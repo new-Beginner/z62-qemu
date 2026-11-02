@@ -1,0 +1,131 @@
+{
+  "completed_observation": true,
+  "profile": "2026.11.02-work-signal-route-r42",
+  "stops": 1462,
+  "stop_reason": "virtual limit",
+  "guest_seconds": 18.005,
+  "observer_wall_seconds": 518.328,
+  "final_display_enabled": true,
+  "process_closed": true,
+  "detach": "OK",
+  "pid": 45888,
+  "stage": "z62-reference-mzpmahke",
+  "cancel_frames": 16,
+  "cancel_local_routes": 16,
+  "incomplete_cancellations": 0,
+  "signals": 270,
+  "incomplete_signals": 0,
+  "signal_origins_lr": {
+    "0x102e913b": 182,
+    "0x102b5bf1": 63,
+    "0x102ccb3d": 25
+  },
+  "unmatched_count": 141,
+  "unmatched_pc": {
+    "0x102b5b30": 141
+  },
+  "work_waits": 155,
+  "work_wait_returns": {
+    "0": 141,
+    "1": 14
+  },
+  "incomplete_work_waits": 1,
+  "all_cancel_routes_associated_work_returns": 0,
+  "descriptor_waits": 208,
+  "incomplete_descriptor_waits": 0,
+  "outside_descriptor_scope": 0,
+  "signal_source_stack_counts": {
+    "0x102b5be0": {
+      "0x102675d5": 63
+    },
+    "0x102b5b0c": {
+      "0x10267601": 141,
+      "0x1026ba25": 16
+    }
+  },
+  "source_matches_current": true,
+  "timeouts": 0,
+  "same_address_different_identity_examples": [
+    {
+      "work_pointer": "0xc2d1a9c0",
+      "cancel_sequence": 53,
+      "cancel_identity": [
+        "0xc2d1a9c0",
+        4,
+        3268148176,
+        3268436480,
+        [
+          "d09af5c10800000000000000",
+          "d09af5c11000000000000000",
+          "d09af5c12000000000000000"
+        ]
+      ],
+      "work_call_sequence": 147,
+      "work_identity": [
+        "0xc2d1a9c0",
+        6,
+        3268148176,
+        3268441472,
+        [
+          "d09af5c10800000000000000",
+          "d09af5c11000000000000000",
+          "d09af5c12000000000000000"
+        ]
+      ]
+    },
+    {
+      "work_pointer": "0xc2d018c0",
+      "cancel_sequence": 293,
+      "cancel_identity": [
+        "0xc2d018c0",
+        1,
+        3268148176,
+        3268436480,
+        [
+          "d09af5c10100000000000000",
+          "d09af5c10200000000000000",
+          "d09af5c10400000000000000"
+        ]
+      ],
+      "work_call_sequence": 362,
+      "work_identity": [
+        "0xc2d018c0",
+        3,
+        3268148176,
+        3268525952,
+        [
+          "d09af5c10100000000000000",
+          "d09af5c10200000000000000",
+          "d09af5c10400000000000000"
+        ]
+      ]
+    },
+    {
+      "work_pointer": "0xc2d2b000",
+      "cancel_sequence": 507,
+      "cancel_identity": [
+        "0xc2d2b000",
+        6,
+        3268148176,
+        3268584128,
+        [
+          "d09af5c10100000000000000",
+          "d09af5c10200000000000000",
+          "d09af5c10400000000000000"
+        ]
+      ],
+      "work_call_sequence": 1365,
+      "work_identity": [
+        "0xc2d2b000",
+        12,
+        3268148176,
+        3268544128,
+        [
+          "d09af5c10100000000000000",
+          "d09af5c10200000000000000",
+          "d09af5c10400000000000000"
+        ]
+      ]
+    }
+  ]
+}

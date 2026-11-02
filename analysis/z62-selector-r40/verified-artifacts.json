@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-work-resource-gate-r40",
+  "paths_relative_to": "workspace",
+  "completed_observation": true,
+  "guest_seconds": 18.048,
+  "observer_wall_seconds": 271.328,
+  "total_stops": 325,
+  "stop_reason": "virtual limit",
+  "exec_session": 42017,
+  "host_exit_code": 0,
+  "process_closed": true,
+  "gdb_detach": "OK",
+  "completed_owned_stage": "z62-reference-pzjryl35",
+  "source_sha256": {
+    "tools/trace_z62_work_gate_wait.py": "95b49c170921ae151ad66dab88d4c6245b6cbb4e73540f130bb70ead527c930f",
+    "tests/test_z62_work_gate_wait.py": "41051646adb55356dfdc8789cd1dbd0221f5157bb98628505efe6624a0489972"
+  },
+  "run_source_identity_matches_current": true,
+  "evidence_sha256": {
+    "analysis/z62-ghidra/work-stage-polls-r39-1/102675d8.asm": "d0366f7f7d6a66b8ec772d1d12bcd543be4f885c4165c6fb53dd84734f74b124",
+    "analysis/z62-ghidra/work-stage-polls-r39-1/102675d8.c": "7d726660ede9667aa1d71b6684ac2c0ddebb7e0e032f4c2a0423c1625c0fb3b4",
+    "analysis/z62-ghidra/work-stage-polls-r39-1/1026b8f2.asm": "babeb9a9a408617f9e163133fe433176c0e58b64729cb40082e8e1b373b02167",
+    "analysis/z62-ghidra/work-stage-polls-r39-1/1026b8f2.c": "3aeb18fd43259fc831550e73f05074776093d87ee18876566240a1344eee7f1a",
+    "analysis/z62-ghidra/work-stage-polls-r39-1/102b5b7e.asm": "e2810f5792c1b955aa82b56da719276e0cff603abe9f9e561af2e7e2e4e25457",
+    "analysis/z62-ghidra/work-stage-polls-r39-1/102b5b7e.c": "76eb836db5922dda90bbc539b76d257a5726c2538c46f41728bcac80bd5c5f0c",
+    "analysis/z62-ghidra/work-stage-polls-r39-1/functions.tsv": "100e0654c21d3ad40a392be8d33f17ed34c62032f12f6f480956a5bff604e9b5",
+    "analysis/z62-ghidra/work-stage-polls-r39-1/headless.log": "27a48d0360e2542c4ac7074c412a31349baf3951fbc469490d9a147fe906974e",
+    "analysis/z62-ghidra/work-stage-polls-r39-1/manifest.json": "a150c38dff252610ef8e03b0325c4cf7566019cccd43b2021a66b11098345734",
+    "analysis/z62-ghidra/work-stage-polls-r39-1/program.txt": "23362e86d9f362126e1235b8d1940351158ec4fa28c519a97b08b2722ab123cc",
+    "analysis/z62-selector-r40/regression.json": "a07f41d765eab8894aad90c1dc4c7450c087f0c37533ae66ae44410dda1d36e7",
+    "analysis/z62-selector-r40/regression.log": "a808a3ce3247487f0e3b87ee01e84e886d184ead07c5218a6e6d1f5897c15a40",
+    "analysis/z62-selector-r40/runtime.log": "83b15e62a02236d353bda5c11da17f213b5d8505ec7aa356535813eb04b664c0",
+    "analysis/z62-selector-r40/scope.md": "12d937bb462613de53a753759952f507fcfbe1a858f80fd0fda0f913e1ea3596",
+    "analysis/z62-selector-r40/waits-1/anchors.json": "bac337cbca5baf2c5f4a2f6f30d201752598493bba2fa3eaca42e9ce58f1b2b8",
+    "analysis/z62-selector-r40/waits-1/effective-command-0.json": "a7c8ff296a4493044155885d4cc872c1e2a06881ed5c68334a453ac7f7f71db9",
+    "analysis/z62-selector-r40/waits-1/fixture.json": "b5af86da10573bc697866e178ff44c8cee21d30a63c7c74904bc6a531695dd9f",
+    "analysis/z62-selector-r40/waits-1/session.json": "6ab86fdea2193dcd73f98fd7376b3d9be1b641ab0a374047847f5603bf3af1f4",
+    "analysis/z62-selector-r40/waits-1/trace.json": "df01216b9fa7265e554a95257ca5e8d0e1dc2200d51b841ddf6ed42ce2e264d4",
+    "analysis/z62-selector-r40/waits-1/work-gate-waits.json": "71a186b9f5b38a1ccdf959ebe82d34234d48b503d0e43e63b8810d1b15bc469d"
+  },
+  "frozen_artifacts": {
+    "r21": {
+      "path": ".build/z62-analog-input-2026.10.30-r21/runtime/qemu-system-arm.exe",
+      "sha256": "0a772865868c4f666024533512d5ede2751255744caf56b594a41da6fc0ef90b"
+    },
+    "r24": {
+      "path": ".build/z62-scene-file-2026.11.01-r24/runtime/qemu-system-arm.exe",
+      "sha256": "dbe36d222dbfa633086f906f626968635c61d9825eaee8174480bef22a39abf2"
+    },
+    "master": {
+      "path": "artifacts/z62-reference-1.70/master.bin",
+      "sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4"
+    }
+  },
+  "r27_fixed_source_hashes": {
+    "tools/z62_async_video_console.py": {
+      "expected": "48a1bd53827ce8dd2067101e9d5e670d71a36c663bd232e804033d037a9f2fe4",
+      "actual": "48a1bd53827ce8dd2067101e9d5e670d71a36c663bd232e804033d037a9f2fe4"
+    },
+    "tools/z62_async_video_scene.py": {
+      "expected": "d7a44e757da421475c17d795ac9e60c834f82dff1d5eb9e5f87c140ea58a11ef",
+      "actual": "d7a44e757da421475c17d795ac9e60c834f82dff1d5eb9e5f87c140ea58a11ef"
+    },
+    "tools/z62_async_video_card.py": {
+      "expected": "37f8b42a533ebc30d917975739ab5f618a6e8675447e4c0fc4d88c6976b1b8fa",
+      "actual": "37f8b42a533ebc30d917975739ab5f618a6e8675447e4c0fc4d88c6976b1b8fa"
+    },
+    "tools/z62_async_video_job.py": {
+      "expected": "7e0dd16154266ba35153015bcce9c2bfdab2b6adc8609b2fee00f0517ec4d35c",
+      "actual": "7e0dd16154266ba35153015bcce9c2bfdab2b6adc8609b2fee00f0517ec4d35c"
+    },
+    "tools/z62_async_video_worker.py": {
+      "expected": "4becaa327969dc3c25879f1f8728576d71bc2cc68cbe9943c6811e745acc6940",
+      "actual": "4becaa327969dc3c25879f1f8728576d71bc2cc68cbe9943c6811e745acc6940"
+    },
+    "tools/z62_video_codec.py": {
+      "expected": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88",
+      "actual": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88"
+    },
+    "tools/z62_media_scene.py": {
+      "expected": "0e1460c6d3bfa1df40a625b95ee47843e95f554eefda6fdfc654e2a7a7e3e34e",
+      "actual": "0e1460c6d3bfa1df40a625b95ee47843e95f554eefda6fdfc654e2a7a7e3e34e"
+    },
+    "tools/z62_scene_exchange.py": {
+      "expected": "490ad0a89e75a5f79f1957392aa990c8e59707a7b39c51ed39d8c1e403700458",
+      "actual": "490ad0a89e75a5f79f1957392aa990c8e59707a7b39c51ed39d8c1e403700458"
+    },
+    "tools/run_z62_async_video_console.py": {
+      "expected": "0b63f4f0bdd33ff6a590eb2711e6df1d70124c7a147ab65c643c8bde520b08d0",
+      "actual": "0b63f4f0bdd33ff6a590eb2711e6df1d70124c7a147ab65c643c8bde520b08d0"
+    },
+    "tools/probe_z62_async_video_console.py": {
+      "expected": "902d06070c5a3b10c4e708475adffafe64df61477f9c5a4c8200dd7d92710e09",
+      "actual": "902d06070c5a3b10c4e708475adffafe64df61477f9c5a4c8200dd7d92710e09"
+    },
+    "tools/export_z62_async_video.py": {
+      "expected": "d1decc56f5627be2ddb75079e43d8161ea354dca162d5269845b31bc603b566a",
+      "actual": "d1decc56f5627be2ddb75079e43d8161ea354dca162d5269845b31bc603b566a"
+    },
+    "tools/assets/z62-async-video.js": {
+      "expected": "77b597e7fff87be59f49f121641a118f4a17d407aaafeec28ad3a2f72ce1a300",
+      "actual": "77b597e7fff87be59f49f121641a118f4a17d407aaafeec28ad3a2f72ce1a300"
+    },
+    "start-z6ii-async-video.cmd": {
+      "expected": "2786ecb6a1b3ed0705fcbbf889f3293a734d9ffe82edf63d0e6f201f371eb9ae",
+      "actual": "2786ecb6a1b3ed0705fcbbf889f3293a734d9ffe82edf63d0e6f201f371eb9ae"
+    }
+  },
+  "r27_all_13_sources_unchanged": true,
+  "virtual_card": {
+    "path": "<USERPROFILE>\\Documents\\Z62-QEMU-runtime\\fixtures\\card-r22-4096.raw",
+    "snapshot": true,
+    "before_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "after_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "current_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "current_matches_before_after": true
+  },
+  "runtime_captured_output_saved": true,
+  "runtime_log": "runtime.log",
+  "regression_receipt": "regression.json",
+  "default_entry_changed": false,
+  "qemu_device_source_changed": false,
+  "guest_software_patched": false,
+  "software_event_injected": false,
+  "camera_accessed": false,
+  "final_display_enabled": true,
+  "mode_recovery_verified": false,
+  "whole_camera_verified": false,
+  "factory_af_verified": false,
+  "flash_safety_verified": false,
+  "paired_waits": 159,
+  "incomplete_waits": 1,
+  "outside_scope": 0,
+  "apis": {
+    "output-queue": {
+      "count": 155,
+      "guest_seconds_distribution": {
+        "0.0": 7,
+        "0.052": 39,
+        "0.051": 101,
+        "0.026": 1,
+        "0.009": 1,
+        "0.032": 5,
+        "0.05": 1
+      },
+      "return_r0": {
+        "0": 141,
+        "1": 14
+      },
+      "resource_flags_at_call": {
+        "0": 3,
+        "28": 152
+      }
+    },
+    "resource-event": {
+      "count": 4,
+      "guest_seconds_distribution": {
+        "1.006": 2,
+        "1.004": 1,
+        "0.802": 1
+      },
+      "return_r0": {
+        "0": 2,
+        "1": 2
+      },
+      "resource_flags_at_call": {
+        "0": 4
+      }
+    }
+  }
+}

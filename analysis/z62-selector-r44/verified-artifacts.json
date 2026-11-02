@@ -1,0 +1,329 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-stage-resource-waits-r44b",
+  "paths_relative_to": "workspace",
+  "completed_observation": true,
+  "exec_session": 73883,
+  "host_exit_code": 0,
+  "process_closed": true,
+  "gdb_detach": "OK",
+  "pid": 53356,
+  "completed_owned_stage": "z62-reference-6kgxjixh",
+  "remaining_qemu_for_two_owned_stages": 0,
+  "guest_seconds": 18.096,
+  "observer_wall_seconds": 321.641,
+  "total_stops": 398,
+  "paired_waits": 12,
+  "incomplete_waits": 1,
+  "outside_scope": 0,
+  "cleanup_associations": 12,
+  "output_source_callback_hits": 0,
+  "output_source_skip_observations": 0,
+  "output_source_publication_hits": 0,
+  "source_sha256": {
+    "tools/trace_z62_stage_resource_waits.py": "dadbdc1ca40f9c16e781297ce5287b22486800ed44ec00b254e18f9349b3babc",
+    "tests/test_z62_stage_resource_waits.py": "2f5f653dec222093df97e74edcb4c6caf961374cdc84c041446f6761f4ff4dea",
+    "tools/trace_z62_work_signal_route.py": "941869903a9a91771bad34f35d25941719881868c03958fb1b2f8ed5f46665f3",
+    "tools/trace_z62_upper_waits.py": "3b03d339ea8faabc19cb924a022cd74bebf9560b0c31bc1b473167f7fdaff2a3",
+    "tools/trace_z62_work_event_waits.py": "28ff87ec8a8b6269297ef98b998834d77dec47385564f90f639bc4cf6a11daf8",
+    "tools/inspect_z62_literal_refs.py": "d1e413d3337584c28f49003215d28b8849ea87e783dcc2585453e1436d59182c",
+    "tools/inspect_z62_call_refs.py": "7b024c5fd6f4a34d8b8e0fc79f95cb061a1af392c3531f86db9c536493d1748d"
+  },
+  "run_source_matches_current": true,
+  "initial_source_snapshot_matches_run": true,
+  "evidence_sha256": {
+    "analysis/z62-ghidra/work-output-irq-r44-5/1036bab0.asm": "fa5b2dff94290f111a4e0889172f56310a352f933fdb1d1f26971de771c91dcd",
+    "analysis/z62-ghidra/work-output-irq-r44-5/1036bab0.c": "19db2cb84885e7a4a4fdafeecd66249f1d8c997aa49cd6f66c3f4915a985ca2c",
+    "analysis/z62-ghidra/work-output-irq-r44-5/1036baec.asm": "8ae953d13855c31b74c457124a03ffda3011d5b02c1820ad5965b9086e187272",
+    "analysis/z62-ghidra/work-output-irq-r44-5/1036baec.c": "325b0c49b2c9e2e9c0585a711c7ba1ff856f47b6b43f44f227f41831d09da231",
+    "analysis/z62-ghidra/work-output-irq-r44-5/1036bb24.asm": "2b6ff523f27b1cfca1a7be8ecbf702657061263329007d6fb753ff0a9be35dcf",
+    "analysis/z62-ghidra/work-output-irq-r44-5/1036bb24.c": "3c53258c27e14e707ec06d6976ca3980ad98fbc4a43f58941b97161432e89905",
+    "analysis/z62-ghidra/work-output-irq-r44-5/1036ebb6.asm": "fd8082eed2eab4f5883d5215a01bbaca3ad9db71178ec8b740f0874269b73f81",
+    "analysis/z62-ghidra/work-output-irq-r44-5/1036ebb6.c": "a22e92ae3195fad2a84093c602befaa19205ea9d61339ec8ef07f341fd14961f",
+    "analysis/z62-ghidra/work-output-irq-r44-5/functions.tsv": "dd11c7814f83cd8917024e5d177bf6a300065dfd18be2f5a40a86289a189b81b",
+    "analysis/z62-ghidra/work-output-irq-r44-5/headless.log": "206a93cf73fe22aa3ca8acac4d08b44c37d992b875aea19ad6b8a8c4f4b05adb",
+    "analysis/z62-ghidra/work-output-irq-r44-5/manifest.json": "9a9ee3ab91a71712375862a209a4a7879bdd780f4c79c98d05d4232dd78a728c",
+    "analysis/z62-ghidra/work-output-irq-r44-5/program.txt": "23362e86d9f362126e1235b8d1940351158ec4fa28c519a97b08b2722ab123cc",
+    "analysis/z62-ghidra/work-output-token-r44-4/10263d08.asm": "837bfb7d9f605a3fb8300e6551a0304b82f591aebe40843995cae0c3ed8d87cb",
+    "analysis/z62-ghidra/work-output-token-r44-4/10263d08.c": "404fc7b825b73a3e3259d3300edeca8c3e1b736ac9ba9ceb5dabc04be9f0ee53",
+    "analysis/z62-ghidra/work-output-token-r44-4/functions.tsv": "73ce7f16cb628eed11cac6704b781d0b249c5c587ff83f16f1e3ac322197c75a",
+    "analysis/z62-ghidra/work-output-token-r44-4/headless.log": "e6fd67b9bc2afc3a4778f0012e078a4ec2bd0a4463156cdc97851f6c2aedd674",
+    "analysis/z62-ghidra/work-output-token-r44-4/manifest.json": "056827a138141fa4805a9e6f01a3feec11a0b08be86f7e064f9c2c10b2f4ab03",
+    "analysis/z62-ghidra/work-output-token-r44-4/program.txt": "23362e86d9f362126e1235b8d1940351158ec4fa28c519a97b08b2722ab123cc",
+    "analysis/z62-ghidra/work-resource-producers-r44-1/102646cc.asm": "184771834954658e5a6bdf0a315ad34b4bb8caf291f37bd5a6358b7a0aa66e3c",
+    "analysis/z62-ghidra/work-resource-producers-r44-1/102646cc.c": "f054631a0faa424acc3082ca35ff78165540d8709349fb61af6c961dfe7ae1c1",
+    "analysis/z62-ghidra/work-resource-producers-r44-1/functions.tsv": "c77e117952fe50b958e76b4a79a8a586b6dbb524ffe7462f5858774bd892d7be",
+    "analysis/z62-ghidra/work-resource-producers-r44-1/headless.log": "970025433249b9aa3db608f11c7c1515794cde53678822ad3bf27cff2b4e4b97",
+    "analysis/z62-ghidra/work-resource-producers-r44-1/manifest.json": "979599fd68b72dcc5688383bf360d3d0d9561eab284896c04feff526b3e56738",
+    "analysis/z62-ghidra/work-resource-producers-r44-1/program.txt": "23362e86d9f362126e1235b8d1940351158ec4fa28c519a97b08b2722ab123cc",
+    "analysis/z62-ghidra/work-resource-producers-r44-2/10265222.asm": "fc66d7edd6f5637bc3cc38d7137b2a46cf766431669fd5dc3593cb61e1164f22",
+    "analysis/z62-ghidra/work-resource-producers-r44-2/10265222.c": "5851c0a4f364e23dd84d8cd54e83c0b23cf3b7cef94f35a0c0d5fdeddb872c87",
+    "analysis/z62-ghidra/work-resource-producers-r44-2/functions.tsv": "cdde90fc5e327c4322440a46c22aad36d58649865cc76ed2320a62974b632494",
+    "analysis/z62-ghidra/work-resource-producers-r44-2/headless.log": "78fa1a79dc92997a859c5ac8455daee8c0b06aa9c97dc2350057735734d24564",
+    "analysis/z62-ghidra/work-resource-producers-r44-2/manifest.json": "9ce030a43b193f4180af1d5475c42dd47dff9a0e4da5433fe7cbf455b5c704da",
+    "analysis/z62-ghidra/work-resource-producers-r44-2/program.txt": "23362e86d9f362126e1235b8d1940351158ec4fa28c519a97b08b2722ab123cc",
+    "analysis/z62-ghidra/work-resource-producers-r44-3/10265220.asm": "cea7e00f72a1f8c74ae5bd6b235c81452249f97b98fc99303980e4dc163a362c",
+    "analysis/z62-ghidra/work-resource-producers-r44-3/10265220.c": "5d423956574d3e8b26de251ac198f335a9d434b87d85829a4abe5885d7028a95",
+    "analysis/z62-ghidra/work-resource-producers-r44-3/functions.tsv": "6ab371d95b5ab96b6ff0e5e5c0dfe7d7cd98b0122908f7a2426f8363523dc78a",
+    "analysis/z62-ghidra/work-resource-producers-r44-3/headless.log": "bc7c716e96fbffb21da347583d2a6f80b94927a5a48b982a8f3b2ee767ba102d",
+    "analysis/z62-ghidra/work-resource-producers-r44-3/manifest.json": "f1674697d35c0fa27783b4fcfc67e925e1d54469aaece84a983a29e94c43804b",
+    "analysis/z62-ghidra/work-resource-producers-r44-3/program.txt": "23362e86d9f362126e1235b8d1940351158ec4fa28c519a97b08b2722ab123cc",
+    "analysis/z62-selector-r44/bank-status-literal-refs.json": "9103829bc3a193b337f122b7fed0ca5c49b42319f3f810953097c4bd12e9e4c5",
+    "analysis/z62-selector-r44/callback-entry-correction.json": "85257702ca941c2f4c212e6394f82c629d514f11cbb37b8dbfde22406a3479b5",
+    "analysis/z62-selector-r44/event-set-callers.json": "0099b6fb0048375e31820de6d39a472d716e36c51c7e23245710e1dfe9ed972c",
+    "analysis/z62-selector-r44/initial-summary.json": "e50e4266be017d98bca9a05feb1c76aefd543a9078d3f435a68197b512894a1c",
+    "analysis/z62-selector-r44/irq-static-contract.json": "3a5a18858052a13f3ce6becdd1a2211ebda8f057b12ae363646cc58326796ab3",
+    "analysis/z62-selector-r44/output-token-source.json": "54b60bf894d7fd442754c1c44e7e1fcc20f5f6b169ac51f8c75595ff45ced83f",
+    "analysis/z62-selector-r44/reference-bank1-contract.json": "044cb6edcb528d05adad9b98c9648599f3acd9e4a3f884dda685399086255338",
+    "analysis/z62-selector-r44/regression-final.json": "2b46386cc298f31ce0e174854605ffba0f7c3a500d32d7f2310c85381e4f4d34",
+    "analysis/z62-selector-r44/regression-final.log": "52c93aca06c2a5b90e0c8438a7ec0ad0a6f0ec909d8b7c274506c77cc1fa310a",
+    "analysis/z62-selector-r44/regression.json": "c16118a88c582637d727fa5e3bacff0689f1aead2d3df932498bf7315a8a5644",
+    "analysis/z62-selector-r44/regression.log": "d5d98868846291b015806a89160545f9b62da38b42b7b1dcd656b3c733826421",
+    "analysis/z62-selector-r44/scope.md": "187956642b56ae8ada4e126fbf9ad948e252e04cd0a7e8a01f81fe71d7ded746",
+    "analysis/z62-selector-r44/source-snapshot/test_z62_stage_resource_waits.py.initial-r44.txt": "3edc2d401ae4117121c4687ea478ad798a11afb37e6fe8cf3960c2f1dd1c3873",
+    "analysis/z62-selector-r44/source-snapshot/trace_z62_stage_resource_waits.py.initial-r44.txt": "b590e9fb79bac62d541a62720184e9b2d9965a714615193e3c74116264978747",
+    "analysis/z62-selector-r44/summary.json": "176ff8f124a0c16c95416f3515bdbbf93c49afe67ba0a4588b8350cd425878e7",
+    "analysis/z62-selector-r44/unit-contract-red.log": "ea738f84c3236844bd6cebeaabb3a7ca2418d8b7d98caaa596fcbafe2a60e4b3",
+    "analysis/z62-selector-r44/unit-final.log": "2af1688c4af262df554ad9e85ac1bc1c1f5524a1bae511804468bdfb94dc2b31",
+    "analysis/z62-selector-r44/unit-green-initial.log": "b74951216902ef561e604b90fa46e9bce6180f6d1e040b55f07c035da2293b81",
+    "analysis/z62-selector-r44/unit-red.log": "e5a08017635cbec7100c2b673e8195cb2bc008febdf18eeae76df6074fea49e6",
+    "analysis/z62-selector-r44/unit-source-green.log": "bc611be51103c9896ca3787c6cbd1c4d4b57f4e3d594fad74719ddc7f0799105",
+    "analysis/z62-selector-r44/unit-source-red.log": "690561e7db479459f06df0600576b9136c3e347370bfa9dd6ed0e6b22d7004fe",
+    "analysis/z62-selector-r44/waits-1/anchors.json": "f0601c95368f0ec9ef2f9e053940e7fbc416fa47df312d2b03b38c0a1bb7d77e",
+    "analysis/z62-selector-r44/waits-1/effective-command-0.json": "655f545aeb252d320e071d69cdd8c882e7503bf49262d459e8eef3098cf60a00",
+    "analysis/z62-selector-r44/waits-1/fixture.json": "b5af86da10573bc697866e178ff44c8cee21d30a63c7c74904bc6a531695dd9f",
+    "analysis/z62-selector-r44/waits-1/resource-waits.json": "080489989f489912200a0dfcdd85f6ece87799518a91a9e3518f2bf0c84b0c7b",
+    "analysis/z62-selector-r44/waits-1/runtime.log": "070401a111f0d674713306b22e334b5e6fa6362a5187c64444597d3b25bac4c1",
+    "analysis/z62-selector-r44/waits-1/session.json": "88abed76e88282d8060fe7e2e1f37038715c49e98d38cb8bdcd2f21f7766bd74",
+    "analysis/z62-selector-r44/waits-1/trace.json": "f400286d3abceb376d9bbb3a4d6765aa87fd4eed3a4257d1ffa6a981ecd82e31",
+    "analysis/z62-selector-r44/waits-2/anchors.json": "15756c3721548deded7c718b98871992f4563eb41f8653ac42a31548c8fd88a2",
+    "analysis/z62-selector-r44/waits-2/effective-command-0.json": "55d907e0e7ca2622dcfaf5f92c729d544be370bb45f319ed3220ce207d7efff6",
+    "analysis/z62-selector-r44/waits-2/fixture.json": "b5af86da10573bc697866e178ff44c8cee21d30a63c7c74904bc6a531695dd9f",
+    "analysis/z62-selector-r44/waits-2/resource-waits.json": "f6269355a5e49cb4ecf0c47560e46aaf52035d2feb4d7ca1e9eebda3ca355010",
+    "analysis/z62-selector-r44/waits-2/runtime.log": "5edbf2d429c6320491cc17397206c4de13b5f2189016f19dbd0d3913b37324fb",
+    "analysis/z62-selector-r44/waits-2/session.json": "c1ed1b3c407f5ace4b88120805dffebd4fcb171323ba9d81d3965435c39a2343",
+    "analysis/z62-selector-r44/waits-2/trace.json": "dae6a829ec279d21c26fe55f53f63ae724738aa130998cbb5d565dfd55099a3d"
+  },
+  "frozen_artifacts": {
+    "r21": {
+      "path": ".build/z62-analog-input-2026.10.30-r21/runtime/qemu-system-arm.exe",
+      "sha256": "0a772865868c4f666024533512d5ede2751255744caf56b594a41da6fc0ef90b",
+      "current_matches": true
+    },
+    "r24": {
+      "path": ".build/z62-scene-file-2026.11.01-r24/runtime/qemu-system-arm.exe",
+      "sha256": "dbe36d222dbfa633086f906f626968635c61d9825eaee8174480bef22a39abf2",
+      "current_matches": true
+    },
+    "master": {
+      "path": "artifacts/z62-reference-1.70/master.bin",
+      "sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+      "current_matches": true
+    }
+  },
+  "r27_fixed_source_hashes": {
+    "tools/z62_async_video_console.py": {
+      "expected": "48a1bd53827ce8dd2067101e9d5e670d71a36c663bd232e804033d037a9f2fe4",
+      "actual": "48a1bd53827ce8dd2067101e9d5e670d71a36c663bd232e804033d037a9f2fe4",
+      "current_matches": true
+    },
+    "tools/z62_async_video_scene.py": {
+      "expected": "d7a44e757da421475c17d795ac9e60c834f82dff1d5eb9e5f87c140ea58a11ef",
+      "actual": "d7a44e757da421475c17d795ac9e60c834f82dff1d5eb9e5f87c140ea58a11ef",
+      "current_matches": true
+    },
+    "tools/z62_async_video_card.py": {
+      "expected": "37f8b42a533ebc30d917975739ab5f618a6e8675447e4c0fc4d88c6976b1b8fa",
+      "actual": "37f8b42a533ebc30d917975739ab5f618a6e8675447e4c0fc4d88c6976b1b8fa",
+      "current_matches": true
+    },
+    "tools/z62_async_video_job.py": {
+      "expected": "7e0dd16154266ba35153015bcce9c2bfdab2b6adc8609b2fee00f0517ec4d35c",
+      "actual": "7e0dd16154266ba35153015bcce9c2bfdab2b6adc8609b2fee00f0517ec4d35c",
+      "current_matches": true
+    },
+    "tools/z62_async_video_worker.py": {
+      "expected": "4becaa327969dc3c25879f1f8728576d71bc2cc68cbe9943c6811e745acc6940",
+      "actual": "4becaa327969dc3c25879f1f8728576d71bc2cc68cbe9943c6811e745acc6940",
+      "current_matches": true
+    },
+    "tools/z62_video_codec.py": {
+      "expected": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88",
+      "actual": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88",
+      "current_matches": true
+    },
+    "tools/z62_media_scene.py": {
+      "expected": "0e1460c6d3bfa1df40a625b95ee47843e95f554eefda6fdfc654e2a7a7e3e34e",
+      "actual": "0e1460c6d3bfa1df40a625b95ee47843e95f554eefda6fdfc654e2a7a7e3e34e",
+      "current_matches": true
+    },
+    "tools/z62_scene_exchange.py": {
+      "expected": "490ad0a89e75a5f79f1957392aa990c8e59707a7b39c51ed39d8c1e403700458",
+      "actual": "490ad0a89e75a5f79f1957392aa990c8e59707a7b39c51ed39d8c1e403700458",
+      "current_matches": true
+    },
+    "tools/run_z62_async_video_console.py": {
+      "expected": "0b63f4f0bdd33ff6a590eb2711e6df1d70124c7a147ab65c643c8bde520b08d0",
+      "actual": "0b63f4f0bdd33ff6a590eb2711e6df1d70124c7a147ab65c643c8bde520b08d0",
+      "current_matches": true
+    },
+    "tools/probe_z62_async_video_console.py": {
+      "expected": "902d06070c5a3b10c4e708475adffafe64df61477f9c5a4c8200dd7d92710e09",
+      "actual": "902d06070c5a3b10c4e708475adffafe64df61477f9c5a4c8200dd7d92710e09",
+      "current_matches": true
+    },
+    "tools/export_z62_async_video.py": {
+      "expected": "d1decc56f5627be2ddb75079e43d8161ea354dca162d5269845b31bc603b566a",
+      "actual": "d1decc56f5627be2ddb75079e43d8161ea354dca162d5269845b31bc603b566a",
+      "current_matches": true
+    },
+    "tools/assets/z62-async-video.js": {
+      "expected": "77b597e7fff87be59f49f121641a118f4a17d407aaafeec28ad3a2f72ce1a300",
+      "actual": "77b597e7fff87be59f49f121641a118f4a17d407aaafeec28ad3a2f72ce1a300",
+      "current_matches": true
+    },
+    "start-z6ii-async-video.cmd": {
+      "expected": "2786ecb6a1b3ed0705fcbbf889f3293a734d9ffe82edf63d0e6f201f371eb9ae",
+      "actual": "2786ecb6a1b3ed0705fcbbf889f3293a734d9ffe82edf63d0e6f201f371eb9ae",
+      "current_matches": true
+    }
+  },
+  "r27_all_13_sources_unchanged": true,
+  "virtual_card": {
+    "path": "<USERPROFILE>\\Documents\\Z62-QEMU-runtime\\fixtures\\card-r22-4096.raw",
+    "snapshot": true,
+    "before_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "after_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "current_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "current_matches_before_after": true
+  },
+  "export_diagnostics": {
+    "work-resource-producers-r44-1": {
+      "completed": true,
+      "original_unchanged": true,
+      "audit": {
+        "exports_checked": 1,
+        "issues": [
+          {
+            "function": "102646cc",
+            "issue": "Could not recover jumptable"
+          }
+        ],
+        "all_exports_structurally_usable": false,
+        "semantics_verified": false
+      },
+      "warnings": {
+        "102646cc.c": [
+          "                    /* WARNING: Could not recover jumptable at 0x10264738. Too many branches */",
+          "                    /* WARNING: Treating indirect jump as call */"
+        ]
+      }
+    },
+    "work-resource-producers-r44-2": {
+      "completed": true,
+      "original_unchanged": true,
+      "audit": {
+        "exports_checked": 1,
+        "issues": [
+          {
+            "function": "10265222",
+            "issue": "Could not recover jumptable"
+          }
+        ],
+        "all_exports_structurally_usable": false,
+        "semantics_verified": false
+      },
+      "warnings": {
+        "10265222.c": [
+          "                    /* WARNING: Could not recover jumptable at 0x10265272. Too many branches */",
+          "                    /* WARNING: Treating indirect jump as call */"
+        ]
+      }
+    },
+    "work-resource-producers-r44-3": {
+      "completed": true,
+      "original_unchanged": true,
+      "audit": {
+        "exports_checked": 1,
+        "issues": [
+          {
+            "function": "10265220",
+            "issue": "Could not recover jumptable"
+          }
+        ],
+        "all_exports_structurally_usable": false,
+        "semantics_verified": false
+      },
+      "warnings": {
+        "10265220.c": [
+          "                    /* WARNING: Could not recover jumptable at 0x10265272. Too many branches */",
+          "                    /* WARNING: Treating indirect jump as call */"
+        ]
+      }
+    },
+    "work-output-token-r44-4": {
+      "completed": true,
+      "original_unchanged": true,
+      "audit": {
+        "exports_checked": 1,
+        "issues": [],
+        "all_exports_structurally_usable": true,
+        "semantics_verified": false
+      },
+      "warnings": {}
+    },
+    "work-output-irq-r44-5": {
+      "completed": true,
+      "original_unchanged": true,
+      "audit": {
+        "exports_checked": 4,
+        "issues": [
+          {
+            "function": "1036bab0",
+            "issue": "Could not recover jumptable"
+          },
+          {
+            "function": "1036baec",
+            "issue": "Could not recover jumptable"
+          },
+          {
+            "function": "1036bb24",
+            "issue": "Possible PIC construction"
+          }
+        ],
+        "all_exports_structurally_usable": false,
+        "semantics_verified": false
+      },
+      "warnings": {
+        "1036bab0.c": [
+          "                    /* WARNING: Could not recover jumptable at 0x1036bae8. Too many branches */",
+          "                    /* WARNING: Treating indirect jump as call */"
+        ],
+        "1036baec.c": [
+          "                    /* WARNING: Could not recover jumptable at 0x1036bb20. Too many branches */",
+          "                    /* WARNING: Treating indirect jump as call */"
+        ],
+        "1036bb24.c": [
+          "/* WARNING: Possible PIC construction at 0x1036bb4c: Changing call to branch */",
+          "/* WARNING: Removing unreachable block (ram,0x1036bb50) */"
+        ]
+      }
+    }
+  },
+  "regression_tests": 509,
+  "regression_seconds": 164.106,
+  "regression_exit_code": 0,
+  "runtime_full_captured_output_saved": true,
+  "regression_full_captured_output_saved": true,
+  "default_entry_changed": false,
+  "qemu_device_source_changed": false,
+  "guest_software_patched": false,
+  "software_event_injected": false,
+  "camera_accessed": false,
+  "runtime_irq_routing_or_dma_contract_verified": false,
+  "hardware_image_output_verified": false,
+  "mode_recovery_verified": false,
+  "whole_camera_verified": false,
+  "factory_af_verified": false,
+  "flash_safety_verified": false
+}

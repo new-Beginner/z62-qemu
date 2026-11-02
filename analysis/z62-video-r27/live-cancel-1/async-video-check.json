@@ -1,0 +1,2647 @@
+{
+  "schema": 1,
+  "completed": true,
+  "implementation_level": "C",
+  "scenario": "cancel",
+  "events": [
+    {
+      "type": "lens",
+      "payload": {
+        "focus_target": 0.65
+      }
+    },
+    {
+      "type": "mode",
+      "payload": {
+        "mode": "video"
+      }
+    },
+    {
+      "type": "record",
+      "payload": {
+        "action": "start"
+      }
+    },
+    {
+      "type": "exposure",
+      "payload": {
+        "iso": 200
+      }
+    },
+    {
+      "type": "record",
+      "payload": {
+        "action": "stop"
+      }
+    },
+    {
+      "type": "heartbeat",
+      "payload": {}
+    },
+    {
+      "type": "record",
+      "payload": {
+        "action": "cancel"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "virtual_time_ns": 21418596729,
+      "phase": "starting",
+      "worker_pid": 22984,
+      "worker_running": true,
+      "terminal": false,
+      "saved_videos": 0,
+      "preview_batches": 177,
+      "source_publish_id": 630
+    }
+  ],
+  "requests": [
+    {
+      "path": "/software/status",
+      "seconds": 0.03200000000651926
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.1880000000091968
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3129999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17100000000209548
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28099999998812564
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.13999999999941792
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20299999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28199999999196734
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.11000000000058208
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17199999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07899999999790452
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20299999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23500000000058208
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28199999999196734
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3130000000091968
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3129999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09299999999348074
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20299999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28199999999196734
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3119999999908032
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09299999999348074
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21899999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23399999999674037
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2340000000112923
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28199999999196734
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.7649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.062000000005355105
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23500000000058208
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21899999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3129999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.06199999999080319
+    },
+    {
+      "path": "/status",
+      "seconds": 0.1870000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.375
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23399999999674037
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2960000000020955
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.0629999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21899999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28199999999196734
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21899999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.32800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28200000000651926
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3119999999908032
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.10900000001129229
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21899999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09299999999348074
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23399999999674037
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.1870000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.06300000000919681
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17199999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21899999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.062000000005355105
+    },
+    {
+      "path": "/status",
+      "seconds": 0.1870000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21900000001187436
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21899999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2340000000112923
+    },
+    {
+      "path": "/status",
+      "seconds": 0.32800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3909999999887077
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.4220000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09300000000803266
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.0629999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.14100000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3129999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28099999998812564
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28099999998812564
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07899999999790452
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28200000000651926
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28099999998812564
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3279999999940628
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07899999999790452
+    },
+    {
+      "path": "/status",
+      "seconds": 0.1869999999908032
+    },
+    {
+      "path": "/status",
+      "seconds": 0.062000000005355105
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15700000000651926
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2659999999887077
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28200000000651926
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07899999999790452
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20300000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17199999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21899999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.13999999999941792
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2659999999887077
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20300000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.39100000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.14100000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20299999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3279999999940628
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3279999999940628
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20399999999790452
+    },
+    {
+      "path": "/status",
+      "seconds": 0.0629999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.14100000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09400000001187436
+    },
+    {
+      "path": "/status",
+      "seconds": 0.6399999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20299999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21900000001187436
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3600000000005821
+    },
+    {
+      "path": "/status",
+      "seconds": 0.32800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09400000001187436
+    },
+    {
+      "path": "/status",
+      "seconds": 0.14100000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28099999998812564
+    },
+    {
+      "path": "/status",
+      "seconds": 0.375
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28099999998812564
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2960000000020955
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3129999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28199999999196734
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.32800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.375
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15700000000651926
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28099999998812564
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28199999999196734
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20299999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.14100000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.14100000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21899999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.34399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.32800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2960000000020955
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09300000000803266
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28099999998812564
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09299999999348074
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20300000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.34400000001187436
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3600000000005821
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3279999999940628
+    },
+    {
+      "path": "/status",
+      "seconds": 0.40600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.062000000005355105
+    },
+    {
+      "path": "/status",
+      "seconds": 0.14100000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20300000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2659999999887077
+    },
+    {
+      "path": "/status",
+      "seconds": 0.4370000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3590000000112923
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23500000000058208
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.0629999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28199999999196734
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 1.5940000000118744
+    },
+    {
+      "path": "/status",
+      "seconds": 0.34300000000803266
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.39100000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.1879999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.34300000000803266
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3279999999940628
+    },
+    {
+      "path": "/status",
+      "seconds": 0.4529999999940628
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20300000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3279999999940628
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3119999999908032
+    },
+    {
+      "path": "/status",
+      "seconds": 0.35899999999674037
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.5149999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.42199999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09299999999348074
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.34399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3909999999887077
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28200000000651926
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3119999999908032
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3279999999940628
+    },
+    {
+      "path": "/status",
+      "seconds": 0.35899999999674037
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09299999999348074
+    },
+    {
+      "path": "/status",
+      "seconds": 0.1870000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3130000000091968
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3129999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3600000000005821
+    },
+    {
+      "path": "/status",
+      "seconds": 0.06199999999080319
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23399999999674037
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.1869999999908032
+    },
+    {
+      "path": "/status",
+      "seconds": 0.34299999999348074
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20399999999790452
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3129999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3279999999940628
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.1880000000091968
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20299999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.40600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.34299999999348074
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23399999999674037
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.34399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3289999999979045
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3119999999908032
+    },
+    {
+      "path": "/status",
+      "seconds": 0.35899999999674037
+    },
+    {
+      "path": "/status",
+      "seconds": 1.5160000000032596
+    },
+    {
+      "path": "/status",
+      "seconds": 0.34399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23399999999674037
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.40600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3279999999940628
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.34400000001187436
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28200000000651926
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17199999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21800000000803266
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21800000000803266
+    },
+    {
+      "path": "/status",
+      "seconds": 0.10900000001129229
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17100000000209548
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23399999999674037
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28099999998812564
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21799999999348074
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.1409999999887077
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23500000000058208
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21899999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.062000000005355105
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15700000000651926
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3129999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3119999999908032
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2659999999887077
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.0629999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21899999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28199999999196734
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.34399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.1870000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.1870000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2340000000112923
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09400000001187436
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2340000000112923
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2960000000020955
+    },
+    {
+      "path": "/status",
+      "seconds": 0.34300000000803266
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2960000000020955
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28199999999196734
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23500000000058208
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07899999999790452
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.32800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.34399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.40600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3119999999908032
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.1870000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.39100000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09300000000803266
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.40600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09400000001187436
+    },
+    {
+      "path": "/status",
+      "seconds": 0.1870000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3129999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3600000000005821
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20299999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.6870000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21900000001187436
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3289999999979045
+    },
+    {
+      "path": "/status",
+      "seconds": 0.21899999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.4529999999940628
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2960000000020955
+    },
+    {
+      "path": "/status",
+      "seconds": 0.40600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09400000001187436
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23500000000058208
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3119999999908032
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.125
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23399999999674037
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09400000001187436
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28099999998812564
+    },
+    {
+      "path": "/status",
+      "seconds": 0.10899999999674037
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09400000001187436
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20300000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.10899999999674037
+    },
+    {
+      "path": "/status",
+      "seconds": 0.14100000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15699999999196734
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23399999999674037
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20299999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.1409999999887077
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28200000000651926
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28099999998812564
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2960000000020955
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3129999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.3130000000091968
+    },
+    {
+      "path": "/status",
+      "seconds": 0.48399999999674037
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09300000000803266
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20299999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.23500000000058208
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28099999998812564
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.28099999998812564
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.29699999999138527
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07800000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/status",
+      "seconds": 0.34399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.09399999999732245
+    },
+    {
+      "path": "/status",
+      "seconds": 0.15600000000267755
+    },
+    {
+      "path": "/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/status",
+      "seconds": 0.4379999999946449
+    },
+    {
+      "path": "/status",
+      "seconds": 0.07799999999406282
+    },
+    {
+      "path": "/status",
+      "seconds": 0.20300000000861473
+    },
+    {
+      "path": "/status",
+      "seconds": 0.26600000000325963
+    },
+    {
+      "path": "/status",
+      "seconds": 0.40600000000267755
+    },
+    {
+      "path": "/camera/event",
+      "seconds": 0.375
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.3279999999940628
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.046000000002095476
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.1879999999946449
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.28100000000267755
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.031000000002677552
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.14100000000325963
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.21899999999732245
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.030999999988125637
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.17100000000209548
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.32800000000861473
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.03199999999196734
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.23399999999674037
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.030999999988125637
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.1870000000053551
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.28099999998812564
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.031000000002677552
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.13999999999941792
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.046999999991385266
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.04700000000593718
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.35899999999674037
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.3119999999908032
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.23399999999674037
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.01600000000325963
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.20299999999406282
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.2970000000059372
+    },
+    {
+      "path": "/camera/event",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.28099999998812564
+    },
+    {
+      "path": "/camera/event",
+      "seconds": 0.15700000000651926
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9839999999967404
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.48399999999674037
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.20399999999790452
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.5629999999946449
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.17200000000593718
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.4850000000005821
+    },
+    {
+      "path": "/camera/event",
+      "seconds": 0.5779999999940628
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.3120000000053551
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9840000000112923
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9530000000086147
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9069999999919673
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9380000000091968
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9379999999946449
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.8899999999994179
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.875
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.125
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.3899999999994179
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.40600000000267755
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.25
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.5620000000053551
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.15700000000651926
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.48399999999674037
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.14100000000325963
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.5160000000032596
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.125
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.5779999999940628
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9839999999967404
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9689999999973224
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9379999999946449
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.8910000000032596
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9060000000026776
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.0320000000065193
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9839999999967404
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9219999999913853
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.0460000000020955
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.1089999999967404
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.125
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.0160000000032596
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.514999999999418
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.1409999999887077
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.125
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.125
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.0310000000026776
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.062000000005355
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.110000000000582
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.0160000000032596
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.0
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9220000000059372
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.8910000000032596
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.0310000000026776
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9210000000020955
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9370000000053551
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9069999999919673
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.8439999999973224
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9530000000086147
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.8910000000032596
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9839999999967404
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.062000000005355
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9840000000112923
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9850000000005821
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9060000000026776
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.875
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.8430000000080327
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9370000000053551
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.8439999999973224
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9379999999946449
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.5629999999946449
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.375
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.375
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.4539999999979045
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.10899999999674037
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.01600000000325963
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.0470000000059372
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9369999999908032
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9370000000053551
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9060000000026776
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.9850000000005821
+    },
+    {
+      "path": "/software/status",
+      "seconds": 1.0939999999973224
+    },
+    {
+      "path": "/camera/event",
+      "seconds": 1.5779999999940628
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.2649999999994179
+    },
+    {
+      "path": "/status",
+      "seconds": 0.11000000000058208
+    },
+    {
+      "path": "/camera/event",
+      "seconds": 0.014999999999417923
+    },
+    {
+      "path": "/camera/event",
+      "seconds": 0.03200000000651926
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.031000000002677552
+    },
+    {
+      "path": "/software/status",
+      "seconds": 0.28099999998812564
+    }
+  ],
+  "factory_video_verified": false,
+  "camera_accessed": false,
+  "stop_post_seconds": 1.5779999999940628,
+  "live_worker_pid": 22984,
+  "live_job_directory": "D:\\Z62-QEMU-runtime\\sessions\\z62-reference-9ns_poiu\\runs\\video-jobs\\video-job-9f5q4bvg",
+  "cancel_post_seconds": 0.03200000000651926,
+  "cancelled_without_media": true,
+  "process_closed": true,
+  "empty_card_reopened": true
+}

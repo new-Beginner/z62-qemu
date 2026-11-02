@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "profile": "2026.11.01-video-console-r26b",
+  "implementation_level": "C",
+  "hardware_profile": "2026.11.01-r24",
+  "hardware_binary_sha256": "dbe36d222dbfa633086f906f626968635c61d9825eaee8174480bef22a39abf2",
+  "r24_frozen_source_files_changed": [],
+  "source_sha256": {
+    "tools/z62_video_codec.py": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88",
+    "tools/z62_video_card.py": "a22438ff2f1243878695268892037564b23e09362f19b405ecbc2d2008855ee4",
+    "tools/z62_video_scene.py": "2fdcf1a6f1c1ab524ab019a5f420b4908e2642c8f328ac633d4c758a41945c0a",
+    "tools/z62_video_input.py": "29f9ca7dc5a802e54fc0c515f3cef9a341d38167789bdc0835d2b1f62e57ca4f",
+    "tools/z62_video_console.py": "0605160d66cdf675d540553fbc7ad6bd8dbd0d5a3be6ae70fc7656c3e6e2fb6d",
+    "tools/run_z62_video_console.py": "981f0ab4ad2d96caf06e7af8a34f5ecd30b3f771ac18eb53f11b5bccb23f0623",
+    "tools/probe_z62_video_console.py": "7f5993ee6c7156003361bd19f28b42b2b02a2831ea8d86c97bf1d6d4d8de06e1",
+    "tools/export_z62_video.py": "bfbb944796e08e43619e0447c6dd538ad07bbe6467abaa1a962d467387106867",
+    "tools/assets/z62-video.js": "7683497518080273202ea6d9d9cd70bd4be2932e04a4ff167e4565d85c8514f0",
+    "tools/assets/z62-video.html": "c43b8268cb6c99a858666c08a5bf39ea2e93433568919e44fe62dd1c550c5cfd",
+    "requirements-video.txt": "16d6ad2b59a850c7470b502e979116f6edcd560d9c8be9eaf2ffe72b3bfa07e6",
+    "start-z6ii-video.cmd": "d7cfc4401bd5281c3776ad49be8722aff7aac7e6472ed5f40a78f41b6f838161"
+  },
+  "regression": {
+    "tests": 415,
+    "seconds": 176.038,
+    "exit_code": 0,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "receipt": "regression-compat.json"
+  },
+  "runtime_receipts": [
+    "compat-live-1/video-check.json",
+    "compat-candidate-1/video-check.json",
+    "compat-ui-export-1/export.json",
+    "ui-qa-compat.json"
+  ],
+  "browser_sample": {
+    "file": "compat-ui-export-1/Z62_0001.MP4",
+    "sha256": "bf8372f8bd606be45da9fa0662094a99779f729efb7777dcd44f00957f896021",
+    "frames": 203,
+    "duration_us": 7479354,
+    "max_source_mse": 3.262087345123291
+  },
+  "ui_runtime_sources_match_current": true,
+  "ui_host_exit_code": 0,
+  "ui_empty_card_reopened": true,
+  "ui_remaining_qemu_processes": 0,
+  "audio_verified": false,
+  "factory_video_verified": false,
+  "whole_camera_verified": false,
+  "factory_af_verified": false,
+  "flash_safety_verified": false
+}

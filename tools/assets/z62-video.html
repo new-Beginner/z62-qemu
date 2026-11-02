@@ -1,0 +1,11 @@
+<section class="video-panel" aria-label="软件录像">
+  <label>软件模式 <select id="video-mode"><option value="photo">照片</option><option value="video">视频</option></select></label>
+  <div class="software-button-row">
+    <button id="video-start" disabled>开始录像</button>
+    <button id="video-stop" disabled>停止并保存</button>
+    <button id="video-cancel" disabled>取消录像</button>
+  </div>
+  <p id="video-info" aria-live="polite">等待录像状态</p>
+  <video id="video-playback" controls preload="metadata" hidden style="width:100%;max-height:400px" aria-label="虚拟卡视频回放"></video>
+  <p class="body-input-note">C · 软件录像，无音频，最长60秒。上方录像键也驱动此后端；原厂照片／视频拨杆和原厂编码尚未接入。</p>
+</section>

@@ -1,0 +1,69 @@
+"""Build independent r48 numerical bank0, preserving the verified r47b tree."""
+import argparse
+import json
+from pathlib import Path
+import shutil
+import build_reference_qemu as reference
+from build_z62_raw_stream import copy_verified_source
+import run_z62_preview_results_format as parent
+import z62_grid_device as device
+
+
+def build(jobs):
+    prior=parent.verify_build()
+    parent_root=parent.DEFAULT_QEMU.parent.parent
+    old=json.loads((parent_root/'reference-build-manifest.json').read_text(encoding='utf-8'))
+    work=reference.guard_workspace(device.WORK,'z62',updates=True)
+    if shutil.disk_usage(work.parent).free < 12*1024**3:
+        raise ValueError('Need 12 GiB free for independent numerical grid build')
+    ident=device.identity()
+    work.mkdir(parents=True,exist_ok=False)
+    (work/reference.MARKER).write_text(json.dumps(reference.identity('z62',True)),encoding='utf-8')
+    source=work/'source/qemu-10.2.4'
+    print('Copying hash-verified r47b; r48 performs numerical work before bank0 completion',flush=True)
+    copy_verified_source(Path(old['source']),source,old['prepared_source_file_sha256'])
+    device.apply_source(source)
+    hashes=dict(old['prepared_source_file_sha256'])
+    changed=tuple(device.INPUTS)+tuple(p.name for p in device.HEADERS)
+    for name in changed: hashes['hw/arm/'+name]=reference.upstream.digest(source/'hw/arm'/name)
+    (work/'prepared-grid.json').write_text(json.dumps({'grid_device':ident,'source_hashes':hashes,
+        'parent_binary_sha256':prior['binary_sha256'],'complete_build':False},indent=2),encoding='utf-8')
+    msys=Path(old['msys2_dir'])
+    built=reference.run_build(source,work/'build',msys,jobs)
+    reference.verify_devices(work/'build')
+    runtime=work/'runtime';runtime.mkdir()
+    dlls=reference.upstream.stage_windows(built,msys,runtime)
+    binary=runtime/built.name
+    checks=reference.smoke_checks(binary,'z62')
+    if ident!=device.identity(): raise ValueError('Grid source changed during build')
+    common={'binary':str(binary),'binary_sha256':reference.upstream.digest(binary),
+            'builder_sha256':reference.upstream.digest(Path(__file__)),'grid_device':ident}
+    names=('reference','functional','transaction','capcom','raw-stream','finite-stats','preview',
+           'capture-contacts','raw-boundary','continuous-stats','analog-input','scene-source',
+           'scene-file','preview-results','preview-results-format')
+    for name in names:
+        previous=parent_root/(name+'-build-manifest.json')
+        record=json.loads(previous.read_text(encoding='utf-8'))
+        record.update(common)
+        record['parent_manifest_sha256']=reference.upstream.digest(previous)
+        if name=='reference':
+            record.update(source=str(source),build=str(work/'build'),runtime=str(runtime),
+                prepared_source_file_sha256=hashes,runtime_dll_sha256=dlls,binary_bytes=binary.stat().st_size,
+                jobs=jobs,checks=checks,inherited_from=str(parent_root),firmware_run=False)
+        if name=='preview-results':
+            record['grid_parent_generated_source_sha256']=dict(record['generated_source_sha256'])
+            for field in record['generated_source_sha256']:
+                if field in changed: record['generated_source_sha256'][field]=hashes['hw/arm/'+field]
+        with (work/(name+'-build-manifest.json')).open('x',encoding='utf-8') as f: json.dump(record,f,indent=2)
+    result={**common,'schema':1,'version':device.VERSION,'parent_binary_sha256':prior['binary_sha256'],
+            'generated_source_sha256':{name:hashes['hw/arm/'+name] for name in changed},'checks':checks}
+    with (work/'grid-build-manifest.json').open('x',encoding='utf-8') as f: json.dump(result,f,indent=2)
+    return result
+
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--jobs',type=int,default=8)
+    args=parser.parse_args()
+    if not 1<=args.jobs<=32: parser.error('jobs must be 1..32')
+    print(json.dumps(build(args.jobs),indent=2))

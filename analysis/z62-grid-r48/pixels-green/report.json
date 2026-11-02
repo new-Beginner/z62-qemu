@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "completed": true,
+  "exit_code": 0,
+  "command": [
+    "D:\\Mypi_deskktop\\.pi-desktoooop\\data\\scratch\\ea676126-86fa-48b9-8090-07cabb814b52\\toolchain\\msys64\\ucrt64\\bin\\gcc.exe",
+    "-std=c11",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "tests/native/z62_grid_pixels_test.c",
+    "-o",
+    "analysis/z62-grid-r48/pixels-green/grid-pixels-test.exe"
+  ],
+  "test_output": "Three real LE-u16 inputs -> rounded RGB mean -> packed12; sources, padding, guards and failure atomicity passed\n",
+  "binary_sha256": "482add8613b540622a9631049e430eed17b54244da6e40d5c741b45978dc3377",
+  "firmware_executed": false,
+  "camera_accessed": false,
+  "algorithm_level": "C"
+}

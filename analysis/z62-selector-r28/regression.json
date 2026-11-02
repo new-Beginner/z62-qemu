@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "profile": "2026.11.01-selector-research-r28",
+  "command": ".build/tools/video-r26/Scripts/python.exe -X utf8 -B -m unittest discover -s tests -q",
+  "temporary_root": "D:/Z62-QEMU-runtime/sessions",
+  "tests": 442,
+  "seconds": 199.991,
+  "exit_code": 0,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "full_captured_stdout_stderr_saved": true,
+  "log_newlines": "normalized LF",
+  "log": "regression.log",
+  "unified_exec_session": 5965,
+  "scope": "Repository regression plus four bounded branch-inspector tests; not full camera, photo/video selector recovery, AF or flash-safety acceptance",
+  "physical_photo_video_identity_verified": false,
+  "selector_recovery_verified": false,
+  "whole_camera_verified": false,
+  "flash_safety_verified": false
+}

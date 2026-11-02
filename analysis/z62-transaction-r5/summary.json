@@ -1,0 +1,149 @@
+{
+  "device_sha256": "451a5a2c38ef9fa4db34aa826aebb9312379d67023b4697aa3209ca7b31e6a6f",
+  "unchanged_inputs": {
+    "Z6_2_0170 (1).bin": "5a9640b4c07abe1ecbf5a52655cbec6b893bba045bb2a1a1d21055b9f8f9d06d",
+    "Z72-fireware/Z7_2_0170.bin": "fc0e94f57500a1f0e287c6b9a036c81a5ffceccb8432a377d645b3fa35a19b6a",
+    "artifacts/z62-reference-1.70/master.bin": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+    "artifacts/z62-reference-1.70/slave.bin": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5",
+    "artifacts/z62-reference-1.70/controller.bin": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983",
+    ".build/z62-reference-2026.10.27-r1/runtime/qemu-system-arm.exe": "e169431ed0a24dded62c2d3e0ea2aba1056385ec96584c57b40cd4e5ab29fba4",
+    ".build/z62-functional-2026.10.28-r4/runtime/qemu-system-arm.exe": "ad306ba7b0acc7a90837c6330da0379c02faf5405650d59a2a62ddc8cb3dfec6"
+  },
+  "runs": {
+    "bridge-off": {
+      "sample_count": 247,
+      "end_virtual_seconds": 37.171,
+      "cycles": [
+        {
+          "cycle": 1,
+          "returned_applv": true,
+          "reopened": true,
+          "navigation_pixels_changed": true,
+          "status_codes_after_navigation": [],
+          "navigation_passed": true
+        },
+        {
+          "cycle": 2,
+          "returned_applv": true,
+          "reopened": true,
+          "navigation_pixels_changed": true,
+          "status_codes_after_navigation": [
+            53,
+            63
+          ],
+          "navigation_passed": false
+        }
+      ],
+      "navigation_changed_pixels": [
+        124535,
+        124535
+      ],
+      "first_0x35": {
+        "after": 30.392,
+        "at_or_before": 30.55,
+        "stage": "after-reopen"
+      },
+      "first_0x3f": {
+        "after": 34.708,
+        "at_or_before": 34.842,
+        "stage": "after-reopen"
+      },
+      "final_status_codes": [
+        53,
+        63
+      ],
+      "raw": {
+        "functional-raw": true,
+        "raw-accepted": 3,
+        "raw-rejected": 3,
+        "raw-bytes": 27427584,
+        "raw-last-reason": "success"
+      },
+      "bridge": {
+        "functional-raw-completion": false,
+        "raw-source-events": 3,
+        "raw-completions": 0,
+        "raw-ignored": 3,
+        "raw-coalesced": 0,
+        "raw-completion-last-reason": "disabled"
+      },
+      "process_closed": true,
+      "all_status_lists_empty": false
+    },
+    "bridge-on": {
+      "sample_count": 246,
+      "end_virtual_seconds": 36.965,
+      "cycles": [
+        {
+          "cycle": 1,
+          "returned_applv": true,
+          "reopened": true,
+          "navigation_pixels_changed": true,
+          "status_codes_after_navigation": [],
+          "navigation_passed": true
+        },
+        {
+          "cycle": 2,
+          "returned_applv": true,
+          "reopened": true,
+          "navigation_pixels_changed": true,
+          "status_codes_after_navigation": [
+            53
+          ],
+          "navigation_passed": false
+        }
+      ],
+      "navigation_changed_pixels": [
+        124535,
+        124535
+      ],
+      "first_0x35": {
+        "after": 30.311,
+        "at_or_before": 30.466,
+        "stage": "after-reopen"
+      },
+      "first_0x3f": null,
+      "final_status_codes": [
+        53
+      ],
+      "raw": {
+        "functional-raw": true,
+        "raw-accepted": 3,
+        "raw-rejected": 3,
+        "raw-bytes": 27427584,
+        "raw-last-reason": "success"
+      },
+      "bridge": {
+        "functional-raw-completion": true,
+        "raw-source-events": 3,
+        "raw-completions": 3,
+        "raw-ignored": 0,
+        "raw-coalesced": 0,
+        "raw-completion-last-reason": "latched"
+      },
+      "process_closed": true,
+      "all_status_lists_empty": false
+    }
+  },
+  "same_ab_global_properties_except_bridge": true,
+  "cmd_smoke_clean_exit": true,
+  "sd_checks": [
+    {
+      "mode": "snapshot",
+      "pio_write_read": true,
+      "reopened_expected": true,
+      "saved": false,
+      "original_untouched_while_running": true
+    },
+    {
+      "mode": "persistent",
+      "pio_write_read": true,
+      "reopened_expected": true,
+      "saved": true,
+      "original_untouched_while_running": true
+    }
+  ],
+  "cycle_fixed": false,
+  "live_view_verified": false,
+  "conclusion": "Bridge-on has three real completion latches and no observed 0x3F in this bounded run; 0x35 remains. Not a full cycle fix."
+}

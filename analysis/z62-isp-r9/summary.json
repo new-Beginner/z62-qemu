@@ -1,0 +1,210 @@
+{
+  "schema": 1,
+  "binary_sha256": "cdd260cba6d28801e00ada2df0ce496b2037bdd6b43beb887118c50246be1961",
+  "evidence_sha256": {
+    "qtest2.json": "36de232bc4dd3c7f14eb870748c8ffea41a151d6ad984819e70c8ace12860b48",
+    "raw-regression.json": "196df17090745ed9c72a071fea8656d36924c36957752a12877ed387559bf052",
+    "finite-regression.json": "602de3a31b5065197f753a40b6a86a79bf273d4ece9ef90e2adf9d9438d09d18",
+    "pixels-test2/report.json": "780120ca471c6fb0745164df99c04439792626f404017736af243a439ecf9a2c",
+    "native/report.json": "cf275b65c7b4974d0f123d73cc6f6f980398f98e644752dc7ed60efcaac11e9a",
+    "menu/report.json": "53fc398e0ecfb38a8d7478bca8668d66a54cf274f43abebc0f9d626a18bf6528",
+    "lifecycle/trace.json": "c4706173c312dd53d0141ab7643b878024b4f97b12c8086777b45dc2f67b17bd"
+  },
+  "native_preview_batches": 187,
+  "native_preview_outputs": 2244,
+  "native_preview_bytes": 3891419136,
+  "lcd_video_points": [
+    {
+      "xy": [
+        200,
+        200
+      ],
+      "rgb": [
+        208,
+        208,
+        208
+      ]
+    },
+    {
+      "xy": [
+        400,
+        200
+      ],
+      "rgb": [
+        239,
+        239,
+        239
+      ]
+    },
+    {
+      "xy": [
+        600,
+        200
+      ],
+      "rgb": [
+        68,
+        68,
+        68
+      ]
+    },
+    {
+      "xy": [
+        800,
+        200
+      ],
+      "rgb": [
+        143,
+        143,
+        143
+      ]
+    },
+    {
+      "xy": [
+        200,
+        300
+      ],
+      "rgb": [
+        233,
+        233,
+        233
+      ]
+    },
+    {
+      "xy": [
+        400,
+        300
+      ],
+      "rgb": [
+        37,
+        39,
+        40
+      ]
+    },
+    {
+      "xy": [
+        600,
+        300
+      ],
+      "rgb": [
+        134,
+        134,
+        134
+      ]
+    },
+    {
+      "xy": [
+        800,
+        300
+      ],
+      "rgb": [
+        180,
+        180,
+        180
+      ]
+    },
+    {
+      "xy": [
+        200,
+        400
+      ],
+      "rgb": [
+        255,
+        243,
+        180
+      ]
+    },
+    {
+      "xy": [
+        400,
+        400
+      ],
+      "rgb": [
+        125,
+        125,
+        125
+      ]
+    },
+    {
+      "xy": [
+        600,
+        400
+      ],
+      "rgb": [
+        173,
+        173,
+        173
+      ]
+    },
+    {
+      "xy": [
+        800,
+        400
+      ],
+      "rgb": [
+        210,
+        210,
+        210
+      ]
+    },
+    {
+      "xy": [
+        200,
+        500
+      ],
+      "rgb": [
+        113,
+        113,
+        113
+      ]
+    },
+    {
+      "xy": [
+        400,
+        500
+      ],
+      "rgb": [
+        166,
+        166,
+        166
+      ]
+    },
+    {
+      "xy": [
+        600,
+        500
+      ],
+      "rgb": [
+        204,
+        204,
+        204
+      ]
+    },
+    {
+      "xy": [
+        800,
+        500
+      ],
+      "rgb": [
+        234,
+        234,
+        234
+      ]
+    }
+  ],
+  "native_pixel_path_verified": true,
+  "statistics_bank0_completed": false,
+  "silicon_pixel_math_verified": false,
+  "complete_emulator": false,
+  "flash_safety_verified": false,
+  "preview_resume_verified": false,
+  "menu_cycle_verified": true,
+  "release_gate_passed": false,
+  "menu_final_preview_batches": 424,
+  "lifecycle_closed": true,
+  "applv_dwell": {
+    "first": 33.735,
+    "last": 45.054,
+    "first_batches": 425,
+    "last_batches": 425
+  }
+}

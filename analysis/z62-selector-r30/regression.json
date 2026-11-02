@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "profile": "2026.11.01-selector-ready-watch-r30",
+  "command": ".build/tools/video-r26/Scripts/python.exe -X utf8 -B -m unittest discover -s tests -q",
+  "temporary_root": "D:/Z62-QEMU-runtime/sessions",
+  "tests": 447,
+  "seconds": 177.986,
+  "exit_code": 0,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "log": "regression.log",
+  "full_captured_stdout_stderr_saved": true,
+  "log_newlines": "normalized LF",
+  "unified_exec_session": 60264,
+  "scope": "Regression before optional tail-frame window extension; native ready-word observation is a separate runtime receipt",
+  "whole_camera_verified": false,
+  "mode_recovery_verified": false,
+  "flash_safety_verified": false
+}

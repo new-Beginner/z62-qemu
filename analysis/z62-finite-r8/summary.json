@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "binary_sha256": "05fcd74d61700eebf4b8f911308b3c5ecabed29e673f581ba7ad97f51ff7bb91",
+  "evidence_sha256": {
+    "qtest.json": "a359479f9fd140a216706a82fa44a15c97160b845a21ab688fce74e198e83edb",
+    "legacy-raw-stream.json": "fcd12dc65181696a23e41829124ab3eb360d6f81b2693e14f989b9bc83aaebc9",
+    "native/report.json": "f83cf424fa95a5090fbaefc2d5a2e14d68c887285fa001b112d889d071bbeb57",
+    "menu/report.json": "d07285e29a7be336f97534850aea32035ff58f55eb0d944320902804025d4d0e",
+    "candidate/report.json": "7500bcec6a754ee3106ab34729e22e979395353fcdb4e0a9ea7072667b5ba2b1",
+    "entry/report.json": "774f85de8d8ec28c164abb75c98b3048e672771aac47ded60a93c5fbc270f1c9",
+    "backend-payloads/trace.json": "b804581573182df888442bbda778d2faab9c0f0c4907f78586f546ba5aa01c6a"
+  },
+  "finite_frames": 122,
+  "finite_batches": 2,
+  "finite_bytes": 93696,
+  "menu_cycles": 3,
+  "candidate_sentinel_executed": true,
+  "cmd_entry_verified": true,
+  "native_backend_graph_sizes": [
+    11,
+    18
+  ],
+  "hardware_accuracy_verified": false,
+  "live_view_verified": false,
+  "complete_emulator": false,
+  "flash_safety_verified": false,
+  "display_first_observed": 16.994,
+  "batch_first_observed": {
+    "1": 12.002,
+    "2": 14.04
+  }
+}

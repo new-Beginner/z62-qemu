@@ -1,0 +1,236 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-grid-lifecycle-r49",
+  "binary_sha256": "9e6f7f8e4987d90fcd9c66fae243636f17b1ba3a9cd24db1a83daac2ad3b10f6",
+  "completed_bounded_observation": true,
+  "recovery_observed": false,
+  "samples": 39,
+  "known_samples": 39,
+  "events": [
+    {
+      "kind": "persistent-selector-pin0",
+      "level": 0,
+      "virtual_seconds": 31.625,
+      "before_levels": 16777215,
+      "after_levels": 16777214
+    },
+    {
+      "kind": "persistent-selector-pin0",
+      "level": 1,
+      "virtual_seconds": 40.361,
+      "before_levels": 16777214,
+      "after_levels": 16777215
+    }
+  ],
+  "frame_inspection": [
+    {
+      "file": "before.png",
+      "sha256": "7a85bcbd4cb512be594f78838452b811b6c964bab88f2be34787dcc6d0c26a92",
+      "virtual_seconds": 31.015,
+      "index": 3,
+      "display_enabled": true,
+      "dimensions": [
+        1024,
+        682
+      ],
+      "unique_rgb_colors": 840,
+      "dominant_rgb": [
+        0,
+        0,
+        0
+      ],
+      "dominant_count": 26080
+    },
+    {
+      "file": "pin0-low.png",
+      "sha256": "17ed0e18f9fc2836e10ddefdac46ac4ee5fcb414f2237109eb8dcefbbfef5a50",
+      "virtual_seconds": 39.746,
+      "index": 3,
+      "display_enabled": true,
+      "dimensions": [
+        1024,
+        576
+      ],
+      "unique_rgb_colors": 511,
+      "dominant_rgb": [
+        0,
+        154,
+        0
+      ],
+      "dominant_count": 530364
+    },
+    {
+      "file": "pin0-high.png",
+      "sha256": "4cc738fefd712856a6aa943656d85a1541250b3a1226e2e75134375dce3f299a",
+      "virtual_seconds": 48.363,
+      "index": 3,
+      "display_enabled": false,
+      "dimensions": [
+        1024,
+        576
+      ],
+      "unique_rgb_colors": 1,
+      "dominant_rgb": [
+        0,
+        154,
+        0
+      ],
+      "dominant_count": 589824
+    },
+    {
+      "file": "final.png",
+      "sha256": "4cc738fefd712856a6aa943656d85a1541250b3a1226e2e75134375dce3f299a",
+      "virtual_seconds": 54.591,
+      "index": 3,
+      "display_enabled": false,
+      "dimensions": [
+        1024,
+        576
+      ],
+      "unique_rgb_colors": 1,
+      "dominant_rgb": [
+        0,
+        154,
+        0
+      ],
+      "dominant_count": 589824
+    }
+  ],
+  "original_waits_by_phase": {
+    "initial": {
+      "paired": 5,
+      "returns": {
+        "1": 5
+      },
+      "durations": [
+        0
+      ]
+    },
+    "low": {
+      "paired": 5,
+      "returns": {
+        "0": 5
+      },
+      "durations": [
+        1.006
+      ]
+    },
+    "spans_high": {
+      "paired": 1,
+      "returns": {
+        "0": 1
+      },
+      "durations": [
+        1.006
+      ]
+    },
+    "after_high": {
+      "paired": 13,
+      "returns": {
+        "0": 13
+      },
+      "durations": [
+        1.005,
+        1.006,
+        1.007
+      ]
+    }
+  },
+  "incomplete_waits": 1,
+  "ready_callback_entries": [
+    {
+      "sequence": 21,
+      "guest_seconds": 16.668
+    },
+    {
+      "sequence": 31,
+      "guest_seconds": 36.234
+    }
+  ],
+  "changed_application_inputs": [
+    {
+      "sequence": 25,
+      "guest_seconds": 31.658,
+      "value": 1
+    },
+    {
+      "sequence": 43,
+      "guest_seconds": 40.385,
+      "value": 0
+    }
+  ],
+  "new_profile_observation": {
+    "sequence": 28,
+    "guest_seconds": 35.225,
+    "command_bank0": [
+      "0x202",
+      "0x22",
+      "0x3"
+    ],
+    "command_bank1": [
+      "0x300",
+      "0x34e",
+      "0x3"
+    ],
+    "operation_type_channel_raw": "1d09",
+    "full_video_ports_and_source_geometry_captured": false
+  },
+  "final_sample": {
+    "virtual_seconds": 54.591,
+    "known": true,
+    "index": 3,
+    "display_enabled": false,
+    "before_control_step": true,
+    "input_inhibit": 0,
+    "ready_join": 3,
+    "grid_groups": 412,
+    "preview_batches": 616,
+    "counts": {
+      "grid-groups": 412,
+      "grid-outputs": 1648,
+      "grid-rejected": 1,
+      "grid-source-events": 767,
+      "preview-batches": 616,
+      "preview-result-batches": 616,
+      "grid-reason": "disabled",
+      "preview-reason": "drain"
+    }
+  },
+  "stop": {
+    "pid": 42464,
+    "stop_reason": "virtual limit",
+    "stops": 73,
+    "process_closed": true,
+    "detach": "OK",
+    "trace_complete": false
+  },
+  "final_guest_seconds": 55.051,
+  "wall_seconds": 788.484,
+  "card": {
+    "path": "<USERPROFILE>\\Documents\\Z62-QEMU-runtime\\fixtures\\card-r22-4096.raw",
+    "snapshot": true,
+    "before_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "after_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7"
+  },
+  "video_osd_visually_observed": true,
+  "physical_selector_identity_verified": false,
+  "video_recording_verified": false,
+  "source_sha256": {
+    "tools/trace_z62_grid_lifecycle.py": "9e7f3525040b7c980362ec26e06073ac9ae3b9a23674debc19f4a358b2f2ac12",
+    "tests/test_z62_grid_lifecycle.py": "f72ba0e0fa1edfffded69e5ffcdc5ef46357d7dc1eb4f1893849595d72e5f08b"
+  },
+  "evidence_sha256": {
+    "analysis/z62-recovery-r49/grid-on-1/anchors.json": "226906cad3476f5a74fe3a9ba4380473c9129266a1985a21862790f2f4fa46c1",
+    "analysis/z62-recovery-r49/grid-on-1/before.png": "7a85bcbd4cb512be594f78838452b811b6c964bab88f2be34787dcc6d0c26a92",
+    "analysis/z62-recovery-r49/grid-on-1/effective-command-0.json": "93d194727cc9ce59221e2292a10cc9ec46f027b530fbd71de40a84d65ff2cf9b",
+    "analysis/z62-recovery-r49/grid-on-1/final.png": "4cc738fefd712856a6aa943656d85a1541250b3a1226e2e75134375dce3f299a",
+    "analysis/z62-recovery-r49/grid-on-1/fixture.json": "b5af86da10573bc697866e178ff44c8cee21d30a63c7c74904bc6a531695dd9f",
+    "analysis/z62-recovery-r49/grid-on-1/lifecycle.json": "366e6ecc25762b173e9ec9a2f6a036154e1d21b31947d7b8df0d5b69f02e8f9c",
+    "analysis/z62-recovery-r49/grid-on-1/pin0-high.png": "4cc738fefd712856a6aa943656d85a1541250b3a1226e2e75134375dce3f299a",
+    "analysis/z62-recovery-r49/grid-on-1/pin0-low.png": "17ed0e18f9fc2836e10ddefdac46ac4ee5fcb414f2237109eb8dcefbbfef5a50",
+    "analysis/z62-recovery-r49/grid-on-1/session.json": "223bfe60e0a56444edec07700ab394f1125ccec20fae230dd4f412fa95b1b551",
+    "analysis/z62-recovery-r49/grid-on-1/trace.json": "8a6d2a18faa162df47a6f8ddae4d7cd6e96f613be98de2d2df95fe58c9ad7f53",
+    "analysis/z62-recovery-r49/grid-on-1-stdout.txt": "d855620b271c0d58cabc3fb3c261b8bccf6cdd2c9887a75ecfffe3745e6b96e8",
+    "analysis/z62-recovery-r49/scope.md": "231f085dce5d9dd9f55e0e462fc1b85384d095cdf607e8ae32ed9504933606b5"
+  }
+}

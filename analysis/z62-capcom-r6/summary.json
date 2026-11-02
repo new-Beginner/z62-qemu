@@ -1,0 +1,239 @@
+{
+  "binary_sha256": "6a14316c4a3f25bdce27f4f649710dcc06b15677e416f7c1e80fb6cb810ec132",
+  "runs": {
+    "cycle-on": {
+      "enabled": true,
+      "passed": true,
+      "virtual_seconds": 49.586,
+      "samples": 380,
+      "status_codes": [],
+      "health_known": true,
+      "cycles": [
+        {
+          "cycle": 1,
+          "returned_applv": true,
+          "reopened": true,
+          "navigation_pixels_changed": true,
+          "status_codes_after_navigation": [],
+          "navigation_passed": true
+        },
+        {
+          "cycle": 2,
+          "returned_applv": true,
+          "reopened": true,
+          "navigation_pixels_changed": true,
+          "status_codes_after_navigation": [],
+          "navigation_passed": true
+        },
+        {
+          "cycle": 3,
+          "returned_applv": true,
+          "reopened": true,
+          "navigation_pixels_changed": true,
+          "status_codes_after_navigation": [],
+          "navigation_passed": true
+        }
+      ],
+      "navigation_changed_pixels": [
+        124535,
+        124535,
+        121856
+      ],
+      "capcom": {
+        "z62-capcom-sync": true,
+        "capcom-requests": 3,
+        "capcom-completions": 3,
+        "capcom-coalesced": 0
+      },
+      "report_sha256": "345ea5ac6055eec77dbc18dfdfcec1a42908ec8588c013990d6d2eadddb18d0b"
+    },
+    "cycle-off": {
+      "enabled": false,
+      "passed": false,
+      "virtual_seconds": 22.487,
+      "samples": 164,
+      "status_codes": [],
+      "health_known": true,
+      "cycles": [
+        {
+          "cycle": 1,
+          "returned_applv": true,
+          "reopened": false
+        }
+      ],
+      "navigation_changed_pixels": [],
+      "capcom": {
+        "z62-capcom-sync": false,
+        "capcom-requests": 0,
+        "capcom-completions": 0,
+        "capcom-coalesced": 0
+      },
+      "report_sha256": "f103067d6c0063d28bf34b528dbe207d8073623b612b223fc752d943a9b8e2a2"
+    },
+    "cycle-on-cold2": {
+      "enabled": true,
+      "passed": true,
+      "virtual_seconds": 49.786,
+      "samples": 342,
+      "status_codes": [],
+      "health_known": true,
+      "cycles": [
+        {
+          "cycle": 1,
+          "returned_applv": true,
+          "reopened": true,
+          "navigation_pixels_changed": true,
+          "status_codes_after_navigation": [],
+          "navigation_passed": true
+        },
+        {
+          "cycle": 2,
+          "returned_applv": true,
+          "reopened": true,
+          "navigation_pixels_changed": true,
+          "status_codes_after_navigation": [],
+          "navigation_passed": true
+        },
+        {
+          "cycle": 3,
+          "returned_applv": true,
+          "reopened": true,
+          "navigation_pixels_changed": true,
+          "status_codes_after_navigation": [],
+          "navigation_passed": true
+        }
+      ],
+      "navigation_changed_pixels": [
+        124535,
+        124535,
+        121856
+      ],
+      "capcom": {
+        "z62-capcom-sync": true,
+        "capcom-requests": 3,
+        "capcom-completions": 3,
+        "capcom-coalesced": 0
+      },
+      "report_sha256": "655723718ae769b3488fda4e71e378828d14f1742477d00de8cfb72b5e521ce9"
+    },
+    "cycle-off-cold2": {
+      "enabled": false,
+      "passed": false,
+      "virtual_seconds": 36.872,
+      "samples": 244,
+      "status_codes": [
+        53
+      ],
+      "health_known": true,
+      "cycles": [
+        {
+          "cycle": 1,
+          "returned_applv": true,
+          "reopened": true,
+          "navigation_pixels_changed": true,
+          "status_codes_after_navigation": [],
+          "navigation_passed": true
+        },
+        {
+          "cycle": 2,
+          "returned_applv": true,
+          "reopened": true,
+          "navigation_pixels_changed": true,
+          "status_codes_after_navigation": [
+            53
+          ],
+          "navigation_passed": false
+        }
+      ],
+      "navigation_changed_pixels": [
+        124535,
+        124535
+      ],
+      "capcom": {
+        "z62-capcom-sync": false,
+        "capcom-requests": 0,
+        "capcom-completions": 0,
+        "capcom-coalesced": 0
+      },
+      "report_sha256": "dde5fa515f3c7d93926c1d5ef586e8cd8e6492526c9e32b8b75dec24549611fd"
+    }
+  },
+  "complete_camera_verified": false,
+  "flash_safety_verified": false,
+  "controlled_commands": {
+    "cycle-on": true,
+    "cycle-on-cold2": true
+  },
+  "notification_chain": [
+    {
+      "label": "mode-ack-callback",
+      "registers": {
+        "pc": "0x102420a0",
+        "lr": "0x10107274",
+        "sp": "0xc2b2c670",
+        "r0": "0x41",
+        "r1": "0x1",
+        "r2": "0x102420a1",
+        "r3": "0x1",
+        "r4": "0xc2b2a934",
+        "r5": "0x1",
+        "r6": "0x1",
+        "r7": "0x5c"
+      }
+    },
+    {
+      "label": "mode-done-callback-send",
+      "registers": {
+        "pc": "0x102420d8",
+        "lr": "0x10107274",
+        "sp": "0xc2b2c670",
+        "r0": "0x3030024",
+        "r1": "0x0",
+        "r2": "0x10241d67",
+        "r3": "0x8",
+        "r4": "0xc2b2a934",
+        "r5": "0x1",
+        "r6": "0x1",
+        "r7": "0x5c"
+      }
+    },
+    {
+      "label": "async-notification-producer",
+      "registers": {
+        "pc": "0x10241cde",
+        "lr": "0x1035c95d",
+        "sp": "0xc51ac7f0",
+        "r0": "0x3030004",
+        "r1": "0x0",
+        "r2": "0x10396b6b",
+        "r3": "0x0",
+        "r4": "0xc18a790c",
+        "r5": "0x10",
+        "r6": "0x3030002",
+        "r7": "0x0"
+      }
+    },
+    {
+      "label": "notification-dispatch",
+      "registers": {
+        "pc": "0x10396eb6",
+        "lr": "0x10396eb7",
+        "sp": "0xc51ac7c8",
+        "r0": "0x12",
+        "r1": "0x0",
+        "r2": "0x60000013",
+        "r3": "0x0",
+        "r4": "0x0",
+        "r5": "0xc1868290",
+        "r6": "0x5",
+        "r7": "0x200"
+      }
+    }
+  ],
+  "candidate_instruction_executed": {
+    "pc": "0x10020004",
+    "r0": "0x62",
+    "cpsr": "0x400001d3"
+  },
+  "evidence_checks_passed": true
+}

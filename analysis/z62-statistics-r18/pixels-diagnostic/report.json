@@ -1,0 +1,20 @@
+{
+  "completed": false,
+  "command": [
+    "D:\\Mypi_deskktop\\.pi-desktoooop\\data\\scratch\\ea676126-86fa-48b9-8090-07cabb814b52\\toolchain\\msys64\\ucrt64\\bin\\gcc.exe",
+    "-std=c11",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "tests/native/z62_statistics_pixels_test.c",
+    "-o",
+    "analysis/z62-statistics-r18/pixels-diagnostic/pixels-test.exe"
+  ],
+  "camera_accessed": false,
+  "firmware_executed": false,
+  "failure": {
+    "type": "RuntimeError",
+    "message": "Native pixel test failed (3221226505): Assertion failed: n > 0 && get32(p) == 400*n && get32(p+4) == 1000*n && get32(p+8) == 1600*n, file tests/native/z62_statistics_pixels_test.c, line 42\n"
+  }
+}

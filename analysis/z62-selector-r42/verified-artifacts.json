@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-work-signal-route-r42",
+  "paths_relative_to": "workspace",
+  "completed_observation": true,
+  "exec_session": 70043,
+  "host_exit_code": 0,
+  "process_closed": true,
+  "gdb_detach": "OK",
+  "pid": 45888,
+  "completed_owned_stage": "z62-reference-mzpmahke",
+  "remaining_qemu_for_owned_stage": 0,
+  "guest_seconds": 18.005,
+  "observer_wall_seconds": 518.328,
+  "total_stops": 1462,
+  "stop_reason": "virtual limit",
+  "source_sha256": {
+    "tools/trace_z62_work_signal_route.py": "941869903a9a91771bad34f35d25941719881868c03958fb1b2f8ed5f46665f3",
+    "tests/test_z62_work_signal_route.py": "97592c076496c9de95679985ece8b0f252e9262a1060bcdd8c45525612794c4a",
+    "tools/trace_z62_work_event_waits.py": "28ff87ec8a8b6269297ef98b998834d77dec47385564f90f639bc4cf6a11daf8"
+  },
+  "run_source_matches_current": true,
+  "evidence_sha256": {
+    "analysis/z62-ghidra/work-normal-signals-r42-1/102675f2.asm": "dc43ab4deb2ac0be7a67ac2ec9f6bee332e80aa351fcb854289fce119cfbe415",
+    "analysis/z62-ghidra/work-normal-signals-r42-1/102675f2.c": "c480784387ec137dc4291e614d48796483dc6ccc2198b9c63eac35499c5a0cfb",
+    "analysis/z62-ghidra/work-normal-signals-r42-1/functions.tsv": "5459712c5bafe9864f5361a92c8d4e39bb32e29e45245913b5c330830673aa8e",
+    "analysis/z62-ghidra/work-normal-signals-r42-1/headless.log": "933f97de5355a5f2ca9d81b21a0756f7b01a3997f5f5b44c342e9c1e165a13c2",
+    "analysis/z62-ghidra/work-normal-signals-r42-1/manifest.json": "a4ce1c7fc1509f09826ab32dd123c32b75ce529f0deec23aa91c9185ef0b5199",
+    "analysis/z62-ghidra/work-normal-signals-r42-1/program.txt": "23362e86d9f362126e1235b8d1940351158ec4fa28c519a97b08b2722ab123cc",
+    "analysis/z62-selector-r42/counter-inside-wait.json": "f5465a6ac0fb6b940bde319855a006cb9fc0e1bbe4471d58a43574ad53fdea88",
+    "analysis/z62-selector-r42/regression.json": "c0484c8069c5b5dd0d7a18e021ca4ef65f737261070a0f8b74a5dbe4f78e3c1f",
+    "analysis/z62-selector-r42/regression.log": "574d127333c945996b1f2a2a6bddb0d87a96d2808fb858fba7e7c3de4c5b2b06",
+    "analysis/z62-selector-r42/rom-table-candidates.json": "b0cb1ec6d1cbe3b16fb0b2387dbd1fd27f86a03875344a91b0d2add6d8322b05",
+    "analysis/z62-selector-r42/routes-1/anchors.json": "7efe8dbf667189260deb78352fb5f6d85d657e1a099adee5dda1331b68286d17",
+    "analysis/z62-selector-r42/routes-1/effective-command-0.json": "6b7465bb36cb70505be0a26f04b7ee4fb0a72a17e926066f31a17f023dcdf196",
+    "analysis/z62-selector-r42/routes-1/fixture.json": "b5af86da10573bc697866e178ff44c8cee21d30a63c7c74904bc6a531695dd9f",
+    "analysis/z62-selector-r42/routes-1/session.json": "004fc23fd3a171f96a63129fb9c0da4a35a90d45011d1cb87f954c23fb776c4d",
+    "analysis/z62-selector-r42/routes-1/signal-route.json": "a3836b691c90e7031a0b9adf3d97d2931988a8f940d8ffea5ec7596b447ec12b",
+    "analysis/z62-selector-r42/routes-1/trace.json": "b59b37664efc38dfc9331ba014ed2510821434b89e61c8287a348a290ef05c77",
+    "analysis/z62-selector-r42/runtime.log": "fdc58f4d7a7c1bc299519fac05884723d5bb4497e9daed65dafd59642407235f",
+    "analysis/z62-selector-r42/scope.md": "a42a9a60f4d71724766135a9baf4ecfa0cc05430c7663f4d841f0adf502d1d9e",
+    "analysis/z62-selector-r42/signal-origins.json": "4feea78cc2482be750fd4c99514aae92418ba9b2bf5c91793914aebb656d5bc8",
+    "analysis/z62-selector-r42/summary.json": "73bb36bfff805aa04918fda69219d648ca3025fa020b8f15608e0d54eef732a0",
+    "analysis/z62-selector-r42/unit-final.log": "e8dab7cbfb7da64ab37eb01d18dd21499a4df738411818e3dbbde99be8805a0e",
+    "analysis/z62-selector-r42/unit-green.log": "fb5c2dc216606695d39fec1cf8a2daa8632882bb8552d00aac920117f2a8e427",
+    "analysis/z62-selector-r42/unit-red.log": "c56fa3e352fbf772fe0ea9fa822c074fa3a5cfd233f1ff8f2424af7a5c54df67"
+  },
+  "frozen_artifacts": {
+    "r21": {
+      "path": ".build/z62-analog-input-2026.10.30-r21/runtime/qemu-system-arm.exe",
+      "sha256": "0a772865868c4f666024533512d5ede2751255744caf56b594a41da6fc0ef90b",
+      "current_matches": true
+    },
+    "r24": {
+      "path": ".build/z62-scene-file-2026.11.01-r24/runtime/qemu-system-arm.exe",
+      "sha256": "dbe36d222dbfa633086f906f626968635c61d9825eaee8174480bef22a39abf2",
+      "current_matches": true
+    },
+    "master": {
+      "path": "artifacts/z62-reference-1.70/master.bin",
+      "sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+      "current_matches": true
+    }
+  },
+  "r27_fixed_source_hashes": {
+    "tools/z62_async_video_console.py": {
+      "expected": "48a1bd53827ce8dd2067101e9d5e670d71a36c663bd232e804033d037a9f2fe4",
+      "actual": "48a1bd53827ce8dd2067101e9d5e670d71a36c663bd232e804033d037a9f2fe4",
+      "current_matches": true
+    },
+    "tools/z62_async_video_scene.py": {
+      "expected": "d7a44e757da421475c17d795ac9e60c834f82dff1d5eb9e5f87c140ea58a11ef",
+      "actual": "d7a44e757da421475c17d795ac9e60c834f82dff1d5eb9e5f87c140ea58a11ef",
+      "current_matches": true
+    },
+    "tools/z62_async_video_card.py": {
+      "expected": "37f8b42a533ebc30d917975739ab5f618a6e8675447e4c0fc4d88c6976b1b8fa",
+      "actual": "37f8b42a533ebc30d917975739ab5f618a6e8675447e4c0fc4d88c6976b1b8fa",
+      "current_matches": true
+    },
+    "tools/z62_async_video_job.py": {
+      "expected": "7e0dd16154266ba35153015bcce9c2bfdab2b6adc8609b2fee00f0517ec4d35c",
+      "actual": "7e0dd16154266ba35153015bcce9c2bfdab2b6adc8609b2fee00f0517ec4d35c",
+      "current_matches": true
+    },
+    "tools/z62_async_video_worker.py": {
+      "expected": "4becaa327969dc3c25879f1f8728576d71bc2cc68cbe9943c6811e745acc6940",
+      "actual": "4becaa327969dc3c25879f1f8728576d71bc2cc68cbe9943c6811e745acc6940",
+      "current_matches": true
+    },
+    "tools/z62_video_codec.py": {
+      "expected": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88",
+      "actual": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88",
+      "current_matches": true
+    },
+    "tools/z62_media_scene.py": {
+      "expected": "0e1460c6d3bfa1df40a625b95ee47843e95f554eefda6fdfc654e2a7a7e3e34e",
+      "actual": "0e1460c6d3bfa1df40a625b95ee47843e95f554eefda6fdfc654e2a7a7e3e34e",
+      "current_matches": true
+    },
+    "tools/z62_scene_exchange.py": {
+      "expected": "490ad0a89e75a5f79f1957392aa990c8e59707a7b39c51ed39d8c1e403700458",
+      "actual": "490ad0a89e75a5f79f1957392aa990c8e59707a7b39c51ed39d8c1e403700458",
+      "current_matches": true
+    },
+    "tools/run_z62_async_video_console.py": {
+      "expected": "0b63f4f0bdd33ff6a590eb2711e6df1d70124c7a147ab65c643c8bde520b08d0",
+      "actual": "0b63f4f0bdd33ff6a590eb2711e6df1d70124c7a147ab65c643c8bde520b08d0",
+      "current_matches": true
+    },
+    "tools/probe_z62_async_video_console.py": {
+      "expected": "902d06070c5a3b10c4e708475adffafe64df61477f9c5a4c8200dd7d92710e09",
+      "actual": "902d06070c5a3b10c4e708475adffafe64df61477f9c5a4c8200dd7d92710e09",
+      "current_matches": true
+    },
+    "tools/export_z62_async_video.py": {
+      "expected": "d1decc56f5627be2ddb75079e43d8161ea354dca162d5269845b31bc603b566a",
+      "actual": "d1decc56f5627be2ddb75079e43d8161ea354dca162d5269845b31bc603b566a",
+      "current_matches": true
+    },
+    "tools/assets/z62-async-video.js": {
+      "expected": "77b597e7fff87be59f49f121641a118f4a17d407aaafeec28ad3a2f72ce1a300",
+      "actual": "77b597e7fff87be59f49f121641a118f4a17d407aaafeec28ad3a2f72ce1a300",
+      "current_matches": true
+    },
+    "start-z6ii-async-video.cmd": {
+      "expected": "2786ecb6a1b3ed0705fcbbf889f3293a734d9ffe82edf63d0e6f201f371eb9ae",
+      "actual": "2786ecb6a1b3ed0705fcbbf889f3293a734d9ffe82edf63d0e6f201f371eb9ae",
+      "current_matches": true
+    }
+  },
+  "r27_all_13_sources_unchanged": true,
+  "virtual_card": {
+    "path": "<USERPROFILE>\\Documents\\Z62-QEMU-runtime\\fixtures\\card-r22-4096.raw",
+    "snapshot": true,
+    "before_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "after_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "current_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "current_matches_before_after": true
+  },
+  "cancel_local_routes": 16,
+  "signals": 270,
+  "signal_stack_frames_checked": 220,
+  "work_waits": 155,
+  "incomplete_work_waits": 1,
+  "descriptor_waits": 208,
+  "incomplete_descriptor_waits": 0,
+  "matched_counter_signal_rows_inside_wait": 9,
+  "regression_tests": 495,
+  "regression_seconds": 180.595,
+  "regression_exit_code": 0,
+  "runtime_full_captured_output_saved": true,
+  "regression_full_captured_output_saved": true,
+  "default_entry_changed": false,
+  "qemu_device_source_changed": false,
+  "guest_software_patched": false,
+  "software_event_injected": false,
+  "camera_accessed": false,
+  "allocation_epoch_verified": false,
+  "exclusive_producer_verified": false,
+  "hardware_image_output_verified": false,
+  "mode_recovery_verified": false,
+  "whole_camera_verified": false,
+  "factory_af_verified": false,
+  "flash_safety_verified": false
+}

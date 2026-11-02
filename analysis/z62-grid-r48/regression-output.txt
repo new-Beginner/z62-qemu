@@ -1,0 +1,38 @@
+master: QEMU started, PID=5852; cores inside this engine=1
+slave: QEMU started, PID=48976; cores inside this engine=1
+Z6II_BOOT {"lab_version":"0.4.0","engine":"master","payload_sha256":"7b85aa96ea25d6b23481627313082476619ccb4dd3634a585de4ed896d350071","cores_within_one_engine":1,"entry":268566528,"cpu_model_hypothesis":true,"boot_config_enabled":true,"config_reset_is_hypothesis":true,"config_word_count":61,"completion_feedback_modeled":false,"completion_model_is_hypothesis":true,"auto_complete":true,"blocked_control":0,"completion_result":0,"dual_chip_ipc_modeled":false,"menu_reached":false}
+Z6II_EVENT {"event":"unmodeled-mmio","engine":"master","access":"read","address":537010944,"size":4,"value":0,"pc":268568800,"cpu":0,"cpsr":536871379,"registers":[537010944,1,40000000,0,1,0,0,7,67,26,1,537010176,0,67145424,268580776,268568800],"response_fabricated":false}
+Z6II_BOOT {"lab_version":"0.4.0","engine":"slave","payload_sha256":"ed7be55b90024270c9e8227fa2effd66a0eb8f32e96de23e3d1a7a196cdaf676","cores_within_one_engine":1,"entry":268566528,"cpu_model_hypothesis":true,"boot_config_enabled":true,"config_reset_is_hypothesis":true,"config_word_count":61,"completion_feedback_modeled":false,"completion_model_is_hypothesis":true,"auto_complete":true,"blocked_control":0,"completion_result":0,"dual_chip_ipc_modeled":false,"menu_reached":false}
+Z6II_EVENT {"event":"unmodeled-mmio","engine":"slave","access":"read","address":537010944,"size":4,"value":0,"pc":268568800,"cpu":0,"cpsr":536871379,"registers":[537010944,1,40000000,0,1,0,0,7,67,26,1,537010176,0,67145424,268580776,268568800],"response_fabricated":false}
+Prepared <USERPROFILE>\AppData\Local\Temp\tmp5wnbq79s\z72-新建\source\qemu-10.2.4
+Prepared <USERPROFILE>\AppData\Local\Temp\tmp0acgahip\z62-新建\source\qemu-10.2.4
+Prepared <USERPROFILE>\AppData\Local\Temp\tmplqvyx9_o\source
+Prepared <USERPROFILE>\AppData\Local\Temp\tmpo40xqex3\source
+Prepared <USERPROFILE>\AppData\Local\Temp\tmpcexwolyj\source
+OFFLINE PASS: valid parser, serial redaction, 3 malformed inputs; no camera access
+{
+  "completed": false,
+  "source_payload_replayed": null,
+  "independent_decode": null,
+  "failure": {
+    "type": "HTTPError",
+    "message": "HTTP Error 503: Service Unavailable"
+  }
+}
+{
+  "completed": false,
+  "source_payload_replayed": null,
+  "independent_decode": null,
+  "failure": {
+    "type": "ValueError",
+    "message": "Target is not the owned native-scene QEMU profile"
+  }
+}
+OBSERVATION_TIMEOUT {"sequence": 1, "wall_seconds": 2, "consecutive": 1, "error": "query-status missing", "gdb_packet_waiting": true, "monitor": {"replayed_commands": 0}, "control_commands_replayed": false}
+OBSERVATION_TIMEOUT {"sequence": 1, "wall_seconds": 0, "consecutive": 1, "error": "no reply", "gdb_packet_waiting": false, "monitor": {}, "control_commands_replayed": false}
+OBSERVATION_TIMEOUT {"sequence": 2, "wall_seconds": 1, "consecutive": 2, "error": "no reply", "gdb_packet_waiting": false, "monitor": {}, "control_commands_replayed": false}
+OBSERVATION_TIMEOUT {"sequence": 3, "wall_seconds": 3, "consecutive": 3, "error": "no reply", "gdb_packet_waiting": false, "monitor": {}, "control_commands_replayed": false}
+----------------------------------------------------------------------
+Ran 530 tests in 172.726s
+
+OK

@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-work-stage-table-r39",
+  "paths_relative_to": "workspace",
+  "completed_observation": false,
+  "guest_seconds": 10.375,
+  "observer_wall_seconds": 162.875,
+  "total_stops": 250,
+  "stop_reason": "wall or stop limit",
+  "exec_session": 90135,
+  "host_exit_code": 1,
+  "process_closed": true,
+  "gdb_detach": "OK",
+  "completed_owned_stage": "z62-reference-_8tu0ftn",
+  "source_sha256": {
+    "tools/trace_z62_work_stage_table.py": "2d2191cbb2c8dbb749f54cf4958a50e3770ee41587978e5cc151d2f1ef916c10",
+    "tests/test_z62_work_stage_table.py": "666cb13cedd5012940af861655259605b767880799dd089a767ee910f82dbd67"
+  },
+  "run_source_identity_matches_current": true,
+  "evidence_sha256": {
+    "analysis/z62-selector-r39/regression.json": "49fa121640e7ae7e0e0e31adf47b4a2f083eed8039c891364dda34fcc40a8a32",
+    "analysis/z62-selector-r39/regression.log": "6453045f7353afe03c74079450d9473648d6932886385d3c50c3d2f9cd6aaaf9",
+    "analysis/z62-selector-r39/runtime.log": "2aee31345073a521a4273bde0560ba588b94c02980178a9552605b4162e7a355",
+    "analysis/z62-selector-r39/scope.md": "0b910d5f8ad9dd006025bd37e8f11049188dd3fe6da0270f82aef8f656a818e9",
+    "analysis/z62-selector-r39/table-1/anchors.json": "25c4a75c2d93fe37b16389b388d0e9c1fb05edae2b5211a54ed41689ffa67df4",
+    "analysis/z62-selector-r39/table-1/effective-command-0.json": "fb8c6bb0bd5b6a0dff64becbbb20274145f3378b4f4b3e40e64370e9856957f8",
+    "analysis/z62-selector-r39/table-1/fixture.json": "ef819c325530d3423d3f87d4403576c0622568dba3d7beb2586e7d584f86e9ef",
+    "analysis/z62-selector-r39/table-1/session.json": "7b0ffa08bd63476fa83d08a873ed08c629197baf4316ea56752f78474e46151b",
+    "analysis/z62-selector-r39/table-1/stage-table.json": "7a8c0ca04d4c10baf12daf08a0981d7fdec578ef7c82353be40dd2c69bcd46d7",
+    "analysis/z62-selector-r39/table-1/trace.json": "0e38421e86b312df59150ab78185e0a9553cbb51504cfb36a289e213727481f2"
+  },
+  "frozen_artifacts": {
+    "r21": {
+      "path": ".build/z62-analog-input-2026.10.30-r21/runtime/qemu-system-arm.exe",
+      "sha256": "0a772865868c4f666024533512d5ede2751255744caf56b594a41da6fc0ef90b"
+    },
+    "r24": {
+      "path": ".build/z62-scene-file-2026.11.01-r24/runtime/qemu-system-arm.exe",
+      "sha256": "dbe36d222dbfa633086f906f626968635c61d9825eaee8174480bef22a39abf2"
+    },
+    "master": {
+      "path": "artifacts/z62-reference-1.70/master.bin",
+      "sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4"
+    }
+  },
+  "r27_fixed_source_hashes": {
+    "tools/z62_async_video_console.py": {
+      "expected": "48a1bd53827ce8dd2067101e9d5e670d71a36c663bd232e804033d037a9f2fe4",
+      "actual": "48a1bd53827ce8dd2067101e9d5e670d71a36c663bd232e804033d037a9f2fe4"
+    },
+    "tools/z62_async_video_scene.py": {
+      "expected": "d7a44e757da421475c17d795ac9e60c834f82dff1d5eb9e5f87c140ea58a11ef",
+      "actual": "d7a44e757da421475c17d795ac9e60c834f82dff1d5eb9e5f87c140ea58a11ef"
+    },
+    "tools/z62_async_video_card.py": {
+      "expected": "37f8b42a533ebc30d917975739ab5f618a6e8675447e4c0fc4d88c6976b1b8fa",
+      "actual": "37f8b42a533ebc30d917975739ab5f618a6e8675447e4c0fc4d88c6976b1b8fa"
+    },
+    "tools/z62_async_video_job.py": {
+      "expected": "7e0dd16154266ba35153015bcce9c2bfdab2b6adc8609b2fee00f0517ec4d35c",
+      "actual": "7e0dd16154266ba35153015bcce9c2bfdab2b6adc8609b2fee00f0517ec4d35c"
+    },
+    "tools/z62_async_video_worker.py": {
+      "expected": "4becaa327969dc3c25879f1f8728576d71bc2cc68cbe9943c6811e745acc6940",
+      "actual": "4becaa327969dc3c25879f1f8728576d71bc2cc68cbe9943c6811e745acc6940"
+    },
+    "tools/z62_video_codec.py": {
+      "expected": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88",
+      "actual": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88"
+    },
+    "tools/z62_media_scene.py": {
+      "expected": "0e1460c6d3bfa1df40a625b95ee47843e95f554eefda6fdfc654e2a7a7e3e34e",
+      "actual": "0e1460c6d3bfa1df40a625b95ee47843e95f554eefda6fdfc654e2a7a7e3e34e"
+    },
+    "tools/z62_scene_exchange.py": {
+      "expected": "490ad0a89e75a5f79f1957392aa990c8e59707a7b39c51ed39d8c1e403700458",
+      "actual": "490ad0a89e75a5f79f1957392aa990c8e59707a7b39c51ed39d8c1e403700458"
+    },
+    "tools/run_z62_async_video_console.py": {
+      "expected": "0b63f4f0bdd33ff6a590eb2711e6df1d70124c7a147ab65c643c8bde520b08d0",
+      "actual": "0b63f4f0bdd33ff6a590eb2711e6df1d70124c7a147ab65c643c8bde520b08d0"
+    },
+    "tools/probe_z62_async_video_console.py": {
+      "expected": "902d06070c5a3b10c4e708475adffafe64df61477f9c5a4c8200dd7d92710e09",
+      "actual": "902d06070c5a3b10c4e708475adffafe64df61477f9c5a4c8200dd7d92710e09"
+    },
+    "tools/export_z62_async_video.py": {
+      "expected": "d1decc56f5627be2ddb75079e43d8161ea354dca162d5269845b31bc603b566a",
+      "actual": "d1decc56f5627be2ddb75079e43d8161ea354dca162d5269845b31bc603b566a"
+    },
+    "tools/assets/z62-async-video.js": {
+      "expected": "77b597e7fff87be59f49f121641a118f4a17d407aaafeec28ad3a2f72ce1a300",
+      "actual": "77b597e7fff87be59f49f121641a118f4a17d407aaafeec28ad3a2f72ce1a300"
+    },
+    "start-z6ii-async-video.cmd": {
+      "expected": "2786ecb6a1b3ed0705fcbbf889f3293a734d9ffe82edf63d0e6f201f371eb9ae",
+      "actual": "2786ecb6a1b3ed0705fcbbf889f3293a734d9ffe82edf63d0e6f201f371eb9ae"
+    }
+  },
+  "r27_all_13_sources_unchanged": true,
+  "virtual_card": {
+    "path": "<USERPROFILE>\\Documents\\Z62-QEMU-runtime\\fixtures\\card-r22-4096.raw",
+    "snapshot": true,
+    "before_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "after_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "current_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "current_matches_before_after": true
+  },
+  "runtime_captured_output_saved": true,
+  "runtime_log": "runtime.log",
+  "regression_receipt": "regression.json",
+  "default_entry_changed": false,
+  "qemu_device_source_changed": false,
+  "guest_software_patched": false,
+  "software_event_injected": false,
+  "camera_accessed": false,
+  "final_display_enabled": false,
+  "mode_recovery_verified": false,
+  "whole_camera_verified": false,
+  "factory_af_verified": false,
+  "flash_safety_verified": false,
+  "table_snapshots": 26,
+  "table_hashes": {
+    "80e6020e2732302e5b349d4fbdcab51139209939cedaacd7630c9dac4dbdc78f": 26
+  },
+  "table_pointers": {
+    "0xc2bb3e60": 26
+  },
+  "callback_pointers": {
+    "0x10245379": 26
+  },
+  "budget_stop_is_failure": true,
+  "full_stage_execution_verified": false
+}

@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-r47b",
+  "command": ".build/tools/video-r26/Scripts/python.exe -X utf8 -B -m unittest discover -s tests -q",
+  "tests": 524,
+  "seconds": 186.987,
+  "exit_code": 0,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "new_tests": 6,
+  "new_tests_failed_before_implementation": true,
+  "full_captured_stdout_stderr_saved": true,
+  "unified_exec_session": 14377,
+  "log": "regression.log",
+  "native_c_tests_recorded_separately": true,
+  "scope": "Project suite plus physical configuration, independent device adapter and native delivery observation; no whole-camera acceptance."
+}

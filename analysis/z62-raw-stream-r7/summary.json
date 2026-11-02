@@ -1,0 +1,208 @@
+{
+  "binary_sha256": "838e82868251e94d57ee72b6f94ff7bf9d6412df56915cf9d66fc5d7b02062b3",
+  "observations": {
+    "native-no-menu": {
+      "last_virtual_seconds": 20.061,
+      "stream": {
+        "z62-raw-stream": true,
+        "raw-stream-active": false,
+        "raw-stream-attempts": 245,
+        "raw-stream-frames": 245,
+        "raw-stream-failed": 0,
+        "raw-stream-blocked": 0,
+        "raw-stream-unrelated": 0
+      },
+      "firmware_status_codes": [],
+      "display_enabled": false,
+      "command_transitions": [
+        {
+          "virtual_seconds": 0.0,
+          "words": [
+            "0x0",
+            "0x0",
+            "0x1"
+          ]
+        },
+        {
+          "virtual_seconds": 0.975,
+          "words": [
+            "0x0",
+            "0x3e",
+            "0x1"
+          ]
+        },
+        {
+          "virtual_seconds": 9.856,
+          "words": [
+            "0x600",
+            "0x63e",
+            "0x3"
+          ]
+        },
+        {
+          "virtual_seconds": 12.809,
+          "words": [
+            "0x2",
+            "0x63e",
+            "0x61"
+          ]
+        },
+        {
+          "virtual_seconds": 15.807,
+          "words": [
+            "0x20",
+            "0x63e",
+            "0x9"
+          ]
+        },
+        {
+          "virtual_seconds": 18.835,
+          "words": [
+            "0x10",
+            "0x63e",
+            "0x5"
+          ]
+        }
+      ],
+      "mode_word": "0x203",
+      "capture_flags": "0x2",
+      "host_raw_or_metadata_injections": 0,
+      "report_sha256": "8780a1d3b4fb8364f84b534f7b371c030c8a3fd3181470c84a59852a46173d88"
+    },
+    "native-with-drain": {
+      "last_virtual_seconds": 25.112,
+      "stream": {
+        "z62-raw-stream": true,
+        "raw-stream-active": false,
+        "raw-stream-attempts": 245,
+        "raw-stream-frames": 245,
+        "raw-stream-failed": 0,
+        "raw-stream-blocked": 0,
+        "raw-stream-unrelated": 2
+      },
+      "firmware_status_codes": [],
+      "display_enabled": false,
+      "command_transitions": [
+        {
+          "virtual_seconds": 0.0,
+          "words": [
+            "0x0",
+            "0x0",
+            "0x1"
+          ]
+        },
+        {
+          "virtual_seconds": 0.993,
+          "words": [
+            "0x0",
+            "0x3e",
+            "0x1"
+          ]
+        },
+        {
+          "virtual_seconds": 9.815,
+          "words": [
+            "0x1",
+            "0x1c",
+            "0x5"
+          ]
+        }
+      ],
+      "mode_word": "0x1000203",
+      "capture_flags": "0x4",
+      "host_raw_or_metadata_injections": 0,
+      "report_sha256": "6cb50ee1d52ccabb9a24ed4024970281dd18ab0a7de59a4df85710146e160bc4"
+    },
+    "mode1-descriptors": {
+      "last_virtual_seconds": 13.101,
+      "stream": {
+        "z62-raw-stream": true,
+        "raw-stream-active": false,
+        "raw-stream-attempts": 245,
+        "raw-stream-frames": 245,
+        "raw-stream-failed": 0,
+        "raw-stream-blocked": 0,
+        "raw-stream-unrelated": 2
+      },
+      "firmware_status_codes": [],
+      "display_enabled": false,
+      "command_transitions": [
+        {
+          "virtual_seconds": 0.17,
+          "words": [
+            "0x0",
+            "0x0",
+            "0x1"
+          ]
+        },
+        {
+          "virtual_seconds": 0.988,
+          "words": [
+            "0x0",
+            "0x3e",
+            "0x1"
+          ]
+        },
+        {
+          "virtual_seconds": 9.859,
+          "words": [
+            "0x1",
+            "0x1c",
+            "0x5"
+          ]
+        }
+      ],
+      "mode_word": "0x1000203",
+      "capture_flags": "0x4",
+      "host_raw_or_metadata_injections": 0,
+      "report_sha256": "0b2223848a3fbb2a66d3ea159dbab55e572770e8f19854d0cba2cbfc88c37a0b"
+    }
+  },
+  "complete_camera_verified": false,
+  "live_view_verified": false,
+  "menu_regression": {
+    "passed": false,
+    "cycles": [
+      {
+        "cycle": 1,
+        "returned_applv": true,
+        "reopened": false
+      }
+    ],
+    "verdict": {
+      "samples_before_menu": 21,
+      "observed_0x3f_before_menu": false,
+      "first_0x3f": null,
+      "menu_observed": true,
+      "reopened_observed": false,
+      "left_menu_observed": true,
+      "health_observations_complete": true,
+      "all_status_lists_empty": true,
+      "no_blocking_codes_observed": true
+    }
+  },
+  "consumer_route": {
+    "pc": "0x1023831e",
+    "lr": "0x10238c5b",
+    "sp": "0xc533b7f0",
+    "r0": "0x200",
+    "r1": "0xc26a0ac4",
+    "r2": "0xc269fae4",
+    "r3": "0x0",
+    "r4": "0x200",
+    "r5": "0x4000",
+    "r6": "0xc269f9f4",
+    "r7": "0x0"
+  },
+  "diagnostic_bank_rotation": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1
+  ],
+  "evidence_checks_passed": true
+}

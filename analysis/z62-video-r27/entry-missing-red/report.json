@@ -1,0 +1,15 @@
+{
+  "completed": false,
+  "camera_accessed": false,
+  "url": "http://127.0.0.1:55944",
+  "entry": "start-z6ii-qemu.cmd",
+  "expected_version": "2026.10.29-no-lens-r16",
+  "diagnostic_key": "preview_status",
+  "candidate": false,
+  "failure": {
+    "type": "ValueError",
+    "message": "Python research entry must be a tool in this workspace",
+    "traceback": "Traceback (most recent call last):\n  File \"<WORKSPACE>\\tools\\probe_z62_entry.py\", line 39, in run\n    raise ValueError('Python research entry must be a tool in this workspace')\nValueError: Python research entry must be a tool in this workspace\n"
+  },
+  "process_closed": true
+}

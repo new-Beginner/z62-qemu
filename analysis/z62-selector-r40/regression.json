@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "tests": 483,
+  "seconds": 158.649,
+  "host_exit_code": 0,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "full_captured_tool_output_saved": true,
+  "source": "Captured exec/write_stdin output from the completed run before this continuation, not a new execution.",
+  "log": "analysis/z62-selector-r40/regression.log",
+  "environment": "D-drive temporary fixtures and isolated video-capable Python environment",
+  "proves": "Host-side regression assertions only; no factory media, camera recovery, AF or flash-safety acceptance."
+}

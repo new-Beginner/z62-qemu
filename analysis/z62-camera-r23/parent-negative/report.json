@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "completed": false,
+  "implementation_level": "C",
+  "firmware_executed": false,
+  "camera_accessed": false,
+  "binary_sha256": "0a772865868c4f666024533512d5ede2751255744caf56b594a41da6fc0ef90b",
+  "expected_parent_negative": true,
+  "missing_property": "Property 'nikon-z72-input-config.scene-uses' not found"
+}

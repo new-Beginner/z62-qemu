@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "qemu_sha256": "81406798183345e1aa975aada2c05151aa61c4514cfcee926fc8375cdf95c1fc",
+  "evidence_sha256": {
+    "lens-control": "6fecb38e2647030c7f1817ff8d7b5b9a75f1e6140e9b0b92e9d9fd73b5d6f7cf",
+    "lens-policy": "46abc38191caf7e22d1a4b56fc1e1c8b760f8380ba67b21a56831cd565f95561",
+    "lens-presence": "4dd2d8bb700120e3933a57d15343948005f55d46f015dcf12d22def1a0c7e5f8",
+    "lens-presence-code": "559fada8a708afefd1850ee6faa0b6be363c818db96fcd639bebdda2e9728c3b",
+    "lens-error-reconnect": "2b6322be0c1893ef0e6aead05400e8c6b5c21f990b534198f6b77cd2cb53ac16",
+    "lens-error7-writer": "ed21073b9189376b8c4fa269f064950f91ab6b468f3b882c5c34487752752e74",
+    "slot7-watch": "af8b1572b63195b09675c11486d6f6d50b835cf205d15c2054a03513da0611e8",
+    "lens-detect": "64708157877a36c0ffb9c80a2c361ecb3e82129e92290a1ffe4f13dccafb6d36",
+    "hold5": "31a6efcf64035f3343c9790f4451bf17dcc8b96e56fdff6278c9216ca06e5098"
+  },
+  "upper_reply_zero_is_not_error_free_lens": true,
+  "slot7_original_writer": "0x10345330",
+  "slot7_caller": "0x1030A8A9",
+  "slot7_set_count": 7,
+  "candidate_600c_branch_reached": false,
+  "nominal_full_hold_seconds": 5,
+  "actual_full_hold_seconds": 4.934,
+  "capture_permission_restored": false,
+  "complete_emulator": false,
+  "photo_capture_verified": false,
+  "flash_safety_verified": false
+}

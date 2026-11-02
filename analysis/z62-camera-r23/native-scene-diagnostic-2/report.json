@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "completed": false,
+  "implementation_level": "C",
+  "firmware_executed": false,
+  "camera_accessed": false,
+  "binary_sha256": "cd2085ecdc5d77151c07958ae6a111d5055199affac3d751db3568bb019f29dc",
+  "failure": {
+    "type": "RuntimeError",
+    "message": "Device-test QEMU startup failed\nQEMU: <PROJECTS>\\�̼�Z6II\\.build\\z62-scene-source-2026.11.01-r23a\\runtime\\qemu-system-arm.exe: Initial Z62 scene must be a bounded ordinary file\n"
+  }
+}

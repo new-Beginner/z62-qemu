@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-work-stage-origin-r43",
+  "command": ".build/tools/video-r26/Scripts/python.exe -X utf8 -B -m unittest discover -s tests -q",
+  "tests": 499,
+  "seconds": 219.042,
+  "exit_code": 0,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "new_tests": 4,
+  "new_tests_failed_before_implementation": true,
+  "full_captured_stdout_stderr_saved": true,
+  "log": "regression.log",
+  "unified_exec_session": 36843,
+  "scope": "Original stage and native write observation; no hardware completion acceptance."
+}

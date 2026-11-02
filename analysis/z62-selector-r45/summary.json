@@ -1,0 +1,291 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-transfer-bindings-r45b",
+  "completed_bounded_observation": true,
+  "exec_session": 99290,
+  "host_exit_code": 0,
+  "guest_seconds": 18.045,
+  "observer_wall_seconds": 481.422,
+  "stops": 1086,
+  "stop_reason": "virtual limit",
+  "pid": 53116,
+  "process_closed": true,
+  "detach": "OK",
+  "generic_capture_trace_complete_flag": false,
+  "bounded_observation_flag_distinct_from_shutter_capture": true,
+  "binding_observations": 701,
+  "kind_counts": {
+    "native-irq102-status": 228,
+    "data-status-dispatch": 228,
+    "control-callback": 6,
+    "hook-registration-entry": 3,
+    "message-enqueue": 2,
+    "message-decode": 4,
+    "command-dispatch": 222,
+    "wait-binding-snapshot": 8
+  },
+  "all_observations_match_trace": true,
+  "all_instruction_anchors_match": true,
+  "binding_snapshot_count": 8,
+  "unique_binding_configurations": 1,
+  "binding": {
+    "read_only": true,
+    "snapshots_atomic": false,
+    "source_instruction_4": "f3f086ff",
+    "source_instruction_matches": true,
+    "kind": "wait-binding-snapshot",
+    "transfer_registers": {
+      "0x0": 0,
+      "0x4": 1,
+      "0x8": 0,
+      "0xc": 1,
+      "0x10": 113,
+      "0x14": 67076092,
+      "0x18": 0,
+      "0x1c": 0,
+      "0x20": 0,
+      "0x24": 0
+    },
+    "transfer_command_callback": "0x103b754d",
+    "transfer_control_callback": "0x1038b021",
+    "transfer_callback_raw_18": "4d753b10306f80c1d86d80c1000000004601000021b03810",
+    "message_decoder_hook": "0x102e47b1",
+    "other_library_hooks": [
+      "0x102e47ab",
+      "0x102e47a5"
+    ],
+    "result_callbacks": [
+      "0x103b7541",
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x103b7547",
+      "0x103b7541",
+      "0x103b7541",
+      "0x0"
+    ],
+    "result_status_tables": {
+      "status1c_low": [
+        {
+          "status_mask": 1,
+          "payload": 1
+        },
+        {
+          "status_mask": 2,
+          "payload": 2
+        },
+        {
+          "status_mask": 4,
+          "payload": 4
+        },
+        {
+          "status_mask": 8,
+          "payload": 8
+        },
+        {
+          "status_mask": 16,
+          "payload": 16
+        },
+        {
+          "status_mask": 32,
+          "payload": 32
+        },
+        {
+          "status_mask": 64,
+          "payload": 64
+        },
+        {
+          "status_mask": 128,
+          "payload": 128
+        }
+      ],
+      "status1c_high": [
+        {
+          "status_mask": 65536,
+          "payload": 256
+        },
+        {
+          "status_mask": 131072,
+          "payload": 512
+        },
+        {
+          "status_mask": 262144,
+          "payload": 1024
+        },
+        {
+          "status_mask": 524288,
+          "payload": 2048
+        },
+        {
+          "status_mask": 1048576,
+          "payload": 4096
+        },
+        {
+          "status_mask": 2097152,
+          "payload": 8192
+        },
+        {
+          "status_mask": 4194304,
+          "payload": 16384
+        },
+        {
+          "status_mask": 8388608,
+          "payload": 32768
+        }
+      ],
+      "status20": [
+        {
+          "status_mask": 65536,
+          "payload": 65536
+        },
+        {
+          "status_mask": 131072,
+          "payload": 131072
+        },
+        {
+          "status_mask": 262144,
+          "payload": 262144
+        },
+        {
+          "status_mask": 524288,
+          "payload": 524288
+        },
+        {
+          "status_mask": 1048576,
+          "payload": 1048576
+        },
+        {
+          "status_mask": 2097152,
+          "payload": 2097152
+        },
+        {
+          "status_mask": 4194304,
+          "payload": 4194304
+        },
+        {
+          "status_mask": 8388608,
+          "payload": 8388608
+        }
+      ]
+    },
+    "command_dispatch_hook": "0x1038ad1f",
+    "processor_mode0": 0,
+    "processor_mode1": 0,
+    "processor_callback0": "0x102e719b",
+    "processor_callback1": "0x102e6f0d",
+    "processor_callback_raw_10": "00000000cc0000019b712e100d6f2e10",
+    "command_mode0_raw": 3,
+    "command_mode1_raw": 2,
+    "configuration_semantics_verified": false
+  },
+  "native_irq102_status18_1c_20_counts": {
+    "0x1,0x0,0x0": 6,
+    "0x0,0x0,0x8": 222
+  },
+  "messages": [
+    {
+      "sequence": 81,
+      "guest_seconds": 9.777,
+      "kind": "message-enqueue",
+      "code": "0x42193081",
+      "callback": "0x10265221",
+      "aux_pointer": "0xc2377f38",
+      "word18_raw": "0xc235fb38",
+      "irq_result_value_verified": false
+    },
+    {
+      "sequence": 82,
+      "guest_seconds": 9.777,
+      "kind": "message-decode",
+      "code": "0x42193081",
+      "callback": "0x10265221",
+      "aux_pointer": "0xc2377f38",
+      "word18_raw": "0xc235fb38",
+      "irq_result_value_verified": false
+    },
+    {
+      "sequence": 83,
+      "guest_seconds": 9.778,
+      "kind": "message-enqueue",
+      "code": "0x42193081",
+      "callback": "0x102646cd",
+      "aux_pointer": "0xc23777d8",
+      "word18_raw": "0xc235f334",
+      "irq_result_value_verified": false
+    },
+    {
+      "sequence": 84,
+      "guest_seconds": 9.778,
+      "kind": "message-decode",
+      "code": "0x42193081",
+      "callback": "0x102646cd",
+      "aux_pointer": "0xc23777d8",
+      "word18_raw": "0xc235f334",
+      "irq_result_value_verified": false
+    },
+    {
+      "sequence": 92,
+      "guest_seconds": 10.374,
+      "kind": "message-decode",
+      "code": "0x42193083",
+      "callback": "0x102646cd",
+      "aux_pointer": "0xc23777d8",
+      "word18_raw": "0x0",
+      "irq_result_value_verified": false
+    },
+    {
+      "sequence": 93,
+      "guest_seconds": 10.374,
+      "kind": "message-decode",
+      "code": "0x42193083",
+      "callback": "0x10265221",
+      "aux_pointer": "0xc2377f38",
+      "word18_raw": "0x0",
+      "irq_result_value_verified": false
+    }
+  ],
+  "paired_waits": 12,
+  "incomplete_waits": 1,
+  "outside_scope": 0,
+  "cleanup_associations": 12,
+  "wait_groups": {
+    "stage-a300": {
+      "count": 5,
+      "returns": {
+        "0x1": 5
+      },
+      "durations": {
+        "0.003": 1,
+        "0.0": 4
+      },
+      "output_bits": {
+        "0x62c00000": 1,
+        "0x22c00000": 4
+      }
+    },
+    "stage-69446": {
+      "count": 7,
+      "returns": {
+        "0x0": 7
+      },
+      "durations": {
+        "1.005": 2,
+        "1.007": 2,
+        "1.006": 3
+      },
+      "output_bits": {
+        "0x81000000": 7
+      }
+    }
+  },
+  "source_callback_entries": 0,
+  "source_skip_counter_observations": 0,
+  "runtime_full_captured_stdout_saved": false,
+  "runtime_stdout_limitation": "A polled chunk was truncated by the exec output budget; captured log retained. Structured trace and observation receipts are intact.",
+  "guest_software_written_by_host": false,
+  "software_event_injected": false,
+  "hardware_completion_verified": false,
+  "irq_to_target_message_route_verified": false,
+  "mode_recovery_verified": false,
+  "whole_camera_verified": false
+}

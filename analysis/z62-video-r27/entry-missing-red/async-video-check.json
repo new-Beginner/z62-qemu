@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "completed": false,
+  "implementation_level": "C",
+  "scenario": "encode",
+  "events": [],
+  "observations": [],
+  "requests": [],
+  "factory_video_verified": false,
+  "camera_accessed": false,
+  "failure": {
+    "type": "ValueError",
+    "message": "Python research entry must be a tool in this workspace"
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-result-subscriptions-r46",
+  "paths_relative_to": "workspace",
+  "completed_bounded_observation": true,
+  "exec_session": 62189,
+  "host_exit_code": 0,
+  "process_closed": true,
+  "gdb_detach": "OK",
+  "pid": 55468,
+  "completed_owned_stage": "z62-reference-k8puzvhh",
+  "remaining_qemu_for_owned_stage": 0,
+  "guest_seconds": 18.055,
+  "observer_wall_seconds": 288.39,
+  "total_stops": 251,
+  "subscription_observations": 245,
+  "source_sha256": {
+    "tools/trace_z62_result_subscriptions.py": "cb64ceb4372737429891836250c78a76d7dff7786e43884d22c11596b8ed26c0",
+    "tests/test_z62_result_subscriptions.py": "76ce0dc3dec85d1095154effb2e08af965d10438a8682605965474b9a7e14041",
+    "tools/trace_z62_stage_resource_waits.py": "dadbdc1ca40f9c16e781297ce5287b22486800ed44ec00b254e18f9349b3babc",
+    "tools/probe_z62_no_lens.py": "3b3ecabeab0a8eb4e82d0cd14431340d13110ec583e198801397f88015a9d6c1",
+    "tools/trace_z62_shutter_route.py": "a334aa7d17dbb577fb587c29432868ddbddd1033a399550bacfd2f1d2ee04478",
+    "tools/z62_backend_packets.py": "a1f8c359da829780d17793a07c5b344405c41d34cd088838ca4a231a5247e225",
+    "tools/decompile_z62.py": "2688a9490f1ea048aa3b27309303823c6410fc36b28a062e28a518ce7899a440",
+    "tools/ghidra/ExportZ62Functions.java": "b1ff4d845deacefb79b7d63d655d97836da25178b814162567e417180d58accf"
+  },
+  "run_source_matches_current": true,
+  "evidence_sha256": {
+    "2026-11-02_研究-Z62两银行订阅与预览结果路由r46-report.md": "3ae8ae5d3f083b898e0d393e7bfe5c8cc03cb571310ba462c62b2636706935e2",
+    "analysis/z62-ghidra/graph-construction-r46-5/102bd486.asm": "cd54a31b2e9413a71480c3472578b1f02dc4958b555cdb0ec214d2ab124016f3",
+    "analysis/z62-ghidra/graph-construction-r46-5/102bd486.c": "6c7ff000aaa6944901214848d26706fff1cc3921ff90090f4771423e913da00c",
+    "analysis/z62-ghidra/graph-construction-r46-5/functions.tsv": "b3313aa68ec91f6fc45a625a2f565fdd4981dc2e2e2548c2234bef95a2676473",
+    "analysis/z62-ghidra/graph-construction-r46-5/headless.log": "3a97150e0456e84007123fc07a6d4529306237d3eb390c8fcef46fea24288b41",
+    "analysis/z62-ghidra/graph-construction-r46-5/manifest.json": "05d00be3f6e1f9f9eeab610984b55f6525bf159f00439c9038e5f981a75b5074",
+    "analysis/z62-ghidra/graph-construction-r46-5/program.txt": "23362e86d9f362126e1235b8d1940351158ec4fa28c519a97b08b2722ab123cc",
+    "analysis/z62-ghidra/preview-callback-r46-6/10263d4c.asm": "2ec1bea8b7ee2f36fcb665bca64691f4eb23db33d0711c9462fc486908ed7b11",
+    "analysis/z62-ghidra/preview-callback-r46-6/10263d4c.c": "354be60ca4b17979bb35bc74d0a4313baf78e5fe51771b6278b022a1914afb6e",
+    "analysis/z62-ghidra/preview-callback-r46-6/102bb700.asm": "adaa4ad4db00dc59c47790b6333cd0840623b50b4c2422744d0dfede8c963cfd",
+    "analysis/z62-ghidra/preview-callback-r46-6/102bb700.c": "26350348c4308a406a5a4d3d81058714c826009b84f7555865dc937d82021d69",
+    "analysis/z62-ghidra/preview-callback-r46-6/functions.tsv": "4fe15f47f8df271d05e3f50de6d896b4fb028189a0d5eef467545a3de86bf03a",
+    "analysis/z62-ghidra/preview-callback-r46-6/headless.log": "f183c8e439de64c828e4c41df37c00ec0736fc4031df1303effb4b2d4747457b",
+    "analysis/z62-ghidra/preview-callback-r46-6/manifest.json": "62ebdde9a1bc24e2a99757da0c70bf02db303355510f5b00c353807b47d10bf8",
+    "analysis/z62-ghidra/preview-callback-r46-6/program.txt": "23362e86d9f362126e1235b8d1940351158ec4fa28c519a97b08b2722ab123cc",
+    "analysis/z62-ghidra/processor-handoff-r46-2/10263d08.asm": "837bfb7d9f605a3fb8300e6551a0304b82f591aebe40843995cae0c3ed8d87cb",
+    "analysis/z62-ghidra/processor-handoff-r46-2/10263d08.c": "404fc7b825b73a3e3259d3300edeca8c3e1b736ac9ba9ceb5dabc04be9f0ee53",
+    "analysis/z62-ghidra/processor-handoff-r46-2/102e6f0c.asm": "ef7a1bc1d782172d1173a5db61bc2789e717cc470ac07fa8a933f23777232e86",
+    "analysis/z62-ghidra/processor-handoff-r46-2/102e6f0c.c": "ac295119182872a0f93bbd0bcc1ef30a0ff41bd3c3490600bff5c364ebc6642d",
+    "analysis/z62-ghidra/processor-handoff-r46-2/1038ad1a.asm": "a09dfe904d1668935dde0d9dbd6af7c2d785fbe4dd4a1e9c931d6557b9f21f44",
+    "analysis/z62-ghidra/processor-handoff-r46-2/1038ad1a.c": "0a920e4626ac9b61f69647acf24cb0eebdcf866c5d3533e896d71d944f211705",
+    "analysis/z62-ghidra/processor-handoff-r46-2/functions.tsv": "152182d1447453c87599c6ea9b43ec2c324cd7082054b52b7fc9de01ef7bae31",
+    "analysis/z62-ghidra/processor-handoff-r46-2/headless.log": "1e1e19686025c75184d6b398dcd2f0c73ecfe7c1bfae4163d460599ab8875696",
+    "analysis/z62-ghidra/processor-handoff-r46-2/manifest.json": "abbf6687ffe5bf0307e51f1a709fbadced9e130c4da2f1878ef61c2348a141be",
+    "analysis/z62-ghidra/processor-handoff-r46-2/program.txt": "23362e86d9f362126e1235b8d1940351158ec4fa28c519a97b08b2722ab123cc",
+    "analysis/z62-ghidra/result-subscription-r46-1/102e6a14.asm": "79a45d76dddfe19e2bab6257a8b9b7a94f37a7cb1af49125ac5a8c4e0286a06e",
+    "analysis/z62-ghidra/result-subscription-r46-1/102e6a14.c": "d1cfd38664a99769f3df4043767283d920de97ad0d78c66d43428a0f42f88efa",
+    "analysis/z62-ghidra/result-subscription-r46-1/103b76b0.asm": "04bf52195b29e0c0761d8e1e49320e5b19ec8fc7bf4c1a9b45ab4495357d8267",
+    "analysis/z62-ghidra/result-subscription-r46-1/103b76b0.c": "c5dd44fcf02fb577709a0dceb124194c38e7271c23c75600178975110d208e79",
+    "analysis/z62-ghidra/result-subscription-r46-1/103b76bc.asm": "c97c5a1ec1da461447ca7fb425b3da35c4131f5ed6224668705f88bcd7cdb74e",
+    "analysis/z62-ghidra/result-subscription-r46-1/103b76bc.c": "300f788aaf285c0680b2ccf92a64051d2944ab68032d03ea1cba43a2f8320398",
+    "analysis/z62-ghidra/result-subscription-r46-1/103bfbce.asm": "62d28bb1403e271fc397658526298ea10b98babda15813c89583623240a3af6e",
+    "analysis/z62-ghidra/result-subscription-r46-1/103bfbce.c": "786c5fe598311c592197e83f73285fd45dbd64a5f8a0b8f227903667e65b7c67",
+    "analysis/z62-ghidra/result-subscription-r46-1/functions.tsv": "d76db92aa6f721d0c76f6412be9e7136d602ed92935205c06cf97b21e6311eee",
+    "analysis/z62-ghidra/result-subscription-r46-1/headless.log": "77ec45f2ed7a2ae63f5571bedf5ac2e951cb1183b743f037026b1e1cebed4daa",
+    "analysis/z62-ghidra/result-subscription-r46-1/manifest.json": "689e732523d0f1d10ad3155c933f652123d1c1e93899debd14501db098a41c87",
+    "analysis/z62-ghidra/result-subscription-r46-1/program.txt": "23362e86d9f362126e1235b8d1940351158ec4fa28c519a97b08b2722ab123cc",
+    "analysis/z62-ghidra/source-registration-r46-3/10263fbc.asm": "86701069aa9bbc021c97d2248e0cf29b07de9df7c54ba74e9e79f0d01addd187",
+    "analysis/z62-ghidra/source-registration-r46-3/10263fbc.c": "04b30c657d5bcf800035ef405504fe3f2516d016f7aa028e94de3013cd4993dd",
+    "analysis/z62-ghidra/source-registration-r46-3/102b860a.asm": "6580750847390f46bcc2ee1a8360f55cb0c2d445234b8ac8e0886a38b0495e3e",
+    "analysis/z62-ghidra/source-registration-r46-3/102b860a.c": "2a9fd93e125b45fcaf500d4ff266bf4015a9db03f5998de3465cebacb2425ab6",
+    "analysis/z62-ghidra/source-registration-r46-3/functions.tsv": "40556a425ffb67a50e048f4d8bedf1a48b8c2ccfcfb1bb4605641c8cffd96336",
+    "analysis/z62-ghidra/source-registration-r46-3/headless.log": "fe7be08f16436608e13672bcccb4297404db1a6bf530952da1f84a2ce43acc39",
+    "analysis/z62-ghidra/source-registration-r46-3/manifest.json": "89accab24cd2d2c77c104fd2d7021a51b792c94e662532ceb34405bf2a4e020d",
+    "analysis/z62-ghidra/source-registration-r46-3/program.txt": "23362e86d9f362126e1235b8d1940351158ec4fa28c519a97b08b2722ab123cc",
+    "analysis/z62-ghidra/subscriber-dispatch-r46-4/102b85fe.asm": "c7886925d6a873478b458ba1de08ea65890b1ef6488c322ab7cfa17982ab7b1c",
+    "analysis/z62-ghidra/subscriber-dispatch-r46-4/102b85fe.c": "89818b4d8e51b2f45c6963e933e194c137d896c2ea1388d976caf57ba06f7c7a",
+    "analysis/z62-ghidra/subscriber-dispatch-r46-4/102bf71c.asm": "f093ce1b22a072e21258917f45e5d226ab1e374c43824a26520cb941e187f538",
+    "analysis/z62-ghidra/subscriber-dispatch-r46-4/102bf71c.c": "f52da7ea3d3814ee1f77560aa81ad798b38ef495d0fde9c8ababf82a23675f58",
+    "analysis/z62-ghidra/subscriber-dispatch-r46-4/functions.tsv": "e6dfb21e1ffe1111283e4322eb87f06f88cd210c1ca9849c5c9d27084b71b05f",
+    "analysis/z62-ghidra/subscriber-dispatch-r46-4/headless.log": "944bae1ffe9f0cdb8e8e0c7cddfe6e009be6def4712d9e014cdfe977be39c4b9",
+    "analysis/z62-ghidra/subscriber-dispatch-r46-4/manifest.json": "08fd77531984895ef19a8c370647ddc25e3173b10dd99728b5dd98c5ba628e8c",
+    "analysis/z62-ghidra/subscriber-dispatch-r46-4/program.txt": "23362e86d9f362126e1235b8d1940351158ec4fa28c519a97b08b2722ab123cc",
+    "analysis/z62-selector-r46/export-diagnostics.json": "bfe146547d17ad8db00f3910aa9f5bb4c6117ad38452cbdd6bc84d6f018a9e61",
+    "analysis/z62-selector-r46/graphs-decoded.json": "c4bd065b66dedf510f403556c9d0c64fe660f35dcfc51ae8d38cb7dd6b281c8b",
+    "analysis/z62-selector-r46/regression.json": "262367d007987865783882c2f77d021cea478836c3f2dafbf6f86acda9bdb710",
+    "analysis/z62-selector-r46/regression.log": "76f418de4111ad40cb46a2cf5aee61ae2a6efbd64b1a22cdbcf306d5e4cce5ec",
+    "analysis/z62-selector-r46/routing-contract.json": "c62c4d3f496cd483ff3b38ec7f636bd1c6db794dc15d22930f422f233cbe3753",
+    "analysis/z62-selector-r46/scope.md": "b4bc1a0df1e21800dc88445c4a2db87b9d6eac67feebcfdb8a12faa42476617f",
+    "analysis/z62-selector-r46/source-callback-refs.json": "33fce11c702c267cfbc7aa5096d9fb27e0c39e4e909db19c013f69e47d560623",
+    "analysis/z62-selector-r46/subscriber-ref-context.json": "501e88a55a3798e4c167fca199a788e847d56716b3966f9e9fc9625ec90bbf5b",
+    "analysis/z62-selector-r46/subscriptions-1/anchors.json": "5bcd0ea299cea51338ca0fa10dd4649f546e4fb052d4e36ec88364ce41eea346",
+    "analysis/z62-selector-r46/subscriptions-1/effective-command-0.json": "e8af8ae954550c0b04a556d63ae5c86e19e4e7b97f91a06c759bc7f420249ead",
+    "analysis/z62-selector-r46/subscriptions-1/fixture.json": "b5af86da10573bc697866e178ff44c8cee21d30a63c7c74904bc6a531695dd9f",
+    "analysis/z62-selector-r46/subscriptions-1/result-subscriptions.json": "3e2b14384b7964d5245d55b2d41c1affc48a3a40236dc8fda9cb26775768513f",
+    "analysis/z62-selector-r46/subscriptions-1/runtime-stdout.log": "27c300804d2072ef1eadd7a99db57d8852ca179b7395d28e1d299d1d760f50d2",
+    "analysis/z62-selector-r46/subscriptions-1/session.json": "e1d88262f54fa871e0f90e689fea08a303a0b07b2d715cf22f9575f16ec3f8cd",
+    "analysis/z62-selector-r46/subscriptions-1/trace.json": "34d06a2e60d19ad3f281e1853f1cf6ca25d577565f03f9156366136f94874d40",
+    "analysis/z62-selector-r46/summary.json": "c01ede206d289b317fa9d15b87de0e225d8ae1bc212cb38a9e4010f75cf518cf",
+    "analysis/z62-selector-r46/unit-green.log": "537f6cb0b96e1be2fa5950bbc4ab9c0b016f4314eb76bfe7925f88200e0008c7",
+    "analysis/z62-selector-r46/unit-red.log": "1fbd704b254e38391aca88de0695ab32d0ca405d70c9fe811f917a0e7d2dc4d7"
+  },
+  "mutable_document_sha256_at_archive": {
+    "GOAL-Z62-QEMU.md": "604c47e990a62259265d7aca2b05d87884b88f9ce991575d97f1f9540c4d928d",
+    "Z62-CAPABILITY-COVERAGE.md": "897d3609f6de12e5601ddf60d515a4ed8b74d607f8ca9a80e6aa442bb48f3479"
+  },
+  "mutable_documents_expected_to_advance": true,
+  "frozen_artifacts": {
+    "r21": {
+      "path": ".build/z62-analog-input-2026.10.30-r21/runtime/qemu-system-arm.exe",
+      "sha256": "0a772865868c4f666024533512d5ede2751255744caf56b594a41da6fc0ef90b",
+      "current_matches": true
+    },
+    "r24": {
+      "path": ".build/z62-scene-file-2026.11.01-r24/runtime/qemu-system-arm.exe",
+      "sha256": "dbe36d222dbfa633086f906f626968635c61d9825eaee8174480bef22a39abf2",
+      "current_matches": true
+    },
+    "master": {
+      "path": "artifacts/z62-reference-1.70/master.bin",
+      "sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+      "current_matches": true
+    }
+  },
+  "r27_fixed_source_hashes": {
+    "tools/z62_async_video_console.py": {
+      "expected": "48a1bd53827ce8dd2067101e9d5e670d71a36c663bd232e804033d037a9f2fe4",
+      "actual": "48a1bd53827ce8dd2067101e9d5e670d71a36c663bd232e804033d037a9f2fe4",
+      "current_matches": true
+    },
+    "tools/z62_async_video_scene.py": {
+      "expected": "d7a44e757da421475c17d795ac9e60c834f82dff1d5eb9e5f87c140ea58a11ef",
+      "actual": "d7a44e757da421475c17d795ac9e60c834f82dff1d5eb9e5f87c140ea58a11ef",
+      "current_matches": true
+    },
+    "tools/z62_async_video_card.py": {
+      "expected": "37f8b42a533ebc30d917975739ab5f618a6e8675447e4c0fc4d88c6976b1b8fa",
+      "actual": "37f8b42a533ebc30d917975739ab5f618a6e8675447e4c0fc4d88c6976b1b8fa",
+      "current_matches": true
+    },
+    "tools/z62_async_video_job.py": {
+      "expected": "7e0dd16154266ba35153015bcce9c2bfdab2b6adc8609b2fee00f0517ec4d35c",
+      "actual": "7e0dd16154266ba35153015bcce9c2bfdab2b6adc8609b2fee00f0517ec4d35c",
+      "current_matches": true
+    },
+    "tools/z62_async_video_worker.py": {
+      "expected": "4becaa327969dc3c25879f1f8728576d71bc2cc68cbe9943c6811e745acc6940",
+      "actual": "4becaa327969dc3c25879f1f8728576d71bc2cc68cbe9943c6811e745acc6940",
+      "current_matches": true
+    },
+    "tools/z62_video_codec.py": {
+      "expected": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88",
+      "actual": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88",
+      "current_matches": true
+    },
+    "tools/z62_media_scene.py": {
+      "expected": "0e1460c6d3bfa1df40a625b95ee47843e95f554eefda6fdfc654e2a7a7e3e34e",
+      "actual": "0e1460c6d3bfa1df40a625b95ee47843e95f554eefda6fdfc654e2a7a7e3e34e",
+      "current_matches": true
+    },
+    "tools/z62_scene_exchange.py": {
+      "expected": "490ad0a89e75a5f79f1957392aa990c8e59707a7b39c51ed39d8c1e403700458",
+      "actual": "490ad0a89e75a5f79f1957392aa990c8e59707a7b39c51ed39d8c1e403700458",
+      "current_matches": true
+    },
+    "tools/run_z62_async_video_console.py": {
+      "expected": "0b63f4f0bdd33ff6a590eb2711e6df1d70124c7a147ab65c643c8bde520b08d0",
+      "actual": "0b63f4f0bdd33ff6a590eb2711e6df1d70124c7a147ab65c643c8bde520b08d0",
+      "current_matches": true
+    },
+    "tools/probe_z62_async_video_console.py": {
+      "expected": "902d06070c5a3b10c4e708475adffafe64df61477f9c5a4c8200dd7d92710e09",
+      "actual": "902d06070c5a3b10c4e708475adffafe64df61477f9c5a4c8200dd7d92710e09",
+      "current_matches": true
+    },
+    "tools/export_z62_async_video.py": {
+      "expected": "d1decc56f5627be2ddb75079e43d8161ea354dca162d5269845b31bc603b566a",
+      "actual": "d1decc56f5627be2ddb75079e43d8161ea354dca162d5269845b31bc603b566a",
+      "current_matches": true
+    },
+    "tools/assets/z62-async-video.js": {
+      "expected": "77b597e7fff87be59f49f121641a118f4a17d407aaafeec28ad3a2f72ce1a300",
+      "actual": "77b597e7fff87be59f49f121641a118f4a17d407aaafeec28ad3a2f72ce1a300",
+      "current_matches": true
+    },
+    "start-z6ii-async-video.cmd": {
+      "expected": "2786ecb6a1b3ed0705fcbbf889f3293a734d9ffe82edf63d0e6f201f371eb9ae",
+      "actual": "2786ecb6a1b3ed0705fcbbf889f3293a734d9ffe82edf63d0e6f201f371eb9ae",
+      "current_matches": true
+    }
+  },
+  "r27_all_13_sources_unchanged": true,
+  "virtual_card": {
+    "path": "<USERPROFILE>\\Documents\\Z62-QEMU-runtime\\fixtures\\card-r22-4096.raw",
+    "snapshot": true,
+    "before_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "current_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "current_matches": true
+  },
+  "export_diagnostics": {
+    "result-subscription-r46-1": {
+      "exports_checked": 4,
+      "issues": [
+        {
+          "function": "102e6a14",
+          "issue": "Could not recover jumptable"
+        }
+      ],
+      "all_exports_structurally_usable": false,
+      "semantics_verified": false
+    },
+    "processor-handoff-r46-2": {
+      "exports_checked": 3,
+      "issues": [
+        {
+          "function": "1038ad1a",
+          "issue": "Could not recover jumptable"
+        }
+      ],
+      "all_exports_structurally_usable": false,
+      "semantics_verified": false
+    },
+    "source-registration-r46-3": {
+      "exports_checked": 2,
+      "issues": [],
+      "all_exports_structurally_usable": true,
+      "semantics_verified": false
+    },
+    "subscriber-dispatch-r46-4": {
+      "exports_checked": 2,
+      "issues": [],
+      "all_exports_structurally_usable": true,
+      "semantics_verified": false
+    },
+    "graph-construction-r46-5": {
+      "exports_checked": 1,
+      "issues": [],
+      "all_exports_structurally_usable": true,
+      "semantics_verified": false
+    },
+    "preview-callback-r46-6": {
+      "exports_checked": 2,
+      "issues": [],
+      "all_exports_structurally_usable": true,
+      "semantics_verified": false
+    }
+  },
+  "unverified_interior_export_not_used": "102BF71C",
+  "regression_tests": 518,
+  "regression_seconds": 169.759,
+  "regression_exit_code": 0,
+  "runtime_stdout_all_hit_sequences_saved": true,
+  "regression_full_captured_output_saved": true,
+  "default_entry_changed": false,
+  "qemu_device_source_changed": false,
+  "guest_software_patched": false,
+  "software_event_injected": false,
+  "camera_accessed": false,
+  "bank0_and_bank1_subscriptions_observed": true,
+  "low_result_group_routing_identified": true,
+  "runtime_low_result_irq_delivery_verified": false,
+  "bank0_numerical_graph_executed": false,
+  "hardware_completion_verified": false,
+  "mode_recovery_verified": false,
+  "whole_camera_verified": false,
+  "factory_af_verified": false,
+  "flash_safety_verified": false
+}

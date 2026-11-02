@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-work-signal-route-r42",
+  "command": ".build/tools/video-r26/Scripts/python.exe -X utf8 -B -m unittest discover -s tests -q",
+  "tests": 495,
+  "seconds": 180.595,
+  "exit_code": 0,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "new_tests": 6,
+  "initial_tests_failed_before_implementation": true,
+  "full_captured_stdout_stderr_saved": true,
+  "log": "regression.log",
+  "unified_exec_session": 62736,
+  "scope": "Native cancellation/signaling observer; no hardware or factory completion acceptance."
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "profile": "2026.11.01-async-video-console-r27",
+  "implementation_level": "C",
+  "command": ".build/tools/video-r26/Scripts/python.exe -X utf8 -B -m unittest discover -s tests -v",
+  "temporary_root": "D:/Z62-QEMU-runtime/sessions",
+  "tests": 438,
+  "seconds": 257.102,
+  "exit_code": 0,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "new_r27_tests": 23,
+  "evidence_origin": "Transcribed from the completed unified exec 11901 output in this continuous goal session; no full log was saved. The completed process handle is no longer available.",
+  "full_log_saved": false,
+  "scope": "Repository regression including r27 asynchronous video and Windows JSON replacement; not whole-camera, factory AF, or flash-safety acceptance",
+  "factory_video_verified": false,
+  "factory_af_verified": false,
+  "whole_camera_verified": false,
+  "flash_safety_verified": false
+}

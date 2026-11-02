@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-grid-lifecycle-r49",
+  "qemu_sha256": "9e6f7f8e4987d90fcd9c66fae243636f17b1ba3a9cd24db1a83daac2ad3b10f6",
+  "frozen_source_checks": {
+    "qemu/z62-grid/nikon-z62-grid-pixels.h": {
+      "expected": "09802a8574bf489c93c614bad2e1b5af1d8bdca806b7b03e6cd484a3973886f8",
+      "actual": "09802a8574bf489c93c614bad2e1b5af1d8bdca806b7b03e6cd484a3973886f8"
+    },
+    "qemu/z62-grid/nikon-z62-grid.h": {
+      "expected": "5c8196e7857ab5cf91bbfd75e094fe8c5aff990e823423bc69ee83db9a05eddf",
+      "actual": "5c8196e7857ab5cf91bbfd75e094fe8c5aff990e823423bc69ee83db9a05eddf"
+    },
+    "qemu/z62-grid/observed-profile.json": {
+      "expected": "f12c8922e5b66667c7567ba7c0d12a26418e75c1ee1a8399e9ac9b24b289fc55",
+      "actual": "f12c8922e5b66667c7567ba7c0d12a26418e75c1ee1a8399e9ac9b24b289fc55"
+    },
+    "tools/check_z62_grid_pixels.py": {
+      "expected": "ae25f2a45df3783198f8e9d074949ba6a97572bb58ee1788226391e87bb95716",
+      "actual": "ae25f2a45df3783198f8e9d074949ba6a97572bb58ee1788226391e87bb95716"
+    },
+    "tools/build_z62_grid.py": {
+      "expected": "84907b37d09fc37700e83d3345ba3089347d7e8337c4c4eebe235d8e08b6c2f6",
+      "actual": "84907b37d09fc37700e83d3345ba3089347d7e8337c4c4eebe235d8e08b6c2f6"
+    },
+    "tools/run_z62_grid.py": {
+      "expected": "09ae5d9841d14f49635edc245c501fcc269c95b99115fc2c6c08489c5b51a6c8",
+      "actual": "09ae5d9841d14f49635edc245c501fcc269c95b99115fc2c6c08489c5b51a6c8"
+    },
+    "tools/z62_grid_device.py": {
+      "expected": "37bd184c3916839de3708007726c8f31ede44279812a57f29bd1c6902d5f3ca3",
+      "actual": "37bd184c3916839de3708007726c8f31ede44279812a57f29bd1c6902d5f3ca3"
+    },
+    "tools/probe_z62_grid_config.py": {
+      "expected": "52697e9f245fb285c9f0de0ec052f7f15dc155868b716b297fda2875a4d4e3cd",
+      "actual": "52697e9f245fb285c9f0de0ec052f7f15dc155868b716b297fda2875a4d4e3cd"
+    },
+    "tools/probe_z62_grid.py": {
+      "expected": "0b8c5c5bc3ee5b762bea075cb0bff99ea79192ba23ddf5f520f6ae84f7c52525",
+      "actual": "0b8c5c5bc3ee5b762bea075cb0bff99ea79192ba23ddf5f520f6ae84f7c52525"
+    },
+    "tools/trace_z62_grid_delivery.py": {
+      "expected": "c38b4a1fe6c7d69885f4c0f881f9f28efa6f0729ac3b2f8a926a62a5131f56d2",
+      "actual": "c38b4a1fe6c7d69885f4c0f881f9f28efa6f0729ac3b2f8a926a62a5131f56d2"
+    },
+    "tests/test_z62_grid_config.py": {
+      "expected": "aaff79c61a2da7388833adbfc3d6e5177dc9d558cf0e315af9c6f2b0e970f64a",
+      "actual": "aaff79c61a2da7388833adbfc3d6e5177dc9d558cf0e315af9c6f2b0e970f64a"
+    },
+    "tests/test_z62_grid_delivery.py": {
+      "expected": "80a1c124ed673485299fe36f3cfd77f64f0fb9c2e1221f33c7d1ec19c83b7123",
+      "actual": "80a1c124ed673485299fe36f3cfd77f64f0fb9c2e1221f33c7d1ec19c83b7123"
+    },
+    "tests/test_z62_grid_device.py": {
+      "expected": "ddaac05cf425c4ff2c4ab59644449a1b69f8805da056b4a4d4b792897d06b378",
+      "actual": "ddaac05cf425c4ff2c4ab59644449a1b69f8805da056b4a4d4b792897d06b378"
+    },
+    "tests/native/z62_grid_pixels_test.c": {
+      "expected": "0d97ecac573839262cb43afbf6a6eccd8af8c1b3752bfabfdf31f1bcd71a3761",
+      "actual": "0d97ecac573839262cb43afbf6a6eccd8af8c1b3752bfabfdf31f1bcd71a3761"
+    }
+  },
+  "r27_fixed_source_checks": {
+    "tools/z62_async_video_console.py": {
+      "expected": "48a1bd53827ce8dd2067101e9d5e670d71a36c663bd232e804033d037a9f2fe4",
+      "actual": "48a1bd53827ce8dd2067101e9d5e670d71a36c663bd232e804033d037a9f2fe4"
+    },
+    "tools/z62_async_video_scene.py": {
+      "expected": "d7a44e757da421475c17d795ac9e60c834f82dff1d5eb9e5f87c140ea58a11ef",
+      "actual": "d7a44e757da421475c17d795ac9e60c834f82dff1d5eb9e5f87c140ea58a11ef"
+    },
+    "tools/z62_async_video_card.py": {
+      "expected": "37f8b42a533ebc30d917975739ab5f618a6e8675447e4c0fc4d88c6976b1b8fa",
+      "actual": "37f8b42a533ebc30d917975739ab5f618a6e8675447e4c0fc4d88c6976b1b8fa"
+    },
+    "tools/z62_async_video_job.py": {
+      "expected": "7e0dd16154266ba35153015bcce9c2bfdab2b6adc8609b2fee00f0517ec4d35c",
+      "actual": "7e0dd16154266ba35153015bcce9c2bfdab2b6adc8609b2fee00f0517ec4d35c"
+    },
+    "tools/z62_async_video_worker.py": {
+      "expected": "4becaa327969dc3c25879f1f8728576d71bc2cc68cbe9943c6811e745acc6940",
+      "actual": "4becaa327969dc3c25879f1f8728576d71bc2cc68cbe9943c6811e745acc6940"
+    },
+    "tools/z62_video_codec.py": {
+      "expected": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88",
+      "actual": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88"
+    },
+    "tools/z62_media_scene.py": {
+      "expected": "0e1460c6d3bfa1df40a625b95ee47843e95f554eefda6fdfc654e2a7a7e3e34e",
+      "actual": "0e1460c6d3bfa1df40a625b95ee47843e95f554eefda6fdfc654e2a7a7e3e34e"
+    },
+    "tools/z62_scene_exchange.py": {
+      "expected": "490ad0a89e75a5f79f1957392aa990c8e59707a7b39c51ed39d8c1e403700458",
+      "actual": "490ad0a89e75a5f79f1957392aa990c8e59707a7b39c51ed39d8c1e403700458"
+    },
+    "tools/run_z62_async_video_console.py": {
+      "expected": "0b63f4f0bdd33ff6a590eb2711e6df1d70124c7a147ab65c643c8bde520b08d0",
+      "actual": "0b63f4f0bdd33ff6a590eb2711e6df1d70124c7a147ab65c643c8bde520b08d0"
+    },
+    "tools/probe_z62_async_video_console.py": {
+      "expected": "902d06070c5a3b10c4e708475adffafe64df61477f9c5a4c8200dd7d92710e09",
+      "actual": "902d06070c5a3b10c4e708475adffafe64df61477f9c5a4c8200dd7d92710e09"
+    },
+    "tools/export_z62_async_video.py": {
+      "expected": "d1decc56f5627be2ddb75079e43d8161ea354dca162d5269845b31bc603b566a",
+      "actual": "d1decc56f5627be2ddb75079e43d8161ea354dca162d5269845b31bc603b566a"
+    },
+    "tools/assets/z62-async-video.js": {
+      "expected": "77b597e7fff87be59f49f121641a118f4a17d407aaafeec28ad3a2f72ce1a300",
+      "actual": "77b597e7fff87be59f49f121641a118f4a17d407aaafeec28ad3a2f72ce1a300"
+    },
+    "start-z6ii-async-video.cmd": {
+      "expected": "2786ecb6a1b3ed0705fcbbf889f3293a734d9ffe82edf63d0e6f201f371eb9ae",
+      "actual": "2786ecb6a1b3ed0705fcbbf889f3293a734d9ffe82edf63d0e6f201f371eb9ae"
+    }
+  },
+  "frozen_binaries": {
+    "r21": {
+      "path": ".build/z62-analog-input-2026.10.30-r21/runtime/qemu-system-arm.exe",
+      "expected": "0a772865868c4f666024533512d5ede2751255744caf56b594a41da6fc0ef90b",
+      "actual": "0a772865868c4f666024533512d5ede2751255744caf56b594a41da6fc0ef90b"
+    },
+    "r24": {
+      "path": ".build/z62-scene-file-2026.11.01-r24/runtime/qemu-system-arm.exe",
+      "expected": "dbe36d222dbfa633086f906f626968635c61d9825eaee8174480bef22a39abf2",
+      "actual": "dbe36d222dbfa633086f906f626968635c61d9825eaee8174480bef22a39abf2"
+    },
+    "master": {
+      "path": "artifacts/z62-reference-1.70/master.bin",
+      "expected": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+      "actual": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4"
+    },
+    "r47": {
+      "path": ".build/z62-preview-results-2026.11.02-r47/runtime/qemu-system-arm.exe",
+      "expected": "55aae5f735a962e47d5531f0b2f506413f46ff47c2429cb369022fae796cd069",
+      "actual": "55aae5f735a962e47d5531f0b2f506413f46ff47c2429cb369022fae796cd069"
+    },
+    "r47b": {
+      "path": ".build/z62-preview-results-format-2026.11.02-r47b/runtime/qemu-system-arm.exe",
+      "expected": "145520bd35f763957f6be0e0cce33cb84312f34a6501991f49a93af91f9e46e8",
+      "actual": "145520bd35f763957f6be0e0cce33cb84312f34a6501991f49a93af91f9e46e8"
+    }
+  },
+  "card": {
+    "path": "<USERPROFILE>\\Documents\\Z62-QEMU-runtime\\fixtures\\card-r22-4096.raw",
+    "snapshot": true,
+    "before_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "after_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7"
+  },
+  "recovery_observed": false,
+  "source_sha256": {
+    "tools/trace_z62_grid_lifecycle.py": "9e7f3525040b7c980362ec26e06073ac9ae3b9a23674debc19f4a358b2f2ac12",
+    "tests/test_z62_grid_lifecycle.py": "f72ba0e0fa1edfffded69e5ffcdc5ef46357d7dc1eb4f1893849595d72e5f08b"
+  },
+  "evidence_sha256": {
+    "analysis/z62-recovery-r49/grid-on-1/anchors.json": "226906cad3476f5a74fe3a9ba4380473c9129266a1985a21862790f2f4fa46c1",
+    "analysis/z62-recovery-r49/grid-on-1/before.png": "7a85bcbd4cb512be594f78838452b811b6c964bab88f2be34787dcc6d0c26a92",
+    "analysis/z62-recovery-r49/grid-on-1/effective-command-0.json": "93d194727cc9ce59221e2292a10cc9ec46f027b530fbd71de40a84d65ff2cf9b",
+    "analysis/z62-recovery-r49/grid-on-1/final.png": "4cc738fefd712856a6aa943656d85a1541250b3a1226e2e75134375dce3f299a",
+    "analysis/z62-recovery-r49/grid-on-1/fixture.json": "b5af86da10573bc697866e178ff44c8cee21d30a63c7c74904bc6a531695dd9f",
+    "analysis/z62-recovery-r49/grid-on-1/lifecycle.json": "366e6ecc25762b173e9ec9a2f6a036154e1d21b31947d7b8df0d5b69f02e8f9c",
+    "analysis/z62-recovery-r49/grid-on-1/pin0-high.png": "4cc738fefd712856a6aa943656d85a1541250b3a1226e2e75134375dce3f299a",
+    "analysis/z62-recovery-r49/grid-on-1/pin0-low.png": "17ed0e18f9fc2836e10ddefdac46ac4ee5fcb414f2237109eb8dcefbbfef5a50",
+    "analysis/z62-recovery-r49/grid-on-1/session.json": "223bfe60e0a56444edec07700ab394f1125ccec20fae230dd4f412fa95b1b551",
+    "analysis/z62-recovery-r49/grid-on-1/trace.json": "8a6d2a18faa162df47a6f8ddae4d7cd6e96f613be98de2d2df95fe58c9ad7f53",
+    "analysis/z62-recovery-r49/grid-on-1-stdout.txt": "d855620b271c0d58cabc3fb3c261b8bccf6cdd2c9887a75ecfffe3745e6b96e8",
+    "analysis/z62-recovery-r49/regression-output.txt": "73f78856cff4cd68e7e7974b1cd7b33a488c56d25062d84cf603ea38adb0006e",
+    "analysis/z62-recovery-r49/regression.json": "e6a134cb6675e8fde3109afc92d819dc95163a74b837227e680211b5465f13ce",
+    "analysis/z62-recovery-r49/scope.md": "231f085dce5d9dd9f55e0e462fc1b85384d095cdf607e8ae32ed9504933606b5",
+    "analysis/z62-recovery-r49/summary.json": "a5ac6bf44adf1938806f3b03893707459ae3dc7035ce86aa15c566af9c0b81d6",
+    "analysis/z62-recovery-r49/targeted-tests.txt": "c8e0b8264f6933d017c796201623ae6e35d69395e3f98d02504520a3f74430f0"
+  }
+}

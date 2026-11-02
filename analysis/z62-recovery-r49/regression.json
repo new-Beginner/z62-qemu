@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-grid-lifecycle-r49",
+  "exit_code": 0,
+  "tests": 534,
+  "seconds": 184.194,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "command": [
+    ".build/tools/video-r26/Scripts/python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-q"
+  ],
+  "output_file": "regression-output.txt",
+  "feature_recovery_passed": false
+}

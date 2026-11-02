@@ -1,0 +1,222 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-work-stage-origin-r43b",
+  "paths_relative_to": "workspace",
+  "completed_observation": true,
+  "exec_session": 60677,
+  "host_exit_code": 0,
+  "process_closed": true,
+  "gdb_detach": "OK",
+  "pid": 52536,
+  "completed_owned_stage": "z62-reference-c7dkfz4w",
+  "remaining_qemu_for_two_owned_stages": 0,
+  "guest_seconds": 18.007,
+  "observer_wall_seconds": 306.125,
+  "total_stops": 582,
+  "native_write_observations": 278,
+  "changed_write_observations": 99,
+  "verified_stage_entries": 142,
+  "stage_table_count": 3,
+  "entry_pending_word4": {
+    "0": 122,
+    "1": 20
+  },
+  "source_sha256": {
+    "tools/trace_z62_work_stage_origin.py": "a4e19e04db9e3758b36a853e6eb318ef69b269af60edc9cd9a11e0d3b24d4bac",
+    "tests/test_z62_work_stage_origin.py": "4a875584d9a59ae70f226106afcb7ab517979faa3e113eeaf22ad4e52aedf28f",
+    "tools/trace_z62_upper_waits.py": "3b03d339ea8faabc19cb924a022cd74bebf9560b0c31bc1b473167f7fdaff2a3",
+    "tests/test_z62_watch_step.py": "67d3b8900b808e83afa25d1cfbb5eb69bd0ced533093cd6aac01a203211e6010",
+    "tools/trace_z62_work_signal_route.py": "941869903a9a91771bad34f35d25941719881868c03958fb1b2f8ed5f46665f3",
+    "tools/trace_z62_retire_count.py": "c2a4db091727b4664bae6c103e96955f6be0f83299adb7ee4a99433397e3a1ff",
+    "tools/trace_z62_work_event_waits.py": "28ff87ec8a8b6269297ef98b998834d77dec47385564f90f639bc4cf6a11daf8"
+  },
+  "run_source_matches_current": true,
+  "evidence_sha256": {
+    "analysis/z62-ghidra/work-stage-upstream-r43-1/10269446.asm": "24ba985f219f00db6561483007a19f15533b4530461d357c4dc46fce0f923d07",
+    "analysis/z62-ghidra/work-stage-upstream-r43-1/10269446.c": "086a2e69d3815c628ef284055f89c9a7838683bdc146eec7f8a8a7db68a5e74e",
+    "analysis/z62-ghidra/work-stage-upstream-r43-1/10269cf8.asm": "46a912a8c97e5b4766aeb6c736dfa0bd01317581665a818ed0f1c419deaad58b",
+    "analysis/z62-ghidra/work-stage-upstream-r43-1/10269cf8.c": "7443083109b8f8aa6c21e7386e93b184fc413b970d208ce62c30007fc0680353",
+    "analysis/z62-ghidra/work-stage-upstream-r43-1/1026a300.asm": "a31c9d4d318f62295749cfdb339c395a94f0c2f7c5d61cfc2a1ee5b14d2c1423",
+    "analysis/z62-ghidra/work-stage-upstream-r43-1/1026a300.c": "dc8f5699798433b590bf515eac2901bef691675cc554bce10db12940420fe9fb",
+    "analysis/z62-ghidra/work-stage-upstream-r43-1/functions.tsv": "ec9313cc89d8d12cc8f9d9a685bd8b72045652fd58eaddb897ddd0634bf4694c",
+    "analysis/z62-ghidra/work-stage-upstream-r43-1/headless.log": "fdcea7ab48c7009417cf0b8ef6d10afa6cc2b936adc852c79ad608d84d778925",
+    "analysis/z62-ghidra/work-stage-upstream-r43-1/manifest.json": "4cadf49b7ebaa5d4d3070ae8919fe12ae1a652bb1c9f07d3af1d9d839592c65b",
+    "analysis/z62-ghidra/work-stage-upstream-r43-1/program.txt": "23362e86d9f362126e1235b8d1940351158ec4fa28c519a97b08b2722ab123cc",
+    "analysis/z62-ghidra/work-stage-upstream-r43-2/1026b3d2.asm": "6baf68440ce57af3b6bf565a5ef8f627460d809cdc120602ab7f064bd1dcdc33",
+    "analysis/z62-ghidra/work-stage-upstream-r43-2/1026b3d2.c": "f36065aaa136c23c26a8f4ffe8fb8cc98fe3089e45d6d1c3266de1c14d06f30e",
+    "analysis/z62-ghidra/work-stage-upstream-r43-2/1026b5ea.asm": "8a5efa866a85344f822e5ec40ba8409a5e7352cd35060314da608a1d1b40e085",
+    "analysis/z62-ghidra/work-stage-upstream-r43-2/1026b5ea.c": "66d5d317da66829473fa90a707a6ede04b9071c7044fe2fcdf58878c48ea20ea",
+    "analysis/z62-ghidra/work-stage-upstream-r43-2/functions.tsv": "e13337ca2ee6f85c7a6171499594b5afde6836f4714bcf0887f7655ff6cac166",
+    "analysis/z62-ghidra/work-stage-upstream-r43-2/headless.log": "2659144012c92e2a2acca3cb0016c4068a27edbfdb94339caf4e5a39a46163f2",
+    "analysis/z62-ghidra/work-stage-upstream-r43-2/manifest.json": "3bf64183aaaf1e84a0cf31453578cd7baddd21eeca145e14a36b90fdd4219fa1",
+    "analysis/z62-ghidra/work-stage-upstream-r43-2/program.txt": "23362e86d9f362126e1235b8d1940351158ec4fa28c519a97b08b2722ab123cc",
+    "analysis/z62-selector-r43/literal-candidates.json": "0f24c15c8e61a322f01c5b54099cfc57d7cd2f685ae4f532cdbb1462755fe2f7",
+    "analysis/z62-selector-r43/origin-1/anchors.json": "3442d6e99bcf3bc0837374eb0decb0580848207ed04c4c0c71e541f6f01685bd",
+    "analysis/z62-selector-r43/origin-1/effective-command-0.json": "c7a4ab2fbbaf35a3ab73979930aababd9383572a3d9b2399edbb7d807419e631",
+    "analysis/z62-selector-r43/origin-1/intentional-abort.json": "c790da260f3da8077ec61619d96acb101178cf3ae0691c1a2c8f47364b2f6294",
+    "analysis/z62-selector-r43/origin-1/runtime.log": "98722bf10b9615dc8974d78a000848815b44437048e8d622a570147370becaf1",
+    "analysis/z62-selector-r43/origin-1/session.json": "19f86296e17b0e9b67b91fd23ce6a22f422f39637913f74f80a059e198520d3a",
+    "analysis/z62-selector-r43/origin-1/trace.json": "b0d585b519ad15fa4ed941c27aeb64c655bd1a1838469891266d242e3ab3cf65",
+    "analysis/z62-selector-r43/origin-2/anchors.json": "3442d6e99bcf3bc0837374eb0decb0580848207ed04c4c0c71e541f6f01685bd",
+    "analysis/z62-selector-r43/origin-2/effective-command-0.json": "4c9f6273427d91035cb266cc2c6c17a003f6bbd2161563d216d524322940dd6b",
+    "analysis/z62-selector-r43/origin-2/fixture.json": "b5af86da10573bc697866e178ff44c8cee21d30a63c7c74904bc6a531695dd9f",
+    "analysis/z62-selector-r43/origin-2/runtime.log": "531f6738380f156cff8e27446a004ea57e5938e898992a41ca57809b9582712e",
+    "analysis/z62-selector-r43/origin-2/session.json": "5be1980876080ebf58de85dee41d1e7e3fe0d05fc89627e413f72073c7413387",
+    "analysis/z62-selector-r43/origin-2/stage-origin.json": "cb6e126339f85f101a5ab30bd079a210ca41afea702ad25cd1718bd2e8d7a503",
+    "analysis/z62-selector-r43/origin-2/trace.json": "3da45c81023630b2705248fe67629b81bf815c1758536181828cf333d3540ede",
+    "analysis/z62-selector-r43/regression-final.json": "f0766e45fb88f8a97473b2c1dc45510bbeeb7005694f88dba3301b3954050f18",
+    "analysis/z62-selector-r43/regression-final.log": "e4e1a37100e6d651f4d41e397411bdc108549da6f0fe56eac2c4d71be8f504cb",
+    "analysis/z62-selector-r43/regression.json": "500a5736db32b777dd7b4f25a7293d3c6883b56baf586bad9ea13a65a73fd1e5",
+    "analysis/z62-selector-r43/regression.log": "ce7b35988b5078639b407ff51d895d56901c344a4dcc490db8a833d61b3664f9",
+    "analysis/z62-selector-r43/resource-event-candidates.json": "c61588ef47e0dbe6a0f1469455279e42cafe5a5977df66f068d2ae1b008cf23a",
+    "analysis/z62-selector-r43/scope.md": "2857150970cf42d076499141b601d3d8478b8f928ca47455a298053669fc7490",
+    "analysis/z62-selector-r43/source-snapshot/trace_z62_upper_waits.before-multistore-fix.txt": "14b260ff83c50b03caa57a01165b0322fbf4db0bff25d69efcfc57db650a4a13",
+    "analysis/z62-selector-r43/source-snapshot/trace_z62_work_stage_origin.before-multistore-fix.txt": "d74b3988ebb127fcef9924ffff2e3106154a4b12ba1a24c5e85c3b3dd4d031f4",
+    "analysis/z62-selector-r43/summary.json": "15768e865a9facf21edf060f5a2238af8e76da917b819049b98716d5fc9e9ab4",
+    "analysis/z62-selector-r43/unit-green.log": "1446257731a9668824dbba8e166e441ff64c69c614a6c9fa1ee8f1b425882d09",
+    "analysis/z62-selector-r43/unit-red.log": "6606144d26d8a63df4de3ca7aadfe036ef94363fd6d2d00d6c9c3f4a96dbcc47",
+    "analysis/z62-selector-r43/watch-step-comparison.json": "ca572b8db20b74f7ec4d7b2c7de2bcd7a7cbc4cbe2ad70743ef3ec4f80165a34",
+    "analysis/z62-selector-r43/watch-step-green.log": "aece0b59f94004ff6484ed589e910c70269686c7290ca5a65d6577c9d53ceda1",
+    "analysis/z62-selector-r43/watch-step-red.log": "df50f28268149cf61d4d43d589bbbccda14ba73e97eb7fcad3519109fe9938f5",
+    "analysis/z62-selector-r43/work-field-contract.json": "20a775d8d03b836ab874cc8aeb6f11b6550db44a0de65e60208111be54005adb"
+  },
+  "frozen_artifacts": {
+    "r21": {
+      "path": ".build/z62-analog-input-2026.10.30-r21/runtime/qemu-system-arm.exe",
+      "sha256": "0a772865868c4f666024533512d5ede2751255744caf56b594a41da6fc0ef90b",
+      "current_matches": true
+    },
+    "r24": {
+      "path": ".build/z62-scene-file-2026.11.01-r24/runtime/qemu-system-arm.exe",
+      "sha256": "dbe36d222dbfa633086f906f626968635c61d9825eaee8174480bef22a39abf2",
+      "current_matches": true
+    },
+    "master": {
+      "path": "artifacts/z62-reference-1.70/master.bin",
+      "sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+      "current_matches": true
+    }
+  },
+  "r27_fixed_source_hashes": {
+    "tools/z62_async_video_console.py": {
+      "expected": "48a1bd53827ce8dd2067101e9d5e670d71a36c663bd232e804033d037a9f2fe4",
+      "actual": "48a1bd53827ce8dd2067101e9d5e670d71a36c663bd232e804033d037a9f2fe4",
+      "current_matches": true
+    },
+    "tools/z62_async_video_scene.py": {
+      "expected": "d7a44e757da421475c17d795ac9e60c834f82dff1d5eb9e5f87c140ea58a11ef",
+      "actual": "d7a44e757da421475c17d795ac9e60c834f82dff1d5eb9e5f87c140ea58a11ef",
+      "current_matches": true
+    },
+    "tools/z62_async_video_card.py": {
+      "expected": "37f8b42a533ebc30d917975739ab5f618a6e8675447e4c0fc4d88c6976b1b8fa",
+      "actual": "37f8b42a533ebc30d917975739ab5f618a6e8675447e4c0fc4d88c6976b1b8fa",
+      "current_matches": true
+    },
+    "tools/z62_async_video_job.py": {
+      "expected": "7e0dd16154266ba35153015bcce9c2bfdab2b6adc8609b2fee00f0517ec4d35c",
+      "actual": "7e0dd16154266ba35153015bcce9c2bfdab2b6adc8609b2fee00f0517ec4d35c",
+      "current_matches": true
+    },
+    "tools/z62_async_video_worker.py": {
+      "expected": "4becaa327969dc3c25879f1f8728576d71bc2cc68cbe9943c6811e745acc6940",
+      "actual": "4becaa327969dc3c25879f1f8728576d71bc2cc68cbe9943c6811e745acc6940",
+      "current_matches": true
+    },
+    "tools/z62_video_codec.py": {
+      "expected": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88",
+      "actual": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88",
+      "current_matches": true
+    },
+    "tools/z62_media_scene.py": {
+      "expected": "0e1460c6d3bfa1df40a625b95ee47843e95f554eefda6fdfc654e2a7a7e3e34e",
+      "actual": "0e1460c6d3bfa1df40a625b95ee47843e95f554eefda6fdfc654e2a7a7e3e34e",
+      "current_matches": true
+    },
+    "tools/z62_scene_exchange.py": {
+      "expected": "490ad0a89e75a5f79f1957392aa990c8e59707a7b39c51ed39d8c1e403700458",
+      "actual": "490ad0a89e75a5f79f1957392aa990c8e59707a7b39c51ed39d8c1e403700458",
+      "current_matches": true
+    },
+    "tools/run_z62_async_video_console.py": {
+      "expected": "0b63f4f0bdd33ff6a590eb2711e6df1d70124c7a147ab65c643c8bde520b08d0",
+      "actual": "0b63f4f0bdd33ff6a590eb2711e6df1d70124c7a147ab65c643c8bde520b08d0",
+      "current_matches": true
+    },
+    "tools/probe_z62_async_video_console.py": {
+      "expected": "902d06070c5a3b10c4e708475adffafe64df61477f9c5a4c8200dd7d92710e09",
+      "actual": "902d06070c5a3b10c4e708475adffafe64df61477f9c5a4c8200dd7d92710e09",
+      "current_matches": true
+    },
+    "tools/export_z62_async_video.py": {
+      "expected": "d1decc56f5627be2ddb75079e43d8161ea354dca162d5269845b31bc603b566a",
+      "actual": "d1decc56f5627be2ddb75079e43d8161ea354dca162d5269845b31bc603b566a",
+      "current_matches": true
+    },
+    "tools/assets/z62-async-video.js": {
+      "expected": "77b597e7fff87be59f49f121641a118f4a17d407aaafeec28ad3a2f72ce1a300",
+      "actual": "77b597e7fff87be59f49f121641a118f4a17d407aaafeec28ad3a2f72ce1a300",
+      "current_matches": true
+    },
+    "start-z6ii-async-video.cmd": {
+      "expected": "2786ecb6a1b3ed0705fcbbf889f3293a734d9ffe82edf63d0e6f201f371eb9ae",
+      "actual": "2786ecb6a1b3ed0705fcbbf889f3293a734d9ffe82edf63d0e6f201f371eb9ae",
+      "current_matches": true
+    }
+  },
+  "r27_all_13_sources_unchanged": true,
+  "virtual_card": {
+    "path": "<USERPROFILE>\\Documents\\Z62-QEMU-runtime\\fixtures\\card-r22-4096.raw",
+    "snapshot": true,
+    "before_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "after_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "current_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+    "current_matches_before_after": true
+  },
+  "export_diagnostics": {
+    "work-stage-upstream-r43-1": {
+      "completed": true,
+      "original_unchanged": true,
+      "audit": {
+        "exports_checked": 3,
+        "issues": [],
+        "all_exports_structurally_usable": true,
+        "semantics_verified": false
+      },
+      "warnings": {}
+    },
+    "work-stage-upstream-r43-2": {
+      "completed": true,
+      "original_unchanged": true,
+      "audit": {
+        "exports_checked": 2,
+        "issues": [],
+        "all_exports_structurally_usable": true,
+        "semantics_verified": false
+      },
+      "warnings": {
+        "1026b5ea.c": [
+          "/* WARNING: Type propagation algorithm not settling */"
+        ]
+      }
+    }
+  },
+  "initial_watch_probe_failure_preserved": "origin-1/intentional-abort.json",
+  "generic_memory_step_tool_changed": true,
+  "firmware_or_qemu_device_changed": false,
+  "regression_tests": 502,
+  "regression_seconds": 157.381,
+  "regression_exit_code": 0,
+  "regression_full_captured_output_saved": true,
+  "runtime_full_captured_output_saved": true,
+  "default_entry_changed": false,
+  "guest_software_patched": false,
+  "software_event_injected": false,
+  "camera_accessed": false,
+  "allocation_epoch_verified": false,
+  "hardware_image_output_verified": false,
+  "mode_recovery_verified": false,
+  "whole_camera_verified": false,
+  "factory_af_verified": false,
+  "flash_safety_verified": false
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "completed": true,
+  "exit_code": 0,
+  "command": [
+    "D:\\Mypi_deskktop\\.pi-desktoooop\\data\\scratch\\ea676126-86fa-48b9-8090-07cabb814b52\\toolchain\\msys64\\ucrt64\\bin\\gcc.exe",
+    "-std=c11",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-I",
+    "qemu/z62-preview-results-format",
+    "tests/native/z62_preview_results_format_test.c",
+    "-o",
+    "analysis/z62-results-r47/format-green/format-test.exe"
+  ],
+  "profile_header_sha256": "6c4c655e5b0ba2de1b57a31632f90eb60d10cfba39883aa55cefd3a775041c8b",
+  "test_output": "Z62 physical output profiles, independent result bits, metadata independence and rejection checks passed\nObserved Z62 per-unit format transitions accepted; unobserved formats rejected\n",
+  "firmware_executed": false,
+  "camera_accessed": false
+}

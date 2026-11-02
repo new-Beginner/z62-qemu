@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "completed": true,
+  "implementation_level": "C",
+  "firmware_executed": false,
+  "camera_accessed": false,
+  "preload_only": true,
+  "binary_sha256": "cd2085ecdc5d77151c07958ae6a111d5055199affac3d751db3568bb019f29dc",
+  "preloaded_frame_before_guest_execution": true,
+  "initial_file_ascii_staged": true
+}

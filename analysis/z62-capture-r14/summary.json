@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "qemu_sha256": "81406798183345e1aa975aada2c05151aa61c4514cfcee926fc8375cdf95c1fc",
+  "evidence_sha256": {
+    "full-state-targeted/trace.json": "47a362859deecb6a960526af5190136d1a48515e91b83178e8d4660b30b4219b",
+    "full-state-targeted/session.json": "98c420008f903900d59f55640fd47d6aba5d37383640720fd112f889a1abff8a",
+    "permission/trace.json": "46b4304535f6dbe597b38f84cb9bc461a2433b43d5fdc7aa13672334d921b1e8",
+    "permission/session.json": "a207cc4f7da7a653a30d3999ae63386ca782596b73e94f70b4619f59f79d0cd8",
+    "requirements-boot/trace.json": "c5cdd1144efb61d3e74e9596303b2ad385a433019e25d4bd07a99097c8517dd7",
+    "requirements-boot/session.json": "66cf8121b631b58ca150594ee236ef4ecb6e22d708d71dc7530fb0d0625bf4de",
+    "components/trace.json": "5276380d2802a0e9ae867f72d43b94e852a88312c48421ff46c8012693d01525",
+    "components/session.json": "6c8b058c141093412a2b0146674da003ebffe1644ce54727e7a85cebbeb75d3b",
+    "component-types/trace.json": "89be8952a3c6e164eb26701f349a10c5b36b6ce5a047899d0c51f475f7c2a9a5",
+    "component-types/session.json": "acc17555939816e76e77f5deff38a5935df69f6e7cda4b6f83fa46b64b2f4517",
+    "group23-header/trace.json": "6db0921e042a291f6c538be52c5a1352a0f7b951b2e0288fffed1384c1289bf2",
+    "group23-header/session.json": "0714937bc9c9b5c0fd6249391ca1ace27dd1ca2da1d7b1c7993ac34fc135a561",
+    "group23-capture/trace.json": "988b525f9506e4a5f5adc3c5c4dcfa825ce936daa9b9a241e7a0d2f952e2c464",
+    "group23-capture/session.json": "8465c0155dc967abf4de4c5b9668f307e1e74ecd46e14b1c4153dfac8e23f0ab",
+    "group23-header/fixture.json": "d68b12413f0e10a22ca4638268cd6092cac7cf5eeb714d3e7f4365e1848a4205",
+    "group23-capture/fixture.json": "2dff2c3275d69eb38259bf67c10af6035269d51c0ac170693dc81da6cb66150e"
+  },
+  "native_full_request_observed": true,
+  "native_capture_state_byte": "0xC23E3F76",
+  "baseline_blockers": [
+    "0x25",
+    "0x2c"
+  ],
+  "group23_blockers": [
+    "0x25"
+  ],
+  "group23_component_ready_observed": true,
+  "factory_calibration_recovered": false,
+  "capture_state3_reached": false,
+  "photo_capture_verified": false,
+  "complete_emulator": false,
+  "flash_safety_verified": false
+}

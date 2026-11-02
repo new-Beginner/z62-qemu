@@ -1,0 +1,281 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-result-subscriptions-r46",
+  "completed_bounded_observation": true,
+  "exec_session": 62189,
+  "host_exit_code": 0,
+  "guest_seconds": 18.055,
+  "observer_wall_seconds": 288.39,
+  "stops": 251,
+  "pid": 55468,
+  "stop_reason": "virtual limit",
+  "process_closed": true,
+  "detach": "OK",
+  "generic_capture_trace_complete_flag": false,
+  "binding_observations": 245,
+  "kind_counts": {
+    "result-callback-registration": 1,
+    "result-callback-native-store": 1,
+    "native-graph-snapshot": 4,
+    "result-forward-selection": 4,
+    "result-forward-native-store": 4,
+    "library-result-handoff": 223,
+    "result-binding-before-wait": 8
+  },
+  "wait_snapshots": 8,
+  "unique_wait_snapshots": 1,
+  "first_wait_snapshot": {
+    "read_only": true,
+    "snapshots_atomic": false,
+    "source_instruction_4": "f3f086ff",
+    "source_instruction_matches": true,
+    "guest_software_written_by_host": false,
+    "hardware_completion_verified": false,
+    "kind": "result-binding-before-wait",
+    "device_handle_raw": 3246398832,
+    "command_dispatch_callback": "0x1038ad1f",
+    "result_dispatch_callback": "0x1038ad1b",
+    "forward_mask_raw": 113,
+    "software_binding_raw_14": "701d80c145af38101fad38101bad381071000000",
+    "library_hooks": [
+      "0x102e47b1",
+      "0x102e47ab",
+      "0x102e47a5"
+    ],
+    "command_forward_masks_raw": [
+      16453,
+      16453
+    ],
+    "result_translation_masks_raw": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "result_translation_rows": [
+      [
+        2,
+        49,
+        0
+      ],
+      [
+        0,
+        50,
+        0
+      ],
+      [
+        0,
+        51,
+        0
+      ],
+      [
+        0,
+        52,
+        0
+      ],
+      [
+        16,
+        53,
+        0
+      ],
+      [
+        1,
+        54,
+        0
+      ],
+      [
+        4,
+        55,
+        0
+      ],
+      [
+        0,
+        56,
+        0
+      ]
+    ],
+    "command_contexts_raw_60": "02000600010000000000010000000000010000000000010001000100000000000100000003000000007f37c2787f37c200003801020001000300000001000000000007000100160002000000000000000000000000000100a07737c2187837c2",
+    "library_contexts": [
+      {
+        "pointer": "0xc2377f00",
+        "available": true,
+        "raw_20": "0000000002000000007f37c22152261083301942387f37c20000000000000000",
+        "callback_table_pointer": "0xc2377f38",
+        "callback_table_available": true,
+        "callback_table_raw_0c": "e8030000093d2610093d2610",
+        "callbacks": [
+          "0x3e8",
+          "0x10263d09",
+          "0x10263d09"
+        ]
+      },
+      {
+        "pointer": "0xc23777a0",
+        "available": true,
+        "raw_20": "0000000002000000a07737c2cd46261083301942d87737c20000000000000000",
+        "callback_table_pointer": "0xc23777d8",
+        "callback_table_available": true,
+        "callback_table_raw_0c": "e80300004d3d26104d3d2610",
+        "callbacks": [
+          "0x3e8",
+          "0x10263d4d",
+          "0x10263d4d"
+        ]
+      }
+    ],
+    "hardware_masks_raw": [
+      1,
+      113,
+      67076092
+    ],
+    "interpretation_of_result_rows_verified": false
+  },
+  "last_wait_snapshot": {
+    "read_only": true,
+    "snapshots_atomic": false,
+    "source_instruction_4": "f3f086ff",
+    "source_instruction_matches": true,
+    "guest_software_written_by_host": false,
+    "hardware_completion_verified": false,
+    "kind": "result-binding-before-wait",
+    "device_handle_raw": 3246398832,
+    "command_dispatch_callback": "0x1038ad1f",
+    "result_dispatch_callback": "0x1038ad1b",
+    "forward_mask_raw": 113,
+    "software_binding_raw_14": "701d80c145af38101fad38101bad381071000000",
+    "library_hooks": [
+      "0x102e47b1",
+      "0x102e47ab",
+      "0x102e47a5"
+    ],
+    "command_forward_masks_raw": [
+      16453,
+      16453
+    ],
+    "result_translation_masks_raw": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "result_translation_rows": [
+      [
+        2,
+        49,
+        0
+      ],
+      [
+        0,
+        50,
+        0
+      ],
+      [
+        0,
+        51,
+        0
+      ],
+      [
+        0,
+        52,
+        0
+      ],
+      [
+        16,
+        53,
+        0
+      ],
+      [
+        1,
+        54,
+        0
+      ],
+      [
+        4,
+        55,
+        0
+      ],
+      [
+        0,
+        56,
+        0
+      ]
+    ],
+    "command_contexts_raw_60": "02000600010000000000010000000000010000000000010001000100000000000100000003000000007f37c2787f37c200003801020001000300000001000000000007000100160002000000000000000000000000000100a07737c2187837c2",
+    "library_contexts": [
+      {
+        "pointer": "0xc2377f00",
+        "available": true,
+        "raw_20": "0000000002000000007f37c22152261083301942387f37c20000000000000000",
+        "callback_table_pointer": "0xc2377f38",
+        "callback_table_available": true,
+        "callback_table_raw_0c": "e8030000093d2610093d2610",
+        "callbacks": [
+          "0x3e8",
+          "0x10263d09",
+          "0x10263d09"
+        ]
+      },
+      {
+        "pointer": "0xc23777a0",
+        "available": true,
+        "raw_20": "0000000002000000a07737c2cd46261083301942d87737c20000000000000000",
+        "callback_table_pointer": "0xc23777d8",
+        "callback_table_available": true,
+        "callback_table_raw_0c": "e80300004d3d26104d3d2610",
+        "callbacks": [
+          "0x3e8",
+          "0x10263d4d",
+          "0x10263d4d"
+        ]
+      }
+    ],
+    "hardware_masks_raw": [
+      1,
+      113,
+      67076092
+    ],
+    "interpretation_of_result_rows_verified": false
+  },
+  "all_observations_match_trace": true,
+  "all_instruction_anchors_match": true,
+  "handoffs": [
+    {
+      "mode_raw": 0,
+      "message_code_raw": "0x42193081",
+      "predicted_callback": "0x10263d4d",
+      "argument0_raw": 1,
+      "count": 223,
+      "callback_execution_verified": false
+    }
+  ],
+  "graphs": [
+    {
+      "container": "0xc2377f78",
+      "count": 11,
+      "observed_graph_snapshots": 1,
+      "distinct_snapshots": 1
+    },
+    {
+      "container": "0xc2377818",
+      "count": 18,
+      "observed_graph_snapshots": 3,
+      "distinct_snapshots": 1
+    }
+  ],
+  "native_result_registration_store_verified": true,
+  "runtime_stdout_all_hit_sequences_saved": true,
+  "runtime_stdout_bytes": 20824,
+  "guest_software_written_by_host": false,
+  "software_event_injected": false,
+  "hardware_completion_verified": false,
+  "mode_recovery_verified": false,
+  "whole_camera_verified": false
+}

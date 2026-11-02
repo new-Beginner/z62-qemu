@@ -1,0 +1,4 @@
+# Optional independent NEF audit environment; not required by the camera host.
+numpy==2.4.1
+Pillow==12.2.0
+rawpy==0.25.1

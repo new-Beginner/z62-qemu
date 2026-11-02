@@ -1,0 +1,1060 @@
+{
+  "completed": true,
+  "camera_accessed": false,
+  "url": "http://127.0.0.1:64090",
+  "entry": "tools\\run_z62_software_console.py",
+  "expected_version": "2026.10.29-no-lens-r16",
+  "diagnostic_key": "preview_status",
+  "candidate": false,
+  "pid": 46800,
+  "last_state": {
+    "model": "Z62",
+    "phase": "running",
+    "error": null,
+    "ready": true,
+    "package_version": "2026.10.29-no-lens-r16",
+    "package_root": "<USERPROFILE>\\Documents\\Z62-QEMU-runtime\\sessions\\z62-reference-2tdq92h3",
+    "main_screen_experiment": false,
+    "sd_card_attached": false,
+    "experimental_boundaries": 0,
+    "input_ready": true,
+    "main_screen_usable": false,
+    "auto_menu": "off",
+    "uptime": 29,
+    "body_controls": {
+      "version": "2026.10.30-body-input-r19",
+      "source_sha256": "f240c75639d5c00270c662a62af24f3fcb968609c64a425aa86710434dc4c78c",
+      "controls": [
+        {
+          "id": "play",
+          "pin": 8,
+          "keyboard_code": "KeyP",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "delete",
+          "pin": 23,
+          "keyboard_code": "Delete",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "release-mode",
+          "pin": 1,
+          "keyboard_code": "KeyR",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "i",
+          "pin": 2,
+          "keyboard_code": "KeyI",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "iso",
+          "pin": 19,
+          "keyboard_code": "KeyO",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "exposure-compensation",
+          "pin": 18,
+          "keyboard_code": "KeyE",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "disp",
+          "pin": 10,
+          "keyboard_code": "KeyD",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "zoom-in",
+          "pin": 22,
+          "keyboard_code": "Equal",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "zoom-out",
+          "pin": 21,
+          "keyboard_code": "Minus",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        }
+      ],
+      "guest_software_patched": false,
+      "complete_body_controls": false,
+      "electrical_input": {
+        "known": true,
+        "levels": 16777215
+      }
+    },
+    "encoder_adapter": {
+      "version": "2026.10.30-encoder-queue-r20",
+      "source_sha256": "3a400f26d8965cf8df91c6aca896319f0224d84f9c96cd86c3b65a6cb21714a5",
+      "max_queued_phases": 128,
+      "minimum_phase_guest_seconds": 0.02,
+      "guest_software_patched": false,
+      "photographic_function_verified": false
+    },
+    "encoder_labels": {
+      "version": "2026.10.30-encoder-labels-r20",
+      "source_sha256": "02c75176fa48a10aefad477965ba6b4e2b49afc8806f14aea9534e4108fdc290",
+      "labels": [
+        "主拨轮",
+        "副拨轮"
+      ],
+      "basis": "C1.70 rotary-name table and original ISO combination",
+      "clockwise_direction_verified": false,
+      "shutter_aperture_controls_verified": false
+    },
+    "encoder_input": {
+      "known": true,
+      "queued_phases": 0,
+      "phases": {
+        "0": 0,
+        "1": 0
+      },
+      "issued_phases": 0,
+      "cancel_requests": 0,
+      "counts_are_guest_observations": false
+    },
+    "extra_input": {
+      "known": true,
+      "gpio_levels": {
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1
+      },
+      "joystick_position": "neutral",
+      "joystick_requested": "neutral",
+      "queued_positions": 0
+    },
+    "mode_dial": {
+      "known": true,
+      "lock_pressed": false,
+      "position": "P",
+      "code": 0,
+      "adc_sample": 0,
+      "effective_firmware_mode_known": false
+    },
+    "mode_dial_adapter": {
+      "version": "2026.10.30-mode-console-r22",
+      "source_sha256": "ec8e279a9ae947d06c54f4233ea299494c7dd1c32699dbdf6675419d457e8b29",
+      "modes": {
+        "P": 0,
+        "S": 1,
+        "A": 2,
+        "M": 3,
+        "U1": 4,
+        "U2": 5,
+        "U3": 6,
+        "AUTO": 10
+      },
+      "selector": {
+        "version": "2026.10.30-mode-input-r21",
+        "source_sha256": "cc55d3200b2e10033481b46faa4c933a72b512b8d143911e58595a4add7862c2",
+        "adc_channel": 2,
+        "bands": [
+          [
+            0,
+            231,
+            0
+          ],
+          [
+            231,
+            717,
+            1
+          ],
+          [
+            717,
+            1234,
+            2
+          ],
+          [
+            1234,
+            1780,
+            3
+          ],
+          [
+            1780,
+            2335,
+            6
+          ],
+          [
+            2335,
+            2875,
+            5
+          ],
+          [
+            2875,
+            3399,
+            4
+          ],
+          [
+            3399,
+            4096,
+            10
+          ]
+        ],
+        "samples": {
+          "0": 115,
+          "1": 473,
+          "2": 975,
+          "3": 1506,
+          "6": 2057,
+          "5": 2604,
+          "4": 3136,
+          "10": 3747
+        },
+        "guest_software_patched": false
+      },
+      "mechanical_lock_only": true,
+      "guest_software_patched": false,
+      "all_exposure_mode_functions_verified": false
+    },
+    "extra_input_adapter": {
+      "version": "2026.10.30-extra-console-r21",
+      "source_sha256": "fd3efa1c72d0d8d05002efbc2354d14d915b7a5ac62f9eb5ef1569ee5aa2819d",
+      "gpio_input": {
+        "version": "2026.10.30-extra-input-r21",
+        "source_sha256": "dc554653890383f687cbede5b6c1b7b78de5ffd8070e88a92f89f57a99f2dbdf",
+        "gpio_keys": {
+          "26": {
+            "name": "AF-ON",
+            "port": 1073879040,
+            "pin": 2,
+            "wire_offset": 27
+          },
+          "27": {
+            "name": "Fn1",
+            "port": 1073873920,
+            "pin": 15,
+            "wire_offset": 59
+          },
+          "28": {
+            "name": "Fn2",
+            "port": 1073872896,
+            "pin": 10,
+            "wire_offset": 60
+          },
+          "29": {
+            "name": "录像",
+            "port": 1073873920,
+            "pin": 1,
+            "wire_offset": 9
+          }
+        },
+        "joystick_pins": {
+          "neutral": [],
+          "center": [
+            11
+          ],
+          "right": [
+            11,
+            14
+          ],
+          "left": [
+            11,
+            15
+          ],
+          "up": [
+            11,
+            13
+          ],
+          "down": [
+            11,
+            12
+          ],
+          "right-up": [
+            11,
+            14,
+            13
+          ],
+          "right-down": [
+            11,
+            14,
+            12
+          ],
+          "left-up": [
+            11,
+            15,
+            13
+          ],
+          "left-down": [
+            11,
+            15,
+            12
+          ]
+        },
+        "guest_software_patched": false,
+        "af_lens_or_recording_verified": false
+      },
+      "guest_software_patched": false,
+      "photographic_functions_verified": false
+    },
+    "execution": "running",
+    "index": 3,
+    "held": [],
+    "queued": [],
+    "menu_pending": false,
+    "virtual_seconds": 1.702,
+    "lcd_frames": 13,
+    "display_enabled": false,
+    "reference_update_version": "2026.10.27-r1",
+    "sampling_source": false,
+    "sensor_pixels_modeled": false,
+    "shoulder": {
+      "page": 0,
+      "reads": 0,
+      "writes": 0,
+      "id-reads": 0,
+      "page-writes": 0,
+      "image": "000000000000000000080000c9000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "shoulder_physical_segments": false,
+    "firmware_status_count": 0,
+    "firmware_status_codes": [],
+    "firmware_health_known": true,
+    "firmware_status_empty": true,
+    "live_view_verified": false,
+    "functional_raw_status": {
+      "engines": {
+        "master": {
+          "functional-raw": true,
+          "raw-accepted": 23,
+          "raw-rejected": 3,
+          "raw-bytes": 210278144,
+          "raw-last-reason": "success"
+        },
+        "slave": {
+          "functional-raw": true,
+          "raw-accepted": 0,
+          "raw-rejected": 0,
+          "raw-bytes": 0,
+          "raw-last-reason": "reset"
+        }
+      },
+      "errors": [],
+      "live_view_verified": false,
+      "packing_verified": false,
+      "snapshot_atomic": false,
+      "known": true
+    },
+    "transaction_bridge": {
+      "engines": {
+        "master": {
+          "functional-raw-completion": true,
+          "raw-source-events": 23,
+          "raw-completions": 0,
+          "raw-ignored": 23,
+          "raw-coalesced": 0,
+          "raw-completion-last-reason": "mode-mismatch"
+        },
+        "slave": {
+          "functional-raw-completion": true,
+          "raw-source-events": 0,
+          "raw-completions": 0,
+          "raw-ignored": 0,
+          "raw-coalesced": 0,
+          "raw-completion-last-reason": "reset"
+        }
+      },
+      "errors": [],
+      "snapshot_atomic": false,
+      "hardware_timing_verified": false,
+      "live_view_verified": false,
+      "known": true
+    },
+    "capcom_sync_status": {
+      "known": true,
+      "engines": {
+        "master": {
+          "z62-capcom-sync": true,
+          "capcom-requests": 1,
+          "capcom-completions": 1,
+          "capcom-coalesced": 0
+        },
+        "slave": {
+          "z62-capcom-sync": true,
+          "capcom-requests": 0,
+          "capcom-completions": 0,
+          "capcom-coalesced": 0
+        }
+      },
+      "errors": [],
+      "mechanical_capture_verified": false,
+      "latency_ns_hypothesis": 100000
+    },
+    "hardware_version": "2026.10.30-r21",
+    "raw_stream_status": {
+      "known": true,
+      "engines": {
+        "master": {
+          "z62-raw-stream": true,
+          "raw-stream-active": true,
+          "raw-stream-attempts": 23,
+          "raw-stream-frames": 23,
+          "raw-stream-failed": 0,
+          "raw-stream-blocked": 0,
+          "raw-stream-unrelated": 0
+        },
+        "slave": {
+          "z62-raw-stream": true,
+          "raw-stream-active": false,
+          "raw-stream-attempts": 0,
+          "raw-stream-frames": 0,
+          "raw-stream-failed": 0,
+          "raw-stream-blocked": 0,
+          "raw-stream-unrelated": 0
+        }
+      },
+      "errors": [],
+      "isp_implemented": false,
+      "live_view_verified": false
+    },
+    "finite_stats_status": {
+      "known": true,
+      "engines": {
+        "master": {
+          "finite-attempts": 0,
+          "finite-frames": 0,
+          "finite-batches": 0,
+          "finite-rejected": 0,
+          "finite-bytes": 0,
+          "finite-reason": "reset"
+        },
+        "slave": {
+          "finite-attempts": 0,
+          "finite-frames": 0,
+          "finite-batches": 0,
+          "finite-rejected": 0,
+          "finite-bytes": 0,
+          "finite-reason": "reset"
+        }
+      },
+      "errors": [],
+      "algorithm_hypothesis": "stationary last-RAW regional box means",
+      "silicon_metering_verified": false,
+      "live_view_verified": false
+    },
+    "preview_status": {
+      "known": true,
+      "engines": {
+        "master": {
+          "z62-preview": true,
+          "preview-attempts": 0,
+          "preview-batches": 0,
+          "preview-outputs": 0,
+          "preview-bytes": 0,
+          "preview-rejected": 0,
+          "preview-blocked": 0,
+          "preview-cancelled": 0,
+          "preview-drains": 0,
+          "preview-flushes": 0,
+          "preview-reason": "reset"
+        },
+        "slave": {
+          "z62-preview": true,
+          "preview-attempts": 0,
+          "preview-batches": 0,
+          "preview-outputs": 0,
+          "preview-bytes": 0,
+          "preview-rejected": 0,
+          "preview-blocked": 0,
+          "preview-cancelled": 0,
+          "preview-drains": 0,
+          "preview-flushes": 0,
+          "preview-reason": "reset"
+        }
+      },
+      "errors": [],
+      "statistics_bank0_completed": false,
+      "silicon_pixel_math_verified": false,
+      "arbitrary_node_graphs_supported": false
+    },
+    "input_adapter": {
+      "version": "2026.10.29-capture-input-r16",
+      "source_sha256": "496073f9a2f324e2c110c8ff5988ece8d60fe0cc000c9e5c3f3672c8d98e32e9",
+      "half_press_ui_id": 24,
+      "full_press_ui_id": 25,
+      "full_press_includes_half": true,
+      "guest_software_patched": false
+    },
+    "lens_contact": {
+      "version": "2026.10.29-lens-contact-r16",
+      "source_sha256": "4116ef0aef46274e0a56d1447079b9cf92a212d04c7054c9f1a16a2423d657b2",
+      "gpio": "/machine/controller/keys-gpio",
+      "pin": 0,
+      "level": 1,
+      "configuration": "no lens attached",
+      "lens_protocol_emulated": false,
+      "guest_software_patched": false
+    },
+    "host_version": "2026.10.29-no-lens-r16",
+    "capture_input": {
+      "known": true,
+      "capture-contact-levels": 0,
+      "capture-contact-edges": 4,
+      "capture-contact-irq-events": 4,
+      "body_input_levels": [
+        1,
+        1
+      ]
+    },
+    "monitor_transport": {
+      "version": "2026.10.29-qmp-r1",
+      "timed_out_requests": 0,
+      "late_replies": 0,
+      "replayed_commands": 0,
+      "closed": false
+    },
+    "capture_acceptance": {
+      "photo_saved_verified": false,
+      "complete_emulator": false
+    }
+  },
+  "status": {
+    "model": "Z62",
+    "phase": "running",
+    "error": null,
+    "ready": true,
+    "package_version": "2026.10.29-no-lens-r16",
+    "package_root": "<USERPROFILE>\\Documents\\Z62-QEMU-runtime\\sessions\\z62-reference-2tdq92h3",
+    "main_screen_experiment": false,
+    "sd_card_attached": false,
+    "experimental_boundaries": 0,
+    "input_ready": true,
+    "main_screen_usable": false,
+    "auto_menu": "off",
+    "uptime": 26,
+    "body_controls": {
+      "version": "2026.10.30-body-input-r19",
+      "source_sha256": "f240c75639d5c00270c662a62af24f3fcb968609c64a425aa86710434dc4c78c",
+      "controls": [
+        {
+          "id": "play",
+          "pin": 8,
+          "keyboard_code": "KeyP",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "delete",
+          "pin": 23,
+          "keyboard_code": "Delete",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "release-mode",
+          "pin": 1,
+          "keyboard_code": "KeyR",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "i",
+          "pin": 2,
+          "keyboard_code": "KeyI",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "iso",
+          "pin": 19,
+          "keyboard_code": "KeyO",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "exposure-compensation",
+          "pin": 18,
+          "keyboard_code": "KeyE",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "disp",
+          "pin": 10,
+          "keyboard_code": "KeyD",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "zoom-in",
+          "pin": 22,
+          "keyboard_code": "Equal",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        },
+        {
+          "id": "zoom-out",
+          "pin": 21,
+          "keyboard_code": "Minus",
+          "mapping_basis": "original-C1.70-static-route",
+          "functional_acceptance": "pending"
+        }
+      ],
+      "guest_software_patched": false,
+      "complete_body_controls": false,
+      "electrical_input": {
+        "known": true,
+        "levels": 16777215
+      }
+    },
+    "encoder_adapter": {
+      "version": "2026.10.30-encoder-queue-r20",
+      "source_sha256": "3a400f26d8965cf8df91c6aca896319f0224d84f9c96cd86c3b65a6cb21714a5",
+      "max_queued_phases": 128,
+      "minimum_phase_guest_seconds": 0.02,
+      "guest_software_patched": false,
+      "photographic_function_verified": false
+    },
+    "encoder_labels": {
+      "version": "2026.10.30-encoder-labels-r20",
+      "source_sha256": "02c75176fa48a10aefad477965ba6b4e2b49afc8806f14aea9534e4108fdc290",
+      "labels": [
+        "主拨轮",
+        "副拨轮"
+      ],
+      "basis": "C1.70 rotary-name table and original ISO combination",
+      "clockwise_direction_verified": false,
+      "shutter_aperture_controls_verified": false
+    },
+    "encoder_input": {
+      "known": true,
+      "queued_phases": 0,
+      "phases": {
+        "0": 0,
+        "1": 0
+      },
+      "issued_phases": 0,
+      "cancel_requests": 0,
+      "counts_are_guest_observations": false
+    },
+    "extra_input": {
+      "known": true,
+      "gpio_levels": {
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1
+      },
+      "joystick_position": "neutral",
+      "joystick_requested": "neutral",
+      "queued_positions": 0
+    },
+    "mode_dial": {
+      "known": true,
+      "lock_pressed": false,
+      "position": "P",
+      "code": 0,
+      "adc_sample": 0,
+      "effective_firmware_mode_known": false
+    },
+    "mode_dial_adapter": {
+      "version": "2026.10.30-mode-console-r22",
+      "source_sha256": "ec8e279a9ae947d06c54f4233ea299494c7dd1c32699dbdf6675419d457e8b29",
+      "modes": {
+        "P": 0,
+        "S": 1,
+        "A": 2,
+        "M": 3,
+        "U1": 4,
+        "U2": 5,
+        "U3": 6,
+        "AUTO": 10
+      },
+      "selector": {
+        "version": "2026.10.30-mode-input-r21",
+        "source_sha256": "cc55d3200b2e10033481b46faa4c933a72b512b8d143911e58595a4add7862c2",
+        "adc_channel": 2,
+        "bands": [
+          [
+            0,
+            231,
+            0
+          ],
+          [
+            231,
+            717,
+            1
+          ],
+          [
+            717,
+            1234,
+            2
+          ],
+          [
+            1234,
+            1780,
+            3
+          ],
+          [
+            1780,
+            2335,
+            6
+          ],
+          [
+            2335,
+            2875,
+            5
+          ],
+          [
+            2875,
+            3399,
+            4
+          ],
+          [
+            3399,
+            4096,
+            10
+          ]
+        ],
+        "samples": {
+          "0": 115,
+          "1": 473,
+          "2": 975,
+          "3": 1506,
+          "6": 2057,
+          "5": 2604,
+          "4": 3136,
+          "10": 3747
+        },
+        "guest_software_patched": false
+      },
+      "mechanical_lock_only": true,
+      "guest_software_patched": false,
+      "all_exposure_mode_functions_verified": false
+    },
+    "extra_input_adapter": {
+      "version": "2026.10.30-extra-console-r21",
+      "source_sha256": "fd3efa1c72d0d8d05002efbc2354d14d915b7a5ac62f9eb5ef1569ee5aa2819d",
+      "gpio_input": {
+        "version": "2026.10.30-extra-input-r21",
+        "source_sha256": "dc554653890383f687cbede5b6c1b7b78de5ffd8070e88a92f89f57a99f2dbdf",
+        "gpio_keys": {
+          "26": {
+            "name": "AF-ON",
+            "port": 1073879040,
+            "pin": 2,
+            "wire_offset": 27
+          },
+          "27": {
+            "name": "Fn1",
+            "port": 1073873920,
+            "pin": 15,
+            "wire_offset": 59
+          },
+          "28": {
+            "name": "Fn2",
+            "port": 1073872896,
+            "pin": 10,
+            "wire_offset": 60
+          },
+          "29": {
+            "name": "录像",
+            "port": 1073873920,
+            "pin": 1,
+            "wire_offset": 9
+          }
+        },
+        "joystick_pins": {
+          "neutral": [],
+          "center": [
+            11
+          ],
+          "right": [
+            11,
+            14
+          ],
+          "left": [
+            11,
+            15
+          ],
+          "up": [
+            11,
+            13
+          ],
+          "down": [
+            11,
+            12
+          ],
+          "right-up": [
+            11,
+            14,
+            13
+          ],
+          "right-down": [
+            11,
+            14,
+            12
+          ],
+          "left-up": [
+            11,
+            15,
+            13
+          ],
+          "left-down": [
+            11,
+            15,
+            12
+          ]
+        },
+        "guest_software_patched": false,
+        "af_lens_or_recording_verified": false
+      },
+      "guest_software_patched": false,
+      "photographic_functions_verified": false
+    },
+    "execution": "running",
+    "index": 3,
+    "held": [],
+    "queued": [],
+    "menu_pending": false,
+    "virtual_seconds": 1.537,
+    "lcd_frames": 10,
+    "display_enabled": false,
+    "reference_update_version": "2026.10.27-r1",
+    "sampling_source": false,
+    "sensor_pixels_modeled": false,
+    "shoulder": {
+      "page": 0,
+      "reads": 0,
+      "writes": 0,
+      "id-reads": 0,
+      "page-writes": 0,
+      "image": "000000000000000000080000c9000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "shoulder_physical_segments": false,
+    "firmware_status_count": 0,
+    "firmware_status_codes": [],
+    "firmware_health_known": true,
+    "firmware_status_empty": true,
+    "live_view_verified": false,
+    "functional_raw_status": {
+      "engines": {
+        "master": {
+          "functional-raw": true,
+          "raw-accepted": 18,
+          "raw-rejected": 3,
+          "raw-bytes": 164565504,
+          "raw-last-reason": "success"
+        },
+        "slave": {
+          "functional-raw": true,
+          "raw-accepted": 0,
+          "raw-rejected": 0,
+          "raw-bytes": 0,
+          "raw-last-reason": "reset"
+        }
+      },
+      "errors": [],
+      "live_view_verified": false,
+      "packing_verified": false,
+      "snapshot_atomic": false,
+      "known": true
+    },
+    "transaction_bridge": {
+      "engines": {
+        "master": {
+          "functional-raw-completion": true,
+          "raw-source-events": 18,
+          "raw-completions": 0,
+          "raw-ignored": 18,
+          "raw-coalesced": 0,
+          "raw-completion-last-reason": "mode-mismatch"
+        },
+        "slave": {
+          "functional-raw-completion": true,
+          "raw-source-events": 0,
+          "raw-completions": 0,
+          "raw-ignored": 0,
+          "raw-coalesced": 0,
+          "raw-completion-last-reason": "reset"
+        }
+      },
+      "errors": [],
+      "snapshot_atomic": false,
+      "hardware_timing_verified": false,
+      "live_view_verified": false,
+      "known": true
+    },
+    "capcom_sync_status": {
+      "known": true,
+      "engines": {
+        "master": {
+          "z62-capcom-sync": true,
+          "capcom-requests": 1,
+          "capcom-completions": 1,
+          "capcom-coalesced": 0
+        },
+        "slave": {
+          "z62-capcom-sync": true,
+          "capcom-requests": 0,
+          "capcom-completions": 0,
+          "capcom-coalesced": 0
+        }
+      },
+      "errors": [],
+      "mechanical_capture_verified": false,
+      "latency_ns_hypothesis": 100000
+    },
+    "hardware_version": "2026.10.30-r21",
+    "raw_stream_status": {
+      "known": true,
+      "engines": {
+        "master": {
+          "z62-raw-stream": true,
+          "raw-stream-active": true,
+          "raw-stream-attempts": 18,
+          "raw-stream-frames": 18,
+          "raw-stream-failed": 0,
+          "raw-stream-blocked": 0,
+          "raw-stream-unrelated": 0
+        },
+        "slave": {
+          "z62-raw-stream": true,
+          "raw-stream-active": false,
+          "raw-stream-attempts": 0,
+          "raw-stream-frames": 0,
+          "raw-stream-failed": 0,
+          "raw-stream-blocked": 0,
+          "raw-stream-unrelated": 0
+        }
+      },
+      "errors": [],
+      "isp_implemented": false,
+      "live_view_verified": false
+    },
+    "finite_stats_status": {
+      "known": true,
+      "engines": {
+        "master": {
+          "finite-attempts": 0,
+          "finite-frames": 0,
+          "finite-batches": 0,
+          "finite-rejected": 0,
+          "finite-bytes": 0,
+          "finite-reason": "reset"
+        },
+        "slave": {
+          "finite-attempts": 0,
+          "finite-frames": 0,
+          "finite-batches": 0,
+          "finite-rejected": 0,
+          "finite-bytes": 0,
+          "finite-reason": "reset"
+        }
+      },
+      "errors": [],
+      "algorithm_hypothesis": "stationary last-RAW regional box means",
+      "silicon_metering_verified": false,
+      "live_view_verified": false
+    },
+    "preview_status": {
+      "known": true,
+      "engines": {
+        "master": {
+          "z62-preview": true,
+          "preview-attempts": 0,
+          "preview-batches": 0,
+          "preview-outputs": 0,
+          "preview-bytes": 0,
+          "preview-rejected": 0,
+          "preview-blocked": 0,
+          "preview-cancelled": 0,
+          "preview-drains": 0,
+          "preview-flushes": 0,
+          "preview-reason": "reset"
+        },
+        "slave": {
+          "z62-preview": true,
+          "preview-attempts": 0,
+          "preview-batches": 0,
+          "preview-outputs": 0,
+          "preview-bytes": 0,
+          "preview-rejected": 0,
+          "preview-blocked": 0,
+          "preview-cancelled": 0,
+          "preview-drains": 0,
+          "preview-flushes": 0,
+          "preview-reason": "reset"
+        }
+      },
+      "errors": [],
+      "statistics_bank0_completed": false,
+      "silicon_pixel_math_verified": false,
+      "arbitrary_node_graphs_supported": false
+    },
+    "input_adapter": {
+      "version": "2026.10.29-capture-input-r16",
+      "source_sha256": "496073f9a2f324e2c110c8ff5988ece8d60fe0cc000c9e5c3f3672c8d98e32e9",
+      "half_press_ui_id": 24,
+      "full_press_ui_id": 25,
+      "full_press_includes_half": true,
+      "guest_software_patched": false
+    },
+    "lens_contact": {
+      "version": "2026.10.29-lens-contact-r16",
+      "source_sha256": "4116ef0aef46274e0a56d1447079b9cf92a212d04c7054c9f1a16a2423d657b2",
+      "gpio": "/machine/controller/keys-gpio",
+      "pin": 0,
+      "level": 1,
+      "configuration": "no lens attached",
+      "lens_protocol_emulated": false,
+      "guest_software_patched": false
+    },
+    "host_version": "2026.10.29-no-lens-r16",
+    "capture_input": {
+      "known": true,
+      "capture-contact-levels": 0,
+      "capture-contact-edges": 0,
+      "capture-contact-irq-events": 0,
+      "body_input_levels": [
+        1,
+        1
+      ]
+    },
+    "monitor_transport": {
+      "version": "2026.10.29-qmp-r1",
+      "timed_out_requests": 0,
+      "late_replies": 0,
+      "replayed_commands": 0,
+      "closed": false
+    },
+    "capture_acceptance": {
+      "photo_saved_verified": false,
+      "complete_emulator": false
+    }
+  },
+  "monitor_transport_verified": true,
+  "full_press_responses": [
+    "{\"ok\":true}",
+    "{\"ok\":true}"
+  ],
+  "capture_input_after": {
+    "known": true,
+    "capture-contact-levels": 0,
+    "capture-contact-edges": 4,
+    "capture-contact-irq-events": 4,
+    "body_input_levels": [
+      1,
+      1
+    ]
+  },
+  "release_response": "{\"ok\":true}",
+  "capture_input_http_verified": true,
+  "stop_response": "{\"ok\":true}",
+  "exit_code": 0,
+  "process_closed": true
+}

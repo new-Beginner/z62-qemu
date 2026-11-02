@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-stage-resource-waits-r44",
+  "command": ".build/tools/video-r26/Scripts/python.exe -X utf8 -B -m unittest discover -s tests -q",
+  "tests": 508,
+  "seconds": 233.137,
+  "exit_code": 0,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "new_tests": 6,
+  "new_tests_failed_before_implementation": true,
+  "live_output_contract_test_failed_before_fix": true,
+  "full_captured_stdout_stderr_saved": true,
+  "log": "regression.log",
+  "unified_exec_session": 61799,
+  "scope": "Upstream wait/cleanup observation; runtime acceptance separate."
+}

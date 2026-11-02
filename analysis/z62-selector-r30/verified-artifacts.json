@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "profile": "2026.11.01-selector-ready-watch-r30",
+  "paths_relative_to": "workspace",
+  "completed_observation": true,
+  "guest_seconds": 55.08,
+  "observation_wall_seconds": 783.125,
+  "source_sha256": {
+    "tools/trace_z62_selector_ready.py": "b610a18c7c8aac13fe4446d17c414285500b0d866f35f88aac72cfeb0079c21f"
+  },
+  "archived_dependency_text_sha256": {
+    "analysis/z62-selector-r30/source-snapshot/trace_z62_upper_waits.py": "588b9f5591dc379dd3aad7d30309e8c4cbaeca926925e1da898f3715521a54f9",
+    "analysis/z62-selector-r30/source-snapshot/z62_breakpoint_window.py": "62b8edab45d331580e4cd85695a8e16eef6ce75f438621341fb19015e19f2ee6"
+  },
+  "archived_text_normalization": "LF; trailing whitespace at the end of each file was not retained",
+  "evidence_sha256": {
+    "analysis/z62-selector-r30/ready-watch-1/ready.json": "f14d556e7ef3f5399740bd2eb4ae5860480d94eafdcc2fd0432c69af1e803ced",
+    "analysis/z62-selector-r30/ready-watch-1/trace.json": "2abc2b90280e981db2521da2db73cfcbf283b5299acc091ebd59a4ba470adbe0",
+    "analysis/z62-selector-r30/regression.json": "a503168a2fe6c1e3a9744c9dc2853bb46c2cabb829805e4f817fda26d57d97be",
+    "analysis/z62-selector-r30/regression.log": "fd472a4810706197cd60605e374c0e34df02ee30e033ffae09d51690d4806e33"
+  },
+  "ready_word": "0xc1868ae8",
+  "observed_native_cpu_writes": [
+    {
+      "guest_seconds": 0.619,
+      "pc": "0x1031ed90",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "guest_seconds": 0.622,
+      "pc": "0x1031a248",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "guest_seconds": 29.924,
+      "pc": "0x10322b5a",
+      "before": 1,
+      "after": 3
+    },
+    {
+      "guest_seconds": 31.145,
+      "pc": "0x10322054",
+      "before": 3,
+      "after": 1
+    }
+  ],
+  "ready_mask": 2,
+  "callback_entries": [
+    29.924
+  ],
+  "mode_recovery_verified": false,
+  "physical_photo_video_identity_verified": false,
+  "host_wrote_guest_software_state": false,
+  "host_invoked_guest_callback": false,
+  "host_exit_code": 0,
+  "gdb_detach": "OK",
+  "owned_stage": "z62-reference-t68xo0kf",
+  "remaining_qemu_for_owned_stage": 0,
+  "virtual_card_snapshot": true,
+  "virtual_card_before_after_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+  "regression_tests": 447,
+  "regression_seconds": 177.986,
+  "regression_exit_code": 0,
+  "regression_scope": "Before the optional r31 tail-window extension",
+  "whole_camera_verified": false,
+  "factory_af_verified": false,
+  "flash_safety_verified": false
+}

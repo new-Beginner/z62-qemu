@@ -1,0 +1,219 @@
+{
+  "scope": "fresh QEMU experiments; this script only audits saved evidence",
+  "camera_accessed": false,
+  "timing": {
+    "early": {
+      "qemu_sha256": "e169431ed0a24dded62c2d3e0ea2aba1056385ec96584c57b40cd4e5ab29fba4",
+      "firmware_inputs": {
+        "master.bin": {
+          "size": 38750138,
+          "sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4"
+        },
+        "slave.bin": {
+          "size": 8832194,
+          "sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5"
+        },
+        "controller.bin": {
+          "size": 524290,
+          "sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983"
+        }
+      },
+      "first_key": {
+        "pin": 9,
+        "label": "first-menu",
+        "last_virtual_seconds": 3.054,
+        "wall_seconds": 44.36
+      },
+      "last_no_error_virtual": 4.134,
+      "first_error_virtual": 4.289,
+      "first_error_pending": "0x20000",
+      "before_menu_samples": 22,
+      "final_virtual": 18.752,
+      "menu_observed": true,
+      "reopened_observed": false,
+      "process_closed": true
+    },
+    "delayed": {
+      "qemu_sha256": "e169431ed0a24dded62c2d3e0ea2aba1056385ec96584c57b40cd4e5ab29fba4",
+      "firmware_inputs": {
+        "master.bin": {
+          "size": 38750138,
+          "sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4"
+        },
+        "slave.bin": {
+          "size": 8832194,
+          "sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5"
+        },
+        "controller.bin": {
+          "size": 524290,
+          "sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983"
+        }
+      },
+      "first_key": {
+        "pin": 9,
+        "label": "first-menu",
+        "last_virtual_seconds": 20.124,
+        "wall_seconds": 280.5
+      },
+      "last_no_error_virtual": 20.279,
+      "first_error_virtual": 20.425,
+      "first_error_pending": "0x20000",
+      "before_menu_samples": 139,
+      "final_virtual": 34.943,
+      "menu_observed": true,
+      "reopened_observed": false,
+      "process_closed": true
+    }
+  },
+  "traces": {
+    "wait-trace": {
+      "trace_complete": false,
+      "waits": {
+        "wait-800-call": null,
+        "wait-20-call": {
+          "call_virtual": 4.05,
+          "return_virtual": 4.201,
+          "duration_virtual_seconds_rounded": 0.151,
+          "raw_kernel_r0": "0xffce0000",
+          "caller_lr": "0x102dda01",
+          "status_and_mask_at_call": {
+            "0x20065508": "0x0",
+            "0x2006550c": "0xf3",
+            "0x20065504": "0x0",
+            "0x20065400": "0x10",
+            "0x20060044": "0x0",
+            "0x20060040": "0x27feb7"
+          }
+        }
+      },
+      "stop_return": "0x180",
+      "append_r0": "0x3f",
+      "append_virtual": 4.201,
+      "mode_completion_enabled": false,
+      "unrelated_waits": [
+        "0x10372aa7"
+      ],
+      "detach": "OK",
+      "process_closed": true
+    },
+    "wait-trace-filtered": {
+      "trace_complete": true,
+      "waits": {
+        "wait-800-call": {
+          "call_virtual": 3.947,
+          "return_virtual": 4.048,
+          "duration_virtual_seconds_rounded": 0.101,
+          "raw_kernel_r0": "0xffce0000",
+          "caller_lr": "0x102dbbb1",
+          "status_and_mask_at_call": {
+            "0x20065508": "0x0",
+            "0x2006550c": "0xf3",
+            "0x20065504": "0x0",
+            "0x20065400": "0x10",
+            "0x20060044": "0x0",
+            "0x20060040": "0x27feb7"
+          }
+        },
+        "wait-20-call": {
+          "call_virtual": 4.048,
+          "return_virtual": 4.2,
+          "duration_virtual_seconds_rounded": 0.152,
+          "raw_kernel_r0": "0xffce0000",
+          "caller_lr": "0x102dda01",
+          "status_and_mask_at_call": {
+            "0x20065508": "0x0",
+            "0x2006550c": "0xf3",
+            "0x20065504": "0x0",
+            "0x20065400": "0x10",
+            "0x20060044": "0x0",
+            "0x20060040": "0x27feb7"
+          }
+        }
+      },
+      "stop_return": "0x180",
+      "append_r0": "0x3f",
+      "append_virtual": 4.2,
+      "mode_completion_enabled": false,
+      "unrelated_waits": [
+        "0x10372aa7",
+        "0x10372aa7"
+      ],
+      "detach": "OK",
+      "process_closed": true
+    },
+    "mode-completion-only": {
+      "trace_complete": true,
+      "waits": {
+        "wait-800-call": {
+          "call_virtual": 3.95,
+          "return_virtual": 4.051,
+          "duration_virtual_seconds_rounded": 0.101,
+          "raw_kernel_r0": "0xffce0000",
+          "caller_lr": "0x102dbbb1",
+          "status_and_mask_at_call": {
+            "0x20065508": "0x0",
+            "0x2006550c": "0xf3",
+            "0x20065504": "0x0",
+            "0x20065400": "0x10",
+            "0x20060044": "0x0",
+            "0x20060040": "0x27feb7"
+          }
+        },
+        "wait-20-call": {
+          "call_virtual": 4.051,
+          "return_virtual": 4.052,
+          "duration_virtual_seconds_rounded": 0.001,
+          "raw_kernel_r0": "0x0",
+          "caller_lr": "0x102dda01",
+          "status_and_mask_at_call": {
+            "0x20065508": "0x0",
+            "0x2006550c": "0xf3",
+            "0x20065504": "0x0",
+            "0x20065400": "0x10",
+            "0x20060044": "0x0",
+            "0x20060040": "0x27feb7"
+          }
+        }
+      },
+      "stop_return": "0x80",
+      "append_r0": "0x3f",
+      "append_virtual": 4.052,
+      "mode_completion_enabled": true,
+      "unrelated_waits": [
+        "0x10372aa7",
+        "0x10372aa7"
+      ],
+      "detach": "OK",
+      "process_closed": true
+    }
+  },
+  "image_validation": "manual visual inspection required",
+  "firmware_members_unchanged": true,
+  "evidence_sha256": {
+    "artifacts/z62-menu-timing-20261028/early/report.json": "b6af05d9c02a586f35e694c422ff734ca73bef928adea09b2487f1dbbbff9492",
+    "artifacts/z62-menu-timing-20261028/early/session.json": "7f64b38c8fec82e5c702177a16f2c0a182307be1670dd2f210eed72510424871",
+    "artifacts/z62-menu-timing-20261028/early/effective-command-0.json": "086dafa950803cb0ae99ead17932f7aaa19d0c31257df3b232d70be74257cd67",
+    "artifacts/z62-menu-timing-20261028/early/before-menu.png": "2513e4494827f394a48f1c043b9391cd8f253eb50894cfeb199063994cdf02e3",
+    "artifacts/z62-menu-timing-20261028/early/first-menu.png": "be7859c562a111dd929bdfca9c96433db0449b2373543d35309e425722ae716e",
+    "artifacts/z62-menu-timing-20261028/early/menu-down.png": "74f08bece971670f2023302fec952be3e549d6661665f469394f512ff451a5a2",
+    "artifacts/z62-menu-timing-20261028/early/after-exit.png": "6453ea739982654d4e41d28189a1dce64f76e5ff649a506f3e845c11ad032d8a",
+    "artifacts/z62-menu-timing-20261028/early/after-reopen.png": "6b107f6f9f1cd864998b292e8404e487390956fd8f2713d67869cb96a9be437d",
+    "artifacts/z62-menu-timing-20261028/delayed/report.json": "07d419ae93367095d585bd467fa923a6dd7fdfec222d7c5e3fa339385bd1f135",
+    "artifacts/z62-menu-timing-20261028/delayed/session.json": "d39499edec5ff7e2952f9f26ce7f99cf86ae486cda0ba2d38f48e930636ccc87",
+    "artifacts/z62-menu-timing-20261028/delayed/effective-command-0.json": "5c4f66cce01826fb1f0f0bf8760383a7bd4e4f971511b837f76cd1d78f7f9792",
+    "artifacts/z62-menu-timing-20261028/delayed/before-menu.png": "2513e4494827f394a48f1c043b9391cd8f253eb50894cfeb199063994cdf02e3",
+    "artifacts/z62-menu-timing-20261028/delayed/first-menu.png": "2513e4494827f394a48f1c043b9391cd8f253eb50894cfeb199063994cdf02e3",
+    "artifacts/z62-menu-timing-20261028/delayed/menu-down.png": "74f08bece971670f2023302fec952be3e549d6661665f469394f512ff451a5a2",
+    "artifacts/z62-menu-timing-20261028/delayed/after-exit.png": "6453ea739982654d4e41d28189a1dce64f76e5ff649a506f3e845c11ad032d8a",
+    "artifacts/z62-menu-timing-20261028/delayed/after-reopen.png": "6b107f6f9f1cd864998b292e8404e487390956fd8f2713d67869cb96a9be437d",
+    "artifacts/z62-menu-timing-20261028/wait-trace/trace.json": "d95d10129194ba931821b387e98d78a663d7d061e85079a48b82e98680470dbe",
+    "artifacts/z62-menu-timing-20261028/wait-trace/session.json": "0311e63b56b4e3e49505bb3e2e2c98e62f09a754a8a5465f40dc09e72c93b03b",
+    "artifacts/z62-menu-timing-20261028/wait-trace/effective-command-0.json": "e1d5d701f948b741e55acf3668c82030255509e7839214432bee2f45ee9b1d1f",
+    "artifacts/z62-menu-timing-20261028/wait-trace-filtered/trace.json": "b72c1b7266063f358e4c53b514031ccc31090b8f833aa039c0e488b3e8cec7f6",
+    "artifacts/z62-menu-timing-20261028/wait-trace-filtered/session.json": "97bffd2de4ffd218843208ac6f55a5c224967d1ca6d0c549e490c8d24b4af140",
+    "artifacts/z62-menu-timing-20261028/wait-trace-filtered/effective-command-0.json": "71a3802dfe209fb512b015e2e88cbfa34e111578060a3a386ca129b80d1f3178",
+    "artifacts/z62-menu-timing-20261028/mode-completion-only/trace.json": "184d91bffe90a169e9a3ac2caf4b4b4fa9894af57ece0fa2ba4a47e2802280db",
+    "artifacts/z62-menu-timing-20261028/mode-completion-only/session.json": "e7be95c965d2139722bc1f1d34c4a0c75852c1eb42e34263b95f5d2b1d121587",
+    "artifacts/z62-menu-timing-20261028/mode-completion-only/effective-command-0.json": "d048c59ded0a5f8bcda3145ad09d9013f2ee7a734039f8554530063dcba61049"
+  }
+}

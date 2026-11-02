@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "version": "2026.11.01-software-camera-r22",
+  "implementation_level": "C",
+  "qemu_sha256": "0a772865868c4f666024533512d5ede2751255744caf56b594a41da6fc0ef90b",
+  "source_sha256": {
+    "tools/z62_directory_card.py": "a32052f0d37be272264fef8abb935124af896744b7b7fd4436418162bad6f7d7",
+    "tools/z62_software_camera.py": "37e276a3be6f52b9ffd394de56999dbfebd0cfbb91efe2e757f52a7c30b5ff69",
+    "tools/z62_software_console.py": "8e6b84d93a68b6e413d844d915636b9054425673f7d8acb800d4c4fa4b7205df",
+    "tools/run_z62_software_console.py": "ec61a6c54f14d7cb91f9806c9de0be845b6d79e38daa7134859ddb04f9ad2707",
+    "tools/probe_z62_software_console.py": "486de0b77d43128d67d3391cec8739d1dfe4157b3b111e4962081d7692cb364c",
+    "tools/probe_z62_entry.py": "3d7d915ab95a5ed2e8fa330196180fd71bb3cda965097455bcb8a8fc705cf16b",
+    "tools/probe_z62_encoder_console.py": "c905a05481b0f853061024a888efdf72cb5d4d368b9874a3f8491b0efb445932",
+    "tools/probe_z62_extra_console.py": "6b84585b9210c971534007d62d2a4e3ffee050671cd872d9431a487f8380b2d9",
+    "tools/probe_z62_mode_console.py": "248fc9ee7daa45068bb78f232e66210c30a9039c381e0c3781196e64f4ba5f19",
+    "tools/verify_z62_mode_controls.py": "60426c5c6d70b38e50ef795ee5590be37dcdccae3f99f6e8a70d990624295126",
+    "tools/assets/z62-software-camera.html": "d2fda1c08d85837b2745007c05eba99c3c7afd3944ec37f025d62f3b0ede79ef",
+    "tools/assets/z62-software-camera.css": "d2d83e20a910f5116b309a5f9b454ad4d2f503bdc4c3fac4ce790bd894a90502",
+    "tools/assets/z62-software-camera.js": "f2b60816aa5d3770224a505e2b181df300eb04abc1a523b46ccf8f89f6901211",
+    "tests/test_z62_entry_lifecycle.py": "d99e68a92fa134ee0bb0c1a53b074867b2d3d652a6c923e50f4c8d67f789fc76",
+    "tests/test_z62_software_camera.py": "31c3054f0b7336d884c5eeeb723d1db50143b118fc87233aaa616dca5a41fae0",
+    "tests/test_z62_software_console.py": "c50027b683410b59aac17f86aa437c7b4b835329d57466398f3591c59077b86b",
+    "start-z6ii-software-camera.cmd": "fd030db6659a56be836b453ec46acdba080f7239bc69a32c96fa3e9a8b19bfee",
+    "requirements.txt": "a7ee74849d1c0d110c8dc387f3f27490732b553a15202f85d5af2a6bb5c0f288"
+  },
+  "evidence_sha256": {
+    "mode-summary.json": "f3dbb35c14adb1f876d4b3f82cbaec78456642223a7a78c110243067c1eb7f81",
+    "mode-diagnostics-1/report.json": "be5e67a4620341945912a61b1abb6fd5c3aead45691460244cb0178599e064dd",
+    "mode-candidate-diagnostics-1/report.json": "772acdce747ce632ed2325038261b1f0c6592658de1713c1e9bc6eafd526eb17",
+    "software-http-1/report.json": "bbd4d64b13fd166c51f3990ab0172da2e3cbfe6f2e160c8d05491bb86f1a02a8",
+    "software-http-1/software-check.json": "eb5337be4a78a6b5a3fb618f78d2753a28c0476daf66486663947068d5837a71",
+    "software-http-1/captured.jpg": "2daacf9165b2cec5e51526a81a7bca4ed5d883bef49559ecc3c87472a554fb5a",
+    "software-http-1/playback-zoom.jpg": "32091bb0b43b54ce845571c906d5a8ab976cee642d1f1c8f57c68fc377ee946a",
+    "unittest.log": "dfdffcdeac461a5907333435bb911950394699907d8b6a5250ba149974a745ed",
+    "unittest-summary.json": "3bf14d02ae5953862ddc4b7731a21e86aa16dff4fcb41ada44fb38f1ea0a1749",
+    "ui-observation.json": "b86004607a2177806e4c3f8adcfdaa6b3ccdd7051c8db347c1e958ba31898cbd",
+    "software-candidate-http-1/report.json": "0b9660f113f89060f07d91525cf1639f52a1940e550b58878f9cce83f378d75f",
+    "software-candidate-http-1/software-check.json": "0b8f655dec19efd637f849198f68553ba04cd2a5a22db34ad93c53e01f66c381",
+    "software-candidate-http-1/captured.jpg": "29697c87e3e661b35e103ade4e6c1086d16dedb82a9f26918b96ebe9d774ae1b",
+    "software-candidate-http-1/playback-zoom.jpg": "32091bb0b43b54ce845571c906d5a8ab976cee642d1f1c8f57c68fc377ee946a"
+  },
+  "executed_stage": "<USERPROFILE>\\Documents\\Z62-QEMU-runtime\\sessions\\z62-reference-2tdq92h3\\source",
+  "executed_core_matches_current": {
+    "z62_directory_card.py": true,
+    "z62_software_camera.py": true,
+    "z62_software_console.py": true
+  },
+  "repository_regression": {
+    "command": "python -X utf8 -B -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "tests": 352,
+    "seconds": 216.891,
+    "failures": 0,
+    "errors": 0,
+    "log": "unittest.log",
+    "scope": "Repository regression including native boot/device tests and C software-camera tests; not complete camera acceptance or flash safety"
+  },
+  "complete_emulator": false,
+  "factory_capture_chain_verified": false,
+  "flash_safety_verified": false,
+  "candidate_executed_stage": "<USERPROFILE>\\Documents\\Z62-QEMU-runtime\\sessions\\z62-reference-4nk5mm3s\\source",
+  "candidate_executed_core_matches_current": {
+    "z62_directory_card.py": true,
+    "z62_software_camera.py": true,
+    "z62_software_console.py": true
+  },
+  "firmware_package_sha256": "5a9640b4c07abe1ecbf5a52655cbec6b893bba045bb2a1a1d21055b9f8f9d06d"
+}

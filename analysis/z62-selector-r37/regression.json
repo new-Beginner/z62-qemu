@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-processor-retire-count-r37",
+  "command": ".build/tools/video-r26/Scripts/python.exe -X utf8 -B -m unittest discover -s tests -q",
+  "tests": 470,
+  "seconds": 213.095,
+  "exit_code": 0,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "new_retire_count_tests": 3,
+  "new_tests_failed_before_implementation": true,
+  "log": "regression.log",
+  "full_captured_stdout_stderr_saved": true,
+  "log_newlines": "normalized LF",
+  "unified_exec_session": 90347,
+  "scope": "Native count/stack observation tests, not firmware recovery or wait-cause acceptance.",
+  "mode_recovery_verified": false,
+  "whole_camera_verified": false,
+  "factory_af_verified": false
+}

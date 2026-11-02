@@ -1,0 +1,560 @@
+{
+  "schema": 1,
+  "probe_completed": true,
+  "firmware_health_verified": false,
+  "flash_safety_verified": false,
+  "camera_accessed": false,
+  "candidate": {
+    "all_executed_members_match_reference": false,
+    "camera_accessed": false,
+    "candidate_layout_semantics_verified": false,
+    "flash_safety_verified": false,
+    "layout": "Z62 C1.70 fixed module names and sizes",
+    "member_crcs_verified": true,
+    "members": {
+      "controller.bin": {
+        "baseline_sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983",
+        "changed_bytes": 0,
+        "first_changed_offset": null,
+        "last_changed_offset": null,
+        "matches_reference": true,
+        "member": "ex1850_012000.bi",
+        "sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983",
+        "size": 524290
+      },
+      "master.bin": {
+        "baseline_sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+        "changed_bytes": 10,
+        "first_changed_offset": 0,
+        "last_changed_offset": 38750137,
+        "matches_reference": false,
+        "member": "eg1850_mas_01700",
+        "sha256": "df4127d24f1196d18f62f3a8f6853455dc91f708b2bc60764cd5ceb95894fcdd",
+        "size": 38750138
+      },
+      "slave.bin": {
+        "baseline_sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5",
+        "changed_bytes": 0,
+        "first_changed_offset": null,
+        "last_changed_offset": null,
+        "matches_reference": true,
+        "member": "eg1850_sla_01700",
+        "sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5",
+        "size": 8832194
+      }
+    },
+    "mode": "explicit-offline-candidate",
+    "package": null,
+    "package_crc_verified": false,
+    "schema": 1,
+    "signature_verified": false,
+    "unexecuted_members": [
+      {
+        "executed": false,
+        "member": "_tpj01_v140.bin",
+        "reason": "Peripheral processor not emulated",
+        "sha256": "e60998537d46a15c430154aeeb589026aca015256d27e2d5990589d23a59c88e",
+        "size": 57346
+      },
+      {
+        "executed": false,
+        "member": "vr1850_010100.bi",
+        "reason": "Peripheral processor not emulated",
+        "sha256": "7e48c59adff7b917b41d2a2643ae692588c7b92b955d69f0000531885df274d9",
+        "size": 838664
+      }
+    ],
+    "test_fixture": "staged ARM sentinel; intentionally not camera firmware"
+  },
+  "device": {
+    "binary": "<WORKSPACE>\\.build\\z62-preview-2026.10.29-r9\\runtime\\qemu-system-arm.exe",
+    "binary_sha256": "cdd260cba6d28801e00ada2df0ce496b2037bdd6b43beb887118c50246be1961",
+    "reference_updates": {
+      "version": "2026.10.27-r1",
+      "upstream_commit": "4a7bed36b6e747f58d5ab25f31b06a31fa7c6ec2",
+      "upstream_source_sha256": {
+        "nikon-z72-controller-panel.c": "7d7c1e9de14e084f8c52866003be2de80e0de0f2f5bf56d2c2cbab76da525a2f",
+        "nikon-z72-controller-i2c.c": "41ae3fe79c875a49a8bceea5500d9e1210067ae38b6115217ee96c8533696e23"
+      },
+      "adapter_sha256": "7aad258f284e24d035eea625374a006e01f899a29da36cae796b47cb29321763",
+      "trace_header_sha256": "25f9fc1ef2cbe85b3bd441bfc4b8beeb66364f17c3b068f3862e1a0665dc0357",
+      "console_features_sha256": "eb568607df7ffeaa8af477547aa11053630ef6d435fe0aeae264d0eff4ca5877",
+      "guest_patched": false,
+      "physical_panel_segments": false,
+      "trace_changes": "short-ring origin fixed; uint64 count; clear on reset; VMState 38 only"
+    },
+    "functional_device": {
+      "version": "2026.10.28-r4",
+      "input_sha256": {
+        "nikon-z72.c": "918225b3590d1aa3251bbd598e2a7a890cf557c8dcec1959866162b01080453a",
+        "nikon-z72-input-config.c": "a0bc556c6ed4742c5749005c2a644fa3fae963bd7ec3c06312943fe500f266c4"
+      },
+      "adapter_sha256": "2d32b622369a31eb11a82c05fc82f4f7dc4e6e97df9977d34c5e285d0600f24d",
+      "header_sha256": "7df661209e4ad1b8036d5fab4d8965a54ad2df2501651111e9579ae1f3ed578e",
+      "packing": "experimental-packed12-not-hardware-verified",
+      "trigger": "explicit-20068104-submit-only",
+      "default_enabled": false,
+      "sensor_completion_source": false,
+      "guest_patched": false
+    },
+    "transaction_device": {
+      "schema": 1,
+      "version": "2026.10.28-r5",
+      "input_sha256": {
+        "nikon-z72.c": "a948a662560b54f1b84db243bf65976125b2921f508ad3921f5b6d953405a8de",
+        "nikon-z62-sensor-config.c": "80ed89ee62530ad9abad27026004d7d06d03def2ae2738486874caa657ae7779"
+      },
+      "adapter_sha256": "b0cdd3ee4c9b4df82704cf7a08aedea6505db155981a42bbc50c96c751add52d",
+      "header_sha256": "9911dedaee082a255e7130dfd3492dbf98790b7f751ea7a77969283c0e7bc776",
+      "base_functional_device": {
+        "version": "2026.10.28-r4",
+        "input_sha256": {
+          "nikon-z72.c": "918225b3590d1aa3251bbd598e2a7a890cf557c8dcec1959866162b01080453a",
+          "nikon-z72-input-config.c": "a0bc556c6ed4742c5749005c2a644fa3fae963bd7ec3c06312943fe500f266c4"
+        },
+        "adapter_sha256": "2d32b622369a31eb11a82c05fc82f4f7dc4e6e97df9977d34c5e285d0600f24d",
+        "header_sha256": "7df661209e4ad1b8036d5fab4d8965a54ad2df2501651111e9579ae1f3ed578e",
+        "packing": "experimental-packed12-not-hardware-verified",
+        "trigger": "explicit-20068104-submit-only",
+        "default_enabled": false,
+        "sensor_completion_source": false,
+        "guest_patched": false
+      },
+      "default_enabled": false,
+      "hypothesis": "transaction-linked-mode2-IRQ92-bit1",
+      "guest_patched": false,
+      "silicon_timing_verified": false
+    },
+    "builder_sha256": "b5e5bcd735dbf44995e06efc0460970e2037515a94da81576004faf963915e3d",
+    "msys2_dir": "D:\\Mypi_deskktop\\.pi-desktoooop\\data\\scratch\\ea676126-86fa-48b9-8090-07cabb814b52\\toolchain\\msys64",
+    "donor_commit": "4f4389944fc339d107f22f5f7ca3f90cc34b78de",
+    "schema": 1,
+    "version": "2026.10.28-r5",
+    "base_generated_functional_sha256": {
+      "nikon-z72.c": "a948a662560b54f1b84db243bf65976125b2921f508ad3921f5b6d953405a8de",
+      "nikon-z72-input-config.c": "70f5bbf0cf4f0e054b5fe9718be4ad5256845171f973e6d6db8f2a55a33d6b4c",
+      "nikon-z62-functional-raw.h": "7df661209e4ad1b8036d5fab4d8965a54ad2df2501651111e9579ae1f3ed578e"
+    },
+    "generated_transaction_sha256": {
+      "nikon-z72.c": "c543a72929474488896000fc43add9e982403b5b504368e9bdb76eb53ab4589a",
+      "nikon-z62-sensor-config.c": "4d1a7abaf525ec1a02b40ee6c9d09ae6fe9864c7bf8186800f653b1523e497c3",
+      "nikon-z62-transaction.h": "9911dedaee082a255e7130dfd3492dbf98790b7f751ea7a77969283c0e7bc776"
+    },
+    "capcom_device": {
+      "schema": 1,
+      "version": "2026.10.28-r6",
+      "input_sha256": "e02a627bf37a16f92e9313a7f0a55a0a011fb218a24fc41b2830eba47973e691",
+      "adapter_sha256": "6f754c9b1a3420fb67913e28106e64b96c96c0f71377e8349a88cdf5aaca7091",
+      "header_sha256": "12b4b98436f1b2bf6c3d590bcad0487860185ee3296d426a8fddff11ae94fd88",
+      "default_enabled": false,
+      "latency_ns_hypothesis": 100000,
+      "request": "0x04282018 bit8",
+      "acknowledge": "0x04282014 bit7 IRQ65",
+      "guest_software_patched": false,
+      "mechanical_capture_verified": false
+    },
+    "raw_stream_device": {
+      "schema": 1,
+      "version": "2026.10.29-r7",
+      "input_sha256": "3e5cd8d13cc5cc25a2d85a4cfcf04a5ec870d5f517a4856c8c3469af454f21d5",
+      "adapter_sha256": "8cd316e5a3dfe493e7e330e64c99cc221d1d96562550323c098df0c8dcbd728a",
+      "header_sha256": "391edff82788be9526e38dba113ab4c3b52291a7fd6acde0ae7010fb825eb1c2",
+      "default_enabled": false,
+      "completion": "actual RAW DMA -> bank4 bit8 IRQ96",
+      "clock": "existing frame-sync source; functional cadence",
+      "isp_implemented": false,
+      "metadata_implemented": false,
+      "pixel_packing_verified": false,
+      "guest_software_patched": false
+    },
+    "parent_manifest_sha256": "01d3db98ef93a7a89d24bede045926ac0039cd4502dd9049e88c24496b7d0feb",
+    "base_generated_transaction_sha256": {
+      "nikon-z72.c": "ddf71f0aa606cda75f5699c62d626615f7c8bde4d00a9a5ba79d046c3301b623",
+      "nikon-z62-sensor-config.c": "4d1a7abaf525ec1a02b40ee6c9d09ae6fe9864c7bf8186800f653b1523e497c3",
+      "nikon-z62-transaction.h": "9911dedaee082a255e7130dfd3492dbf98790b7f751ea7a77969283c0e7bc776"
+    },
+    "finite_stats_device": {
+      "schema": 1,
+      "version": "2026.10.29-r8",
+      "input_sha256": {
+        "nikon-z72.c": "417a062a721476a5f0274aa82a2c9279ae94b5bef4318b3d16bbfd87f623ae55",
+        "nikon-z72-input-config.c": "70f5bbf0cf4f0e054b5fe9718be4ad5256845171f973e6d6db8f2a55a33d6b4c",
+        "nikon-z62-functional-raw.h": "7df661209e4ad1b8036d5fab4d8965a54ad2df2501651111e9579ae1f3ed578e"
+      },
+      "adapter_sha256": "27257ce4c7a18c456b5bf29146cd9e8722a9f3946261695ee6ded170c0da9da0",
+      "headers_sha256": {
+        "nikon-z62-finite-stats.h": "3b0020322115afcb4cef4fad6a3ae261c316ed474e5e472a6625127810a69a99",
+        "nikon-z62-finite-bridge.h": "b348d05d858a1ac1e558a72f82767b36d6024e3f2dd451a99c25a34a3f59fa1b"
+      },
+      "default_enabled": false,
+      "data_layout": "30x12 LE-u16, row64, slots61",
+      "algorithm_hypothesis": "stationary last-RAW full-frame regional box means",
+      "silicon_metering_verified": false,
+      "camera_safety_verified": false,
+      "guest_software_patched": false,
+      "isp_implemented": false
+    },
+    "preview_device": {
+      "schema": 1,
+      "version": "2026.10.29-r9",
+      "input_sha256": {
+        "nikon-z72.c": "ddf71f0aa606cda75f5699c62d626615f7c8bde4d00a9a5ba79d046c3301b623",
+        "nikon-z62-raw-stream.h": "391edff82788be9526e38dba113ab4c3b52291a7fd6acde0ae7010fb825eb1c2"
+      },
+      "adapter_sha256": "0ebd32c757c644e9d20ce9199c76f5c3ed47261c4c5d32a5ef938452b2691f7b",
+      "headers_sha256": {
+        "nikon-z62-preview.h": "60fcd24760314221b3f517db925a4b3516740e45c52dfe5d5346720a71b6d08c",
+        "nikon-z62-preview-pixels.h": "e31d5c2bb1577fbdf524386b53b6bb606d5424b89495019cf7b9b85bb90412d8"
+      },
+      "default_enabled": false,
+      "algorithm": "approximate cropped RGGB12/sRGB/NV12 preview",
+      "statistics_bank0_completed": false,
+      "arbitrary_node_graphs_supported": false,
+      "silicon_pixel_math_verified": false,
+      "guest_software_patched": false
+    }
+  },
+  "samples": [
+    {
+      "model": "Z62",
+      "phase": "running",
+      "error": null,
+      "ready": false,
+      "input_ready": false,
+      "candidate_observation_error": "ValueError: Could not read machine state",
+      "firmware_candidate": {
+        "all_executed_members_match_reference": false,
+        "camera_accessed": false,
+        "candidate_layout_semantics_verified": false,
+        "flash_safety_verified": false,
+        "layout": "Z62 C1.70 fixed module names and sizes",
+        "member_crcs_verified": true,
+        "members": {
+          "controller.bin": {
+            "baseline_sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983",
+            "changed_bytes": 0,
+            "first_changed_offset": null,
+            "last_changed_offset": null,
+            "matches_reference": true,
+            "member": "ex1850_012000.bi",
+            "sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983",
+            "size": 524290
+          },
+          "master.bin": {
+            "baseline_sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+            "changed_bytes": 10,
+            "first_changed_offset": 0,
+            "last_changed_offset": 38750137,
+            "matches_reference": false,
+            "member": "eg1850_mas_01700",
+            "sha256": "df4127d24f1196d18f62f3a8f6853455dc91f708b2bc60764cd5ceb95894fcdd",
+            "size": 38750138
+          },
+          "slave.bin": {
+            "baseline_sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5",
+            "changed_bytes": 0,
+            "first_changed_offset": null,
+            "last_changed_offset": null,
+            "matches_reference": true,
+            "member": "eg1850_sla_01700",
+            "sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5",
+            "size": 8832194
+          }
+        },
+        "mode": "explicit-offline-candidate",
+        "package": null,
+        "package_crc_verified": false,
+        "schema": 1,
+        "signature_verified": false,
+        "unexecuted_members": [
+          {
+            "executed": false,
+            "member": "_tpj01_v140.bin",
+            "reason": "Peripheral processor not emulated",
+            "sha256": "e60998537d46a15c430154aeeb589026aca015256d27e2d5990589d23a59c88e",
+            "size": 57346
+          },
+          {
+            "executed": false,
+            "member": "vr1850_010100.bi",
+            "reason": "Peripheral processor not emulated",
+            "sha256": "7e48c59adff7b917b41d2a2643ae692588c7b92b955d69f0000531885df274d9",
+            "size": 838664
+          }
+        ],
+        "test_fixture": "staged ARM sentinel; intentionally not camera firmware"
+      },
+      "firmware_health_known": false,
+      "firmware_status_empty": false,
+      "firmware_status_codes": null,
+      "firmware_status_count": null,
+      "live_view_verified": false,
+      "firmware_observation_error": "Candidate internal state layout is unverified",
+      "candidate_internal_observations_verified": false,
+      "package_version": "2026.10.28-candidate1",
+      "qmp_execution": {
+        "status": "running",
+        "running": true
+      }
+    },
+    {
+      "model": "Z62",
+      "phase": "running",
+      "error": null,
+      "ready": false,
+      "input_ready": false,
+      "candidate_observation_error": "ValueError: Could not read machine state",
+      "firmware_candidate": {
+        "all_executed_members_match_reference": false,
+        "camera_accessed": false,
+        "candidate_layout_semantics_verified": false,
+        "flash_safety_verified": false,
+        "layout": "Z62 C1.70 fixed module names and sizes",
+        "member_crcs_verified": true,
+        "members": {
+          "controller.bin": {
+            "baseline_sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983",
+            "changed_bytes": 0,
+            "first_changed_offset": null,
+            "last_changed_offset": null,
+            "matches_reference": true,
+            "member": "ex1850_012000.bi",
+            "sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983",
+            "size": 524290
+          },
+          "master.bin": {
+            "baseline_sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+            "changed_bytes": 10,
+            "first_changed_offset": 0,
+            "last_changed_offset": 38750137,
+            "matches_reference": false,
+            "member": "eg1850_mas_01700",
+            "sha256": "df4127d24f1196d18f62f3a8f6853455dc91f708b2bc60764cd5ceb95894fcdd",
+            "size": 38750138
+          },
+          "slave.bin": {
+            "baseline_sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5",
+            "changed_bytes": 0,
+            "first_changed_offset": null,
+            "last_changed_offset": null,
+            "matches_reference": true,
+            "member": "eg1850_sla_01700",
+            "sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5",
+            "size": 8832194
+          }
+        },
+        "mode": "explicit-offline-candidate",
+        "package": null,
+        "package_crc_verified": false,
+        "schema": 1,
+        "signature_verified": false,
+        "unexecuted_members": [
+          {
+            "executed": false,
+            "member": "_tpj01_v140.bin",
+            "reason": "Peripheral processor not emulated",
+            "sha256": "e60998537d46a15c430154aeeb589026aca015256d27e2d5990589d23a59c88e",
+            "size": 57346
+          },
+          {
+            "executed": false,
+            "member": "vr1850_010100.bi",
+            "reason": "Peripheral processor not emulated",
+            "sha256": "7e48c59adff7b917b41d2a2643ae692588c7b92b955d69f0000531885df274d9",
+            "size": 838664
+          }
+        ],
+        "test_fixture": "staged ARM sentinel; intentionally not camera firmware"
+      },
+      "firmware_health_known": false,
+      "firmware_status_empty": false,
+      "firmware_status_codes": null,
+      "firmware_status_count": null,
+      "live_view_verified": false,
+      "firmware_observation_error": "Candidate internal state layout is unverified",
+      "candidate_internal_observations_verified": false,
+      "package_version": "2026.10.28-candidate1",
+      "qmp_execution": {
+        "status": "running",
+        "running": true
+      }
+    },
+    {
+      "model": "Z62",
+      "phase": "running",
+      "error": null,
+      "ready": false,
+      "input_ready": false,
+      "candidate_observation_error": "ValueError: Could not read machine state",
+      "firmware_candidate": {
+        "all_executed_members_match_reference": false,
+        "camera_accessed": false,
+        "candidate_layout_semantics_verified": false,
+        "flash_safety_verified": false,
+        "layout": "Z62 C1.70 fixed module names and sizes",
+        "member_crcs_verified": true,
+        "members": {
+          "controller.bin": {
+            "baseline_sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983",
+            "changed_bytes": 0,
+            "first_changed_offset": null,
+            "last_changed_offset": null,
+            "matches_reference": true,
+            "member": "ex1850_012000.bi",
+            "sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983",
+            "size": 524290
+          },
+          "master.bin": {
+            "baseline_sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+            "changed_bytes": 10,
+            "first_changed_offset": 0,
+            "last_changed_offset": 38750137,
+            "matches_reference": false,
+            "member": "eg1850_mas_01700",
+            "sha256": "df4127d24f1196d18f62f3a8f6853455dc91f708b2bc60764cd5ceb95894fcdd",
+            "size": 38750138
+          },
+          "slave.bin": {
+            "baseline_sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5",
+            "changed_bytes": 0,
+            "first_changed_offset": null,
+            "last_changed_offset": null,
+            "matches_reference": true,
+            "member": "eg1850_sla_01700",
+            "sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5",
+            "size": 8832194
+          }
+        },
+        "mode": "explicit-offline-candidate",
+        "package": null,
+        "package_crc_verified": false,
+        "schema": 1,
+        "signature_verified": false,
+        "unexecuted_members": [
+          {
+            "executed": false,
+            "member": "_tpj01_v140.bin",
+            "reason": "Peripheral processor not emulated",
+            "sha256": "e60998537d46a15c430154aeeb589026aca015256d27e2d5990589d23a59c88e",
+            "size": 57346
+          },
+          {
+            "executed": false,
+            "member": "vr1850_010100.bi",
+            "reason": "Peripheral processor not emulated",
+            "sha256": "7e48c59adff7b917b41d2a2643ae692588c7b92b955d69f0000531885df274d9",
+            "size": 838664
+          }
+        ],
+        "test_fixture": "staged ARM sentinel; intentionally not camera firmware"
+      },
+      "firmware_health_known": false,
+      "firmware_status_empty": false,
+      "firmware_status_codes": null,
+      "firmware_status_count": null,
+      "live_view_verified": false,
+      "firmware_observation_error": "Candidate internal state layout is unverified",
+      "candidate_internal_observations_verified": false,
+      "package_version": "2026.10.28-candidate1",
+      "qmp_execution": {
+        "status": "running",
+        "running": true
+      }
+    },
+    {
+      "model": "Z62",
+      "phase": "running",
+      "error": null,
+      "ready": false,
+      "input_ready": false,
+      "candidate_observation_error": "ValueError: Could not read machine state",
+      "firmware_candidate": {
+        "all_executed_members_match_reference": false,
+        "camera_accessed": false,
+        "candidate_layout_semantics_verified": false,
+        "flash_safety_verified": false,
+        "layout": "Z62 C1.70 fixed module names and sizes",
+        "member_crcs_verified": true,
+        "members": {
+          "controller.bin": {
+            "baseline_sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983",
+            "changed_bytes": 0,
+            "first_changed_offset": null,
+            "last_changed_offset": null,
+            "matches_reference": true,
+            "member": "ex1850_012000.bi",
+            "sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983",
+            "size": 524290
+          },
+          "master.bin": {
+            "baseline_sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+            "changed_bytes": 10,
+            "first_changed_offset": 0,
+            "last_changed_offset": 38750137,
+            "matches_reference": false,
+            "member": "eg1850_mas_01700",
+            "sha256": "df4127d24f1196d18f62f3a8f6853455dc91f708b2bc60764cd5ceb95894fcdd",
+            "size": 38750138
+          },
+          "slave.bin": {
+            "baseline_sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5",
+            "changed_bytes": 0,
+            "first_changed_offset": null,
+            "last_changed_offset": null,
+            "matches_reference": true,
+            "member": "eg1850_sla_01700",
+            "sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5",
+            "size": 8832194
+          }
+        },
+        "mode": "explicit-offline-candidate",
+        "package": null,
+        "package_crc_verified": false,
+        "schema": 1,
+        "signature_verified": false,
+        "unexecuted_members": [
+          {
+            "executed": false,
+            "member": "_tpj01_v140.bin",
+            "reason": "Peripheral processor not emulated",
+            "sha256": "e60998537d46a15c430154aeeb589026aca015256d27e2d5990589d23a59c88e",
+            "size": 57346
+          },
+          {
+            "executed": false,
+            "member": "vr1850_010100.bi",
+            "reason": "Peripheral processor not emulated",
+            "sha256": "7e48c59adff7b917b41d2a2643ae692588c7b92b955d69f0000531885df274d9",
+            "size": 838664
+          }
+        ],
+        "test_fixture": "staged ARM sentinel; intentionally not camera firmware"
+      },
+      "firmware_health_known": false,
+      "firmware_status_empty": false,
+      "firmware_status_codes": null,
+      "firmware_status_count": null,
+      "live_view_verified": false,
+      "firmware_observation_error": "Candidate internal state layout is unverified",
+      "candidate_internal_observations_verified": false,
+      "package_version": "2026.10.28-candidate1",
+      "qmp_execution": {
+        "status": "running",
+        "running": true
+      }
+    }
+  ],
+  "pid": 6956,
+  "master_cpu": {
+    "pc": "0x10020004",
+    "r0": "0x62",
+    "cpsr": "0x400001d3"
+  },
+  "entry_bytes": "6200a0e3feffffea",
+  "selected_entry_loaded": true,
+  "sentinel_executed": true,
+  "detach": "OK",
+  "qemu_exit_code": 0,
+  "clean_exit": true,
+  "staged_members_unchanged": true
+}

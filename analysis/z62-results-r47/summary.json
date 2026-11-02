@@ -1,0 +1,1377 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-preview-result-delivery-r47b",
+  "completed_observation": true,
+  "exec_session": 54744,
+  "host_exit_code": 0,
+  "guest_seconds": 12.013,
+  "observer_wall_seconds": 244.453,
+  "stops": 608,
+  "pid": 54292,
+  "owned_stage": "z62-reference-ym6gh32_",
+  "process_closed": true,
+  "detach": "OK",
+  "stop_reason": "virtual limit",
+  "generic_capture_trace_complete_flag": false,
+  "observation_count": 602,
+  "kind_counts": {
+    "result-callback-registration": 1,
+    "result-callback-native-store": 1,
+    "native-irq102-status": 55,
+    "result-forward-selection": 4,
+    "result-forward-native-store": 4,
+    "library-result-handoff": 195,
+    "native-preview-callback": 195,
+    "native-preview-publication": 145,
+    "result-binding-before-wait": 2
+  },
+  "irq_status18_1c_20": {
+    "0x1,0x0,0x0": 6,
+    "0x0,0x61,0x8": 49
+  },
+  "callback82_count": 146,
+  "publication_point_count": 145,
+  "paired_callback_publication": 145,
+  "incomplete_callbacks": 1,
+  "outside_publications": 0,
+  "callback_payloads": {
+    "1": 49,
+    "2": 49,
+    "4": 48
+  },
+  "publication_payloads": {
+    "1": 48,
+    "2": 49,
+    "4": 48
+  },
+  "native_counter_publication_range": [
+    1,
+    123
+  ],
+  "complete_result_triplets": 48,
+  "result_irq_groups": [
+    {
+      "irq_sequence": 23,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 35,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 48,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 60,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 72,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 84,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 96,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 108,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 120,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 132,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 144,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 156,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 168,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 180,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 192,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 204,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 216,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 228,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 240,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 252,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 264,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 276,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 288,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 300,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 312,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 324,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 336,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 348,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 360,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 372,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 384,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 397,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 409,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 421,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 433,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 445,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 457,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 469,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 481,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 493,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 505,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 517,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 529,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 541,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 553,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 565,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 577,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 589,
+      "payloads": [
+        2,
+        1,
+        4
+      ],
+      "complete_triplet": true
+    },
+    {
+      "irq_sequence": 601,
+      "payloads": [
+        2
+      ],
+      "complete_triplet": false
+    }
+  ],
+  "paired_publications": [
+    {
+      "callback_sequence": 27,
+      "publication_sequence": 28,
+      "payload": 2,
+      "native_count_after_increment": 1
+    },
+    {
+      "callback_sequence": 30,
+      "publication_sequence": 31,
+      "payload": 1,
+      "native_count_after_increment": 2
+    },
+    {
+      "callback_sequence": 33,
+      "publication_sequence": 34,
+      "payload": 4,
+      "native_count_after_increment": 3
+    },
+    {
+      "callback_sequence": 39,
+      "publication_sequence": 40,
+      "payload": 2,
+      "native_count_after_increment": 4
+    },
+    {
+      "callback_sequence": 42,
+      "publication_sequence": 43,
+      "payload": 1,
+      "native_count_after_increment": 5
+    },
+    {
+      "callback_sequence": 45,
+      "publication_sequence": 46,
+      "payload": 4,
+      "native_count_after_increment": 6
+    },
+    {
+      "callback_sequence": 52,
+      "publication_sequence": 53,
+      "payload": 2,
+      "native_count_after_increment": 7
+    },
+    {
+      "callback_sequence": 55,
+      "publication_sequence": 56,
+      "payload": 1,
+      "native_count_after_increment": 8
+    },
+    {
+      "callback_sequence": 58,
+      "publication_sequence": 59,
+      "payload": 4,
+      "native_count_after_increment": 9
+    },
+    {
+      "callback_sequence": 64,
+      "publication_sequence": 65,
+      "payload": 2,
+      "native_count_after_increment": 10
+    },
+    {
+      "callback_sequence": 67,
+      "publication_sequence": 68,
+      "payload": 1,
+      "native_count_after_increment": 11
+    },
+    {
+      "callback_sequence": 70,
+      "publication_sequence": 71,
+      "payload": 4,
+      "native_count_after_increment": 12
+    },
+    {
+      "callback_sequence": 76,
+      "publication_sequence": 77,
+      "payload": 2,
+      "native_count_after_increment": 13
+    },
+    {
+      "callback_sequence": 79,
+      "publication_sequence": 80,
+      "payload": 1,
+      "native_count_after_increment": 14
+    },
+    {
+      "callback_sequence": 82,
+      "publication_sequence": 83,
+      "payload": 4,
+      "native_count_after_increment": 15
+    },
+    {
+      "callback_sequence": 88,
+      "publication_sequence": 89,
+      "payload": 2,
+      "native_count_after_increment": 16
+    },
+    {
+      "callback_sequence": 91,
+      "publication_sequence": 92,
+      "payload": 1,
+      "native_count_after_increment": 17
+    },
+    {
+      "callback_sequence": 94,
+      "publication_sequence": 95,
+      "payload": 4,
+      "native_count_after_increment": 18
+    },
+    {
+      "callback_sequence": 100,
+      "publication_sequence": 101,
+      "payload": 2,
+      "native_count_after_increment": 19
+    },
+    {
+      "callback_sequence": 103,
+      "publication_sequence": 104,
+      "payload": 1,
+      "native_count_after_increment": 20
+    },
+    {
+      "callback_sequence": 106,
+      "publication_sequence": 107,
+      "payload": 4,
+      "native_count_after_increment": 21
+    },
+    {
+      "callback_sequence": 112,
+      "publication_sequence": 113,
+      "payload": 2,
+      "native_count_after_increment": 19
+    },
+    {
+      "callback_sequence": 115,
+      "publication_sequence": 116,
+      "payload": 1,
+      "native_count_after_increment": 20
+    },
+    {
+      "callback_sequence": 118,
+      "publication_sequence": 119,
+      "payload": 4,
+      "native_count_after_increment": 21
+    },
+    {
+      "callback_sequence": 124,
+      "publication_sequence": 125,
+      "payload": 2,
+      "native_count_after_increment": 22
+    },
+    {
+      "callback_sequence": 127,
+      "publication_sequence": 128,
+      "payload": 1,
+      "native_count_after_increment": 23
+    },
+    {
+      "callback_sequence": 130,
+      "publication_sequence": 131,
+      "payload": 4,
+      "native_count_after_increment": 24
+    },
+    {
+      "callback_sequence": 136,
+      "publication_sequence": 137,
+      "payload": 2,
+      "native_count_after_increment": 25
+    },
+    {
+      "callback_sequence": 139,
+      "publication_sequence": 140,
+      "payload": 1,
+      "native_count_after_increment": 26
+    },
+    {
+      "callback_sequence": 142,
+      "publication_sequence": 143,
+      "payload": 4,
+      "native_count_after_increment": 27
+    },
+    {
+      "callback_sequence": 148,
+      "publication_sequence": 149,
+      "payload": 2,
+      "native_count_after_increment": 28
+    },
+    {
+      "callback_sequence": 151,
+      "publication_sequence": 152,
+      "payload": 1,
+      "native_count_after_increment": 29
+    },
+    {
+      "callback_sequence": 154,
+      "publication_sequence": 155,
+      "payload": 4,
+      "native_count_after_increment": 30
+    },
+    {
+      "callback_sequence": 160,
+      "publication_sequence": 161,
+      "payload": 2,
+      "native_count_after_increment": 31
+    },
+    {
+      "callback_sequence": 163,
+      "publication_sequence": 164,
+      "payload": 1,
+      "native_count_after_increment": 32
+    },
+    {
+      "callback_sequence": 166,
+      "publication_sequence": 167,
+      "payload": 4,
+      "native_count_after_increment": 33
+    },
+    {
+      "callback_sequence": 172,
+      "publication_sequence": 173,
+      "payload": 2,
+      "native_count_after_increment": 34
+    },
+    {
+      "callback_sequence": 175,
+      "publication_sequence": 176,
+      "payload": 1,
+      "native_count_after_increment": 35
+    },
+    {
+      "callback_sequence": 178,
+      "publication_sequence": 179,
+      "payload": 4,
+      "native_count_after_increment": 36
+    },
+    {
+      "callback_sequence": 184,
+      "publication_sequence": 185,
+      "payload": 2,
+      "native_count_after_increment": 34
+    },
+    {
+      "callback_sequence": 187,
+      "publication_sequence": 188,
+      "payload": 1,
+      "native_count_after_increment": 35
+    },
+    {
+      "callback_sequence": 190,
+      "publication_sequence": 191,
+      "payload": 4,
+      "native_count_after_increment": 36
+    },
+    {
+      "callback_sequence": 196,
+      "publication_sequence": 197,
+      "payload": 2,
+      "native_count_after_increment": 37
+    },
+    {
+      "callback_sequence": 199,
+      "publication_sequence": 200,
+      "payload": 1,
+      "native_count_after_increment": 38
+    },
+    {
+      "callback_sequence": 202,
+      "publication_sequence": 203,
+      "payload": 4,
+      "native_count_after_increment": 39
+    },
+    {
+      "callback_sequence": 208,
+      "publication_sequence": 209,
+      "payload": 2,
+      "native_count_after_increment": 40
+    },
+    {
+      "callback_sequence": 211,
+      "publication_sequence": 212,
+      "payload": 1,
+      "native_count_after_increment": 41
+    },
+    {
+      "callback_sequence": 214,
+      "publication_sequence": 215,
+      "payload": 4,
+      "native_count_after_increment": 42
+    },
+    {
+      "callback_sequence": 220,
+      "publication_sequence": 221,
+      "payload": 2,
+      "native_count_after_increment": 43
+    },
+    {
+      "callback_sequence": 223,
+      "publication_sequence": 224,
+      "payload": 1,
+      "native_count_after_increment": 44
+    },
+    {
+      "callback_sequence": 226,
+      "publication_sequence": 227,
+      "payload": 4,
+      "native_count_after_increment": 45
+    },
+    {
+      "callback_sequence": 232,
+      "publication_sequence": 233,
+      "payload": 2,
+      "native_count_after_increment": 46
+    },
+    {
+      "callback_sequence": 235,
+      "publication_sequence": 236,
+      "payload": 1,
+      "native_count_after_increment": 47
+    },
+    {
+      "callback_sequence": 238,
+      "publication_sequence": 239,
+      "payload": 4,
+      "native_count_after_increment": 48
+    },
+    {
+      "callback_sequence": 244,
+      "publication_sequence": 245,
+      "payload": 2,
+      "native_count_after_increment": 49
+    },
+    {
+      "callback_sequence": 247,
+      "publication_sequence": 248,
+      "payload": 1,
+      "native_count_after_increment": 50
+    },
+    {
+      "callback_sequence": 250,
+      "publication_sequence": 251,
+      "payload": 4,
+      "native_count_after_increment": 51
+    },
+    {
+      "callback_sequence": 256,
+      "publication_sequence": 257,
+      "payload": 2,
+      "native_count_after_increment": 49
+    },
+    {
+      "callback_sequence": 259,
+      "publication_sequence": 260,
+      "payload": 1,
+      "native_count_after_increment": 50
+    },
+    {
+      "callback_sequence": 262,
+      "publication_sequence": 263,
+      "payload": 4,
+      "native_count_after_increment": 51
+    },
+    {
+      "callback_sequence": 268,
+      "publication_sequence": 269,
+      "payload": 2,
+      "native_count_after_increment": 52
+    },
+    {
+      "callback_sequence": 271,
+      "publication_sequence": 272,
+      "payload": 1,
+      "native_count_after_increment": 53
+    },
+    {
+      "callback_sequence": 274,
+      "publication_sequence": 275,
+      "payload": 4,
+      "native_count_after_increment": 54
+    },
+    {
+      "callback_sequence": 280,
+      "publication_sequence": 281,
+      "payload": 2,
+      "native_count_after_increment": 55
+    },
+    {
+      "callback_sequence": 283,
+      "publication_sequence": 284,
+      "payload": 1,
+      "native_count_after_increment": 56
+    },
+    {
+      "callback_sequence": 286,
+      "publication_sequence": 287,
+      "payload": 4,
+      "native_count_after_increment": 57
+    },
+    {
+      "callback_sequence": 292,
+      "publication_sequence": 293,
+      "payload": 2,
+      "native_count_after_increment": 58
+    },
+    {
+      "callback_sequence": 295,
+      "publication_sequence": 296,
+      "payload": 1,
+      "native_count_after_increment": 59
+    },
+    {
+      "callback_sequence": 298,
+      "publication_sequence": 299,
+      "payload": 4,
+      "native_count_after_increment": 60
+    },
+    {
+      "callback_sequence": 304,
+      "publication_sequence": 305,
+      "payload": 2,
+      "native_count_after_increment": 61
+    },
+    {
+      "callback_sequence": 307,
+      "publication_sequence": 308,
+      "payload": 1,
+      "native_count_after_increment": 62
+    },
+    {
+      "callback_sequence": 310,
+      "publication_sequence": 311,
+      "payload": 4,
+      "native_count_after_increment": 63
+    },
+    {
+      "callback_sequence": 316,
+      "publication_sequence": 317,
+      "payload": 2,
+      "native_count_after_increment": 64
+    },
+    {
+      "callback_sequence": 319,
+      "publication_sequence": 320,
+      "payload": 1,
+      "native_count_after_increment": 65
+    },
+    {
+      "callback_sequence": 322,
+      "publication_sequence": 323,
+      "payload": 4,
+      "native_count_after_increment": 66
+    },
+    {
+      "callback_sequence": 328,
+      "publication_sequence": 329,
+      "payload": 2,
+      "native_count_after_increment": 64
+    },
+    {
+      "callback_sequence": 331,
+      "publication_sequence": 332,
+      "payload": 1,
+      "native_count_after_increment": 65
+    },
+    {
+      "callback_sequence": 334,
+      "publication_sequence": 335,
+      "payload": 4,
+      "native_count_after_increment": 66
+    },
+    {
+      "callback_sequence": 340,
+      "publication_sequence": 341,
+      "payload": 2,
+      "native_count_after_increment": 67
+    },
+    {
+      "callback_sequence": 343,
+      "publication_sequence": 344,
+      "payload": 1,
+      "native_count_after_increment": 68
+    },
+    {
+      "callback_sequence": 346,
+      "publication_sequence": 347,
+      "payload": 4,
+      "native_count_after_increment": 69
+    },
+    {
+      "callback_sequence": 352,
+      "publication_sequence": 353,
+      "payload": 2,
+      "native_count_after_increment": 70
+    },
+    {
+      "callback_sequence": 355,
+      "publication_sequence": 356,
+      "payload": 1,
+      "native_count_after_increment": 71
+    },
+    {
+      "callback_sequence": 358,
+      "publication_sequence": 359,
+      "payload": 4,
+      "native_count_after_increment": 72
+    },
+    {
+      "callback_sequence": 364,
+      "publication_sequence": 365,
+      "payload": 2,
+      "native_count_after_increment": 73
+    },
+    {
+      "callback_sequence": 367,
+      "publication_sequence": 368,
+      "payload": 1,
+      "native_count_after_increment": 74
+    },
+    {
+      "callback_sequence": 370,
+      "publication_sequence": 371,
+      "payload": 4,
+      "native_count_after_increment": 75
+    },
+    {
+      "callback_sequence": 376,
+      "publication_sequence": 377,
+      "payload": 2,
+      "native_count_after_increment": 76
+    },
+    {
+      "callback_sequence": 379,
+      "publication_sequence": 380,
+      "payload": 1,
+      "native_count_after_increment": 77
+    },
+    {
+      "callback_sequence": 382,
+      "publication_sequence": 383,
+      "payload": 4,
+      "native_count_after_increment": 78
+    },
+    {
+      "callback_sequence": 388,
+      "publication_sequence": 389,
+      "payload": 2,
+      "native_count_after_increment": 76
+    },
+    {
+      "callback_sequence": 391,
+      "publication_sequence": 392,
+      "payload": 1,
+      "native_count_after_increment": 77
+    },
+    {
+      "callback_sequence": 394,
+      "publication_sequence": 395,
+      "payload": 4,
+      "native_count_after_increment": 78
+    },
+    {
+      "callback_sequence": 401,
+      "publication_sequence": 402,
+      "payload": 2,
+      "native_count_after_increment": 79
+    },
+    {
+      "callback_sequence": 404,
+      "publication_sequence": 405,
+      "payload": 1,
+      "native_count_after_increment": 80
+    },
+    {
+      "callback_sequence": 407,
+      "publication_sequence": 408,
+      "payload": 4,
+      "native_count_after_increment": 81
+    },
+    {
+      "callback_sequence": 413,
+      "publication_sequence": 414,
+      "payload": 2,
+      "native_count_after_increment": 82
+    },
+    {
+      "callback_sequence": 416,
+      "publication_sequence": 417,
+      "payload": 1,
+      "native_count_after_increment": 83
+    },
+    {
+      "callback_sequence": 419,
+      "publication_sequence": 420,
+      "payload": 4,
+      "native_count_after_increment": 84
+    },
+    {
+      "callback_sequence": 425,
+      "publication_sequence": 426,
+      "payload": 2,
+      "native_count_after_increment": 85
+    },
+    {
+      "callback_sequence": 428,
+      "publication_sequence": 429,
+      "payload": 1,
+      "native_count_after_increment": 86
+    },
+    {
+      "callback_sequence": 431,
+      "publication_sequence": 432,
+      "payload": 4,
+      "native_count_after_increment": 87
+    },
+    {
+      "callback_sequence": 437,
+      "publication_sequence": 438,
+      "payload": 2,
+      "native_count_after_increment": 88
+    },
+    {
+      "callback_sequence": 440,
+      "publication_sequence": 441,
+      "payload": 1,
+      "native_count_after_increment": 89
+    },
+    {
+      "callback_sequence": 443,
+      "publication_sequence": 444,
+      "payload": 4,
+      "native_count_after_increment": 90
+    },
+    {
+      "callback_sequence": 449,
+      "publication_sequence": 450,
+      "payload": 2,
+      "native_count_after_increment": 91
+    },
+    {
+      "callback_sequence": 452,
+      "publication_sequence": 453,
+      "payload": 1,
+      "native_count_after_increment": 92
+    },
+    {
+      "callback_sequence": 455,
+      "publication_sequence": 456,
+      "payload": 4,
+      "native_count_after_increment": 93
+    },
+    {
+      "callback_sequence": 461,
+      "publication_sequence": 462,
+      "payload": 2,
+      "native_count_after_increment": 91
+    },
+    {
+      "callback_sequence": 464,
+      "publication_sequence": 465,
+      "payload": 1,
+      "native_count_after_increment": 92
+    },
+    {
+      "callback_sequence": 467,
+      "publication_sequence": 468,
+      "payload": 4,
+      "native_count_after_increment": 93
+    },
+    {
+      "callback_sequence": 473,
+      "publication_sequence": 474,
+      "payload": 2,
+      "native_count_after_increment": 94
+    },
+    {
+      "callback_sequence": 476,
+      "publication_sequence": 477,
+      "payload": 1,
+      "native_count_after_increment": 95
+    },
+    {
+      "callback_sequence": 479,
+      "publication_sequence": 480,
+      "payload": 4,
+      "native_count_after_increment": 96
+    },
+    {
+      "callback_sequence": 485,
+      "publication_sequence": 486,
+      "payload": 2,
+      "native_count_after_increment": 97
+    },
+    {
+      "callback_sequence": 488,
+      "publication_sequence": 489,
+      "payload": 1,
+      "native_count_after_increment": 98
+    },
+    {
+      "callback_sequence": 491,
+      "publication_sequence": 492,
+      "payload": 4,
+      "native_count_after_increment": 99
+    },
+    {
+      "callback_sequence": 497,
+      "publication_sequence": 498,
+      "payload": 2,
+      "native_count_after_increment": 100
+    },
+    {
+      "callback_sequence": 500,
+      "publication_sequence": 501,
+      "payload": 1,
+      "native_count_after_increment": 101
+    },
+    {
+      "callback_sequence": 503,
+      "publication_sequence": 504,
+      "payload": 4,
+      "native_count_after_increment": 102
+    },
+    {
+      "callback_sequence": 509,
+      "publication_sequence": 510,
+      "payload": 2,
+      "native_count_after_increment": 103
+    },
+    {
+      "callback_sequence": 512,
+      "publication_sequence": 513,
+      "payload": 1,
+      "native_count_after_increment": 104
+    },
+    {
+      "callback_sequence": 515,
+      "publication_sequence": 516,
+      "payload": 4,
+      "native_count_after_increment": 105
+    },
+    {
+      "callback_sequence": 521,
+      "publication_sequence": 522,
+      "payload": 2,
+      "native_count_after_increment": 106
+    },
+    {
+      "callback_sequence": 524,
+      "publication_sequence": 525,
+      "payload": 1,
+      "native_count_after_increment": 107
+    },
+    {
+      "callback_sequence": 527,
+      "publication_sequence": 528,
+      "payload": 4,
+      "native_count_after_increment": 108
+    },
+    {
+      "callback_sequence": 533,
+      "publication_sequence": 534,
+      "payload": 2,
+      "native_count_after_increment": 106
+    },
+    {
+      "callback_sequence": 536,
+      "publication_sequence": 537,
+      "payload": 1,
+      "native_count_after_increment": 107
+    },
+    {
+      "callback_sequence": 539,
+      "publication_sequence": 540,
+      "payload": 4,
+      "native_count_after_increment": 108
+    },
+    {
+      "callback_sequence": 545,
+      "publication_sequence": 546,
+      "payload": 2,
+      "native_count_after_increment": 109
+    },
+    {
+      "callback_sequence": 548,
+      "publication_sequence": 549,
+      "payload": 1,
+      "native_count_after_increment": 110
+    },
+    {
+      "callback_sequence": 551,
+      "publication_sequence": 552,
+      "payload": 4,
+      "native_count_after_increment": 111
+    },
+    {
+      "callback_sequence": 557,
+      "publication_sequence": 558,
+      "payload": 2,
+      "native_count_after_increment": 112
+    },
+    {
+      "callback_sequence": 560,
+      "publication_sequence": 561,
+      "payload": 1,
+      "native_count_after_increment": 113
+    },
+    {
+      "callback_sequence": 563,
+      "publication_sequence": 564,
+      "payload": 4,
+      "native_count_after_increment": 114
+    },
+    {
+      "callback_sequence": 569,
+      "publication_sequence": 570,
+      "payload": 2,
+      "native_count_after_increment": 115
+    },
+    {
+      "callback_sequence": 572,
+      "publication_sequence": 573,
+      "payload": 1,
+      "native_count_after_increment": 116
+    },
+    {
+      "callback_sequence": 575,
+      "publication_sequence": 576,
+      "payload": 4,
+      "native_count_after_increment": 117
+    },
+    {
+      "callback_sequence": 581,
+      "publication_sequence": 582,
+      "payload": 2,
+      "native_count_after_increment": 118
+    },
+    {
+      "callback_sequence": 584,
+      "publication_sequence": 585,
+      "payload": 1,
+      "native_count_after_increment": 119
+    },
+    {
+      "callback_sequence": 587,
+      "publication_sequence": 588,
+      "payload": 4,
+      "native_count_after_increment": 120
+    },
+    {
+      "callback_sequence": 593,
+      "publication_sequence": 594,
+      "payload": 2,
+      "native_count_after_increment": 121
+    },
+    {
+      "callback_sequence": 596,
+      "publication_sequence": 597,
+      "payload": 1,
+      "native_count_after_increment": 122
+    },
+    {
+      "callback_sequence": 599,
+      "publication_sequence": 600,
+      "payload": 4,
+      "native_count_after_increment": 123
+    },
+    {
+      "callback_sequence": 605,
+      "publication_sequence": 606,
+      "payload": 2,
+      "native_count_after_increment": 121
+    }
+  ],
+  "bank0_command_counts": [
+    0
+  ],
+  "bank0_skip_counts": [
+    1
+  ],
+  "result_irq_and_native_callback_publication_observed": true,
+  "publication_point_is_not_downstream_work_completion": true,
+  "guest_software_written_by_host": false,
+  "software_event_injected": false,
+  "bank0_numerical_graph_executed": false,
+  "whole_camera_verified": false
+}

@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "qemu_sha256": "81406798183345e1aa975aada2c05151aa61c4514cfcee926fc8375cdf95c1fc",
+  "body_controls": {
+    "version": "2026.10.30-body-input-r19",
+    "source_sha256": "f240c75639d5c00270c662a62af24f3fcb968609c64a425aa86710434dc4c78c",
+    "controls": [
+      {
+        "id": "play",
+        "pin": 8,
+        "keyboard_code": "KeyP",
+        "mapping_basis": "original-C1.70-static-route",
+        "functional_acceptance": "pending"
+      },
+      {
+        "id": "delete",
+        "pin": 23,
+        "keyboard_code": "Delete",
+        "mapping_basis": "original-C1.70-static-route",
+        "functional_acceptance": "pending"
+      },
+      {
+        "id": "release-mode",
+        "pin": 1,
+        "keyboard_code": "KeyR",
+        "mapping_basis": "original-C1.70-static-route",
+        "functional_acceptance": "pending"
+      },
+      {
+        "id": "i",
+        "pin": 2,
+        "keyboard_code": "KeyI",
+        "mapping_basis": "original-C1.70-static-route",
+        "functional_acceptance": "pending"
+      },
+      {
+        "id": "iso",
+        "pin": 19,
+        "keyboard_code": "KeyO",
+        "mapping_basis": "original-C1.70-static-route",
+        "functional_acceptance": "pending"
+      },
+      {
+        "id": "exposure-compensation",
+        "pin": 18,
+        "keyboard_code": "KeyE",
+        "mapping_basis": "original-C1.70-static-route",
+        "functional_acceptance": "pending"
+      },
+      {
+        "id": "disp",
+        "pin": 10,
+        "keyboard_code": "KeyD",
+        "mapping_basis": "original-C1.70-static-route",
+        "functional_acceptance": "pending"
+      },
+      {
+        "id": "zoom-in",
+        "pin": 22,
+        "keyboard_code": "Equal",
+        "mapping_basis": "original-C1.70-static-route",
+        "functional_acceptance": "pending"
+      },
+      {
+        "id": "zoom-out",
+        "pin": 21,
+        "keyboard_code": "Minus",
+        "mapping_basis": "original-C1.70-static-route",
+        "functional_acceptance": "pending"
+      }
+    ],
+    "guest_software_patched": false,
+    "complete_body_controls": false
+  },
+  "evidence_sha256": {
+    "static-contract.json": "f0156b938cdef47cb32137300d4746d0211e2e545fcf79988bcb5d9de5dff96b",
+    "body-http/report.json": "cd61a053d9dffd43e44ae46ad72774230b1088ec11790e8894a0de37364165ae",
+    "body-http-candidate/report.json": "0963f73df3ba58e08d0b4cbb87e6cf7d40d3cfedea600fcb3eaaa2272b08e6ce",
+    "pin8/report.json": "6b175e9d381626ba59632644ee5b3a8946f36817d41119c2492d8f738581aaa0",
+    "pin8/session.json": "cfb1b056d3b2c0132903a4a2883646436afb9219dd69fecddcaceb250d3274f4",
+    "visual-review.json": "23c394b1600993d460f649ecffffc7e08e559c4096c7fe130d543ef07abe0f9b"
+  },
+  "static_routes": 15,
+  "baseline_electrical_inputs_verified": 9,
+  "candidate_electrical_inputs_verified": 9,
+  "playback_no_card_and_half_return_verified": true,
+  "returned_preview_batches": [
+    749,
+    918
+  ],
+  "all_new_button_functions_verified": false,
+  "photo_playback_verified": false,
+  "complete_emulator": false,
+  "flash_safety_verified": false
+}

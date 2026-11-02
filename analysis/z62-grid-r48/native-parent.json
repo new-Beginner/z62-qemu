@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "completed": false,
+  "binary_sha256": "145520bd35f763957f6be0e0cce33cb84312f34a6501991f49a93af91f9e46e8",
+  "firmware_loaded": false,
+  "algorithm_level": "C",
+  "camera_accessed": false,
+  "parent_under_test": true,
+  "failure": {
+    "type": "AssertionError",
+    "message": "{'error': {'class': 'GenericError', 'desc': \"Property 'nikon-z72-boot-config.grid-groups' not found\"}}"
+  }
+}

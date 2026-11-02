@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "source": "Observed unified exec session 31970; manually transcribed summary, not a stored full log",
+  "command": ".build/tools/video-r26/Scripts/python.exe -X utf8 -B -m unittest discover -s tests -v",
+  "temporary_root": "D:/Z62-QEMU-runtime/sessions",
+  "exit_code": 0,
+  "tests": 415,
+  "seconds": 148.716,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "video_specific_tests": 24,
+  "pyav_version": "19.0.2",
+  "scope": "RGB r26 profile before the browser-color compatibility correction; r26b requires a fresh run. Not complete camera, original encoder, AF or flash-safety acceptance"
+}

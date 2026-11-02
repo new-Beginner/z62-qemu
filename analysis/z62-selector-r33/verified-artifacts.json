@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "paths_relative_to": "workspace",
+  "verified_on": "2026-11-02",
+  "qemu_profile": "2026.10.30-r21",
+  "qemu_sha256": "0a772865868c4f666024533512d5ede2751255744caf56b594a41da6fc0ef90b",
+  "master_member_with_crc_sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+  "virtual_card_snapshot": true,
+  "virtual_card_before_after_current_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+  "r27_fixed_sources_checked": 13,
+  "r27_fixed_source_mismatches": [],
+  "r24_binary_sha256": "dbe36d222dbfa633086f906f626968635c61d9825eaee8174480bef22a39abf2",
+  "default_entry_changed": false,
+  "qemu_device_source_changed": false,
+  "guest_software_patched": false,
+  "guest_functions_called_by_host": false,
+  "camera_accessed": false,
+  "physical_photo_video_identity_verified": false,
+  "mode_recovery_verified": false,
+  "whole_camera_verified": false,
+  "factory_af_verified": false,
+  "flash_safety_verified": false,
+  "profile": "2026.11.01-selector-configuration-observation-r33",
+  "source_sha256": {
+    "tools/trace_z62_selector_configuration.py": "0a0dbe8445647411125c2d62002a65073e03c50be83a11ebb2fc187deb77d9b6",
+    "tools/analyze_z62_configuration_flow.py": "8c35a215b1ad358c0fe1d83d88dd9896ad42343117f870882d114475302ff0a2",
+    "tests/test_z62_selector_configuration.py": "d1290bfa886a799052608b4b3a430b8e191931fba71868775cbee6c1a0004943",
+    "tests/test_z62_configuration_flow.py": "227d72431951192b7986441b861dfbfeca0056680ca3abd68ae84c3bf6e740f2",
+    "tools/z62_breakpoint_window.py": "aaae9f4d050b4923096807692876b3361ac7241bbab39a638f8e3458aebabe1f",
+    "tools/trace_z62_upper_waits.py": "14b260ff83c50b03caa57a01165b0322fbf4db0bff25d69efcfc57db650a4a13"
+  },
+  "evidence_sha256": {
+    "analysis/z62-selector-r33/configuration-1/anchors.json": "4abe4225d9cf80fe15982ff1023849c11ca879dc8267deea6b22b188abe72282",
+    "analysis/z62-selector-r33/configuration-1/configuration.json": "6a1d0a61001b8adf25b9783c24fd9de0ee01e27a7c12e6b22d8c7ff8914f3275",
+    "analysis/z62-selector-r33/configuration-1/effective-command-0.json": "fbb28a475ceda146f2c379bb9245862fc98c6acb35eb296b422a8889deb467b7",
+    "analysis/z62-selector-r33/configuration-1/fixture.json": "ef819c325530d3423d3f87d4403576c0622568dba3d7beb2586e7d584f86e9ef",
+    "analysis/z62-selector-r33/configuration-1/flow.json": "a9430cc4720051f191e86860655e8692758a157f96d0b17652366bd630fbce23",
+    "analysis/z62-selector-r33/configuration-1/processing.json": "695678425bec26ecfca0121038eeb5b9dd4f3bfe3efd5e4c26fb30837df59ae4",
+    "analysis/z62-selector-r33/configuration-1/queue.json": "d2a6214e0185562d3e74e36a7c636f35f3e66e1cf63dbc1e2501d09a7bb108fe",
+    "analysis/z62-selector-r33/configuration-1/route.json": "c6d26c9d2cef2fa1f0ba8aaef1fff02afafb7be0eb93de2b44f07aac1a631d60",
+    "analysis/z62-selector-r33/configuration-1/selector.json": "2f5ec1191b19e841eb8c401a23f4918a5be2fe77962d13810b8a67c6479479fc",
+    "analysis/z62-selector-r33/configuration-1/session.json": "f32f3d169a8243dd8b3842ef7d9512fb2e066abe5a436ea9765983c3a6dedf57",
+    "analysis/z62-selector-r33/configuration-1/trace.json": "9d8e94511aee9dbf316debe02850b32cdc23c99ba822a5737216a993b5b90441",
+    "analysis/z62-selector-r33/configuration-1/before.png": "7a85bcbd4cb512be594f78838452b811b6c964bab88f2be34787dcc6d0c26a92",
+    "analysis/z62-selector-r33/configuration-1/pin0-high.png": "15efa79c197d71bef9662104e770dac14e2f679cc0571cea129087bf50fbe49c",
+    "analysis/z62-selector-r33/configuration-1/pin0-low.png": "15efa79c197d71bef9662104e770dac14e2f679cc0571cea129087bf50fbe49c",
+    "analysis/z62-selector-r33/regression-final.log": "4f15f4a52d019abdc6af91e89dcdb965b1201fa7ce7d5bfa32697ad4e84b7d22",
+    "analysis/z62-selector-r33/regression-final.json": "4527c95e9992c210caffd39f7e62fc5ad2925948bf2715b2e34a6814ccf7ec26",
+    "analysis/z62-selector-r33/control-state-producers.json": "ecf6033f4051bb36bfaea2b078c162f5d68945cbd52d918c4979d5884a406fa7",
+    "analysis/z62-selector-r33/control-event-callers.json": "aa9ea16816f2efa3ff79c6242e6a80a0bb4d4d2e4e86a8e370940eac9892faae",
+    "analysis/z62-ghidra/selector-state-transition-r33-1/10225994.c": "10b06306ae110515267655969fc8700e27e6de9046a24baf5d6da2d79d85a356",
+    "analysis/z62-ghidra/selector-state-transition-r33-1/10225994.asm": "b079b2c471c1e5f244236065b6e458b7fded0785f86884c6a07df85852a0fa38",
+    "analysis/z62-ghidra/selector-state-transition-r33-1/manifest.json": "b6e8cab86fcb13dd233fda294f53bcbf9161d7ec27b638cba0632f2dd3900a70",
+    "analysis/z62-selector-r33/scope.md": "91b192a095c7e9abab2ff2a6a74b74e049ed8036e6f2f5e4386acba2617d5763"
+  },
+  "completed_observation": false,
+  "input_trace_complete": false,
+  "host_exit_code": 1,
+  "exec_session": 51349,
+  "stop_reason": "wall or stop limit",
+  "max_stops": 1200,
+  "stops": 1200,
+  "last_hit_guest_seconds": 48.871,
+  "last_periodic_guest_seconds": 48.825,
+  "observer_wall_seconds": 974.063,
+  "detach": "OK",
+  "process_closed": true,
+  "remaining_owned_qemu": 0,
+  "configuration_site_snapshots": 1174,
+  "paired_configuration_calls": 3,
+  "incomplete_observed_calls": 0,
+  "outside_scope_observations": 1165,
+  "paired_calls": [
+    {
+      "thread": "01",
+      "sp": "0xc51c1fd0",
+      "call_seconds": 4.981,
+      "return_seconds": 4.987,
+      "requested": {
+        "pointer": "0xc3c99180",
+        "available": true,
+        "raw": "0300000000000000000000000000000000000000000000000000000000000000",
+        "byte_00": 3,
+        "byte_18": 0
+      },
+      "code": 15,
+      "before": 3,
+      "after": 4,
+      "ready_before": 1,
+      "ready_after": 1
+    },
+    {
+      "thread": "01",
+      "sp": "0xc51c1fd0",
+      "call_seconds": 9.253,
+      "return_seconds": 9.255,
+      "requested": {
+        "pointer": "0xc3c5a040",
+        "available": true,
+        "raw": "0000000000000000000000000000000000000000000000000000000000000000",
+        "byte_00": 0,
+        "byte_18": 0
+      },
+      "code": 17,
+      "before": 5,
+      "after": 6,
+      "ready_before": 1,
+      "ready_after": 1
+    },
+    {
+      "thread": "01",
+      "sp": "0xc51c1fd0",
+      "call_seconds": 30.682,
+      "return_seconds": 30.886,
+      "requested": {
+        "pointer": "0xc3d98700",
+        "available": true,
+        "raw": "0100000000000000000000000000000000000000000000000100000000000000",
+        "byte_00": 1,
+        "byte_18": 1
+      },
+      "code": 17,
+      "before": 9,
+      "after": 6,
+      "ready_before": 3,
+      "ready_after": 1
+    }
+  ],
+  "worker_return_update_observations": 560,
+  "initialization_code16_observation": {
+    "guest_seconds": 9.329,
+    "thread": "01",
+    "sp": "0xc51c1fd0",
+    "before": 8,
+    "code": 16,
+    "after": 9
+  },
+  "after_high_observed_worker_codes": [
+    18
+  ],
+  "after_high_observed_worker_states": [
+    8
+  ],
+  "state8_direct_to9_codes": [
+    14,
+    16
+  ],
+  "state8_other_exits": {
+    "4": 10,
+    "6": 11,
+    "19": 17
+  },
+  "state8_producer_dynamically_identified": false,
+  "configuration_flow_recomputed_equal": true,
+  "regression_tests": 457,
+  "regression_seconds": 167.608,
+  "regression_exit_code": 0,
+  "regression_full_captured_output_saved": true,
+  "limitations": [
+    "Three observed calls completed; input observation did not finish.",
+    "Shared worker return/update observations are not additional configuration calls.",
+    "Static event16 producers and preconditions remain candidates until runtime-correlated.",
+    "No successful hardware completion, recovery, or default-entry acceptance inferred."
+  ]
+}

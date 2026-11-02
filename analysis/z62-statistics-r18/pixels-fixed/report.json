@@ -1,0 +1,20 @@
+{
+  "completed": true,
+  "command": [
+    "D:\\Mypi_deskktop\\.pi-desktoooop\\data\\scratch\\ea676126-86fa-48b9-8090-07cabb814b52\\toolchain\\msys64\\ucrt64\\bin\\gcc.exe",
+    "-std=c11",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "tests/native/z62_statistics_pixels_test.c",
+    "-o",
+    "analysis/z62-statistics-r18/pixels-fixed/pixels-test.exe"
+  ],
+  "camera_accessed": false,
+  "firmware_executed": false,
+  "test_output": "PASS: CFA colors, all cells, sum/count coverage, scalar mean, impulses, padding, bounds, immutable input\n",
+  "header_sha256": "34fa76bb889fe3cae12b0dc0dba213dd28d1ef25fdbe1492bcd5edce360768b1",
+  "test_sha256": "8a0ca7f51e14e064b14a55eb562177b7c30f545f9c1763f286a72d7527bc8bcd",
+  "binary_sha256": "ca0a51ee2d7f5fa6a51ee92979bbb130ef20bceb8db732794a83fd119ffaaa96"
+}

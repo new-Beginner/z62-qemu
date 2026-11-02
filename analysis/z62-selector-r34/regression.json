@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-selector-completion-gates-r34",
+  "command": ".build/tools/video-r26/Scripts/python.exe -X utf8 -B -m unittest discover -s tests -q",
+  "temporary_root": "D:/Z62-QEMU-runtime/sessions",
+  "tests": 461,
+  "seconds": 242.381,
+  "exit_code": 0,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "new_gate_snapshot_tests": 4,
+  "new_tests_failed_before_implementation": true,
+  "log": "regression.log",
+  "full_captured_stdout_stderr_saved": true,
+  "log_newlines": "normalized LF",
+  "unified_exec_session": 98965,
+  "scope": "Repository regression for read-only completion gate observer; live original-firmware run is a separate acceptance.",
+  "mode_recovery_verified": false,
+  "whole_camera_verified": false,
+  "factory_af_verified": false,
+  "flash_safety_verified": false
+}

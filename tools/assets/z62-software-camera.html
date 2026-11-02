@@ -1,0 +1,28 @@
+  <section class="software-camera" aria-labelledby="software-title">
+    <div class="section-bar"><h2 id="software-title">软件成像实验</h2><span class="software-badge">C · 近似模型</span></div>
+    <p class="software-boundary">此窗口使用虚拟镜头和软件 JPEG。上方原厂固件画面保持独立；原厂拍摄、NEF、录像和自动对焦尚未贯通。</p>
+    <div class="software-workspace">
+      <div>
+        <div class="software-screen"><img id="software-frame" width="640" height="424" alt="软件场景与照片回放" hidden><span id="software-placeholder">启动模拟器后，点击下方“开机”</span></div>
+        <p id="software-info" class="software-info" aria-live="polite">等待相机时钟</p>
+        <a id="software-download" hidden download>下载当前照片</a>
+      </div>
+      <div class="software-controls">
+        <div class="software-button-row"><button id="software-on">开机</button><button id="software-off">关机</button><button id="software-shutter">拍摄 JPEG</button></div>
+        <form id="software-optics">
+          <label>焦距 <input name="focal_length_mm" type="number" min="24" max="120" value="50"> mm</label>
+          <label>光圈 <select name="aperture"><option>1.8</option><option>2.8</option><option selected>4</option><option>8</option><option>16</option></select></label>
+          <label>对焦位置 <input name="focus_target" type="range" min="0" max="1" step="0.01" value="0"></label>
+          <button>应用镜头设置</button>
+        </form>
+        <form id="software-exposure">
+          <label>快门 <select name="shutter_seconds"><option value="0.000125">1/8000</option><option value="0.002">1/500</option><option value="0.008" selected>1/125</option><option value="0.03333333333333333">1/30</option></select></label>
+          <label>ISO <select name="iso"><option selected>100</option><option>200</option><option>400</option><option>800</option><option>1600</option></select></label>
+          <button>应用曝光设置</button>
+        </form>
+        <div class="software-button-row"><button id="software-play">回放</button><button id="software-live">取景</button><button id="software-prev">上一张</button><button id="software-next">下一张</button><button id="software-delete">删除当前照片</button></div>
+        <label>回放放大 <select id="software-zoom"><option>1</option><option>2</option><option>4</option><option>8</option><option>16</option></select> 倍</label>
+        <p id="software-message" role="status" aria-live="polite">手动对焦使用归一化位置；测试图平面在 0.65。镜头状态会实际改变图像。</p>
+      </div>
+    </div>
+  </section>

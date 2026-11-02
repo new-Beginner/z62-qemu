@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "completed": false,
+  "binary_sha256": "9e6f7f8e4987d90fcd9c66fae243636f17b1ba3a9cd24db1a83daac2ad3b10f6",
+  "firmware_loaded": false,
+  "algorithm_level": "C",
+  "camera_accessed": false,
+  "parent_under_test": false,
+  "failure": {
+    "type": "AssertionError",
+    "message": ""
+  }
+}

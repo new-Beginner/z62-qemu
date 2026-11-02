@@ -1,0 +1,304 @@
+{
+  "completed": true,
+  "camera_accessed": false,
+  "url": "http://127.0.0.1:63640",
+  "entry": "tools\\run_z62_shutter_preview.py",
+  "expected_version": "2026.10.29-r9",
+  "diagnostic_key": "preview_status",
+  "candidate": true,
+  "pid": 62920,
+  "status": {
+    "model": "Z62",
+    "phase": "running",
+    "error": null,
+    "ready": true,
+    "package_version": "2026.10.28-candidate1",
+    "package_root": "<USERPROFILE>\\AppData\\Local\\Temp\\z62-reference-sk0f3k78",
+    "main_screen_experiment": false,
+    "sd_card_attached": false,
+    "experimental_boundaries": 0,
+    "input_ready": true,
+    "main_screen_usable": false,
+    "auto_menu": "off",
+    "uptime": 20,
+    "execution": "running",
+    "index": 3,
+    "held": [],
+    "queued": [],
+    "menu_pending": false,
+    "virtual_seconds": 1.534,
+    "lcd_frames": 5,
+    "display_enabled": false,
+    "reference_update_version": "2026.10.27-r1",
+    "sampling_source": false,
+    "sensor_pixels_modeled": false,
+    "shoulder": {
+      "page": 0,
+      "reads": 0,
+      "writes": 0,
+      "id-reads": 0,
+      "page-writes": 0,
+      "image": "000000000000000000080000c9000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "shoulder_physical_segments": false,
+    "firmware_candidate": {
+      "all_executed_members_match_reference": true,
+      "camera_accessed": false,
+      "candidate_layout_semantics_verified": false,
+      "flash_safety_verified": false,
+      "layout": "Z62 C1.70 fixed module names and sizes",
+      "member_crcs_verified": true,
+      "members": {
+        "controller.bin": {
+          "baseline_sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983",
+          "changed_bytes": 0,
+          "first_changed_offset": null,
+          "last_changed_offset": null,
+          "matches_reference": true,
+          "member": "ex1850_012000.bi",
+          "sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983",
+          "size": 524290
+        },
+        "master.bin": {
+          "baseline_sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+          "changed_bytes": 0,
+          "first_changed_offset": null,
+          "last_changed_offset": null,
+          "matches_reference": true,
+          "member": "eg1850_mas_01700",
+          "sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+          "size": 38750138
+        },
+        "slave.bin": {
+          "baseline_sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5",
+          "changed_bytes": 0,
+          "first_changed_offset": null,
+          "last_changed_offset": null,
+          "matches_reference": true,
+          "member": "eg1850_sla_01700",
+          "sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5",
+          "size": 8832194
+        }
+      },
+      "mode": "explicit-offline-candidate",
+      "package": {
+        "matches_reference": true,
+        "name": "Z6_2_0170 (1).bin",
+        "sha256": "5a9640b4c07abe1ecbf5a52655cbec6b893bba045bb2a1a1d21055b9f8f9d06d",
+        "size": 49002888
+      },
+      "package_crc_verified": true,
+      "schema": 1,
+      "signature_verified": false,
+      "unexecuted_members": [
+        {
+          "executed": false,
+          "member": "_tpj01_v140.bin",
+          "reason": "Peripheral processor not emulated",
+          "sha256": "e60998537d46a15c430154aeeb589026aca015256d27e2d5990589d23a59c88e",
+          "size": 57346
+        },
+        {
+          "executed": false,
+          "member": "vr1850_010100.bi",
+          "reason": "Peripheral processor not emulated",
+          "sha256": "7e48c59adff7b917b41d2a2643ae692588c7b92b955d69f0000531885df274d9",
+          "size": 838664
+        }
+      ]
+    },
+    "firmware_health_known": false,
+    "firmware_status_empty": false,
+    "firmware_status_codes": null,
+    "firmware_status_count": null,
+    "live_view_verified": false,
+    "firmware_observation_error": "Candidate internal state layout is unverified",
+    "functional_raw_status": {
+      "engines": {
+        "master": {
+          "functional-raw": true,
+          "raw-accepted": 9,
+          "raw-rejected": 3,
+          "raw-bytes": 82282752,
+          "raw-last-reason": "success"
+        },
+        "slave": {
+          "functional-raw": true,
+          "raw-accepted": 0,
+          "raw-rejected": 0,
+          "raw-bytes": 0,
+          "raw-last-reason": "reset"
+        }
+      },
+      "errors": [],
+      "live_view_verified": false,
+      "packing_verified": false,
+      "snapshot_atomic": false,
+      "known": true
+    },
+    "transaction_bridge": {
+      "engines": {
+        "master": {
+          "functional-raw-completion": true,
+          "raw-source-events": 9,
+          "raw-completions": 0,
+          "raw-ignored": 9,
+          "raw-coalesced": 0,
+          "raw-completion-last-reason": "mode-mismatch"
+        },
+        "slave": {
+          "functional-raw-completion": true,
+          "raw-source-events": 0,
+          "raw-completions": 0,
+          "raw-ignored": 0,
+          "raw-coalesced": 0,
+          "raw-completion-last-reason": "reset"
+        }
+      },
+      "errors": [],
+      "snapshot_atomic": false,
+      "hardware_timing_verified": false,
+      "live_view_verified": false,
+      "known": true
+    },
+    "capcom_sync_status": {
+      "known": true,
+      "engines": {
+        "master": {
+          "z62-capcom-sync": true,
+          "capcom-requests": 1,
+          "capcom-completions": 1,
+          "capcom-coalesced": 0
+        },
+        "slave": {
+          "z62-capcom-sync": true,
+          "capcom-requests": 0,
+          "capcom-completions": 0,
+          "capcom-coalesced": 0
+        }
+      },
+      "errors": [],
+      "mechanical_capture_verified": false,
+      "latency_ns_hypothesis": 100000
+    },
+    "hardware_version": "2026.10.29-r9",
+    "raw_stream_status": {
+      "known": true,
+      "engines": {
+        "master": {
+          "z62-raw-stream": true,
+          "raw-stream-active": true,
+          "raw-stream-attempts": 9,
+          "raw-stream-frames": 9,
+          "raw-stream-failed": 0,
+          "raw-stream-blocked": 0,
+          "raw-stream-unrelated": 0
+        },
+        "slave": {
+          "z62-raw-stream": true,
+          "raw-stream-active": false,
+          "raw-stream-attempts": 0,
+          "raw-stream-frames": 0,
+          "raw-stream-failed": 0,
+          "raw-stream-blocked": 0,
+          "raw-stream-unrelated": 0
+        }
+      },
+      "errors": [],
+      "isp_implemented": false,
+      "live_view_verified": false
+    },
+    "finite_stats_status": {
+      "known": true,
+      "engines": {
+        "master": {
+          "finite-attempts": 0,
+          "finite-frames": 0,
+          "finite-batches": 0,
+          "finite-rejected": 0,
+          "finite-bytes": 0,
+          "finite-reason": "reset"
+        },
+        "slave": {
+          "finite-attempts": 0,
+          "finite-frames": 0,
+          "finite-batches": 0,
+          "finite-rejected": 0,
+          "finite-bytes": 0,
+          "finite-reason": "reset"
+        }
+      },
+      "errors": [],
+      "algorithm_hypothesis": "stationary last-RAW regional box means",
+      "silicon_metering_verified": false,
+      "live_view_verified": false
+    },
+    "preview_status": {
+      "known": true,
+      "engines": {
+        "master": {
+          "z62-preview": true,
+          "preview-attempts": 0,
+          "preview-batches": 0,
+          "preview-outputs": 0,
+          "preview-bytes": 0,
+          "preview-rejected": 0,
+          "preview-blocked": 0,
+          "preview-cancelled": 0,
+          "preview-drains": 0,
+          "preview-flushes": 0,
+          "preview-reason": "reset"
+        },
+        "slave": {
+          "z62-preview": true,
+          "preview-attempts": 0,
+          "preview-batches": 0,
+          "preview-outputs": 0,
+          "preview-bytes": 0,
+          "preview-rejected": 0,
+          "preview-blocked": 0,
+          "preview-cancelled": 0,
+          "preview-drains": 0,
+          "preview-flushes": 0,
+          "preview-reason": "reset"
+        }
+      },
+      "errors": [],
+      "statistics_bank0_completed": false,
+      "silicon_pixel_math_verified": false,
+      "arbitrary_node_graphs_supported": false
+    },
+    "input_adapter": {
+      "version": "2026.10.29-input-r10b",
+      "source_sha256": "ab308c2700b5dca8502675ee0305e0338b0b37d3917e6084d306856648fe9f3c",
+      "half_press_ui_id": 24,
+      "gpio_path": "/machine/controller/keys-gpio",
+      "gpio_pin": 1,
+      "active_level": 0,
+      "firmware_switch_mask": "0x80000000",
+      "base_source_sha256": "351e30cb6fe0f3168504c0b2f39d111bcd80f5616e77e2a18904f569dd4155c8",
+      "released_body_gpio_pins": [
+        1,
+        13
+      ]
+    },
+    "monitor_transport": {
+      "version": "2026.10.29-qmp-r1",
+      "timed_out_requests": 0,
+      "late_replies": 0,
+      "replayed_commands": 0,
+      "closed": false
+    },
+    "candidate_internal_observations_verified": false
+  },
+  "monitor_transport_verified": true,
+  "half_press_responses": [
+    "{\"ok\":true}",
+    "{\"ok\":true}"
+  ],
+  "release_response": "{\"ok\":true}",
+  "half_press_http_verified": true,
+  "stop_response": "{\"ok\":true}",
+  "exit_code": 0,
+  "process_closed": true
+}

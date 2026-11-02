@@ -1,0 +1,9 @@
+test_recovery_requires_original_ready_and_two_advancing_outputs (test_z62_grid_lifecycle.GridLifecycleTests.test_recovery_requires_original_ready_and_two_advancing_outputs) ... ok
+test_static_screen_or_only_one_pipeline_cannot_pass (test_z62_grid_lifecycle.GridLifecycleTests.test_static_screen_or_only_one_pipeline_cannot_pass) ... ok
+test_unknown_late_state_and_early_screen_are_not_recovery (test_z62_grid_lifecycle.GridLifecycleTests.test_unknown_late_state_and_early_screen_are_not_recovery) ... ok
+test_unverified_input_sequence_and_reversed_time_are_rejected (test_z62_grid_lifecycle.GridLifecycleTests.test_unverified_input_sequence_and_reversed_time_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.948s
+
+OK

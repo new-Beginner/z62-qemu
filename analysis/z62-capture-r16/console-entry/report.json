@@ -1,0 +1,15 @@
+{
+  "completed": false,
+  "camera_accessed": false,
+  "url": "http://127.0.0.1:51409",
+  "entry": "tools\\run_z62_capture_console.py",
+  "expected_version": "2026.10.29-no-lens-r16",
+  "diagnostic_key": "preview_status",
+  "candidate": false,
+  "pid": 66516,
+  "failure": {
+    "type": "TimeoutError",
+    "message": "Entry readiness timeout"
+  },
+  "process_closed": true
+}

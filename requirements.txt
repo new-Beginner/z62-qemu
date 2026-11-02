@@ -1,0 +1,5 @@
+# Z6II offline startup lab v0.1.0; Python 3.12 tested.
+numpy==2.4.1
+Pillow==12.2.0
+capstone==5.0.7
+unicorn==2.1.4

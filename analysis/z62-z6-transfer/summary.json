@@ -1,0 +1,1434 @@
+{
+  "acceptance_version": "0.2.1",
+  "raw_evidence_rewritten": false,
+  "limits": [
+    "Sampled/non-atomic observations, not uninterrupted health proof.",
+    "A passing saved single cycle is not repeatability or live-view acceptance.",
+    "Older cases without post-reopen navigation cannot pass strict acceptance."
+  ],
+  "cases": {
+    "mode-only": {
+      "raw_hashes": {
+        "artifacts/z62-z6-transfer-20261028/mode-only/after-exit.png": "6453ea739982654d4e41d28189a1dce64f76e5ff649a506f3e845c11ad032d8a",
+        "artifacts/z62-z6-transfer-20261028/mode-only/after-reopen.png": "57cde017f60c912ba0af6274c9591c14d930a59f8aacb321b883dcc380095b0d",
+        "artifacts/z62-z6-transfer-20261028/mode-only/before-menu.png": "2513e4494827f394a48f1c043b9391cd8f253eb50894cfeb199063994cdf02e3",
+        "artifacts/z62-z6-transfer-20261028/mode-only/command.json": "f91740082658013de124bb398707474400671fb086dabc6effde6cdd0762a77a",
+        "artifacts/z62-z6-transfer-20261028/mode-only/console.txt": "202e6d325915ed02b93f048772ce186f9a1bae738e7ea59da1cacc26419ba117",
+        "artifacts/z62-z6-transfer-20261028/mode-only/effective-command-0.json": "396d8dd3358bf6ea4c3bef83139023be23a12201d567e4b9692f21913fe357c7",
+        "artifacts/z62-z6-transfer-20261028/mode-only/first-menu.png": "2513e4494827f394a48f1c043b9391cd8f253eb50894cfeb199063994cdf02e3",
+        "artifacts/z62-z6-transfer-20261028/mode-only/menu-down.png": "74f08bece971670f2023302fec952be3e549d6661665f469394f512ff451a5a2",
+        "artifacts/z62-z6-transfer-20261028/mode-only/report.json": "3ee5d10c2ec0e1d8305c78e654dc8c9687d00a5b1584776da3aeeccc1a929209",
+        "artifacts/z62-z6-transfer-20261028/mode-only/session.json": "544d88405680bb5aa13d64547f28edeafa3365d5c03c04b9b948b2724e4bbf1a"
+      },
+      "identity": {
+        "qemu_sha256": "e169431ed0a24dded62c2d3e0ea2aba1056385ec96584c57b40cd4e5ab29fba4",
+        "reference_commit": "4f4389944fc339d107f22f5f7ca3f90cc34b78de",
+        "inputs": {
+          "master.bin": {
+            "size": 38750138,
+            "sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4"
+          },
+          "slave.bin": {
+            "size": 8832194,
+            "sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5"
+          },
+          "controller.bin": {
+            "size": 524290,
+            "sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983"
+          }
+        },
+        "capture_preset": "mode-only"
+      },
+      "effective_lab_options": [
+        "nikon-z62-sensor-config.laboratory-mode-completion=on"
+      ],
+      "historical_passed": false,
+      "completed_and_closed": true,
+      "last": {
+        "stage": "after-reopen",
+        "virtual_seconds": 18.537,
+        "wall_seconds": 262.14,
+        "index": 3,
+        "pending": "0x0",
+        "queued": [],
+        "status_count": 1,
+        "status_codes": [
+          63
+        ]
+      },
+      "first_0x35": null,
+      "first_0x3f": {
+        "first_sample": {
+          "stage": "after-first-menu",
+          "virtual_seconds": 4.113,
+          "wall_seconds": 58.796,
+          "index": 3,
+          "pending": "0x20000",
+          "queued": [],
+          "status_count": 1,
+          "status_codes": [
+            63
+          ]
+        },
+        "previous_sample": {
+          "stage": "after-first-menu",
+          "virtual_seconds": 3.964,
+          "wall_seconds": 56.765,
+          "index": 3,
+          "pending": "0x20000",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": []
+        }
+      },
+      "reclassified": {
+        "samples_before_menu": 23,
+        "observed_0x3f_before_menu": false,
+        "first_0x3f": {
+          "stage": "after-first-menu",
+          "virtual_seconds": 4.113,
+          "wall_seconds": 58.796,
+          "index": 3,
+          "pending": "0x20000"
+        },
+        "menu_observed": true,
+        "reopened_observed": false,
+        "left_menu_observed": true,
+        "health_observations_complete": true,
+        "all_status_lists_empty": false,
+        "no_blocking_codes_observed": false
+      },
+      "cycles": [],
+      "required_cycles_for_saved_case": 1,
+      "strict_saved_case_passed": false,
+      "missing_reopen_navigation_evidence": true,
+      "counter_status_mode_transitions": [
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 0.012,
+          "wall_seconds": 2.015,
+          "index": 5,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 1.024,
+          "wall_seconds": 16.203,
+          "index": 0,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 1,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 1.309,
+          "wall_seconds": 20.265,
+          "index": 3,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 3,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "after-first-menu",
+          "virtual_seconds": 4.113,
+          "wall_seconds": 58.796,
+          "index": 3,
+          "pending": "0x20000",
+          "queued": [],
+          "status_count": 1,
+          "status_codes": [
+            63
+          ],
+          "sensors": {
+            "master": {
+              "init-submissions": 3,
+              "init-completions": 0,
+              "mode-completions": 1,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x8000"
+        }
+      ],
+      "final_ingress_configuration": {
+        "0x20069500": "0x0",
+        "0x20069504": "0x0",
+        "0x20069508": "0x0",
+        "0x2006950c": "0x0",
+        "0x20069510": "0x0",
+        "0x20069514": "0x0",
+        "0x20069518": "0x0",
+        "0x2006951c": "0x0",
+        "0x20069520": "0x0",
+        "0x20069524": "0x0",
+        "0x20069528": "0x0",
+        "0x2006952c": "0x0",
+        "0x20069530": "0x0",
+        "0x20069f00": "0x0"
+      }
+    },
+    "init-mode": {
+      "raw_hashes": {
+        "artifacts/z62-z6-transfer-20261028/init-mode/after-exit.png": "74f08bece971670f2023302fec952be3e549d6661665f469394f512ff451a5a2",
+        "artifacts/z62-z6-transfer-20261028/init-mode/after-reopen.png": "74f08bece971670f2023302fec952be3e549d6661665f469394f512ff451a5a2",
+        "artifacts/z62-z6-transfer-20261028/init-mode/before-menu.png": "2513e4494827f394a48f1c043b9391cd8f253eb50894cfeb199063994cdf02e3",
+        "artifacts/z62-z6-transfer-20261028/init-mode/command.json": "c5403a85c390b59b1e9975850058584519de404f525e524c79501598d585384a",
+        "artifacts/z62-z6-transfer-20261028/init-mode/console.txt": "2800607d4f58029e7bd5c9a3ee73079b672906fb780251f1e97339ecc785c9d9",
+        "artifacts/z62-z6-transfer-20261028/init-mode/effective-command-0.json": "e091f2922999c23a01620ca0952a2f2c0880cb3737fc09e864135cf6c5b8397e",
+        "artifacts/z62-z6-transfer-20261028/init-mode/first-menu.png": "be7859c562a111dd929bdfca9c96433db0449b2373543d35309e425722ae716e",
+        "artifacts/z62-z6-transfer-20261028/init-mode/menu-down.png": "74f08bece971670f2023302fec952be3e549d6661665f469394f512ff451a5a2",
+        "artifacts/z62-z6-transfer-20261028/init-mode/report.json": "e7753fe496acf3ff51489bbae79d02eefdb9f673161414fbc989323c19dc22e2",
+        "artifacts/z62-z6-transfer-20261028/init-mode/session.json": "a97a6d42bc95f9683f80ac6d2871d21ee85079f0695ecd9284664a98d047c505"
+      },
+      "identity": {
+        "qemu_sha256": "e169431ed0a24dded62c2d3e0ea2aba1056385ec96584c57b40cd4e5ab29fba4",
+        "reference_commit": "4f4389944fc339d107f22f5f7ca3f90cc34b78de",
+        "inputs": {
+          "master.bin": {
+            "size": 38750138,
+            "sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4"
+          },
+          "slave.bin": {
+            "size": 8832194,
+            "sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5"
+          },
+          "controller.bin": {
+            "size": 524290,
+            "sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983"
+          }
+        },
+        "capture_preset": "init-mode"
+      },
+      "effective_lab_options": [
+        "nikon-z62-sensor-config.laboratory-init-completion=on",
+        "nikon-z62-sensor-config.laboratory-mode-completion=on"
+      ],
+      "historical_passed": true,
+      "completed_and_closed": true,
+      "last": {
+        "stage": "after-reopen",
+        "virtual_seconds": 22.737,
+        "wall_seconds": 302.562,
+        "index": 1,
+        "pending": "0x0",
+        "queued": [],
+        "status_count": 0,
+        "status_codes": []
+      },
+      "first_0x35": null,
+      "first_0x3f": null,
+      "reclassified": {
+        "samples_before_menu": 23,
+        "observed_0x3f_before_menu": false,
+        "first_0x3f": null,
+        "menu_observed": true,
+        "reopened_observed": true,
+        "left_menu_observed": true,
+        "health_observations_complete": true,
+        "all_status_lists_empty": true,
+        "no_blocking_codes_observed": true
+      },
+      "cycles": [],
+      "required_cycles_for_saved_case": 1,
+      "strict_saved_case_passed": false,
+      "missing_reopen_navigation_evidence": true,
+      "counter_status_mode_transitions": [
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 0.012,
+          "wall_seconds": 2.015,
+          "index": 5,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 1.028,
+          "wall_seconds": 16.219,
+          "index": 0,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 1,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 1.185,
+          "wall_seconds": 18.234,
+          "index": 0,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 2,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 1.309,
+          "wall_seconds": 20.265,
+          "index": 3,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 3,
+              "init-completions": 1,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "after-exit",
+          "virtual_seconds": 15.172,
+          "wall_seconds": 203.0,
+          "index": 0,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 3,
+              "init-completions": 1,
+              "mode-completions": 1,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x8000"
+        }
+      ],
+      "final_ingress_configuration": {
+        "0x20069500": "0x0",
+        "0x20069504": "0x0",
+        "0x20069508": "0x0",
+        "0x2006950c": "0x0",
+        "0x20069510": "0x0",
+        "0x20069514": "0x6",
+        "0x20069518": "0x5ea0000",
+        "0x2006951c": "0x3ee0000",
+        "0x20069520": "0x0",
+        "0x20069524": "0x0",
+        "0x20069528": "0x0",
+        "0x2006952c": "0x2",
+        "0x20069530": "0x200040",
+        "0x20069f00": "0x11"
+      }
+    },
+    "init-mode-descriptors": {
+      "raw_hashes": {
+        "artifacts/z62-z6-transfer-20261028/init-mode-descriptors/after-exit.png": "2513e4494827f394a48f1c043b9391cd8f253eb50894cfeb199063994cdf02e3",
+        "artifacts/z62-z6-transfer-20261028/init-mode-descriptors/after-reopen.png": "74f08bece971670f2023302fec952be3e549d6661665f469394f512ff451a5a2",
+        "artifacts/z62-z6-transfer-20261028/init-mode-descriptors/before-menu.png": "2513e4494827f394a48f1c043b9391cd8f253eb50894cfeb199063994cdf02e3",
+        "artifacts/z62-z6-transfer-20261028/init-mode-descriptors/command.json": "d0595c03ac3ac41db27e3ae96b520abcdca5f829c81bfa81874f82ea2c918126",
+        "artifacts/z62-z6-transfer-20261028/init-mode-descriptors/console.txt": "6364493aa2beba078ae0b0fc7abfb023a1612a7091db87f0c3b31707b32acc97",
+        "artifacts/z62-z6-transfer-20261028/init-mode-descriptors/effective-command-0.json": "3afbe2cc56cc11cd59d9a3f260dd8a852f671064614e5382c1a01ab7c2f72307",
+        "artifacts/z62-z6-transfer-20261028/init-mode-descriptors/first-menu.png": "695e1b4ee7a42dcd70bcdabfa40134056b9e3febe36459d2f19077e290556cc8",
+        "artifacts/z62-z6-transfer-20261028/init-mode-descriptors/menu-down.png": "74f08bece971670f2023302fec952be3e549d6661665f469394f512ff451a5a2",
+        "artifacts/z62-z6-transfer-20261028/init-mode-descriptors/report.json": "2116b83d39c9d432b027fcef789db2cc02a854aa80c0eeedc94a589cca39d076",
+        "artifacts/z62-z6-transfer-20261028/init-mode-descriptors/session.json": "f2ab5b8d993f423ef1fda56288335e45df926ffa375c9c84f74c24da5f4e27b0"
+      },
+      "identity": {
+        "qemu_sha256": "e169431ed0a24dded62c2d3e0ea2aba1056385ec96584c57b40cd4e5ab29fba4",
+        "reference_commit": "4f4389944fc339d107f22f5f7ca3f90cc34b78de",
+        "inputs": {
+          "master.bin": {
+            "size": 38750138,
+            "sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4"
+          },
+          "slave.bin": {
+            "size": 8832194,
+            "sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5"
+          },
+          "controller.bin": {
+            "size": 524290,
+            "sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983"
+          }
+        },
+        "capture_preset": "init-mode"
+      },
+      "effective_lab_options": [
+        "nikon-z62-sensor-config.laboratory-init-completion=on",
+        "nikon-z62-sensor-config.laboratory-mode-completion=on"
+      ],
+      "historical_passed": true,
+      "completed_and_closed": true,
+      "last": {
+        "stage": "after-reopen",
+        "virtual_seconds": 22.679,
+        "wall_seconds": 292.985,
+        "index": 1,
+        "pending": "0x0",
+        "queued": [],
+        "status_count": 0,
+        "status_codes": []
+      },
+      "first_0x35": null,
+      "first_0x3f": null,
+      "reclassified": {
+        "samples_before_menu": 22,
+        "observed_0x3f_before_menu": false,
+        "first_0x3f": null,
+        "menu_observed": true,
+        "reopened_observed": true,
+        "left_menu_observed": true,
+        "health_observations_complete": true,
+        "all_status_lists_empty": true,
+        "no_blocking_codes_observed": true
+      },
+      "cycles": [],
+      "required_cycles_for_saved_case": 1,
+      "strict_saved_case_passed": false,
+      "missing_reopen_navigation_evidence": true,
+      "counter_status_mode_transitions": [
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 0.014,
+          "wall_seconds": 2.016,
+          "index": 5,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 0.946,
+          "wall_seconds": 14.188,
+          "index": 0,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 1,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 1.263,
+          "wall_seconds": 18.25,
+          "index": 3,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 3,
+              "init-completions": 1,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "after-exit",
+          "virtual_seconds": 15.231,
+          "wall_seconds": 197.188,
+          "index": 0,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 3,
+              "init-completions": 1,
+              "mode-completions": 1,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x8000"
+        }
+      ],
+      "final_ingress_configuration": {
+        "0x20069500": "0x0",
+        "0x20069504": "0x0",
+        "0x20069508": "0x0",
+        "0x2006950c": "0x0",
+        "0x20069510": "0x0",
+        "0x20069514": "0x6",
+        "0x20069518": "0x5ea0000",
+        "0x2006951c": "0x3ee0000",
+        "0x20069520": "0x0",
+        "0x20069524": "0x0",
+        "0x20069528": "0x0",
+        "0x2006952c": "0x2",
+        "0x20069530": "0x200040",
+        "0x20069f00": "0x11",
+        "0x20069808": "0x0",
+        "0x20069850": "0x0",
+        "0x20069854": "0x0",
+        "0x20069858": "0x0",
+        "0x2006985c": "0x0",
+        "0x20069860": "0x0",
+        "0x20069864": "0x0",
+        "0x20069868": "0x0",
+        "0x2006986c": "0x0",
+        "0x20069908": "0x0",
+        "0x20069950": "0x0",
+        "0x20069954": "0x0",
+        "0x20069958": "0x0",
+        "0x2006995c": "0x0",
+        "0x20069960": "0x0",
+        "0x20069964": "0x0",
+        "0x20069968": "0x0",
+        "0x2006996c": "0x0",
+        "0x20069a08": "0x8e0",
+        "0x20069a50": "0x82c00000",
+        "0x20069a54": "0x8448dc00",
+        "0x20069a58": "0x85d1b800",
+        "0x20069a5c": "0x875a9400",
+        "0x20069a60": "0x0",
+        "0x20069a64": "0x0",
+        "0x20069a68": "0x0",
+        "0x20069a6c": "0x0",
+        "0x20069b08": "0x0",
+        "0x20069b50": "0x0",
+        "0x20069b54": "0x0",
+        "0x20069b58": "0x0",
+        "0x20069b5c": "0x0",
+        "0x20069b60": "0x0",
+        "0x20069b64": "0x0",
+        "0x20069b68": "0x0",
+        "0x20069b6c": "0x0"
+      }
+    },
+    "init-mode-three-cycles": {
+      "raw_hashes": {
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/after-exit-2.png": "58c98f03b9c76f8e3f86fae36fdcf09f274f7f956cdff8b2f1f9a5577ff7c45c",
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/after-exit-3.png": "6b107f6f9f1cd864998b292e8404e487390956fd8f2713d67869cb96a9be437d",
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/after-exit.png": "2513e4494827f394a48f1c043b9391cd8f253eb50894cfeb199063994cdf02e3",
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/after-reopen-2.png": "58c98f03b9c76f8e3f86fae36fdcf09f274f7f956cdff8b2f1f9a5577ff7c45c",
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/after-reopen-3.png": "6b107f6f9f1cd864998b292e8404e487390956fd8f2713d67869cb96a9be437d",
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/after-reopen.png": "74f08bece971670f2023302fec952be3e549d6661665f469394f512ff451a5a2",
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/before-menu.png": "2513e4494827f394a48f1c043b9391cd8f253eb50894cfeb199063994cdf02e3",
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/command.json": "6529e58794257bb14090104cace8eb56700fca8a2572b41e8a603718be0e11ff",
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/console.txt": "a928130fd8b24510043c1a629f45dcd3180f6998ce14c7bff3b0663845f252b7",
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/effective-command-0.json": "19ce39338e314c25cc1b86f36c67a205e8cede4f70cad4c769aad06af7ba105c",
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/first-menu.png": "695e1b4ee7a42dcd70bcdabfa40134056b9e3febe36459d2f19077e290556cc8",
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/menu-down.png": "74f08bece971670f2023302fec952be3e549d6661665f469394f512ff451a5a2",
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/reopen-down-2.png": "3f73837ee25423d115a06f780007ecc6770ca744e56de62461e9db2ecf7f320a",
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/reopen-down.png": "58c98f03b9c76f8e3f86fae36fdcf09f274f7f956cdff8b2f1f9a5577ff7c45c",
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/report.json": "8489b20db86bcd0b8a10ea9bfb52813582fffd75e482b5fb8be980c49d471d3f",
+        "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/session.json": "79e600a1d5b27f55157e0c52661c7ae3501bc3b8588e524a48e514b4aa07c5c8"
+      },
+      "identity": {
+        "qemu_sha256": "e169431ed0a24dded62c2d3e0ea2aba1056385ec96584c57b40cd4e5ab29fba4",
+        "reference_commit": "4f4389944fc339d107f22f5f7ca3f90cc34b78de",
+        "inputs": {
+          "master.bin": {
+            "size": 38750138,
+            "sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4"
+          },
+          "slave.bin": {
+            "size": 8832194,
+            "sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5"
+          },
+          "controller.bin": {
+            "size": 524290,
+            "sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983"
+          }
+        },
+        "capture_preset": "init-mode"
+      },
+      "effective_lab_options": [
+        "nikon-z62-sensor-config.laboratory-init-completion=on",
+        "nikon-z62-sensor-config.laboratory-mode-completion=on"
+      ],
+      "historical_passed": false,
+      "completed_and_closed": true,
+      "last": {
+        "stage": "after-reopen",
+        "virtual_seconds": 48.317,
+        "wall_seconds": 630.641,
+        "index": 3,
+        "pending": "0x0",
+        "queued": [],
+        "status_count": 2,
+        "status_codes": [
+          53,
+          63
+        ]
+      },
+      "first_0x35": {
+        "first_sample": {
+          "stage": "after-reopen",
+          "virtual_seconds": 30.47,
+          "wall_seconds": 393.203,
+          "index": 3,
+          "pending": "0x20000",
+          "queued": [],
+          "status_count": 1,
+          "status_codes": [
+            53
+          ]
+        },
+        "previous_sample": {
+          "stage": "after-reopen",
+          "virtual_seconds": 30.311,
+          "wall_seconds": 391.156,
+          "index": 3,
+          "pending": "0x20000",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": []
+        }
+      },
+      "first_0x3f": {
+        "first_sample": {
+          "stage": "after-reopen",
+          "virtual_seconds": 34.938,
+          "wall_seconds": 450.344,
+          "index": 1,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 2,
+          "status_codes": [
+            53,
+            63
+          ]
+        },
+        "previous_sample": {
+          "stage": "after-reopen",
+          "virtual_seconds": 34.784,
+          "wall_seconds": 448.313,
+          "index": 1,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 1,
+          "status_codes": [
+            53
+          ]
+        }
+      },
+      "reclassified": {
+        "samples_before_menu": 22,
+        "observed_0x3f_before_menu": false,
+        "first_0x3f": {
+          "stage": "after-reopen",
+          "virtual_seconds": 34.938,
+          "wall_seconds": 450.344,
+          "index": 1,
+          "pending": "0x0"
+        },
+        "menu_observed": true,
+        "reopened_observed": true,
+        "left_menu_observed": true,
+        "health_observations_complete": true,
+        "all_status_lists_empty": false,
+        "no_blocking_codes_observed": false
+      },
+      "cycles": [
+        {
+          "cycle": 1,
+          "returned_applv": true,
+          "reopened": true,
+          "changed_pixels": 124535,
+          "navigation_state": {
+            "stage": "reopen-navigation",
+            "virtual_seconds": 24.34,
+            "wall_seconds": 317.531,
+            "index": 1,
+            "pending": "0x0",
+            "queued": [],
+            "status_count": 0,
+            "status_codes": []
+          },
+          "strict_navigation_passed": true
+        },
+        {
+          "cycle": 2,
+          "returned_applv": true,
+          "reopened": true,
+          "changed_pixels": 124535,
+          "navigation_state": {
+            "stage": "reopen-navigation",
+            "virtual_seconds": 37.198,
+            "wall_seconds": 479.0,
+            "index": 1,
+            "pending": "0x0",
+            "queued": [],
+            "status_count": 2,
+            "status_codes": [
+              53,
+              63
+            ]
+          },
+          "strict_navigation_passed": false
+        },
+        {
+          "cycle": 3,
+          "returned_applv": true,
+          "reopened": false,
+          "changed_pixels": null,
+          "navigation_state": null,
+          "strict_navigation_passed": false
+        }
+      ],
+      "required_cycles_for_saved_case": 3,
+      "strict_saved_case_passed": false,
+      "missing_reopen_navigation_evidence": false,
+      "counter_status_mode_transitions": [
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 0.013,
+          "wall_seconds": 2.016,
+          "index": 5,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 0.933,
+          "wall_seconds": 14.188,
+          "index": 0,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 1,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 1.241,
+          "wall_seconds": 18.235,
+          "index": 3,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 3,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 1.372,
+          "wall_seconds": 20.266,
+          "index": 3,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 3,
+              "init-completions": 1,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "after-exit",
+          "virtual_seconds": 15.168,
+          "wall_seconds": 199.281,
+          "index": 0,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 3,
+              "init-completions": 1,
+              "mode-completions": 1,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x8000"
+        },
+        {
+          "stage": "after-exit",
+          "virtual_seconds": 24.506,
+          "wall_seconds": 319.75,
+          "index": 0,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 4,
+              "init-completions": 1,
+              "mode-completions": 1,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x8000"
+        },
+        {
+          "stage": "after-exit",
+          "virtual_seconds": 24.658,
+          "wall_seconds": 321.781,
+          "index": 0,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 6,
+              "init-completions": 1,
+              "mode-completions": 1,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x8000"
+        },
+        {
+          "stage": "after-reopen",
+          "virtual_seconds": 30.47,
+          "wall_seconds": 393.203,
+          "index": 3,
+          "pending": "0x20000",
+          "queued": [],
+          "status_count": 1,
+          "status_codes": [
+            53
+          ],
+          "sensors": {
+            "master": {
+              "init-submissions": 6,
+              "init-completions": 1,
+              "mode-completions": 1,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x8000"
+        },
+        {
+          "stage": "after-reopen",
+          "virtual_seconds": 34.938,
+          "wall_seconds": 450.344,
+          "index": 1,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 2,
+          "status_codes": [
+            53,
+            63
+          ],
+          "sensors": {
+            "master": {
+              "init-submissions": 6,
+              "init-completions": 1,
+              "mode-completions": 2,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x8000"
+        }
+      ],
+      "final_ingress_configuration": {
+        "0x20069500": "0x0",
+        "0x20069504": "0x0",
+        "0x20069508": "0x0",
+        "0x2006950c": "0x0",
+        "0x20069510": "0x0",
+        "0x20069514": "0x6",
+        "0x20069518": "0x5ea0000",
+        "0x2006951c": "0x3ee0000",
+        "0x20069520": "0x0",
+        "0x20069524": "0x0",
+        "0x20069528": "0x0",
+        "0x2006952c": "0x2",
+        "0x20069530": "0x200040",
+        "0x20069f00": "0x11",
+        "0x20069808": "0x0",
+        "0x20069850": "0x0",
+        "0x20069854": "0x0",
+        "0x20069858": "0x0",
+        "0x2006985c": "0x0",
+        "0x20069860": "0x0",
+        "0x20069864": "0x0",
+        "0x20069868": "0x0",
+        "0x2006986c": "0x0",
+        "0x20069908": "0x0",
+        "0x20069950": "0x0",
+        "0x20069954": "0x0",
+        "0x20069958": "0x0",
+        "0x2006995c": "0x0",
+        "0x20069960": "0x0",
+        "0x20069964": "0x0",
+        "0x20069968": "0x0",
+        "0x2006996c": "0x0",
+        "0x20069a08": "0x8e0",
+        "0x20069a50": "0x82c00000",
+        "0x20069a54": "0x8448dc00",
+        "0x20069a58": "0x85d1b800",
+        "0x20069a5c": "0x875a9400",
+        "0x20069a60": "0x0",
+        "0x20069a64": "0x0",
+        "0x20069a68": "0x0",
+        "0x20069a6c": "0x0",
+        "0x20069b08": "0x0",
+        "0x20069b50": "0x0",
+        "0x20069b54": "0x0",
+        "0x20069b58": "0x0",
+        "0x20069b5c": "0x0",
+        "0x20069b60": "0x0",
+        "0x20069b64": "0x0",
+        "0x20069b68": "0x0",
+        "0x20069b6c": "0x0"
+      }
+    },
+    "init-mode-delayed": {
+      "raw_hashes": {
+        "artifacts/z62-z6-transfer-20261028/init-mode-delayed/after-exit.png": "2513e4494827f394a48f1c043b9391cd8f253eb50894cfeb199063994cdf02e3",
+        "artifacts/z62-z6-transfer-20261028/init-mode-delayed/after-reopen.png": "74f08bece971670f2023302fec952be3e549d6661665f469394f512ff451a5a2",
+        "artifacts/z62-z6-transfer-20261028/init-mode-delayed/before-menu.png": "2513e4494827f394a48f1c043b9391cd8f253eb50894cfeb199063994cdf02e3",
+        "artifacts/z62-z6-transfer-20261028/init-mode-delayed/command.json": "6f1246589a15526714a30b234394a5176bfdb3bea10a6920c714dd5b3242601b",
+        "artifacts/z62-z6-transfer-20261028/init-mode-delayed/console.txt": "94ecb44b577223f5c3b57e05281cc6c51b38d01685eb86e83cf4d6bda625aa32",
+        "artifacts/z62-z6-transfer-20261028/init-mode-delayed/effective-command-0.json": "ad08321fae18a377f1a0e902ed825532a2ae7729b6c759c9ce843fa1cc14062c",
+        "artifacts/z62-z6-transfer-20261028/init-mode-delayed/first-menu.png": "389b36c74b1bbc644a1b7a136be38156634e42dd61bc6d3772e1bd74f9d4f706",
+        "artifacts/z62-z6-transfer-20261028/init-mode-delayed/menu-down.png": "74f08bece971670f2023302fec952be3e549d6661665f469394f512ff451a5a2",
+        "artifacts/z62-z6-transfer-20261028/init-mode-delayed/reopen-down.png": "58c98f03b9c76f8e3f86fae36fdcf09f274f7f956cdff8b2f1f9a5577ff7c45c",
+        "artifacts/z62-z6-transfer-20261028/init-mode-delayed/report.json": "f5b7e7c3f93fe71e83dd9b870e02f45edabe9e5b117474c817c9f5c2759af31e",
+        "artifacts/z62-z6-transfer-20261028/init-mode-delayed/session.json": "06e9d6425803e1e221f7b59b4c6ce7605f61273a7ee0ceeda8974bf167352014"
+      },
+      "identity": {
+        "qemu_sha256": "e169431ed0a24dded62c2d3e0ea2aba1056385ec96584c57b40cd4e5ab29fba4",
+        "reference_commit": "4f4389944fc339d107f22f5f7ca3f90cc34b78de",
+        "inputs": {
+          "master.bin": {
+            "size": 38750138,
+            "sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4"
+          },
+          "slave.bin": {
+            "size": 8832194,
+            "sha256": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5"
+          },
+          "controller.bin": {
+            "size": 524290,
+            "sha256": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983"
+          }
+        },
+        "capture_preset": "init-mode"
+      },
+      "effective_lab_options": [
+        "nikon-z62-sensor-config.laboratory-init-completion=on",
+        "nikon-z62-sensor-config.laboratory-mode-completion=on"
+      ],
+      "historical_passed": true,
+      "completed_and_closed": true,
+      "last": {
+        "stage": "reopen-navigation",
+        "virtual_seconds": 41.313,
+        "wall_seconds": 540.234,
+        "index": 1,
+        "pending": "0x0",
+        "queued": [],
+        "status_count": 0,
+        "status_codes": []
+      },
+      "first_0x35": null,
+      "first_0x3f": null,
+      "reclassified": {
+        "samples_before_menu": 136,
+        "observed_0x3f_before_menu": false,
+        "first_0x3f": null,
+        "menu_observed": true,
+        "reopened_observed": true,
+        "left_menu_observed": true,
+        "health_observations_complete": true,
+        "all_status_lists_empty": true,
+        "no_blocking_codes_observed": true
+      },
+      "cycles": [
+        {
+          "cycle": 1,
+          "returned_applv": true,
+          "reopened": true,
+          "changed_pixels": 124535,
+          "navigation_state": {
+            "stage": "reopen-navigation",
+            "virtual_seconds": 41.313,
+            "wall_seconds": 540.234,
+            "index": 1,
+            "pending": "0x0",
+            "queued": [],
+            "status_count": 0,
+            "status_codes": []
+          },
+          "strict_navigation_passed": true
+        }
+      ],
+      "required_cycles_for_saved_case": 1,
+      "strict_saved_case_passed": true,
+      "missing_reopen_navigation_evidence": false,
+      "counter_status_mode_transitions": [
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 0.013,
+          "wall_seconds": 2.015,
+          "index": 5,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 1.06,
+          "wall_seconds": 16.218,
+          "index": 0,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 1,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 1.218,
+          "wall_seconds": 18.25,
+          "index": 0,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 3,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "before-menu",
+          "virtual_seconds": 1.346,
+          "wall_seconds": 20.281,
+          "index": 3,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 3,
+              "init-completions": 1,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x0"
+        },
+        {
+          "stage": "after-exit",
+          "virtual_seconds": 32.32,
+          "wall_seconds": 427.812,
+          "index": 0,
+          "pending": "0x0",
+          "queued": [],
+          "status_count": 0,
+          "status_codes": [],
+          "sensors": {
+            "master": {
+              "init-submissions": 3,
+              "init-completions": 1,
+              "mode-completions": 1,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            },
+            "slave": {
+              "init-submissions": 0,
+              "init-completions": 0,
+              "mode-completions": 0,
+              "mode2-completions": 0,
+              "frame-completions": 0
+            }
+          },
+          "mode": "0x8000"
+        }
+      ],
+      "final_ingress_configuration": {
+        "0x20069500": "0x0",
+        "0x20069504": "0x0",
+        "0x20069508": "0x0",
+        "0x2006950c": "0x0",
+        "0x20069510": "0x0",
+        "0x20069514": "0x6",
+        "0x20069518": "0x5ea0000",
+        "0x2006951c": "0x3ee0000",
+        "0x20069520": "0x0",
+        "0x20069524": "0x0",
+        "0x20069528": "0x0",
+        "0x2006952c": "0x2",
+        "0x20069530": "0x200040",
+        "0x20069f00": "0x11",
+        "0x20069808": "0x0",
+        "0x20069850": "0x0",
+        "0x20069854": "0x0",
+        "0x20069858": "0x0",
+        "0x2006985c": "0x0",
+        "0x20069860": "0x0",
+        "0x20069864": "0x0",
+        "0x20069868": "0x0",
+        "0x2006986c": "0x0",
+        "0x20069908": "0x0",
+        "0x20069950": "0x0",
+        "0x20069954": "0x0",
+        "0x20069958": "0x0",
+        "0x2006995c": "0x0",
+        "0x20069960": "0x0",
+        "0x20069964": "0x0",
+        "0x20069968": "0x0",
+        "0x2006996c": "0x0",
+        "0x20069a08": "0x8e0",
+        "0x20069a50": "0x82c00000",
+        "0x20069a54": "0x8448dc00",
+        "0x20069a58": "0x85d1b800",
+        "0x20069a5c": "0x875a9400",
+        "0x20069a60": "0x0",
+        "0x20069a64": "0x0",
+        "0x20069a68": "0x0",
+        "0x20069a6c": "0x0",
+        "0x20069b08": "0x0",
+        "0x20069b50": "0x0",
+        "0x20069b54": "0x0",
+        "0x20069b58": "0x0",
+        "0x20069b5c": "0x0",
+        "0x20069b60": "0x0",
+        "0x20069b64": "0x0",
+        "0x20069b68": "0x0",
+        "0x20069b6c": "0x0"
+      }
+    }
+  }
+}

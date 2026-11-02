@@ -1,0 +1,4 @@
+# Source/device identity checks hash exact bytes. Do not rewrite line endings.
+* -text
+*.png binary
+*.jpg binary

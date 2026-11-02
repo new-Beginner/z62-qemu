@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "profile": "2026.11.01-selector-route-observation-r29",
+  "paths_relative_to": "workspace",
+  "observation_completed": true,
+  "guest_seconds": 55.126,
+  "observation_wall_seconds": 813.922,
+  "route_snapshots": 16,
+  "application_snapshots": 4,
+  "changed_application_snapshots": 2,
+  "virtual_gpio_operations": 2,
+  "qemu_profile": "2026.10.30-r21",
+  "qemu_sha256": "0a772865868c4f666024533512d5ede2751255744caf56b594a41da6fc0ef90b",
+  "master_member_with_crc_sha256": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+  "source_sha256": {
+    "tools/z62_selector_observation.py": "9c234829fdac09e3c9a78ea116213d0a61a1ef65828fd12e727c1818632b12be",
+    "tools/trace_z62_selector_route.py": "96557e60cebf3bb7e5dff84aa77062454b78d372c104c47a3cdbad968402ac83",
+    "tests/test_z62_selector_observation.py": "faf9c6dc88d89667c5510e5c11d99de037b60f347239b6e5d78c058717a406fd",
+    "tools/ghidra/ExportZ62Functions.java": "b1ff4d845deacefb79b7d63d655d97836da25178b814162567e417180d58accf"
+  },
+  "evidence_sha256": {
+    "analysis/z62-selector-r29/application-route-1/route.json": "be3d08100f33a0ea954a9e4767f8618791edf1528bf5e9ff605f408750ca4df8",
+    "analysis/z62-selector-r29/application-route-1/trace.json": "4708474b40e946fe274a914931782e776f40384bc8d1d2f21b02750dd466ba2f",
+    "analysis/z62-selector-r29/application-route-1/session.json": "94b83e3f566afda4648aa98178d00ccf4e16d27cc571cdf1bf698df8596becc8",
+    "analysis/z62-selector-r29/application-route-1/selector.json": "8f53d6e845e350be619c710e0458514d585566a7e5f12a62500359323981e8f5",
+    "analysis/z62-selector-r29/application-route-1/before.png": "ee91af215da697f466e1d5dd260e0dee7b5070a4303efe06c057db3e9ee56407",
+    "analysis/z62-selector-r29/application-route-1/pin0-low.png": "15efa79c197d71bef9662104e770dac14e2f679cc0571cea129087bf50fbe49c",
+    "analysis/z62-selector-r29/application-route-1/pin0-high.png": "15efa79c197d71bef9662104e770dac14e2f679cc0571cea129087bf50fbe49c",
+    "analysis/z62-selector-r29/system-change-callers.json": "01554f696361312719b9eecdb977837d4ec42e593fcc21fd8b3f4de611c17035",
+    "analysis/z62-selector-r29/regression.log": "d75f795a5931f6edea3f828dc55f161455cae0439e074f8a0fa640297f329e11",
+    "analysis/z62-selector-r29/regression.json": "a3aa6f084093f54bbdd8e68257f9a3dfa0beab4f5914268fa6d71af885488f79"
+  },
+  "application_input_register_verified": "r0",
+  "application_input_pointer": "0xc1f7a5ac",
+  "changed_application_receipts": [
+    {
+      "guest_seconds": 30.701,
+      "current": 1,
+      "previous": 0,
+      "changed": 1
+    },
+    {
+      "guest_seconds": 39.386,
+      "current": 0,
+      "previous": 1,
+      "changed": 1
+    }
+  ],
+  "later_application_receipts": [
+    {
+      "guest_seconds": 30.708,
+      "current": 1,
+      "previous": 1,
+      "changed": 0
+    },
+    {
+      "guest_seconds": 39.394,
+      "current": 0,
+      "previous": 0,
+      "changed": 0
+    }
+  ],
+  "both_input_values_reached_original_application": true,
+  "host_wrote_comparison_or_ready_flags": false,
+  "physical_photo_video_identity_verified": false,
+  "mode_recovery_verified": false,
+  "final_display_enabled": false,
+  "final_ready_join": 1,
+  "ready_bit2_clear_write_pc_dynamically_verified": false,
+  "batch_configuration_request_dynamically_verified": false,
+  "read_observation_timeouts": 1,
+  "control_commands_replayed": false,
+  "host_exit_code": 0,
+  "gdb_detach": "OK",
+  "owned_stage": "z62-reference-jrflhb1s",
+  "remaining_qemu_for_owned_stage": 0,
+  "virtual_card_snapshot": true,
+  "virtual_card_before_after_sha256": "27386955eeb28270fd04bf6e2ea9f6baa09f1235e11f5041dbb0a83dd8e61da7",
+  "regression_tests": 447,
+  "regression_seconds": 192.264,
+  "regression_exit_code": 0,
+  "regression_full_captured_output_saved": true,
+  "new_observer_tests": 5,
+  "new_tests_failed_before_implementation": true,
+  "r27_fixed_sources_checked": 13,
+  "r27_fixed_source_mismatches": [],
+  "r24_binary_sha256": "dbe36d222dbfa633086f906f626968635c61d9825eaee8174480bef22a39abf2",
+  "default_entry_changed": false,
+  "qemu_device_source_changed": false,
+  "guest_software_patched": false,
+  "camera_accessed": false,
+  "whole_camera_verified": false,
+  "factory_af_verified": false,
+  "flash_safety_verified": false
+}

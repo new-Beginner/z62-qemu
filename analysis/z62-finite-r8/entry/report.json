@@ -1,0 +1,170 @@
+{
+  "completed": true,
+  "camera_accessed": false,
+  "url": "http://127.0.0.1:59441",
+  "entry": "start-z6ii-qemu.cmd",
+  "pid": 57012,
+  "status": {
+    "model": "Z62",
+    "phase": "running",
+    "error": null,
+    "ready": true,
+    "package_version": "2026.10.29-r8",
+    "package_root": "<USERPROFILE>\\AppData\\Local\\Temp\\z62-reference-78gj9qlq",
+    "main_screen_experiment": false,
+    "sd_card_attached": false,
+    "experimental_boundaries": 0,
+    "input_ready": true,
+    "main_screen_usable": false,
+    "auto_menu": "off",
+    "uptime": 19,
+    "execution": "running",
+    "index": 3,
+    "held": [],
+    "queued": [],
+    "menu_pending": false,
+    "virtual_seconds": 1.512,
+    "lcd_frames": 5,
+    "display_enabled": false,
+    "reference_update_version": "2026.10.27-r1",
+    "sampling_source": false,
+    "sensor_pixels_modeled": false,
+    "shoulder": {
+      "page": 0,
+      "reads": 0,
+      "writes": 0,
+      "id-reads": 0,
+      "page-writes": 0,
+      "image": "000000000000000000080000c9000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "shoulder_physical_segments": false,
+    "firmware_status_count": 0,
+    "firmware_status_codes": [],
+    "firmware_health_known": true,
+    "firmware_status_empty": true,
+    "live_view_verified": false,
+    "functional_raw_status": {
+      "engines": {
+        "master": {
+          "functional-raw": true,
+          "raw-accepted": 8,
+          "raw-rejected": 3,
+          "raw-bytes": 73140224,
+          "raw-last-reason": "success"
+        },
+        "slave": {
+          "functional-raw": true,
+          "raw-accepted": 0,
+          "raw-rejected": 0,
+          "raw-bytes": 0,
+          "raw-last-reason": "reset"
+        }
+      },
+      "errors": [],
+      "live_view_verified": false,
+      "packing_verified": false,
+      "snapshot_atomic": false,
+      "known": true
+    },
+    "transaction_bridge": {
+      "engines": {
+        "master": {
+          "functional-raw-completion": true,
+          "raw-source-events": 8,
+          "raw-completions": 0,
+          "raw-ignored": 8,
+          "raw-coalesced": 0,
+          "raw-completion-last-reason": "mode-mismatch"
+        },
+        "slave": {
+          "functional-raw-completion": true,
+          "raw-source-events": 0,
+          "raw-completions": 0,
+          "raw-ignored": 0,
+          "raw-coalesced": 0,
+          "raw-completion-last-reason": "reset"
+        }
+      },
+      "errors": [],
+      "snapshot_atomic": false,
+      "hardware_timing_verified": false,
+      "live_view_verified": false,
+      "known": true
+    },
+    "capcom_sync_status": {
+      "known": true,
+      "engines": {
+        "master": {
+          "z62-capcom-sync": true,
+          "capcom-requests": 1,
+          "capcom-completions": 1,
+          "capcom-coalesced": 0
+        },
+        "slave": {
+          "z62-capcom-sync": true,
+          "capcom-requests": 0,
+          "capcom-completions": 0,
+          "capcom-coalesced": 0
+        }
+      },
+      "errors": [],
+      "mechanical_capture_verified": false,
+      "latency_ns_hypothesis": 100000
+    },
+    "hardware_version": "2026.10.29-r8",
+    "raw_stream_status": {
+      "known": true,
+      "engines": {
+        "master": {
+          "z62-raw-stream": true,
+          "raw-stream-active": true,
+          "raw-stream-attempts": 8,
+          "raw-stream-frames": 8,
+          "raw-stream-failed": 0,
+          "raw-stream-blocked": 0,
+          "raw-stream-unrelated": 0
+        },
+        "slave": {
+          "z62-raw-stream": true,
+          "raw-stream-active": false,
+          "raw-stream-attempts": 0,
+          "raw-stream-frames": 0,
+          "raw-stream-failed": 0,
+          "raw-stream-blocked": 0,
+          "raw-stream-unrelated": 0
+        }
+      },
+      "errors": [],
+      "isp_implemented": false,
+      "live_view_verified": false
+    },
+    "finite_stats_status": {
+      "known": true,
+      "engines": {
+        "master": {
+          "finite-attempts": 0,
+          "finite-frames": 0,
+          "finite-batches": 0,
+          "finite-rejected": 0,
+          "finite-bytes": 0,
+          "finite-reason": "reset"
+        },
+        "slave": {
+          "finite-attempts": 0,
+          "finite-frames": 0,
+          "finite-batches": 0,
+          "finite-rejected": 0,
+          "finite-bytes": 0,
+          "finite-reason": "reset"
+        }
+      },
+      "errors": [],
+      "algorithm_hypothesis": "stationary last-RAW regional box means",
+      "silicon_metering_verified": false,
+      "live_view_verified": false
+    }
+  },
+  "stop_response": "{\"ok\":true}",
+  "exit_code": 0,
+  "process_closed": true
+}

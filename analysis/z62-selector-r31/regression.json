@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "profile": "2026.11.01-selector-ready-queue-r31",
+  "command": ".build/tools/video-r26/Scripts/python.exe -X utf8 -B -m unittest discover -s tests -q",
+  "temporary_root": "D:/Z62-QEMU-runtime/sessions",
+  "tests": 451,
+  "seconds": 181.747,
+  "exit_code": 0,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "new_window_tests": 4,
+  "window_tests_total": 9,
+  "log": "regression.log",
+  "full_captured_stdout_stderr_saved": true,
+  "log_newlines": "normalized LF",
+  "unified_exec_session": 62912,
+  "scope": "Repository regression with explicit tail-frame SP offset and optional gated return; not whole-camera, selector recovery, AF or flash-safety acceptance",
+  "mode_recovery_verified": false,
+  "whole_camera_verified": false,
+  "factory_af_verified": false,
+  "flash_safety_verified": false
+}

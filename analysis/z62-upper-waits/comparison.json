@@ -1,0 +1,615 @@
+{
+  "sources": {
+    "analysis/z62-upper-waits/init-mode-run1/trace.json": "adf226c2f5e12c145e750034f1c55c1c82ebb9cf7dd5eb1b0bd98dfeb95b35a8",
+    "artifacts/z62-z6-transfer-20261028/init-mode-three-cycles/report.json": "8489b20db86bcd0b8a10ea9bfb52813582fffd75e482b5fb8be980c49d471d3f"
+  },
+  "trace_first_status35": {
+    "previous": {
+      "stage": "after-reopen",
+      "cycle": 2,
+      "virtual_seconds": 30.135,
+      "wall_seconds": 489.391,
+      "index": 3,
+      "pending": "0x20000",
+      "status_count": 0,
+      "status_codes": []
+    },
+    "first": {
+      "stage": "after-reopen",
+      "cycle": 2,
+      "virtual_seconds": 30.256,
+      "wall_seconds": 491.485,
+      "index": 3,
+      "pending": "0x20000",
+      "status_count": 1,
+      "status_codes": [
+        53
+      ]
+    }
+  },
+  "original_first_status35": {
+    "previous": {
+      "stage": "after-reopen",
+      "cycle": null,
+      "virtual_seconds": 30.311,
+      "wall_seconds": 391.156,
+      "index": 3,
+      "pending": "0x20000",
+      "status_count": 0,
+      "status_codes": []
+    },
+    "first": {
+      "stage": "after-reopen",
+      "cycle": null,
+      "virtual_seconds": 30.47,
+      "wall_seconds": 393.203,
+      "index": 3,
+      "pending": "0x20000",
+      "status_count": 1,
+      "status_codes": [
+        53
+      ]
+    }
+  },
+  "matching_at_first_status35": {
+    "mmio": true,
+    "capture": true,
+    "pending": true,
+    "index": true,
+    "status_codes": true
+  },
+  "summary": {
+    "counts": {
+      "mode-request": 2,
+      "wait-call": 1,
+      "wait-return": 1,
+      "status-producer": 1,
+      "status-append": 1
+    },
+    "waits": [
+      {
+        "return_pc": "0x1039c31c",
+        "result": 0,
+        "entry_hit": 3,
+        "return_hit": 4,
+        "virtual_duration": 3.016
+      }
+    ],
+    "unreturned_waits": [],
+    "status35_callers": [
+      "0x1039c325"
+    ],
+    "notification_03030004_count": 0,
+    "status35_sampled": true
+  },
+  "timeline": [
+    {
+      "sequence": 1,
+      "label": "mode-request",
+      "registers": {
+        "pc": "0x10397e78",
+        "lr": "0x1039c4ff",
+        "sp": "0xc532b798",
+        "r0": "0x0",
+        "r1": "0x0",
+        "r2": "0x28",
+        "r3": "0x4004",
+        "r4": "0x1000",
+        "r5": "0xc1868290",
+        "r6": "0x0",
+        "r7": "0x0"
+      },
+      "state": {
+        "stage": "before-menu",
+        "cycle": 0,
+        "virtual_seconds": 0.931,
+        "wall_seconds": 17.094,
+        "index": 0,
+        "pending": "0x0",
+        "status_count": 0,
+        "status_codes": []
+      },
+      "mmio": {
+        "0x20065508": "0x0",
+        "0x2006550c": "0x0",
+        "0x20065504": "0x0",
+        "0x20065400": "0x0",
+        "0x20060044": "0x10",
+        "0x20060040": "0x0",
+        "0x20061000": "0x0"
+      },
+      "sensors": {
+        "master": {
+          "init-submissions": 1,
+          "init-completions": 0,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        },
+        "slave": {
+          "init-submissions": 0,
+          "init-completions": 0,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        }
+      }
+    },
+    {
+      "sequence": 2,
+      "label": "mode-request",
+      "registers": {
+        "pc": "0x10397e78",
+        "lr": "0x1039c427",
+        "sp": "0xc532b7b0",
+        "r0": "0x0",
+        "r1": "0x0",
+        "r2": "0x9",
+        "r3": "0x5004",
+        "r4": "0x1000",
+        "r5": "0xc1868290",
+        "r6": "0x0",
+        "r7": "0x0"
+      },
+      "state": {
+        "stage": "after-exit",
+        "cycle": 2,
+        "virtual_seconds": 24.128,
+        "wall_seconds": 394.985,
+        "index": 1,
+        "pending": "0x0",
+        "status_count": 0,
+        "status_codes": []
+      },
+      "mmio": {
+        "0x20065508": "0x0",
+        "0x2006550c": "0xf3",
+        "0x20065504": "0x8000",
+        "0x20065400": "0x10011",
+        "0x20060044": "0x0",
+        "0x20060040": "0x27feb7",
+        "0x20061000": "0x0"
+      },
+      "sensors": {
+        "master": {
+          "init-submissions": 4,
+          "init-completions": 1,
+          "mode-completions": 1,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        },
+        "slave": {
+          "init-submissions": 0,
+          "init-completions": 0,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        }
+      }
+    },
+    {
+      "sequence": 3,
+      "label": "wait-call",
+      "registers": {
+        "pc": "0x1039c318",
+        "lr": "0x10399899",
+        "sp": "0xc532b780",
+        "r0": "0xc18682ac",
+        "r1": "0x8",
+        "r2": "0x0",
+        "r3": "0xbb8",
+        "r4": "0xbb8",
+        "r5": "0xc1868290",
+        "r6": "0xc1868290",
+        "r7": "0x1"
+      },
+      "state": {
+        "stage": "after-exit",
+        "cycle": 2,
+        "virtual_seconds": 27.144,
+        "wall_seconds": 442.235,
+        "index": 0,
+        "pending": "0x0",
+        "status_count": 0,
+        "status_codes": []
+      },
+      "mmio": {
+        "0x20065508": "0x0",
+        "0x2006550c": "0xf3",
+        "0x20065504": "0x8000",
+        "0x20065400": "0x10011",
+        "0x20060044": "0x0",
+        "0x20060040": "0x27feb7",
+        "0x20061000": "0x0"
+      },
+      "sensors": {
+        "master": {
+          "init-submissions": 6,
+          "init-completions": 1,
+          "mode-completions": 1,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        },
+        "slave": {
+          "init-submissions": 0,
+          "init-completions": 0,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        }
+      }
+    },
+    {
+      "sequence": 4,
+      "label": "wait-return",
+      "registers": {
+        "pc": "0x1039c31c",
+        "lr": "0x1035d451",
+        "sp": "0xc532b780",
+        "r0": "0x0",
+        "r1": "0x0",
+        "r2": "0xbb8",
+        "r3": "0x0",
+        "r4": "0xbb8",
+        "r5": "0xc1868290",
+        "r6": "0xc1868290",
+        "r7": "0x1"
+      },
+      "state": {
+        "stage": "after-reopen",
+        "cycle": 2,
+        "virtual_seconds": 30.16,
+        "wall_seconds": 489.829,
+        "index": 3,
+        "pending": "0x20000",
+        "status_count": 0,
+        "status_codes": []
+      },
+      "mmio": {
+        "0x20065508": "0x0",
+        "0x2006550c": "0xf3",
+        "0x20065504": "0x8000",
+        "0x20065400": "0x10011",
+        "0x20060044": "0x0",
+        "0x20060040": "0x27feb7",
+        "0x20061000": "0x0"
+      },
+      "sensors": {
+        "master": {
+          "init-submissions": 6,
+          "init-completions": 1,
+          "mode-completions": 1,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        },
+        "slave": {
+          "init-submissions": 0,
+          "init-completions": 0,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        }
+      }
+    },
+    {
+      "sequence": 5,
+      "label": "status-producer",
+      "registers": {
+        "pc": "0x10397ec8",
+        "lr": "0x1039c325",
+        "sp": "0xc532b780",
+        "r0": "0x2",
+        "r1": "0x0",
+        "r2": "0xbb8",
+        "r3": "0x0",
+        "r4": "0xbb8",
+        "r5": "0xc1868290",
+        "r6": "0xc1868290",
+        "r7": "0x1"
+      },
+      "state": {
+        "stage": "after-reopen",
+        "cycle": 2,
+        "virtual_seconds": 30.16,
+        "wall_seconds": 489.875,
+        "index": 3,
+        "pending": "0x20000",
+        "status_count": 0,
+        "status_codes": []
+      },
+      "mmio": {
+        "0x20065508": "0x0",
+        "0x2006550c": "0xf3",
+        "0x20065504": "0x8000",
+        "0x20065400": "0x10011",
+        "0x20060044": "0x0",
+        "0x20060040": "0x27feb7",
+        "0x20061000": "0x0"
+      },
+      "sensors": {
+        "master": {
+          "init-submissions": 6,
+          "init-completions": 1,
+          "mode-completions": 1,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        },
+        "slave": {
+          "init-submissions": 0,
+          "init-completions": 0,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        }
+      }
+    },
+    {
+      "sequence": 6,
+      "label": "status-append",
+      "registers": {
+        "pc": "0x103970d4",
+        "lr": "0x10397055",
+        "sp": "0xc532b768",
+        "r0": "0x35",
+        "r1": "0x1",
+        "r2": "0x1",
+        "r3": "0x0",
+        "r4": "0xc532b770",
+        "r5": "0xc1868290",
+        "r6": "0xc1868290",
+        "r7": "0x1"
+      },
+      "state": {
+        "stage": "after-reopen",
+        "cycle": 2,
+        "virtual_seconds": 30.16,
+        "wall_seconds": 489.922,
+        "index": 3,
+        "pending": "0x20000",
+        "status_count": 0,
+        "status_codes": []
+      },
+      "mmio": {
+        "0x20065508": "0x0",
+        "0x2006550c": "0xf3",
+        "0x20065504": "0x8000",
+        "0x20065400": "0x10011",
+        "0x20060044": "0x0",
+        "0x20060040": "0x27feb7",
+        "0x20061000": "0x0"
+      },
+      "sensors": {
+        "master": {
+          "init-submissions": 6,
+          "init-completions": 1,
+          "mode-completions": 1,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        },
+        "slave": {
+          "init-submissions": 0,
+          "init-completions": 0,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        }
+      }
+    }
+  ],
+  "candidate_return_counts": {
+    "0x103999be": 0,
+    "0x10399a00": 0,
+    "0x10399bdc": 0,
+    "0x1039c1f8": 0,
+    "0x1039c31c": 1
+  },
+  "observed_window": {
+    "attachment": {
+      "stage": "before-menu",
+      "cycle": 0,
+      "virtual_seconds": 0.0,
+      "wall_seconds": 1.844,
+      "index": 5,
+      "pending": "0x0",
+      "status_count": 0,
+      "status_codes": []
+    },
+    "last": {
+      "stage": "after-reopen",
+      "cycle": 2,
+      "virtual_seconds": 31.315,
+      "wall_seconds": 508.36,
+      "index": 3,
+      "pending": "0x20000",
+      "status_count": 1,
+      "status_codes": [
+        53
+      ]
+    }
+  },
+  "process": {
+    "pid": 59720,
+    "gdb_port": 54522,
+    "stops": 11,
+    "stop_reason": "status35 observed plus one virtual second",
+    "process_closed": true,
+    "detach": "OK",
+    "trace_complete": true
+  },
+  "counter_transitions": [
+    {
+      "state": {
+        "stage": "before-menu",
+        "cycle": 0,
+        "virtual_seconds": 0.005,
+        "wall_seconds": 1.985,
+        "index": 5,
+        "pending": "0x0",
+        "status_count": 0,
+        "status_codes": []
+      },
+      "sensors": {
+        "master": {
+          "init-submissions": 0,
+          "init-completions": 0,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        },
+        "slave": {
+          "init-submissions": 0,
+          "init-completions": 0,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        }
+      }
+    },
+    {
+      "state": {
+        "stage": "before-menu",
+        "cycle": 0,
+        "virtual_seconds": 1.029,
+        "wall_seconds": 18.766,
+        "index": 0,
+        "pending": "0x0",
+        "status_count": 0,
+        "status_codes": []
+      },
+      "sensors": {
+        "master": {
+          "init-submissions": 1,
+          "init-completions": 0,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        },
+        "slave": {
+          "init-submissions": 0,
+          "init-completions": 0,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        }
+      }
+    },
+    {
+      "state": {
+        "stage": "before-menu",
+        "cycle": 0,
+        "virtual_seconds": 1.277,
+        "wall_seconds": 22.907,
+        "index": 3,
+        "pending": "0x0",
+        "status_count": 0,
+        "status_codes": []
+      },
+      "sensors": {
+        "master": {
+          "init-submissions": 3,
+          "init-completions": 1,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        },
+        "slave": {
+          "init-submissions": 0,
+          "init-completions": 0,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        }
+      }
+    },
+    {
+      "state": {
+        "stage": "after-exit",
+        "cycle": 1,
+        "virtual_seconds": 15.234,
+        "wall_seconds": 247.079,
+        "index": 0,
+        "pending": "0x0",
+        "status_count": 0,
+        "status_codes": []
+      },
+      "sensors": {
+        "master": {
+          "init-submissions": 3,
+          "init-completions": 1,
+          "mode-completions": 1,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        },
+        "slave": {
+          "init-submissions": 0,
+          "init-completions": 0,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        }
+      }
+    },
+    {
+      "state": {
+        "stage": "after-exit",
+        "cycle": 2,
+        "virtual_seconds": 24.207,
+        "wall_seconds": 396.547,
+        "index": 0,
+        "pending": "0x0",
+        "status_count": 0,
+        "status_codes": []
+      },
+      "sensors": {
+        "master": {
+          "init-submissions": 4,
+          "init-completions": 1,
+          "mode-completions": 1,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        },
+        "slave": {
+          "init-submissions": 0,
+          "init-completions": 0,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        }
+      }
+    },
+    {
+      "state": {
+        "stage": "after-exit",
+        "cycle": 2,
+        "virtual_seconds": 24.466,
+        "wall_seconds": 400.719,
+        "index": 0,
+        "pending": "0x0",
+        "status_count": 0,
+        "status_codes": []
+      },
+      "sensors": {
+        "master": {
+          "init-submissions": 6,
+          "init-completions": 1,
+          "mode-completions": 1,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        },
+        "slave": {
+          "init-submissions": 0,
+          "init-completions": 0,
+          "mode-completions": 0,
+          "mode2-completions": 0,
+          "frame-completions": 0
+        }
+      }
+    }
+  ],
+  "post_run_input_sha256": {
+    ".build/z62-reference-2026.10.27-r1/runtime/qemu-system-arm.exe": "e169431ed0a24dded62c2d3e0ea2aba1056385ec96584c57b40cd4e5ab29fba4",
+    "artifacts/z62-reference-1.70/master.bin": "bb83613121f843d65101da936d942acdc513d86dbd3abc26259d0d870d03f5d4",
+    "artifacts/z62-reference-1.70/slave.bin": "3fd8c2cbdf57fadb03f6d69b596b58a8703efdd61ae82572d5afeea0241a9ed5",
+    "artifacts/z62-reference-1.70/controller.bin": "9c65cad554ed02f83d37fbc825a8eb9efe79e3f32f98894dd5dd73edee416983"
+  }
+}

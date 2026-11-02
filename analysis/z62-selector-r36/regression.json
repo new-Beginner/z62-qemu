@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "profile": "2026.11.02-processor-drain-observation-r36",
+  "command": ".build/tools/video-r26/Scripts/python.exe -X utf8 -B -m unittest discover -s tests -q",
+  "temporary_root": "D:/Z62-QEMU-runtime/sessions",
+  "tests": 466,
+  "seconds": 169.914,
+  "exit_code": 0,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "new_drain_snapshot_tests": 3,
+  "new_tests_failed_before_implementation": true,
+  "log": "regression.log",
+  "full_captured_stdout_stderr_saved": true,
+  "log_newlines": "normalized LF",
+  "unified_exec_session": 2703,
+  "scope": "Read-only stop-prerequisite observer repository regression; separate runtime acceptance remains required.",
+  "mode_recovery_verified": false,
+  "whole_camera_verified": false,
+  "factory_af_verified": false,
+  "flash_safety_verified": false
+}

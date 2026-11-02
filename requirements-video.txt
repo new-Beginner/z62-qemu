@@ -1,0 +1,2 @@
+# Optional isolated C video host. Existing project dependencies are inherited.
+av==19.0.2

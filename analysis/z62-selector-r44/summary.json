@@ -1,0 +1,188 @@
+{
+  "schema": 1,
+  "completed_observation": true,
+  "profile": "2026.11.02-stage-resource-waits-r44b",
+  "guest_seconds": 18.096,
+  "observer_wall_seconds": 321.641,
+  "stops": 398,
+  "stop_reason": "virtual limit",
+  "pid": 53356,
+  "stage": "z62-reference-6kgxjixh",
+  "process_closed": true,
+  "detach": "OK",
+  "display_enabled": true,
+  "paired_waits": 12,
+  "incomplete_waits": 1,
+  "outside_scope": 0,
+  "cleanup_entries": 144,
+  "cleanup_associations": 12,
+  "producer_points": 223,
+  "producer_masks": {
+    "0x400000": 223
+  },
+  "source_callback_entries": 0,
+  "source_skip_counter_observations": 0,
+  "source_skip_counter_value_verified": false,
+  "source_publication_point_hits": 0,
+  "groups": {
+    "stage-a300": {
+      "paired_count": 5,
+      "return_r0": {
+        "1": 5
+      },
+      "guest_wait_durations": {
+        "0.004": 1,
+        "0.0": 4
+      },
+      "output_bits_raw": {
+        "0x62c00000": 1,
+        "0x22c00000": 4
+      },
+      "operation_type_channels": {
+        "0204": 5
+      },
+      "actual_arguments": {
+        "event_object": "0xc18647d8",
+        "mask_raw": 2155872256,
+        "wait_parameter": 1000,
+        "output_pointer": "0xc54147b0",
+        "output_equals_verified_stack_slot": true
+      }
+    },
+    "stage-69446": {
+      "paired_count": 7,
+      "return_r0": {
+        "0": 7
+      },
+      "guest_wait_durations": {
+        "1.005": 2,
+        "1.006": 5
+      },
+      "output_bits_raw": {
+        "0x81000000": 7
+      },
+      "operation_type_channels": {
+        "0204": 7
+      },
+      "actual_arguments": {
+        "event_object": "0xc18647d8",
+        "mask_raw": 2164260864,
+        "wait_parameter": 1000,
+        "output_pointer": "0xc54167a8",
+        "output_equals_verified_stack_slot": true
+      }
+    }
+  },
+  "associations": [
+    {
+      "call_sequence": 68,
+      "api": "stage-a300",
+      "return_r0": 1,
+      "pending_at_call": 0,
+      "pending_at_return": 0,
+      "pending_at_cleanup": 0,
+      "return_to_cleanup_seconds": 0
+    },
+    {
+      "call_sequence": 78,
+      "api": "stage-a300",
+      "return_r0": 1,
+      "pending_at_call": 0,
+      "pending_at_return": 0,
+      "pending_at_cleanup": 0,
+      "return_to_cleanup_seconds": 0
+    },
+    {
+      "call_sequence": 87,
+      "api": "stage-a300",
+      "return_r0": 1,
+      "pending_at_call": 0,
+      "pending_at_return": 0,
+      "pending_at_cleanup": 0,
+      "return_to_cleanup_seconds": 0
+    },
+    {
+      "call_sequence": 96,
+      "api": "stage-a300",
+      "return_r0": 1,
+      "pending_at_call": 0,
+      "pending_at_return": 0,
+      "pending_at_cleanup": 0,
+      "return_to_cleanup_seconds": 0
+    },
+    {
+      "call_sequence": 105,
+      "api": "stage-a300",
+      "return_r0": 1,
+      "pending_at_call": 0,
+      "pending_at_return": 0,
+      "pending_at_cleanup": 0,
+      "return_to_cleanup_seconds": 0
+    },
+    {
+      "call_sequence": 72,
+      "api": "stage-69446",
+      "return_r0": 0,
+      "pending_at_call": 0,
+      "pending_at_return": 0,
+      "pending_at_cleanup": 1,
+      "return_to_cleanup_seconds": 0
+    },
+    {
+      "call_sequence": 117,
+      "api": "stage-69446",
+      "return_r0": 0,
+      "pending_at_call": 0,
+      "pending_at_return": 0,
+      "pending_at_cleanup": 1,
+      "return_to_cleanup_seconds": 0
+    },
+    {
+      "call_sequence": 162,
+      "api": "stage-69446",
+      "return_r0": 0,
+      "pending_at_call": 0,
+      "pending_at_return": 0,
+      "pending_at_cleanup": 1,
+      "return_to_cleanup_seconds": 0
+    },
+    {
+      "call_sequence": 203,
+      "api": "stage-69446",
+      "return_r0": 0,
+      "pending_at_call": 0,
+      "pending_at_return": 0,
+      "pending_at_cleanup": 1,
+      "return_to_cleanup_seconds": 0
+    },
+    {
+      "call_sequence": 245,
+      "api": "stage-69446",
+      "return_r0": 0,
+      "pending_at_call": 0,
+      "pending_at_return": 0,
+      "pending_at_cleanup": 1,
+      "return_to_cleanup_seconds": 0
+    },
+    {
+      "call_sequence": 287,
+      "api": "stage-69446",
+      "return_r0": 0,
+      "pending_at_call": 0,
+      "pending_at_return": 0,
+      "pending_at_cleanup": 1,
+      "return_to_cleanup_seconds": 0
+    },
+    {
+      "call_sequence": 329,
+      "api": "stage-69446",
+      "return_r0": 0,
+      "pending_at_call": 0,
+      "pending_at_return": 0,
+      "pending_at_cleanup": 1,
+      "return_to_cleanup_seconds": 0
+    }
+  ],
+  "current_source_matches": true,
+  "timeouts": 0
+}

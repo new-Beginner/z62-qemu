@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "profile": "2026.11.01-async-video-console-r27",
+  "implementation_level": "C",
+  "hardware_profile": "2026.11.01-r24",
+  "hardware_binary": ".build/z62-scene-file-2026.11.01-r24/runtime/qemu-system-arm.exe",
+  "hardware_binary_sha256": "dbe36d222dbfa633086f906f626968635c61d9825eaee8174480bef22a39abf2",
+  "baseline_source_verification": {
+    "r24_receipt": "analysis/z62-camera-r24/verified-artifacts.json",
+    "r24_checked_files": 25,
+    "r24_mismatched": [],
+    "r26b_receipt": "analysis/z62-video-r26/verified-artifacts.json",
+    "r26b_checked_files": 12,
+    "r26b_mismatched": []
+  },
+  "source_sha256": {
+    "tools/z62_async_video_console.py": "48a1bd53827ce8dd2067101e9d5e670d71a36c663bd232e804033d037a9f2fe4",
+    "tools/z62_async_video_scene.py": "d7a44e757da421475c17d795ac9e60c834f82dff1d5eb9e5f87c140ea58a11ef",
+    "tools/z62_async_video_card.py": "37f8b42a533ebc30d917975739ab5f618a6e8675447e4c0fc4d88c6976b1b8fa",
+    "tools/z62_async_video_job.py": "7e0dd16154266ba35153015bcce9c2bfdab2b6adc8609b2fee00f0517ec4d35c",
+    "tools/z62_async_video_worker.py": "4becaa327969dc3c25879f1f8728576d71bc2cc68cbe9943c6811e745acc6940",
+    "tools/z62_video_codec.py": "66eb0d632e9945f270f172236c750bef5ada50c2c8d0b726694242a046d90c88",
+    "tools/z62_media_scene.py": "0e1460c6d3bfa1df40a625b95ee47843e95f554eefda6fdfc654e2a7a7e3e34e",
+    "tools/z62_scene_exchange.py": "490ad0a89e75a5f79f1957392aa990c8e59707a7b39c51ed39d8c1e403700458",
+    "tools/run_z62_async_video_console.py": "0b63f4f0bdd33ff6a590eb2711e6df1d70124c7a147ab65c643c8bde520b08d0",
+    "tools/probe_z62_async_video_console.py": "902d06070c5a3b10c4e708475adffafe64df61477f9c5a4c8200dd7d92710e09",
+    "tools/export_z62_async_video.py": "d1decc56f5627be2ddb75079e43d8161ea354dca162d5269845b31bc603b566a",
+    "tools/assets/z62-async-video.js": "77b597e7fff87be59f49f121641a118f4a17d407aaafeec28ad3a2f72ce1a300",
+    "start-z6ii-async-video.cmd": "2786ecb6a1b3ed0705fcbbf889f3293a734d9ffe82edf63d0e6f201f371eb9ae"
+  },
+  "evidence_sha256": {
+    "live-encode-1/async-video-check.json": "a4b7c2fee9b95a6ec5af7bf2faa0df99f620968ba092254bad77317e17bca26f",
+    "live-cancel-1/async-video-check.json": "ef9190263b6a4ccfe466251c1f5b00ffd80821c984c10311e729f06d933a35d0",
+    "live-close-1/async-video-check.json": "036e884d9def6f3256c3a84efdb4eefcf2a1ef754fbc9afac88885fc01d8f4a6",
+    "candidate-encode-final/async-video-check.json": "e26d7a2dd80917026373954a61eba38ce55e3bf3951ad3c106bd9833cf203892",
+    "ui-export-final/export.json": "35e543ac499612091716d4380c537633e882b3d3ddf7f7e5cf84bef3cfccfbd1",
+    "ui-export-final/media.json": "6ccfe8487e13ca6c3cdd496af7d35be8322cf783107923dfb9d1a19155572466",
+    "ui-export-final/Z62_0001.MP4": "c4c2d3551cd75f54c88256a23d8b61d3d472a0e31682c47273ab8036c0a364af",
+    "ui-qa-final.json": "1ba1453ec620035d158776a70763b8d0dabcf73a30550f808f6fa9ec765e8ee0",
+    "ui-first-failure.json": "2e0e5e723796cf4083dd3daad3f3a2e2983dee198537c20edda56743a19705f9",
+    "regression.json": "65703a33053ded89da1fb8ce8765afa58eefc4352b3133a8385cfe76c4064354",
+    "ui-closed-final.jpg": "b84f6b9b59d02337298b1ee7d8d04dd33d31645ecb6a9321ce4f9874962ff338"
+  },
+  "regression_receipt": "regression.json",
+  "regression_tests": 438,
+  "regression_full_log_saved": false,
+  "early_runtime_receipts_before_json_retry_fix": [
+    "live-encode-1/async-video-check.json",
+    "live-cancel-1/async-video-check.json",
+    "live-close-1/async-video-check.json"
+  ],
+  "final_runtime_receipts": [
+    "candidate-encode-final/async-video-check.json",
+    "ui-export-final/export.json",
+    "ui-qa-final.json"
+  ],
+  "ui_runtime_sources_match_current": true,
+  "ui_core_files_checked": 8,
+  "ui_async_js_suffix_matches_current": true,
+  "ui_host_exit_code": 0,
+  "ui_empty_card_reopened": true,
+  "ui_remaining_processes_for_owned_stage": 0,
+  "cmd_version_verified": "2026.11.01-async-video-console-r27",
+  "audio_verified": false,
+  "factory_video_verified": false,
+  "whole_camera_verified": false,
+  "factory_af_verified": false,
+  "flash_safety_verified": false
+}

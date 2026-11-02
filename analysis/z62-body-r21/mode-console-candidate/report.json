@@ -1,0 +1,15 @@
+{
+  "completed": false,
+  "camera_accessed": false,
+  "url": "http://127.0.0.1:63262",
+  "entry": "tools\\run_z62_mode_console.py",
+  "expected_version": "2026.10.29-no-lens-r16",
+  "diagnostic_key": "preview_status",
+  "candidate": true,
+  "pid": 413280,
+  "failure": {
+    "type": "RuntimeError",
+    "message": "Entry exited before HTTP readiness"
+  },
+  "process_closed": true
+}
