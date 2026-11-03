@@ -2,7 +2,7 @@
 
 核查日期：2026-11-04。A为原始固件执行，B为有证据的设备行为模型，C为显式软件替代，D为未实现。部分原厂界面和输入已经运行，C级JPEG、NEF及静音MP4已有实际运行与独立解码验证；完整相机、原厂拍摄保存、全分辨率RAW／视频、AF实验及刷写安全仍未验收。r66独立软件源经r68完整55.021秒窗口核对：旧RAW停止后，视频两次换景及返回照片新来源实际到达原厂LCD，严格双流水恢复仍未通过。
 
-r69已完成独立构建和输出来源原生检查；r71独立控制台已验证有来源标签的JPEG／NEF及9帧静音MP4。初始照片→视频在未按全快门的对照中确认通过，但拍照后切视频、录像后返回照片的完整验收未过。当前入口为r75界面／r69内核；r86新增独立像素核心，尚未接入QEMU，不与r68静态场景窗口混用。
+r69已完成独立构建和输出来源原生检查；r71独立控制台已验证有来源标签的JPEG／NEF及9帧静音MP4。初始照片→视频在未按全快门的对照中确认通过，但拍照后切视频、录像后返回照片的完整验收未过。当前入口为r75界面／r69内核；r91源码快照包含r87–r91独立采集后端，默认关闭。r91原厂窗口验证了DMA／中断ACK，统计／预览仍未贯通，不与r68静态场景窗口混用。
 
 ## 当前能力
 
@@ -28,7 +28,12 @@ r69已完成独立构建和输出来源原生检查；r71独立控制台已验�
 | 无快门拥塞对照及原厂通知调用 | A调用／C模型诊断 | r79/r80/r81完成有界取证，设备合同仍缺 | [r79–r82报告](history/2026-11-03_研究-Z62无快门拥塞与事件参数边界r79-r82-report.md)：无控制、采集active0、空卡仍队列60/60和三次约201ms超时；连续统计642成功帧；16次线路101对应通知调用。其余指定点只在有限窗口未命中；未读取真实kernel flags或证明setter成功 |
 | 真实内核事件CB、原厂置位与等待错误 | A内核执行／宿主只读观察 | r84/r85完整有界取证，模式未修复 | [r83–r85报告](history/2026-11-03_研究-Z62真实内核事件与通知交付r83-r85-report.md)：用Z6II ARM指令核对32字节CB及+14h pattern；实际0→00800000h、setter返回0，但AND 05B00000h返回FFCE0000h、上层布尔0。r83失败和同VM恢复保留；没有补其它引擎ready或修改AF |
 | 两级采集像素核心 | C独立数值运算 | r86的8项native C及1,523,084样本独立C／NumPy核对通过 | [r86说明](profiles/README-Z62-CAPTUREWORK.md)：非整数缩小、CFA相位、LUT与RAW12/14/16，失败不改输出；实际几何／LUT＋合成MAIN，不证明硅片等价 |
-| CaptureWork设备集成与来源 | D | 未实现 | MAIN生产者／提交来源／ring-bank／run-stop-reset-cancel／generation／背压及LUT逆变换仍缺；无新DMA、IRQ或ready，无新QEMU内核 |
+| 独立MAIN生产者与读占用 | C，本地r87 | 7项专项和两帧3,046,168像素独立核对通过 | [r87报告](history/2026-11-04_实施-Z62独立MAIN来源与帧生命周期r87-report.md)：linear16／角色／CRC／时间身份，单缓存背压、取消／停止／复位及旧serial拒绝；尚未绑定QEMU |
+| RAW transfer冻结与量化重建 | C，本地r88 | 8项专项及两帧3,046,168样本独立核对通过 | [合同](../qemu/z62-capturework/RAW-TRANSFER-CONTRACT.md)：按值LUT／描述CRC、shift12/14/16与LUT8、整帧预检、未知码拒绝；LUT8丢低8位，输出为区间中点，不是原样本 |
+| CaptureWork原生设备／DMA／输入事件 | B有限控制／C像素，本地r89 | 独立新QEMU构建，默认关闭；6帧9,138,504样本实际读回通过 | [r89报告](history/2026-11-04_实施-Z62原生采集后端与DMA交付r89-report.md)：冻结配置／LUT、私有worker、完整选中ring预检、真实写回后3/4/135事件、ACK／bank1／提交前取消／复位通过；不等于原厂消费 |
+| CaptureWork原厂受控执行／中断ACK | A原厂CPU＋C MAIN，本地r90/r91 | 原厂8.003秒窗口有13次DMA和13组CPU W1C，保存6帧9,138,504样本一致 | [r90/r91报告](history/2026-11-04_实施-Z62原厂MAIN交付与共享源策略r90-r91-report.md)：显式policy0兼容已观察共享字段，未知值拒绝；内核采样曾为04300000h，未观察完整05B条件成立，不把ACK当高层工作完成 |
+| CaptureWork物理来源／下游集成 | D | 未验收 | 物理source pair未模拟；持续统计source、预览0、LCD黑；旧grid在该窗口disabled，不能当硬件缺失。需线性视图／数据资格／时钟交付连接，完整模式恢复及inflight取消竞态仍缺 |
+| 当前工作目录全量Python回归 | 工程验证 | r91完整发现701项通过，零失败／错误／跳过 | 当前结果（本地证据，未分发：`analysis/z62-capturework-policy-r91/regression-1.json`），另有新policy0与原厂DMA／ACK验证；r87失败原件（本地证据，未分发：`analysis/z62-main-source-r87/regression-1.json`）保留，不称为全系统或刷机验收 |
 | 原厂虚拟SD扇区／镜像持久化 | B | 底层已实现 | [存储合同](profiles/README-Z62-DEVELOPMENT.md)；没有原厂照片文件闭环 |
 | 软件场景、镜头和曝光 | A/B/C | 已接入原生预览RAW及原厂LCD，模型近似 | [r24说明](profiles/README-Z62-NATIVE-SCENE.md)；单平面未校准；实际图像变化已有原厂LCD截图和RAW载荷验证 |
 | 软件JPEG、目录卡、回放、放大、删除 | C | 原版／候选分支及网页主流程通过 | 原版流程（本地证据，未分发：`analysis/z62-camera-r24/live-flow-1/native-console-check.json`）、候选分支（本地证据，未分发：`analysis/z62-camera-r24/candidate-flow-1/native-console-check.json`）及网页验收（本地证据，未分发：`analysis/z62-camera-r24/ui-qa.json`）；JPEG绑定实际消费的RAW输入；关闭告警及一项UI小修正仍有复测边界 |

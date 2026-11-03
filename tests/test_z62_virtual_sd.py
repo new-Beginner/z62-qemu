@@ -1,17 +1,26 @@
-"""Virtual-media tests; no physical disk access or firmware execution."""
+"""Virtual media under the current workspace entry's Path adaptation.
+
+Actual card IO, transactions and rejections remain active; no physical media.
+"""
 import os
 from pathlib import Path
 import struct
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
 from z62_virtual_sd import CardSession, create_fat32, image_path
+import z62_virtual_sd as virtual_sd
+import z62_workspace_paths as storage
 
 
 class VirtualSDTests(unittest.TestCase):
     def setUp(self):
+        path_type=Path if str(storage.ROOT).isascii() else storage.WorkspacePath
+        transport=patch.object(virtual_sd,'Path',path_type)
+        transport.start(); self.addCleanup(transport.stop)
         self.temp = tempfile.TemporaryDirectory(dir=os.environ.get('PI_SCRATCH_DIR'))
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)

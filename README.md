@@ -2,7 +2,7 @@
 
 尼康 **Z6II / Z62 C1.70** 的 QEMU 系统仿真实验工程。运行原始固件，连接机身输入、虚拟场景、软件镜头、近似成像、虚拟存储和调试工具，逐步建设固件研究平台。
 
-**当前为 2026-11-04 / r86 研究快照，尚未完成完整相机仿真，不能保证修改后的固件刷入真机不变砖。** 当前使用 **r69 QEMU 内核、r75 交互入口**；r76–r86 包含后续诊断和独立 C 数值核心，不表示又发布了多个新内核。r86 尚未集成进 QEMU 设备。原厂固件版本字段没有修改。
+**当前源码快照为 2026-11-04 / r91，尚未完成完整相机仿真，不能保证修改后的固件刷入真机不变砖。** 默认仍使用 **r69 QEMU 内核、r75 交互入口**；r87–r91 的新增源码、测试、阶段报告和选定证据摘要纳入本次更新。r89/r91 为独立、默认关闭的采集实验内核，没有提升默认入口或修改原厂固件版本字段。
 
 本项目基于他人的公开成果继续开发。直接基础包括 [xiaoqingfeng0526/nikon-z62-qemu](https://github.com/xiaoqingfeng0526/nikon-z62-qemu)、[JKWTCN/z72-qemu](https://github.com/JKWTCN/z72-qemu)、WonderLantern Z6/Z7 及其贡献者；近期内核研究还参考了 [nightglasses/z7ii-qemu](https://github.com/nightglasses/z7ii-qemu)。保留原作者、QEMU 和各依赖的许可证与署名，不把他人成果称为从零实现。
 
@@ -22,7 +22,7 @@
 | 软件视频 | 异步编码、进度、取消、H.264/MP4 保存、解码/时间/来源审计及回放已有有界验证 | C；640×424、VFR、静音；不同版本的已通过窗口分开记录，不称长稳或完整原厂录像 |
 | 照片/视频模式往返 | **部分实现，完整交互验收失败** | 原厂选择值已能交付；未全按对照能确认视频新帧，拍照后切换及录像后返回仍有缺口 |
 | 原厂采集/就绪/内核状态观测 | 已定位满队列拒绝、拍摄前就绪等待超时，读到实际内核事件 CB 和原始返回 | A + 宿主诊断；断点扰动，不是功能修复 |
-| r86 采集像素核心 | 两级非整数缩小、CFA 相位、256 项 LUT、RAW12/14/16 打包已有独立 C 实现和数值验证 | C；MAIN 仍为合成输入，QEMU DMA/IRQ、提交来源、ring/bank 和下游 LUT 逆变换未接入 |
+| CaptureWork 独立采集后端 r89/r91 | MAIN／linear16、冻结 LUT／transfer、有限 RAW12 配方、bank/ring、DMA 后事件、ACK 背压；r91 原厂窗口有 13 次 DMA 与 13 组 CPU 确认 | A 原厂受控执行＋B 有限传输＋C 数值模型；保存 6 帧共 9,138,504 样本核对一致，下游统计／预览仍为 0，LCD 全黑；默认关闭 |
 | 原厂 JPEG/NEF 编码并存入客体卡 | **未完成** | D；目录卡的软件照片与原厂文件链分开 |
 | 完整 Z 镜头通信、原厂 AF 多帧回放/闭环/评测 | **未完成** | D；没有自写 AF 冒充原算法，也未修改 AF 算法 |
 | 合焦变绿、自动竖屏、新版 E7 自定义界面、内录 8-bit N-Log | **未作为可用固件功能交付** | 模拟器不能证明这些改动能在 Z6II 实机正常工作 |
@@ -39,10 +39,16 @@
 - **r80–r82：**连续统计仍产出；捕获线路 101 通知调用。撤回把对象首字 `01000111h` 当作 flags 的错误解释。
 - **r83–r85：**从 Z6II 原始 ARM 指令解析真实事件 CB；实际观察内核将 pattern 从 0 写为 `00800000h`、setter 返回 0，但 AND 等待 `05B00000h` 仍返回原始错误码 `FFCE0000h`，上层才转为 0。尚未补齐其它就绪生产者的合法设备合同。
 - **r86：**参考 nightglasses 的 CaptureWork 研究，按 Z62 实际读回的 `2020×1342 → 1514×1342 → 1514×1006` 几何实现独立软件像素核心。8 项 native C 测试通过；合成 MAIN 的全部 1,523,084 个输出像素经独立 C 与 NumPy 两级参考核对，零差异，行填充不变。没有注入完成或修改 r69。
+- **r87：**新增独立 MAIN／linear16 帧和 C 缓存读占用，模型内背压、取消／停止／复位和旧任务拒绝通过；7 项专项及移动场景两帧共 3,046,168 像素核对通过。当时完整发现 690 项实际为 **2 failures／8 errors／0 skips**，集中于 Q:/D: 别名比较和旧 SD 的 ASCII 路径限制，失败记录保留。[阶段记录](docs/history/2026-11-04_实施-Z62独立MAIN来源与帧生命周期r87-report.md)。
+- **r88：**新增不可变 RAW transfer 描述和 C 级量化区间重建，8 项专项通过；两帧 3,046,168 样本与独立参考一致，正向 RAW12 与 r87 字节相同。LUT8 丢失低 8 位，返回区间中点而非原始样本；下游 ISP 尚未接入。旧路径测试按实际工作目录入口适配，旧 guard 保留。
+- **r89：**独立 QEMU 采集后端完成真实 DMA／事件锁存接入，默认关闭。合成 ARM 循环下 6 帧、9,138,504 像素读回一致，bank1、冻结 LUT、背压、提交前取消和复位通过；旧 RAW／ISP 及完整 698 项 Python 回归通过。下游新来源 ISP、完整模式恢复和 inflight 取消竞态仍待验证。[阶段报告](docs/history/2026-11-04_实施-Z62原生采集后端与DMA交付r89-report.md)。
+- **r90/r91：**原厂写入的共享源字 `0x200040` 暴露 r89 原生夹具遗漏；新增显式 C-MAIN 策略兼容该已观察值，未知值仍拒绝。原始 C1.70 的 8.003 秒窗口记录 13 次 DMA 与 13 组 CPU ACK，保存 6 帧、9,138,504 样本独立核对一致；事件块曾采样到 `0x04300000`，未观察完整就绪条件成立。统计／预览未推进、LCD 全黑；本地完整 Python 701 项通过。[阶段报告](docs/history/2026-11-04_实施-Z62原厂MAIN交付与共享源策略r90-r91-report.md)与[采集后端使用说明](docs/profiles/README-Z62-CAPTUREWORK-DEVICE.md)。
+
+本地 r88 最终完整 Python 发现 **698 项通过，零失败／错误／跳过**；r87 的 690 项失败记录保留。SD 测试使用现有工作目录入口的真实 Path 适配，旧入口和 guard 没有修改。详见[r88记录](docs/history/2026-11-04_实施-Z62冻结RAW域与量化重建r88-report.md)。此结果不覆盖新的原厂运行窗口、LibRaw 或完整相机验收。
 
 主要难点是：多输入引擎、两银行及逐单元完成的合同不完整；真实帧对象、数据所有权与停止/重启依赖；NOR/个体标定缺失；镜头反馈与内部 AF/PDAF 数据格式未恢复。不能靠扩大队列、改原厂返回值、延长等待或补 ready 来宣布完成。公开 T-Kernel 2.0 的服务编号与目标不同，只用于语义参考，不据此宣称已确认整个 RTOS 产品和版本。
 
-r86 的配置读回不等于原厂写入/提交证据。独立 MAIN 生产者、有效 run/stop/reset/cancel、generation/背压和不可变 LUT 描述仍是设备集成的前置条件。LUT 打包输出属于编码域，不能直接冒充旧 ISP 所需的线性 RAW；组曲线/系数读回零也不能据此断言资源被擦除或代填成功。
+r86 的配置读回不等于原厂写入/提交证据。r89 已接入独立 C MAIN、冻结 transfer、worker 和有限控制；r91 另外取得原厂提交及中断 ACK 证据，仍未证明高层工作完成。完整 run/stop 合同、下游 ISP 和整机恢复待验收。LUT 打包输出属于编码域，不能直接冒充旧 ISP 所需的线性 RAW；组曲线/系数读回零也不能据此断言资源被擦除或代填成功。
 
 ## 构建与运行
 
@@ -78,12 +84,15 @@ python -m venv .venv
 - [异步软件录像路线](docs/profiles/README-Z62-ASYNC-VIDEO.md)
 - [候选固件输入边界](docs/profiles/README-FIRMWARE-TEST.md)
 - [r86 像素核心、复现方法及设备集成缺口](docs/profiles/README-Z62-CAPTUREWORK.md)
+- [r87–r91 MAIN、RAW 域与 QEMU 采集后端](docs/profiles/README-Z62-CAPTUREWORK-DEVICE.md)
 
-未持有完整构建链时，可先运行公开仓库的 `tools/check_public_source.py` 所列无固件子集。它不等于重跑完整历史回归、原生 QEMU、LibRaw 解码或原厂窗口。本机最近一次历史全量为 r69 阶段的 635 项；后续只对新增范围做专项/实际运行，不能称为 r85 全量全部通过。
+未持有完整构建链时，可先运行公开仓库的 `tools/check_public_source.py` 所列无固件子集。它不等于重跑完整历史回归、原生 QEMU、LibRaw 解码或原厂窗口。r91 本地完整测试发现为 701 项、零失败／错误／跳过，174.859 秒；这是已有完整研究环境的记录，不代表公开新克隆能直接运行所有测试。该环境没有 RawPy。
 
 上一 r85 公开副本已执行 **32 个模块、131 项测试，0 失败/错误/跳过**，并检查850个导出文件哈希、567份Python源码的内存编译及Markdown链接；没有加载固件或启动QEMU。该环境没有RawPy，因此该公开检查不冒充重跑LibRaw/RawPy独立解码。r86 数值检查独立记录；本次公开发布的实际复核范围见公开仓库 `docs/VALIDATION.md`，不能把历史计数冒充本轮全量结果。
 
-本次 r86 公开副本实际复核为 **32 模块、131 项无固件测试通过，零失败／错误／跳过**；另以 GCC 16.2.0 严格编译公开核心并执行 **8 个 C case 全部通过**，不依赖私有 relocation manifest。862 个导出文件哈希、573 份 Python 内存编译及 Markdown 链接通过；未加载固件、未启动 QEMU、未进行 RawPy 解码。最终文档更新后另外复核哈希和链接，未把源码测试当作原厂功能验收。
+上一 r86 公开副本实际复核为 **32 模块、131 项无固件测试通过，零失败／错误／跳过**；另以 GCC 16.2.0 严格编译公开核心并执行 **8 个 C case 全部通过**，不依赖私有 relocation manifest。862 个导出文件哈希、573 份 Python 内存编译及 Markdown 链接通过。r91 本次发布的实际复核单独记录在公开仓库 `docs/VALIDATION.md`，不把历史计数当成本次结果。
+
+本次 r91 公开副本实际执行 **33 模块、134 项无固件测试，零失败／错误／跳过**，另以 GCC 16.2.0 严格编译并通过 **16 个 C case**（8 像素、3 MAIN、5 transfer）。902 个导出文件哈希、593 份 Python 内存编译、Markdown 链接、被排除产物与凭据形态检查通过；最终文档回写后另做静态复核。这次没有启动 QEMU、加载固件、重跑本地 701 项或进行 RawPy/LibRaw 解码，不能当作新的原厂功能窗口。
 
 ## 开发过程、参考与许可证
 
@@ -95,6 +104,10 @@ python -m venv .venv
 - [r79–r82 无快门对照与字段更正](docs/history/2026-11-03_研究-Z62无快门拥塞与事件参数边界r79-r82-report.md)
 - [r83–r85 真实内核事件与参考边界](docs/history/2026-11-03_研究-Z62真实内核事件与通知交付r83-r85-report.md)
 - [r86 采集像素核心与独立验证](docs/history/2026-11-04_实施-Z62采集像素核心与独立验证r86-report.md)
+- [r87 MAIN 来源与生命周期](docs/history/2026-11-04_实施-Z62独立MAIN来源与帧生命周期r87-report.md)
+- [r88 冻结 RAW 域与量化重建](docs/history/2026-11-04_实施-Z62冻结RAW域与量化重建r88-report.md)
+- [r89 原生采集设备与 DMA](docs/history/2026-11-04_实施-Z62原生采集后端与DMA交付r89-report.md)
+- [r90/r91 原厂 MAIN 交付及共享源策略](docs/history/2026-11-04_实施-Z62原厂MAIN交付与共享源策略r90-r91-report.md)
 
 上游来源包括 QEMU、xiaoqingfeng0526、JKWTCN、WonderLantern、R3tr0ooo、nightglasses 等作者及其贡献者；Nikon 官方资料用于机型/控件校对。Tornado NKN 仅作为 PC 维修软件协议和结构线索，不能当作镜头电气协议或 AF 源码，其原件/恢复包不公开。RawPy/LibRaw 用于独立 RAW 解码，PyAV/FFmpeg 用于 C 视频编码与审计。公开的 T-Kernel 2.0 仅为语义参考，目标代码仍独立核验。
 
@@ -107,5 +120,6 @@ python -m venv .venv
 - [开发时间线](docs/DEVELOPMENT.md)
 - [参考、作者与许可证](docs/REFERENCES.md)
 - [本次源码验证范围](docs/VALIDATION.md)
-- [最新内核事件验收摘要](docs/evidence/latest-kernel-events.json)（非完整原始轨迹）
-- [r86采集像素核验摘要](docs/evidence/capturework-pixels-r86.json)（合成MAIN，未集成设备）
+- [历史内核事件验收摘要](docs/evidence/latest-kernel-events.json)（r83–r85，非完整原始轨迹）
+- [r86采集像素核验摘要](docs/evidence/capturework-pixels-r86.json)（独立数值阶段）
+- [r91原厂MAIN／DMA验收摘要](docs/evidence/capturework-original-r91.json)（统计／预览未贯通）

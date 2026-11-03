@@ -1,0 +1,204 @@
+{
+  "schema": 1,
+  "snapshot": "2026.11.04-r91",
+  "completed": true,
+  "firmware_loaded": false,
+  "camera_accessed": false,
+  "historical_full_suite_repeated": false,
+  "test_modules": [
+    "test_public_export",
+    "test_z62_scene_packet",
+    "test_z62_scene_exchange",
+    "test_z62_grid_config",
+    "test_z62_grid_delivery",
+    "test_z62_grid_lifecycle",
+    "test_z62_media_card",
+    "test_z62_media_scene",
+    "test_z62_card_inventory",
+    "test_z62_video_job_files",
+    "test_z62_video_codec",
+    "test_z62_video_input",
+    "test_z62_video_scene",
+    "test_z62_video_card",
+    "test_z62_async_video_card",
+    "test_z62_async_video_scene",
+    "test_z62_async_video_job",
+    "test_z62_selector_observation",
+    "test_z62_selector_configuration",
+    "test_z62_selector_completion",
+    "test_z62_paired_camera",
+    "test_z62_committed_controls_js",
+    "test_z62_action_queue",
+    "test_z62_action_evidence",
+    "test_z62_capture_submit",
+    "test_z62_capture_submit_evidence",
+    "test_z62_prepare_packet",
+    "test_z62_prepare_control",
+    "test_z62_prepare_control_evidence",
+    "test_z62_input_counters",
+    "test_z62_kernel_event_layout",
+    "test_z62_kernel_event_frames",
+    "test_z62_capturework_original"
+  ],
+  "native_requested": true,
+  "exported_files_checked": 902,
+  "python_files_compiled_in_memory": 593,
+  "local_markdown_links_valid": true,
+  "forbidden_artifacts_found": 0,
+  "credential_shapes_found": 0,
+  "tests": 134,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "native_capturework": {
+    "completed": true,
+    "firmware_loaded": false,
+    "qemu_started": false,
+    "cases": [
+      {
+        "case": "raw12",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"case\":\"raw12\"}\r\n",
+        "stderr": "",
+        "completed": true
+      },
+      {
+        "case": "raw14",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"case\":\"raw14\"}\r\n",
+        "stderr": "",
+        "completed": true
+      },
+      {
+        "case": "raw16",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"case\":\"raw16\"}\r\n",
+        "stderr": "",
+        "completed": true
+      },
+      {
+        "case": "rational-mono",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"case\":\"rational-mono\"}\r\n",
+        "stderr": "",
+        "completed": true
+      },
+      {
+        "case": "rational-cfa",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"case\":\"rational-cfa\"}\r\n",
+        "stderr": "",
+        "completed": true
+      },
+      {
+        "case": "lookup",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"case\":\"lookup\"}\r\n",
+        "stderr": "",
+        "completed": true
+      },
+      {
+        "case": "padding",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"case\":\"padding\"}\r\n",
+        "stderr": "",
+        "completed": true
+      },
+      {
+        "case": "rejects",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"case\":\"rejects\"}\r\n",
+        "stderr": "",
+        "completed": true
+      },
+      {
+        "case": "main-parse",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"width\":14,\"height\":10,\"stride\":32,\"publish_id\":1,\"frame_id\":1}\r\n",
+        "stderr": "",
+        "completed": true
+      },
+      {
+        "case": "main-lifecycle",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"width\":14,\"height\":10,\"stride\":32,\"publish_id\":1,\"frame_id\":1}\r\n",
+        "stderr": "",
+        "completed": true
+      },
+      {
+        "case": "main-rejects",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"width\":14,\"height\":10,\"stride\":32,\"publish_id\":1,\"frame_id\":1}\r\n",
+        "stderr": "",
+        "completed": true
+      },
+      {
+        "case": "transfer-12-shift-roundtrip",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"bits\":12,\"codec\":0}\r\n",
+        "stderr": "",
+        "completed": true
+      },
+      {
+        "case": "transfer-14-shift-roundtrip",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"bits\":14,\"codec\":0}\r\n",
+        "stderr": "",
+        "completed": true
+      },
+      {
+        "case": "transfer-16-shift-roundtrip",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"bits\":16,\"codec\":0}\r\n",
+        "stderr": "",
+        "completed": true
+      },
+      {
+        "case": "transfer-12-lookup8-high-byte-roundtrip",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"bits\":12,\"codec\":1}\r\n",
+        "stderr": "",
+        "completed": true
+      },
+      {
+        "case": "transfer-12-lookup8-high-byte-rejects",
+        "returncode": 0,
+        "stdout": "{\"completed\":true,\"bits\":12,\"codec\":1}\r\n",
+        "stderr": "",
+        "completed": true
+      }
+    ],
+    "source_sha256": {
+      "qemu/z62-capturework/nikon-z62-capturework-pixels.h": "30e6ff10a3794a92e3af84c53cebe6f7c9c161d3925e8e39518e98edc85f8b12",
+      "qemu/z62-capturework/nikon-z62-main-source.h": "79a1dd365062dbd149ed4529b43ed49708edb1c8b8a3910767fc0c93f7c12454",
+      "qemu/z62-capturework/nikon-z62-raw-transfer.h": "04f5009c5a197eaf62458bfe61f7be3cf8a717ea6b6ac83e083609922b30af3c",
+      "tests/native/z62_capturework_pixels_probe.c": "69fafa148e53027dd21cc1a415baa6bb79e5a1260d686994e8c2e079acb38172",
+      "tests/native/z62_main_source_probe.c": "393468e1c6756a905fc8c0434fb3b040caccab9c44691c6f85e1a14b29db5010",
+      "tests/native/z62_raw_transfer_probe.c": "9b8976ca40f5298f0587d71d3259bdaf055c3ca39465d82587ac6d7cea70b412"
+    },
+    "compile": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "executable_sha256": "891e4f9f1b0ba3dcb1abb4efd66f8d90c5822d9679c060f421cd55d1f03df8f0",
+    "compiler_version": "gcc.exe (Rev6, Built by MSYS2 project) 16.2.0",
+    "main_compile": {
+      "returncode": 0,
+      "stderr": ""
+    },
+    "transfer_compile": {
+      "returncode": 0,
+      "stderr": ""
+    }
+  },
+  "dependencies": {
+    "numpy": "2.4.1",
+    "Pillow": "12.2.0",
+    "capstone": "5.0.7",
+    "unicorn": "2.1.4",
+    "av": "19.0.2",
+    "rawpy": null
+  }
+}

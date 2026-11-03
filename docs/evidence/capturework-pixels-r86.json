@@ -26,7 +26,7 @@
   "silicon_ISP_equivalence_verified": false,
   "AF_verified": false,
   "camera_accessed": false,
-  "snapshot": "2026.11.04-r86",
+  "snapshot": "2026.11.04-r91",
   "original_record_sha256": "973443523fd5f69205b16082bc1ec7e14560ea883a90aae0b299be0be8ec1412",
   "scope": "Synthetic MAIN numerical fixture only; no QEMU DMA/IRQ or physical sampling equivalence."
 }

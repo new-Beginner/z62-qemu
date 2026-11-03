@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "snapshot": "2026.11.04-r86",
+  "snapshot": "2026.11.04-r91",
   "scope": "Hashes identify omitted local evidence; these are not downloadable traces.",
   "entries": [
     {
@@ -85,6 +85,48 @@
       "path": "analysis/z62-capturework-contract-r86/session-archive-1/archive.json",
       "bytes": 12945,
       "original_sha256": "e44931a5b39beb07bfdab117834c18e6b57c160df9b81513283cbfb6c7eef5cb",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-policy-r91/verified-stage-1.json",
+      "bytes": 1980,
+      "original_sha256": "966185f86898012aa4265f60e6b47f642e7eb9af519d132bb7f97d20603bc1db",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-policy-r91/regression-1.json",
+      "bytes": 654,
+      "original_sha256": "15e82f847fe34069bd9ab7420d1ef462a866331c9367110a4d427839302a19d5",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-policy-r91/native-1/result.json",
+      "bytes": 39985,
+      "original_sha256": "5b496f057c09b353c45d196900509331e1d28f7b1b4b4b71ef6a904f35c7ce1f",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-policy-r91/build-binding/source-archive.json",
+      "bytes": 1379,
+      "original_sha256": "abfacc1ade4ea4e206a6697526da8d75e6533d9bcb134f3e19d329d42f18d832",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-original-r90/original-1/result.json",
+      "bytes": 5159157,
+      "original_sha256": "b5f0ac6903867b934bdfb23a8915be64e4a7de7a4c7eb1d553e9b894eb58c05b",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-original-r90/original-2/result.json",
+      "bytes": 3825450,
+      "original_sha256": "4661bca41529129795efbcdae33ba9e86e379eda406012a1926ce2847e16bc44",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-original-r90/verification-1/result.json",
+      "bytes": 15351,
+      "original_sha256": "d3163452f07a1201670602f1f73247a2f6cc413802008af932667027a5cb1661",
       "original_contents_published": false
     }
   ]

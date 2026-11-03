@@ -35,6 +35,7 @@ TEST_MODULES = (
     'test_z62_capture_submit', 'test_z62_capture_submit_evidence',
     'test_z62_prepare_packet', 'test_z62_prepare_control', 'test_z62_prepare_control_evidence',
     'test_z62_input_counters', 'test_z62_kernel_event_layout', 'test_z62_kernel_event_frames',
+    'test_z62_capturework_original',
 )
 EXCLUDED = {'.git', '.build', '.runtime', '.venv', 'venv', 'artifacts', 'runs', 'third_party', '__pycache__', '.pytest_cache'}
 FORBIDDEN = {'.bin', '.exe', '.dll', '.raw', '.p12', '.p14', '.p16', '.img', '.nef', '.mp4', '.mov', '.zip', '.7z', '.xz'}
@@ -96,10 +97,16 @@ def check_native(compiler):
         raise ValueError('Native build output must remain inside the checkout')
     env = dict(os.environ, TEMP=str(base), TMP=str(base), TMPDIR=str(base), LANG='C', LC_ALL='C',
                PATH=str(compiler.parent)+os.pathsep+os.environ.get('PATH', ''))
+    from PIL import Image
+    from z62_main_frame import make_packet
+    from z62_raw_transfer import RawTransfer
+    sources = ('nikon-z62-capturework-pixels.h', 'nikon-z62-main-source.h',
+               'nikon-z62-raw-transfer.h')
+    probes = ('z62_capturework_pixels_probe.c', 'z62_main_source_probe.c', 'z62_raw_transfer_probe.c')
     result = {'completed': False, 'firmware_loaded': False, 'qemu_started': False,
               'cases': [], 'source_sha256': {name: hashlib.sha256((root/name).read_bytes()).hexdigest()
-                  for name in ('qemu/z62-capturework/nikon-z62-capturework-pixels.h',
-                               'tests/native/z62_capturework_pixels_probe.c')}}
+                  for name in (*('qemu/z62-capturework/'+n for n in sources),
+                               *('tests/native/'+n for n in probes))}}
     with tempfile.TemporaryDirectory(prefix='public-capturework-', dir=base) as directory:
         executable = Path(directory)/('capturework.exe' if os.name == 'nt' else 'capturework')
         command = [str(compiler), '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', '-pedantic',
@@ -129,6 +136,45 @@ def check_native(compiler):
                 row['completed'] = False
             result['cases'].append(row)
         result['completed'] = all(row['completed'] for row in result['cases'])
+        packet = Path(directory)/'main.z62m'
+        packet.write_bytes(make_packet(Image.new('RGB', (7, 5), (255, 128, 0)),
+            width=14, height=10, stride=32, epoch=62, publish_id=1,
+            frame_id=1, virtual_time_ns=33_333_334))
+        # Exercise the actual published C parsers/lifecycles. No private build lock.
+        for label, probe in (('main', probes[1]), ('transfer', probes[2])):
+            binary = Path(directory)/(label+('.exe' if os.name == 'nt' else ''))
+            command = [str(compiler), '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', '-pedantic',
+                       '-I', str(root/'qemu/z62-capturework'),
+                       str(root/'tests/native'/probe), '-o', str(binary)]
+            built = subprocess.run(command, env=env, cwd=directory, capture_output=True, timeout=60)
+            result[label+'_compile'] = {'returncode': built.returncode,
+                'stderr': built.stderr.decode('utf-8', 'backslashreplace')}
+            if built.returncode:
+                result['completed'] = False
+                return result
+            if label == 'main':
+                cases = [(case, [case, str(packet)]) for case in ('parse', 'lifecycle', 'rejects')]
+            else:
+                cases = []
+                for bits, codec, case in ((12, 'shift', 'roundtrip'), (14, 'shift', 'roundtrip'),
+                        (16, 'shift', 'roundtrip'), (12, 'lookup8-high-byte', 'roundtrip'),
+                        (12, 'lookup8-high-byte', 'rejects')):
+                    descriptor = Path(directory)/(str(bits)+'-'+codec+'.z62t')
+                    lut = tuple(16+i*4 for i in range(256)) if codec == 'lookup8-high-byte' else ()
+                    descriptor.write_bytes(RawTransfer(bits, codec, lut).to_bytes())
+                    cases.append((str(bits)+'-'+codec+'-'+case, [case, str(descriptor)]))
+            for case, arguments in cases:
+                ran = subprocess.run([str(binary), *arguments], env=env, cwd=directory,
+                                     capture_output=True, timeout=60)
+                row = {'case': label+'-'+case, 'returncode': ran.returncode,
+                    'stdout': ran.stdout.decode('utf-8', 'backslashreplace'),
+                    'stderr': ran.stderr.decode('utf-8', 'backslashreplace')}
+                try:
+                    row['completed'] = ran.returncode == 0 and json.loads(ran.stdout).get('completed') is True
+                except (ValueError, UnicodeError):
+                    row['completed'] = False
+                result['cases'].append(row)
+        result['completed'] = all(row['completed'] for row in result['cases'])
     return result
 
 
@@ -136,7 +182,7 @@ def check(output, native_compiler=None):
     output = Path(output)
     if output.exists() or output.with_suffix('.log').exists():
         raise FileExistsError('Use a new source-check result path')
-    result = {'schema': 1, 'snapshot': '2026.11.04-r86', 'completed': False,
+    result = {'schema': 1, 'snapshot': '2026.11.04-r91', 'completed': False,
               'firmware_loaded': False, 'camera_accessed': False,
               'historical_full_suite_repeated': False, 'test_modules': list(TEST_MODULES),
               'native_requested': native_compiler is not None}

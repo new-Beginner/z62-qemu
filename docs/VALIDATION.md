@@ -1,5 +1,19 @@
 # 验证与公开证据
 
+## r91 本次公开副本验证（2026-11-04）
+
+本次发布新增 r87–r91 源码，默认仍为 r69 内核／r75 界面。独立公开副本实际执行 **33 模块、134 项无固件测试，零失败／错误／跳过**；以 GCC 16.2.0、C11、O2、Wall、Wextra、Werror、pedantic 编译公开头文件及探针，**16 个 C case 全部通过**：8 个像素、3 个 MAIN 解析／生命周期／拒绝、5 个 transfer 量化／无损 RAW16／未知码拒绝。C case 独立于 134 项计数。结果见 [JSON](../analysis/publication/source-check-r91-20261104-1.json) 和 [完整日志](../analysis/publication/source-check-r91-20261104-1.log)。
+
+同时通过 902 个导出文件 SHA、593 份 Python 内存编译、本地 Markdown 链接、被排除产物及凭据形态检查。767 个未转换导出文件另与研究目录字节核对，零差异。最终文档和导出清单回写后另做静态核验，不将其计为再次运行测试。Git 差异检查按仓库保留原始 CRLF 的约定使用 `git -c core.whitespace=cr-at-eol diff --check`。
+
+```powershell
+python -X utf8 -B tools/check_public_source.py --output analysis/publication/my-r91-check.json --native-compiler .runtime/tools/msys2/ucrt64/bin/gcc.exe
+```
+
+需要已有 Python 依赖、Node 和实际 GCC 路径，使用 ASCII 克隆路径；所有 TEMP／TMP 指向工作目录内 `.runtime/tmp`，输出必须用新文件名。实际借用了已有依赖环境，没有在空机器重建。该检查没有启动 QEMU、加载固件、连接相机、重跑本地 701 项、重新验证全部 9,138,504 样本或重跑 LibRaw；RawPy 未安装。
+
+[r91 选定摘要](evidence/capturework-original-r91.json)来自已有原厂实验及本地完整回归，原件哈希见 [索引](evidence-index-20261104.json)。导出时实际核对原厂窗口、数值复核与回归记录的 SHA 绑定。13 次 DMA／CPU ACK 仅适用于该 8.003 秒受控执行窗口；统计／预览为 0、LCD 全黑。它不是新克隆检查的产物，不是原厂摄影、AF 或刷写安全验收。历史摘要中的发布状态按当时记录保存，当前版本以 README 为准。
+
 ## r86 本次公开副本验证（2026-11-04）
 
 运行基线仍为r69内核／r75界面，r86只新增独立C像素核心。独立公开副本实际执行 **32模块、131项无固件测试，零失败／错误／跳过**，另以GCC 16.2.0／C11／O2／Wall／Wextra／Werror／pedantic编译公开核心并执行 **8个native C case全部通过**。检查862个导出文件哈希、573份Python内存编译、Markdown链接及被排除产物／凭据形态均通过。结果见[本次JSON](../analysis/publication/source-check-20261104-1.json)和[测试日志](../analysis/publication/source-check-20261104-1.log)。

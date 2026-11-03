@@ -6,7 +6,7 @@
 
 ## 2026-11-04 当前路线
 
-当前为 r69 内核、r75 交互控制台、r86 研究快照。r86新增独立C像素核心，未集成QEMU，没有r86内核可构建。下文 r24/r48 是仍保留的历史路线；不是最新内核已经在空机器重新构建的声明。新克隆需自己准备固件、工具链及父构建。
+当前为 r91 源码快照，默认仍为 r69 内核／r75 交互控制台；r89/r91 是独立且默认关闭的采集实验内核。下文 r24/r48 是仍保留的历史路线；不是最新内核已在空机器重建的声明。新克隆需自己准备固件、工具链及父构建。
 
 在后文 r48 基础上，源中当前父依赖顺序为：
 
@@ -23,7 +23,14 @@
 .venv/Scripts/python.exe -X utf8 -B tools/build_z62_output_lineage.py --jobs 4
 ```
 
-它们对应源码依赖，不要求编译不存在的 r75/r85/r86 内核。本次发布没有重新运行整条构建链。宿主/观察器可能严格绑定历史源、输入和 EXE SHA；不同工具链的 fresh build 需要明确的新验收绑定，不能删除 guard 冒充原窗口。
+它们对应到 r69 的源码依赖，不要求编译不存在的 r75/r85/r86 内核。独立采集路线随后构建：
+
+```powershell
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_capturework.py --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_capturework_policy.py --jobs 4
+```
+
+前者是 r89，后者是 r91；两者还依赖工作目录内 r73 工具链锁。详情见 [采集后端说明](profiles/README-Z62-CAPTUREWORK-DEVICE.md)。本次发布没有重新运行整条构建链。宿主/观察器严格绑定历史源、输入和 EXE SHA；不同工具链的 fresh build 需要明确的新验收绑定，不能删除 guard 冒充原窗口。默认入口保持 r69，启用 CaptureWork 时不支持迁移／完整快照。
 
 构建和原厂输入准备好后，使用已安装依赖的 Python；r75 的永久宿主诊断还要求现有的 **Windows host GDB**。若默认路径不适用，显式传入本机实际 GDB 路径，例如项目内 MSYS2/UCRT64 的 gdb.exe：
 
@@ -53,16 +60,16 @@ git submodule update --init third_party/nikon-fw-key-tool
 
 纯 Python 依赖版本已固定在 requirements。PyAV 是 C 级视频后端，RawPy/LibRaw 用于独立 NEF 验证，不是原厂编码器。
 
-若只核验公开源码及r86独立核心，在ASCII路径的克隆根目录、已有依赖环境和工作目录内GCC下运行：
+若只核验公开源码及 r86–r88 独立原语，在 ASCII 路径的克隆根目录、已有依赖环境和工作目录内 GCC 下运行：
 
 ```powershell
 $env:TEMP=(Join-Path $PWD '.runtime/tmp')
 $env:TMP=$env:TEMP
 New-Item -ItemType Directory -Force $env:TEMP | Out-Null
-.venv/Scripts/python.exe -X utf8 -B tools/check_public_source.py --output analysis/publication/my-r86-check.json --native-compiler .runtime/tools/msys2/ucrt64/bin/gcc.exe
+.venv/Scripts/python.exe -X utf8 -B tools/check_public_source.py --output analysis/publication/my-r91-check.json --native-compiler .runtime/tools/msys2/ucrt64/bin/gcc.exe
 ```
 
-该命令分别执行32模块无固件子集和8个实际C case；原生部分只编译公开头文件／probe，不读取私有relocation manifest，不启动QEMU。输出与TEMP位于克隆内；每次结果需用新名称。详见[r86边界](profiles/README-Z62-CAPTUREWORK.md)和[实际验证范围](VALIDATION.md)。
+该命令分别执行 33 模块无固件子集和 16 个实际 C case（8 像素、3 MAIN、5 transfer）；原生部分只编译公开头文件／probe，不读取私有 relocation manifest，不启动 QEMU。输出与 TEMP 位于克隆内；每次结果需用新名称。它不重跑原厂 13 次 DMA 窗口，也不验证完整 QEMU worker 竞态。详见[实际验证范围](VALIDATION.md)。
 
 ## 2. MSYS2 与 QEMU 源码
 

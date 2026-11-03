@@ -12,7 +12,7 @@ import subprocess
 import export_z62_public as old
 
 ROOT=Path(__file__).resolve().parents[1]
-SNAPSHOT='2026.11.04-r86'
+SNAPSHOT='2026.11.04-r91'
 REMOTE='https://github.com/new-Beginner/z62-qemu.git'
 
 
@@ -44,7 +44,7 @@ def refresh(destination,source=ROOT):
         ledger.append({'source':path.relative_to(source).as_posix(),'published':relative,
             'original_sha256':hashlib.sha256(original).hexdigest(),
             'published_sha256':hashlib.sha256(data).hexdigest(),'transformed':original!=data,'bytes':len(data)})
-    navigation='\n## 公开仓库导航\n\n- [构建与父依赖](docs/BUILD.md)\n- [功能清单](docs/FEATURES.md)与[已知限制](docs/LIMITATIONS.md)\n- [开发时间线](docs/DEVELOPMENT.md)\n- [参考、作者与许可证](docs/REFERENCES.md)\n- [本次源码验证范围](docs/VALIDATION.md)\n- [最新内核事件验收摘要](docs/evidence/latest-kernel-events.json)（非完整原始轨迹）\n- [r86采集像素核验摘要](docs/evidence/capturework-pixels-r86.json)（合成MAIN，未集成设备）\n'
+    navigation='\n## 公开仓库导航\n\n- [构建与父依赖](docs/BUILD.md)\n- [功能清单](docs/FEATURES.md)与[已知限制](docs/LIMITATIONS.md)\n- [开发时间线](docs/DEVELOPMENT.md)\n- [参考、作者与许可证](docs/REFERENCES.md)\n- [本次源码验证范围](docs/VALIDATION.md)\n- [历史内核事件验收摘要](docs/evidence/latest-kernel-events.json)（r83–r85，非完整原始轨迹）\n- [r86采集像素核验摘要](docs/evidence/capturework-pixels-r86.json)（独立数值阶段）\n- [r91原厂MAIN／DMA验收摘要](docs/evidence/capturework-original-r91.json)（统计／预览未贯通）\n'
     prepared['README.md']+=navigation.encode('utf-8')
     for row in ledger:
         if row['published']=='README.md':
@@ -73,6 +73,26 @@ def refresh(destination,source=ROOT):
     pixel_summary=dict(pixel_proof,snapshot=SNAPSHOT,original_record_sha256=old.digest(pixels),
         scope='Synthetic MAIN numerical fixture only; no QEMU DMA/IRQ or physical sampling equivalence.')
     prepared['docs/evidence/capturework-pixels-r86.json']=(json.dumps(pixel_summary,ensure_ascii=False,indent=2)+'\n').encode()
+    stage_path=source/'analysis/z62-capturework-policy-r91/verified-stage-1.json'
+    stage=json.loads(stage_path.read_text(encoding='utf-8'))
+    bound={
+        'original_window_result_sha256':'analysis/z62-capturework-original-r90/original-2/result.json',
+        'original_verification_sha256':'analysis/z62-capturework-original-r90/verification-1/result.json',
+    }
+    for key,name in bound.items():
+        if stage[key]!=old.digest(source/name): raise ValueError('r91 evidence binding changed: '+name)
+    regression=source/'analysis/z62-capturework-policy-r91/regression-1.json'
+    verified=json.loads((source/bound['original_verification_sha256']).read_text(encoding='utf-8'))
+    if (stage['full_Python_regression']['result_sha256']!=old.digest(regression) or
+            verified.get('completed_evidence_check') is not True or
+            stage['actual_DMA_completed_counter']!=13 or stage['sample_mismatches']!=0 or
+            stage['downstream_source_statistics_ISP_integration_complete'] is not False):
+        raise ValueError('r91 stage proof is incomplete or overclaims downstream integration')
+    stage_summary={key:value for key,value in stage.items() if key!='published'}
+    stage_summary.update(snapshot=SNAPSHOT,original_record_sha256=old.digest(stage_path),
+        scope='Selected historical r91 controlled-entry evidence; not a new firmware run or whole-camera acceptance.',
+        publication_note='The local record predates publication; its published=false field is not a current cloud status.')
+    prepared['docs/evidence/capturework-original-r91.json']=(json.dumps(stage_summary,ensure_ascii=False,indent=2)+'\n').encode()
     references=('analysis/z62-kernel-events-r83/verified-kernel-1.json',
         'analysis/z62-kernel-events-r83/events-1/result.json','analysis/z62-kernel-events-r83/events-2/result.json',
         'analysis/z62-kernel-events-r83/events-3/result.json','analysis/z62-kernel-events-r83/kernel-contract-1.json',
@@ -84,12 +104,20 @@ def refresh(destination,source=ROOT):
         'analysis/z62-capturework-contract-r86/state-1/source-archive.json',
         'analysis/z62-capturework-contract-r86/native-observed-2/result.json',
         'analysis/z62-capturework-contract-r86/native-observed-2/source-archive.json',
-        'analysis/z62-capturework-contract-r86/session-archive-1/archive.json')
+        'analysis/z62-capturework-contract-r86/session-archive-1/archive.json',
+        'analysis/z62-capturework-policy-r91/verified-stage-1.json',
+        'analysis/z62-capturework-policy-r91/regression-1.json',
+        'analysis/z62-capturework-policy-r91/native-1/result.json',
+        'analysis/z62-capturework-policy-r91/build-binding/source-archive.json',
+        'analysis/z62-capturework-original-r90/original-1/result.json',
+        'analysis/z62-capturework-original-r90/original-2/result.json',
+        'analysis/z62-capturework-original-r90/verification-1/result.json')
     index={'schema':1,'snapshot':SNAPSHOT,'scope':'Hashes identify omitted local evidence; these are not downloadable traces.',
            'entries':[{'path':name,'bytes':(source/name).stat().st_size,'original_sha256':old.digest(source/name),
                        'original_contents_published':False} for name in references]}
     prepared['docs/evidence-index-20261104.json']=(json.dumps(index,ensure_ascii=False,indent=2)+'\n').encode()
     for relative in ('docs/evidence/latest-kernel-events.json','docs/evidence/capturework-pixels-r86.json',
+                     'docs/evidence/capturework-original-r91.json',
                      'docs/evidence-index-20261104.json'):
         data=prepared[relative]
         ledger.append({'source':'selected local verification records','published':relative,

@@ -263,7 +263,9 @@ class ReferenceBuildTests(unittest.TestCase):
                 def unpack(_archive, destination):
                     return self.scaffold(destination / 'qemu-10.2.4')
                 def compile_qemu(source, destination, toolchain, jobs):
-                    self.assertEqual(source, args.work_dir / 'source/qemu-10.2.4')
+                    # A verified SUBST alias and its physical directory name
+                    # identify the same source after the builder's resolve().
+                    self.assertEqual(source.resolve(), (args.work_dir / 'source/qemu-10.2.4').resolve())
                     self.assertEqual(toolchain, msys.resolve())
                     self.assertEqual(jobs, 8)
                     destination.mkdir()

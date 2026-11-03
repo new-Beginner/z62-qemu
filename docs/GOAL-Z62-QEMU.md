@@ -1030,6 +1030,60 @@
 - [r86说明](profiles/README-Z62-CAPTUREWORK.md)、[本轮报告](history/2026-11-04_实施-Z62采集像素核心与独立验证r86-report.md)和能力表已补齐。继续用户授权的GitHub发布，不能在远端实际核验前宣布本次推送完成。
 - 下一步：独立MAIN生产者、原厂有效提交和run／stop／reset／cancel／generation／背压、ring-bank真实合同、不可变RAW transfer／LUT描述及下游逆变换；最后才接实际QEMU DMA和对应IRQ。不补unit1/2/200完成，不改AF。模式完整往返／原厂存卡／AF仍缺，完整Goal active。
 
+### r86 GitHub发布完成（2026-11-04，本地发布回执）
+
+- 已在独立公开克隆codex/publish-r86提交31文件更新，正常fast-forward推送main到 **8c4591d77bb8c39936f08c064f0da4ae0326396b**，保留既有5ad2a6a等历史，无force。README／能力／限制／难点／构建／开发记录／署名、r86源码测试和选定摘要已公开；不含固件、卡、工具链、NKN原件或完整RAM轨迹。
+- 公开副本实际32模块／131项无固件测试，零失败／错误／跳过；独立GCC编译8个C case全部通过，无私有relocation依赖。862导出文件哈希、573份Python内存编译和Markdown链接通过；最终文档之后另做源／语法／链接复核，没有重跑635项、QEMU或RawPy。
+- 初次Git直连fetch超时，在任何push前终止。后用已存在的系统代理作单条Git参数，正常fetch／push成功，不持久修改Git或网络配置。
+- GitHub main ref、ls-remote、tree **9f466d0b03ed074329a13f21e337d0f8311e6d72**、含目录的1249项递归树均与本地一致；匿名main README HTTP200／SHA **993352901e4b7b12b625ea588269e681d8e286f79025a468e977f965d8309d12**一致，仓库public，发布克隆clean。回执`analysis/publication-20261104/publish-receipt.json`。
+- 发布子任务已完成，完整相机目标仍active；r86仍为独立C核心，没有新QEMU设备、模式恢复、原厂存卡或AF验收。原研究索引的两项无关staged保持。
+
+### r87 独立MAIN生产与帧生命周期（2026-11-04，本地后续）
+
+- 前回合为有效进展，完成r86 GitHub发布。本轮完整重读目标，从已确认2020×1342 MAIN需求继续实现独立C来源，保留旧1514×1006辅助帧和r69绑定源／EXE，不重跑旧原厂窗口。
+- 新增Z62M v1／96字节帧，明确MAIN角色／linear16 LE／RGGB、stride／epoch／publication／30Hz帧号／虚拟时间／黑白电平及CRC；C11单缓存与读占用在占用时背压，取消／停止／复位使旧serial失效，release仅所有权而非DMA确认。没有MMIO／timer／DMA／IRQ。
+- 首轮6项因缺模块失败，实现后6项通过；render用例先失败，接入后7项实际GCC／Python专项全部通过。两个完整色彩场景各1,523,084像素由独立NumPy两级采样／RAW12解码比对，padding和输出变化通过。
+- `scene-1`首试Q:/D:相对路径比较失败保留，修正probe路径归一化后`scene-2/result.json`完成：复用现有Scene移动图块和r86实际读回几何／LUT，两帧共3,046,168像素零差异；8份源码原件归档。输出仍为LUT编码域，不当作旧线性ISP输入。
+- `check_z62_regression.py`完整发现690项，169.578秒，exit1／2 failures／8 errors／0 skips；完整日志和名称已保留。两构建mock为Q:/D:同位置比较失败，ReferenceSD两项和VirtualSD六项因旧接口resolve后拒绝中文路径；没有改guard或掩盖失败。新专项通过不代表全量绿。
+- [r87报告](history/2026-11-04_实施-Z62独立MAIN来源与帧生命周期r87-report.md)和MAIN合同／当前能力已更新。本轮r87仍本地，云端最新r86／8c4591d。下一步继续不可变transfer／LUT描述、逆变换及QEMU有效配置提交／bank-ring／DMA-IRQ；同时处理旧路径兼容并重验。完整Goal active，原厂AF和刷机安全未完成。
+
+### r88 冻结RAW域与量化重建（2026-11-04，本地后续）
+
+- 前回合为有效进展。本轮完整重读目标，复现ReferenceSD两项错误，核对现有r73入口本来就适配reference／virtual_sd的Path。未改这些旧宿主或guard；测试按实际入口选Path、规范化构建mock路径。5＋9＋13项相关测试通过，原r87失败记录保留，不当作新的硬件修复。
+- 新增Z62T v1／532字节不可变transfer描述，Python复制tuple、C按值LUT；12／14／16 shift和LUT8。解码先整帧验证后输出线性16，未知末像素码也零写入，padding保留。LUT8低8位已丢，返回输入区间中点而非精确原样本。
+- 8项专项先红后绿；四配方各穷举65,536输入，含无损shift16、量化区间、外部LUT修改隔离、坏描述／缓冲／重叠拒绝。新scene用例先失败后接通C核心／主源／decoder；没有QEMU DMA／IRQ。
+- `analysis/z62-raw-transfer-r88/scene-1/result.json`完成，两帧3,046,168样本独立NumPy核对零差异，实际最大误差50、通用界128；正向packed与r87字节一致。冻结描述SHA0556c437…，结果SHA f8e7b181…；数值链10份和fixture-binding8份源码分别归档，当前SHA已核对。r69 EXE SHA37603d1f…保持。
+- 全量`regression-1.json`698项／171.906秒／exit0；最后测试夹具兼容物理ASCII checkout后重跑`regression-2.json`，**698项／178.953秒／零失败／错误／跳过／exit0**，完整日志保留。无RawPy，不称为LibRaw或新原厂窗口验收。
+- [r88报告](history/2026-11-04_实施-Z62冻结RAW域与量化重建r88-report.md)、RAW域合同和能力表更新。本地r87/r88尚未发布，云端仍r86／8c4591d。下一步必须推进实际Z62有效commit／run、bank/ring、逐任务描述与代次绑定、取消／数据所有权和QEMU DMA／对应IRQ，并把重建线性域接入下游ISP；不能继续用standalone成功代替设备完成。默认r75／r69、AF及原厂状态保持，完整Goal active。
+
+### r89 独立QEMU采集设备与实际DMA／输入事件（2026-11-04，本地后续）
+
+- 前回合为有效进展。本轮完整重读目标，将r86–r88原语接入独立QEMU，保留r69／r75默认入口和绑定源／EXE。固定master原字节和旧61,217次MMIO尝试核对bank bit0；一次临时查看的错误基址输出已舍弃，正式分析固定10020000h并核对旧几何锚点。control-contract-1已归档4份源。
+- 新增默认关闭的CaptureWork：实际写入资格／选择提交、按值配置／LUT、独立MAIN、最多一个私有worker、代次取消、虚拟时钟DMA、整选中ring规范RAM／别名预检、实际行写回后3/4/135事件、W1C／部分ACK背压。没有写原厂软件标志／ready／队列／返回；启用时阻止不完整迁移。
+- 新构建`.build/z62-capturework-2026.11.04-r89/runtime/qemu-system-arm.exe` SHA **65c3eccad787d7ddef4bc8bfef603df115a88d29c61b64cb8a165a66d26b2777**。保留部分复制／TMP中文／链接器诊断解码／QEMU头路径差异的失败；只改新构建器，以ASCII TMP、GCC_EXEC_PREFIX和sysroot完成。旧准备源9文件及清单归档在prepared-attempts/1，最终Configure/Ninja日志保留。
+- native-red-1在r69缺属性失败，旧探针源归档；native-1首过，native-2补存6组MAIN／实际DMA和两会话命令／日志。新QEMU合成ARM循环下6帧／**9,138,504像素**一致，bank1、冻结LUT、背压、提交前取消、停止重启、新publication门槛、复位、ring重叠拒绝和只读状态通过；两进程exit0。本轮没有加载原厂固件新窗口，inflight worker取消竞态未穷尽。
+- 同一新EXE的旧RAW全槽／错误拒绝／主从及原照片视频软件ISP／来源原生检查通过。完整Python发现698项／179.813秒／零失败、错误、跳过，仍无RawPy，不称为LibRaw或整机验收。
+- verification-2对保存的全部DMA再次独立RAW12解码，9,138,504样本零差异、padding、EXE／DLL／旧回归／完整日志／来源均绑定；新native依赖9份、构建／源21份分别归档。原r69 EXE37603d1f…与无关staged两项保持。
+- [r89报告](history/2026-11-04_实施-Z62原生采集后端与DMA交付r89-report.md)、设备合同和能力表更新。下一步在原厂C1.70验证实际消费，恢复缺失统计／group20合同，将CaptureWork输出transfer交给下游ISP并绑定共享场景时钟；继续模式完整往返、原厂媒体、快照和后续AF。本地r87–r89未发布，云端仍r86／8c4591d。完整Goal active。
+
+### r90／r91 原厂MAIN窗口与共享源策略（2026-11-04，本地后续）
+
+- 前回合为有效进展，本轮完整重读目标。新增只读／C源供给驱动，从客体完整64位计数和频率取时间，按实际几何生成MAIN，不等旧预览ready，不发控件或完成事件。3项资格／时间测试先红后绿，未知几何不回退常量。
+- `original-1`在r89上21次输入缓存接受但0 DMA，wall180秒未达到目标16秒，进程exit0。追踪发现实际`20069530=0x200040`（旧r86也已有），r89guard只允许0；旧原生夹具用了0，未覆盖该字段，是测试覆盖遗漏。失败与4份原驱动／宿主源绑定保留，不改成成功。
+- 独立r91新策略仅显式`z62-capturework-policy0=on`才接受0x200040，0保留、未知0x200041拒绝；仍不模拟物理源对、不改像素数学或ready。新EXE SHA **5270d7cfb7db60bbb2ef2f8102ce6c37de4b6c3dbf34a35ea84aed6d67675aa2**，r89/65c3…保持。构建后pacman与r73锁一致，8份新构建源／清单归档。
+- 原生policy测试先在r89缺属性失败，r91默认策略拒绝／显式策略接受／未知值拒绝均通过，原有6帧9,138,504样本矩阵复用并保留非零字段来源，4进程exit0。新字段是显式C输入策略，不把未知物理路由当已恢复。
+- `original-2`正常到8,003,360,666客体ns／进程exit0：14个缓存接受输入、13次实际DMA，CPU0有13次front18h和13次packed80h W1C；保存publication2…7共6帧9,138,504像素，独立RAW12解码零差异。时间来自真实客体计数，原始3成员与snapshot卡源SHA保持，只有C MAIN发布。
+- 603次状态采样中真实CB pattern为0共424次、08000000h共17次、04300000h共159次；末尾0不能当全程0。未采样到完整05B条件，但未断点跟踪setter／返回，不证明采样间从未满足。最后ready_join1／inhibit1、队列60，持续统计0/source、预览0/reset；grid是disabled配置状态，不当硬件完成缺失。1024×682 LCD已看且逐像素确认全黑。
+- 原厂复核verification-1绑定窗口／源／原始成员／非零策略／CPU trace几何和ACK，源76份归档；原厂窗口源7份、native源3份也保留。完整当前Python701项／174.859秒／零失败、错误、跳过，仍无RawPy，不冒充LibRaw或整机验收。
+- [r90/r91报告](history/2026-11-04_实施-Z62原厂MAIN交付与共享源策略r90-r91-report.md)与能力更新。下一步将CW的冻结transfer解码为有来源线性视图，连接统计/readout/ISP的真实输入资格和交付，检查已有启用条件；不能仅补136/0等事件或改raw计数。原厂摄影存卡、模式完整往返、快照、AF与刷机安全未验收；默认r75/r69及两项无关staged保持。本地r87–r91未发布，云端r86／8c4591d，完整Goal active。
+
+### r91 公开源码整理与发布验证（2026-11-04）
+
+- 用户明确要求本轮完成 GitHub 推送。独立公开克隆使用 `codex/publish-r91`，延续 r86／8c4591d 历史，研究根仓库的两项无关 staged 不参与发布。
+- 导入 r87–r91 新增源码、测试、合同和阶段报告，更新 README、覆盖表、构建、限制、开发过程、原作者署名及选定 r91 摘要。默认 r75／r69 与冻结 r89／r91 EXE 保持；公开不含固件、卡、工具链、完整 RAM／trace 或 NKN 原件。
+- 独立发布目录实际完成 33 模块、134 项无固件测试，零失败／错误／跳过；GCC16.2.0 严格编译 16 个 C case 全部通过。902 个导出文件哈希、593 份 Python 内存编译与文档链接通过；最终文档回写后另外静态核对，不声称再跑原厂窗口或本地 701 项。
+- GitHub API 已核对 `new-Beginner/z62-qemu` 为公开、默认分支 main。云端最终提交另以推送后回执为准；完整 Goal 仍 active，后续统计／ISP 来源桥、原厂摄影、模式恢复和 AF 尚未完成。
+
 
 
 

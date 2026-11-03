@@ -1,4 +1,8 @@
-"""Host SD passthrough tests; no physical media or firmware executed."""
+"""Host SD passthrough under the r73 workspace entry's real path adaptation.
+
+Only Path is adapted, exactly as run_z62_workspace does. Validation and IO are
+real; the frozen legacy entry keeps its original ASCII-only behavior.
+"""
 import contextlib
 import io
 import json
@@ -11,9 +15,16 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
 import run_reference_console as run
+import z62_workspace_paths as storage
 
 
 class ReferenceSDTests(unittest.TestCase):
+    def setUp(self):
+        # A physical ASCII checkout needs no SUBST adaptation.
+        path_type=Path if str(storage.ROOT).isascii() else storage.WorkspacePath
+        transport=patch.object(run,'Path',path_type)
+        transport.start(); self.addCleanup(transport.stop)
+
     def temp(self):
         return tempfile.TemporaryDirectory(dir=os.environ.get('PI_SCRATCH_DIR'))
 
@@ -25,7 +36,7 @@ class ReferenceSDTests(unittest.TestCase):
         with self.temp() as folder:
             p = Path(folder) / 'card with spaces.img'
             p.write_bytes(b'x' * 1024)
-            self.assertEqual(run.validate_sd_card('z62', p), p.resolve())
+            self.assertEqual(Path(run.validate_sd_card('z62', p)).resolve(), p.resolve())
             self.assertEqual(p.read_bytes(), b'x' * 1024)
 
     def test_invalid_images_and_profiles_are_rejected(self):
@@ -66,7 +77,7 @@ class ReferenceSDTests(unittest.TestCase):
                 record = json.loads((root / 'session.json').read_text(encoding='utf-8'))
                 self.assertEqual(record['host_version'], run.HOST_VERSION)
                 if attach:
-                    self.assertEqual(captured[captured.index('--sd-card') + 1], str(image.resolve()))
+                    self.assertEqual(Path(captured[captured.index('--sd-card') + 1]).resolve(), image.resolve())
                     self.assertTrue(record['sd_card']['snapshot'])
                     self.assertFalse(record['sd_card']['persistent_guest_writes'])
                     self.assertFalse(record['sd_card']['filesystem_verified'])
