@@ -28,7 +28,7 @@
 
 ## 其他资料与工具
 
-- [nightglasses/z7ii-qemu](https://github.com/nightglasses/z7ii-qemu)，本次复用研究提交 `0e53ea5a6d4f3fc635d63c195a92e943370ac5e9`：内核 SVC/事件处理入口线索；Z6II 事件表、32字节CB、+14h pattern和实际置位/等待另用目标固件核对，不照搬 Z72 的 RAM 地址或宣称整机复现。
+- [nightglasses/z7ii-qemu](https://github.com/nightglasses/z7ii-qemu)，复用研究提交 `0e53ea5a6d4f3fc635d63c195a92e943370ac5e9`：内核SVC/事件处理入口，以及r86 CaptureWork分工和数据研究；Z6II事件CB、实际置位/等待、几何与LUT另用目标核对。r86在本项目实现两级有理采样与独立测试，不直接套用Z72的整数缩放约束、RAM地址或宣称硬件／整机等价。
 - [TRON Forum T-Kernel 2.0](https://github.com/tron-forum/tkernel_2/tree/5778f619bdb354443551888dc2e9aa191e684da8)：事件语义参考，固定 `5778f619bdb354443551888dc2e9aa191e684da8`。公开服务编号 `80360500h` 与目标 `80300500h` 不同，不能据此认定具体 RTOS 版本；目标布局以 Z6II ARM 指令和运行结构为准。参考源码作为本地缓存不随本仓库复制，未并入设备模型。
 
 - [tylermcm/WonderLanternZ7](https://github.com/tylermcm/WonderLanternZ7)，本地记录 `a99e5da7c41dd5931c35faa7287fa04dcc847ebc`：辅助硬件/图像研究对照，不是直接构建依赖；不替它增加许可证。

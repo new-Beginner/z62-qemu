@@ -1,5 +1,19 @@
 # 验证与公开证据
 
+## r86 本次公开副本验证（2026-11-04）
+
+运行基线仍为r69内核／r75界面，r86只新增独立C像素核心。独立公开副本实际执行 **32模块、131项无固件测试，零失败／错误／跳过**，另以GCC 16.2.0／C11／O2／Wall／Wextra／Werror／pedantic编译公开核心并执行 **8个native C case全部通过**。检查862个导出文件哈希、573份Python内存编译、Markdown链接及被排除产物／凭据形态均通过。结果见[本次JSON](../analysis/publication/source-check-20261104-1.json)和[测试日志](../analysis/publication/source-check-20261104-1.log)。
+
+native检查直接使用公开头文件和probe，不读取私有relocation manifest，不依赖原`.build`内核。它与32模块计数分开，未重复计入131项。实际借用既有Python依赖环境，没有在空机器重建；RawPy未安装，未重跑LibRaw独立解码、完整历史635项、QEMU或原厂固件窗口。
+
+```powershell
+python -X utf8 -B tools/check_public_source.py --output analysis/publication/my-r86-check.json --native-compiler .runtime/tools/msys2/ucrt64/bin/gcc.exe
+```
+
+须在ASCII路径的公开克隆根目录使用现有GCC和Python依赖，输出用新文件名；所有临时文件在克隆`.runtime/tmp`。编译／运行失败会保留状态，stderr使用可保留异常字节的信息解码。最终文档和导出清单变更后另做哈希／语法／链接核验，不冒充又重跑整套测试。
+
+r86全1,523,084像素的独立C／NumPy验证发生于本地数值case；见[选定摘要](evidence/capturework-pixels-r86.json)和[原件哈希索引](evidence-index-20261104.json)。MAIN是合成梯度、几何／LUT来自只读快照；QEMU设备集成、来源／commit、硅片等价及AF均false。摘要不分发原始RAM、RAW输出或完整轨迹。
+
 ## 四种证据不要混用
 
 1. **源码/宿主单测**：验证解析、数值、文件事务、输入封装、后台任务和观察器合同。不能单独证明原厂流程。
@@ -9,9 +23,9 @@
 
 ## 历史记录
 
-当前公开快照已更新至2026-11-03/r85，r69阶段最近一次历史全量为635项。此后仅做新增专项、原生检查及实际窗口；本次发布没有在新克隆中重跑635项或全固件链。
+上一公开快照为2026-11-03/r85，r69阶段最近一次历史全量为635项。此后仅做新增专项、原生检查及实际窗口；下面保留历史范围，本次发布没有在新克隆中重跑635项或全固件链。
 
-本次 `check_public_source.py` 明确增加提交来源状态、r75 JavaScript状态迁移、队列/等待/内核CB观察器等无固件子集。需要Node以执行实际JS状态检查；不加载固件、不启动QEMU或连接相机。**32个模块、131项测试全部通过，0失败/错误/跳过**；850个导出文件哈希、567份Python内存编译及Markdown链接通过。见 [本次源码结果](../analysis/publication/source-check-20261103-2.json) 和 [日志](../analysis/publication/source-check-20261103-2.log)。下面98项为上一公开提交的历史记录，不冒充本次计数。
+当时的 `check_public_source.py` 增加提交来源状态、r75 JavaScript状态迁移、队列/等待/内核CB观察器等无固件子集。需要Node以执行实际JS状态检查；不加载固件、不启动QEMU或连接相机。**32个模块、131项测试全部通过，0失败/错误/跳过**；850个导出文件哈希、567份Python内存编译及Markdown链接通过。见 [r85源码结果](../analysis/publication/source-check-20261103-2.json) 和 [日志](../analysis/publication/source-check-20261103-2.log)。下面98项为更早公开提交的历史记录，不冒充r86本次计数。
 
 首次源码检查因文档提前链接尚未生成的结果文件而停止，尚未运行测试，失败记录保留在 `analysis/publication/source-check-20261103.json`。取得实际结果后更新了链接，随后单独复核最终文档/哈希，不反复重跑同一套测试。当前借用既有Python依赖环境，没有在空系统重建全部依赖和历史内核，也没有RawPy独立解码。
 

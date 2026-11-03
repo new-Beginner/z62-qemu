@@ -55,7 +55,7 @@
   "functional_acceptance_eligible": false,
   "AF_verified": false,
   "schema": 1,
-  "snapshot": "2026.11.03-r85",
+  "snapshot": "2026.11.04-r86",
   "original_record_sha256": "f109e36d1c92a5ee3c36609f54c7a34972033a67cc9fbb048fd21e626c52503f",
   "scope": "Selected verification summary only; original traces, complete receipts and firmware are not distributed."
 }

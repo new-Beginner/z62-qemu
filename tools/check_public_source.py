@@ -13,7 +13,9 @@ import json
 import os
 from pathlib import Path
 import re
+import subprocess
 import sys
+import tempfile
 import unittest
 from urllib.parse import unquote
 
@@ -35,7 +37,7 @@ TEST_MODULES = (
     'test_z62_input_counters', 'test_z62_kernel_event_layout', 'test_z62_kernel_event_frames',
 )
 EXCLUDED = {'.git', '.build', '.runtime', '.venv', 'venv', 'artifacts', 'runs', 'third_party', '__pycache__', '.pytest_cache'}
-FORBIDDEN = {'.bin', '.exe', '.dll', '.raw', '.img', '.nef', '.mp4', '.mov', '.zip', '.7z', '.xz'}
+FORBIDDEN = {'.bin', '.exe', '.dll', '.raw', '.p12', '.p14', '.p16', '.img', '.nef', '.mp4', '.mov', '.zip', '.7z', '.xz'}
 
 
 def files():
@@ -80,13 +82,64 @@ def verify_sources():
             'credential_shapes_found': 0}
 
 
-def check(output):
+def check_native(compiler):
+    """Compile only exported C sources; no private manifest or firmware is needed."""
+    root = Path.cwd()
+    if not root.samefile(ROOT) or not str(root).isascii():
+        raise ValueError('Run from the public checkout using its ASCII path or verified ASCII alias')
+    compiler = Path(compiler).absolute()
+    if not compiler.is_file():
+        raise FileNotFoundError('Explicit local GCC is required')
+    base = root/'.runtime/tmp'
+    base.mkdir(parents=True, exist_ok=True)
+    if not base.resolve().is_relative_to(ROOT):
+        raise ValueError('Native build output must remain inside the checkout')
+    env = dict(os.environ, TEMP=str(base), TMP=str(base), TMPDIR=str(base), LANG='C', LC_ALL='C',
+               PATH=str(compiler.parent)+os.pathsep+os.environ.get('PATH', ''))
+    result = {'completed': False, 'firmware_loaded': False, 'qemu_started': False,
+              'cases': [], 'source_sha256': {name: hashlib.sha256((root/name).read_bytes()).hexdigest()
+                  for name in ('qemu/z62-capturework/nikon-z62-capturework-pixels.h',
+                               'tests/native/z62_capturework_pixels_probe.c')}}
+    with tempfile.TemporaryDirectory(prefix='public-capturework-', dir=base) as directory:
+        executable = Path(directory)/('capturework.exe' if os.name == 'nt' else 'capturework')
+        command = [str(compiler), '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', '-pedantic',
+                   '-I', str(root/'qemu/z62-capturework'),
+                   str(root/'tests/native/z62_capturework_pixels_probe.c'), '-o', str(executable)]
+        built = subprocess.run(command, env=env, cwd=directory, capture_output=True, timeout=60)
+        result['compile'] = {'returncode': built.returncode,
+            'stdout': built.stdout.decode('utf-8', 'backslashreplace'),
+            'stderr': built.stderr.decode('utf-8', 'backslashreplace'),
+            'stderr_sha256': hashlib.sha256(built.stderr).hexdigest()}
+        if built.returncode:
+            return result
+        result['executable_sha256'] = hashlib.sha256(executable.read_bytes()).hexdigest()
+        version = subprocess.run([str(compiler), '--version'], env=env, capture_output=True,
+                                 timeout=15, check=True)
+        result['compiler_version'] = version.stdout.decode('utf-8', 'backslashreplace').splitlines()[0]
+        for case in ('raw12', 'raw14', 'raw16', 'rational-mono', 'rational-cfa', 'lookup', 'padding', 'rejects'):
+            ran = subprocess.run([str(executable), case], env=env, cwd=directory,
+                                 capture_output=True, timeout=60)
+            row = {'case': case, 'returncode': ran.returncode,
+                   'stdout': ran.stdout.decode('utf-8', 'backslashreplace'),
+                   'stderr': ran.stderr.decode('utf-8', 'backslashreplace')}
+            try:
+                data = json.loads(ran.stdout)
+                row['completed'] = ran.returncode == 0 and data.get('completed') is True and data.get('case') == case
+            except (ValueError, UnicodeError):
+                row['completed'] = False
+            result['cases'].append(row)
+        result['completed'] = all(row['completed'] for row in result['cases'])
+    return result
+
+
+def check(output, native_compiler=None):
     output = Path(output)
     if output.exists() or output.with_suffix('.log').exists():
         raise FileExistsError('Use a new source-check result path')
-    result = {'schema': 1, 'snapshot': '2026.11.03-r85', 'completed': False,
+    result = {'schema': 1, 'snapshot': '2026.11.04-r86', 'completed': False,
               'firmware_loaded': False, 'camera_accessed': False,
-              'historical_full_suite_repeated': False, 'test_modules': list(TEST_MODULES)}
+              'historical_full_suite_repeated': False, 'test_modules': list(TEST_MODULES),
+              'native_requested': native_compiler is not None}
     log = io.StringIO()
     try:
         result.update(verify_sources())
@@ -96,11 +149,15 @@ def check(output):
             tested = unittest.TextTestRunner(stream=log, verbosity=2).run(suite)
         result.update(tests=tested.testsRun, failures=len(tested.failures), errors=len(tested.errors),
                       skipped=len(tested.skipped), completed=tested.wasSuccessful() and not tested.skipped)
+        if native_compiler is not None:
+            result['native_capturework'] = check_native(native_compiler)
+            result['completed'] = result['completed'] and result['native_capturework']['completed']
         result['dependencies'] = {}
         for name in ('numpy', 'Pillow', 'capstone', 'unicorn', 'av', 'rawpy'):
             try: result['dependencies'][name] = importlib.metadata.version(name)
             except importlib.metadata.PackageNotFoundError: result['dependencies'][name] = None
     except Exception as exc:
+        result['completed'] = False
         result['failure'] = {'type': type(exc).__name__, 'message': str(exc)}
     output.parent.mkdir(parents=True, exist_ok=True)
     with output.with_suffix('.log').open('x', encoding='utf-8') as handle:
@@ -114,5 +171,7 @@ def check(output):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
-    result = check(parser.parse_args().output)
+    parser.add_argument('--native-compiler', type=Path)
+    args = parser.parse_args()
+    result = check(args.output, args.native_compiler)
     raise SystemExit(0 if result['completed'] else 1)

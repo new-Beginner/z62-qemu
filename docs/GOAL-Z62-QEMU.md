@@ -1013,6 +1013,23 @@
 - 用户随后明确要求“这次完成推送github云端，更新readme等文件”，本轮新增GitHub发布授权覆盖先前仅本地限制的发布部分。已确认既有公开new-Beginner/z62-qemu main=39540055…为r49快照，在工作区.runtime/publication/z62-qemu-20261103独立克隆并建codex/publish-r85；原工作区无关staged修改不动。新README和公开快照正整理，不能在真正推送和远端验证前声称完成。
 - 完整相机Goal仍active，下一设备工作聚焦其它就绪生产者的合法配置和数据合同；原厂存卡／模式完整往返／AF仍未实现，不以已有统计101和内核置位成功冒充其它通道完成。
 
+### 用户授权的GitHub更新已完成（2026-11-03）
+
+- 已在独立公共克隆codex/publish-r85提交并正常fast-forward推送到既有公开仓库[main](https://github.com/new-Beginner/z62-qemu)，commit **5ad2a6a0246d93099a16ab2ee5eee72531d231f4**；保留39540055…等公开历史，没有force push。原工作区`.gitmodules`与`third_party/z62-qemu`暂存保持。
+- README更新至r85研究快照，明确r69内核/r75界面；同步功能／限制、技术难点、开发时间线、构建依赖、参考署名、NOTICE和文档索引。发布源码、测试、历史报告、scope和选定脱敏摘要；不发布固件/卡/工具链/NKN原件/完整内存或反汇编。
+- 公开克隆的32模块**131项无固件子集全部通过，零失败/错误/跳过**，850导出文件哈希、567份Python内存编译及本地Markdown链接通过。首轮仅因尚未生成的结果链接停止，失败记录保留；最后文档修改后再做源/链接复核，没有重跑历史635项/固件/LibRaw。
+- GitHub main ref、git ls-remote均与提交一致；远端tree **ac74a3d3dca32bc150f34adc7203efb97e1f2906**与本地1037项完整树一致。匿名raw README HTTP200、SHA256 **11ba764913b300270ef38845f4bb8af41d5be20a715d858a987a2a1830a5aa6e**与提交副本一致；仓库仍public，发布克隆clean。
+- 发布回执：`analysis/publication-20261103/publish-receipt.json`。发布子任务完成；完整仿真Goal仍active，不能把推送或131项源码测试称为原厂采集／模式恢复／AF或刷写安全完成。后续继续其它真实就绪生产条件的模型合同。
+
+### r86 两级采集像素核心与独立验证（2026-11-04）
+
+- 新增C11独立核心：非整数两级nearest缩小、CFA 2×2相位、256项LUT及RAW12/14/16 LE打包；尺寸／stride／跨度／LUT／重叠先预检，错误不写，padding保留。不含MMIO／DMA／timer／IRQ，没有修改r69绑定源码或EXE。
+- DC29816只读快照完成／detachOK：2020×1342→1514×1342→1514×1006，RAW12／pitch2272／packing6。读回不等于原厂写入／commit来源；MAIN仍是合成梯度，组曲线／系数零不能推断擦除或代填。
+- DC5340的8项native C通过；DC39944 native-observed-2全1,523,084像素与独立C两次实化参考一致，输出SHA f8a5e164cb63b9040e9aa425b3b92f5c6d2fbfc3edd78ece9ca75e1746c6a1e1；DC40892归档8份源码；DC28288 NumPy独立全样本／padding／原件SHA复核exit0。native-observed-1不作为当前源码权威。
+- 恢复后重验首次在编译／stderr解码阶段失败，无源码修改，在ASCII位置与C locale下8项通过。115文件会话归档后，本地8688 stop返回ok；DC34460正常exit0，session clean_exit=true。旧8682页面未操作。
+- [r86说明](profiles/README-Z62-CAPTUREWORK.md)、[本轮报告](history/2026-11-04_实施-Z62采集像素核心与独立验证r86-report.md)和能力表已补齐。继续用户授权的GitHub发布，不能在远端实际核验前宣布本次推送完成。
+- 下一步：独立MAIN生产者、原厂有效提交和run／stop／reset／cancel／generation／背压、ring-bank真实合同、不可变RAW transfer／LUT描述及下游逆变换；最后才接实际QEMU DMA和对应IRQ。不补unit1/2/200完成，不改AF。模式完整往返／原厂存卡／AF仍缺，完整Goal active。
+
 
 
 

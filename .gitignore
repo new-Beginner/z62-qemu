@@ -18,6 +18,9 @@ __pycache__/
 *.o
 *.obj
 *.raw
+*.p12
+*.p14
+*.p16
 *.img
 *.iso
 *.zip

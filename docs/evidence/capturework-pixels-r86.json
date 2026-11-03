@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "completed_evidence_check": true,
+  "verifier_sha256": "e754c16b1dae39f0cdffd634c31a18a139f2ccf35977a01f7620367511c2919f",
+  "state_sha256": "61271f1ce6d0128fe8d76f6164280d125683026a92bb636fb91f4c3adcef7f45",
+  "native_result_sha256": "92c8c563f0485dc72bdf7ffec0fa0a1563d4c5c527bf2b187745a8aaba53528c",
+  "source_files_archived_and_verified": 8,
+  "pixels_independently_decoded": 1523084,
+  "sample_mismatches": 0,
+  "row_padding_preserved": true,
+  "packed_sha256": "f8a5e164cb63b9040e9aa425b3b92f5c6d2fbfc3edd78ece9ca75e1746c6a1e1",
+  "dimensions": [
+    2020,
+    1342,
+    1514,
+    1342,
+    1514,
+    1006
+  ],
+  "bits": 12,
+  "stride": 2272,
+  "reference": "NumPy cell-boundary search, two materialized CFA stages, independent packed12 decoder",
+  "QEMU_device_integrated": false,
+  "readiness_completion_emitted": false,
+  "MAIN_source_and_commit_provenance_verified": false,
+  "silicon_ISP_equivalence_verified": false,
+  "AF_verified": false,
+  "camera_accessed": false,
+  "snapshot": "2026.11.04-r86",
+  "original_record_sha256": "973443523fd5f69205b16082bc1ec7e14560ea883a90aae0b299be0be8ec1412",
+  "scope": "Synthetic MAIN numerical fixture only; no QEMU DMA/IRQ or physical sampling equivalence."
+}

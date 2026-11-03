@@ -4,9 +4,9 @@
 
 建议使用 ASCII 的 D 盘工作路径（如 `D:/camera-lab/z62-qemu`），所有新缓存、TEMP/TMP、工具链和运行文件放在项目目录。历史构建为保护证据保留多个独立源码/编译目录，完整链可能需要数十 GB；单个后续构建器还要求至少 12 GiB 空闲。已有或失败目录不会自动删除/覆盖。
 
-## 2026-11-03 当前路线
+## 2026-11-04 当前路线
 
-当前为 r69 内核、r75 交互控制台、r85 研究快照。下文 r24/r48 是仍保留的历史路线；不是最新内核已经在空机器重新构建的声明。新克隆需自己准备固件、工具链及父构建。
+当前为 r69 内核、r75 交互控制台、r86 研究快照。r86新增独立C像素核心，未集成QEMU，没有r86内核可构建。下文 r24/r48 是仍保留的历史路线；不是最新内核已经在空机器重新构建的声明。新克隆需自己准备固件、工具链及父构建。
 
 在后文 r48 基础上，源中当前父依赖顺序为：
 
@@ -23,7 +23,7 @@
 .venv/Scripts/python.exe -X utf8 -B tools/build_z62_output_lineage.py --jobs 4
 ```
 
-它们对应源码依赖，不要求编译不存在的 r75/r85 内核。本次发布没有重新运行整条构建链。宿主/观察器可能严格绑定历史源、输入和 EXE SHA；不同工具链的 fresh build 需要明确的新验收绑定，不能删除 guard 冒充原窗口。
+它们对应源码依赖，不要求编译不存在的 r75/r85/r86 内核。本次发布没有重新运行整条构建链。宿主/观察器可能严格绑定历史源、输入和 EXE SHA；不同工具链的 fresh build 需要明确的新验收绑定，不能删除 guard 冒充原窗口。
 
 构建和原厂输入准备好后，使用已安装依赖的 Python；r75 的永久宿主诊断还要求现有的 **Windows host GDB**。若默认路径不适用，显式传入本机实际 GDB 路径，例如项目内 MSYS2/UCRT64 的 gdb.exe：
 
@@ -52,6 +52,17 @@ git submodule update --init third_party/nikon-fw-key-tool
 ```
 
 纯 Python 依赖版本已固定在 requirements。PyAV 是 C 级视频后端，RawPy/LibRaw 用于独立 NEF 验证，不是原厂编码器。
+
+若只核验公开源码及r86独立核心，在ASCII路径的克隆根目录、已有依赖环境和工作目录内GCC下运行：
+
+```powershell
+$env:TEMP=(Join-Path $PWD '.runtime/tmp')
+$env:TMP=$env:TEMP
+New-Item -ItemType Directory -Force $env:TEMP | Out-Null
+.venv/Scripts/python.exe -X utf8 -B tools/check_public_source.py --output analysis/publication/my-r86-check.json --native-compiler .runtime/tools/msys2/ucrt64/bin/gcc.exe
+```
+
+该命令分别执行32模块无固件子集和8个实际C case；原生部分只编译公开头文件／probe，不读取私有relocation manifest，不启动QEMU。输出与TEMP位于克隆内；每次结果需用新名称。详见[r86边界](profiles/README-Z62-CAPTUREWORK.md)和[实际验证范围](VALIDATION.md)。
 
 ## 2. MSYS2 与 QEMU 源码
 
