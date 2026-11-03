@@ -18,7 +18,7 @@ try:
 except ImportError:
     from z62_directory_card import plain_path
 
-VERSION = '2026.11.01-async-video-job-r27'
+VERSION = '2026.11.03-async-video-job-r60-progress'
 WORKER_SCRIPT = Path(__file__).with_name('z62_async_video_worker.py')
 CODE_FILES = ('z62_async_video_worker.py', 'z62_async_video_job.py', 'z62_async_video_card.py',
               'z62_video_codec.py', 'z62_video_card.py', 'z62_nef_codec.py', 'z62_scene_packet.py',
@@ -239,7 +239,16 @@ class VideoJob:
         path = self.work / 'progress.json'
         if not path.exists():
             return
-        raw = path.read_bytes()
+        try:
+            raw = path.read_bytes()
+        except PermissionError as exc:
+            # Progress is observational. Windows may deny an open while the
+            # worker atomically replaces this file. Keep the last valid state
+            # and retry on the existing polling cycle; result/exit/hash checks
+            # remain the only authority for publication.
+            with self.lock:
+                self.state['progress_read_error'] = {'type': type(exc).__name__, 'message': str(exc)}
+            return
         if len(raw) > 65536:
             raise ValueError('video_worker_progress_too_large')
         progress = json.loads(raw)
@@ -249,6 +258,7 @@ class VideoJob:
         if phase not in ('preparing', 'encoding_auditing', 'validating', 'ready', 'error'):
             raise ValueError('video_worker_unknown_phase')
         with self.lock:
+            self.state['progress_read_error'] = None
             self.state['prepared_frames'] = progress['prepared_frames']
             if not self.cancelled.is_set():
                 self.state['phase'] = ('awaiting_worker_exit' if phase == 'ready' else

@@ -4,6 +4,8 @@
 
 直接基础为 xiaoqingfeng0526 的 `nikon-z62-qemu` R3、JKWTCN 的 `z72-qemu`。它们进一步沿用了 WonderLantern 的 Z6/Z7 工程及 R3tr0ooo 和其他贡献者的工作；相关原始 NOTICE 保存在 `LICENSES/`，固定版本见 `docs/REFERENCES.md`。
 
+近期内核研究另参考 nightglasses/z7ii-qemu 的原始内核入口与运行观察，以及 TRON Forum 的公开 T-Kernel 2.0 事件语义。它们分别只作为入口线索和语义参考；目标服务编号不同，Z6II 指令和运行结构独立核验。未把公开 RTOS 源码复制进设备实现，参考缓存不随仓库分发，原作者和各自条款不变。
+
 本仓库新增的有界数据设备、控制/场景/媒体后端、测试及开发文档采用 GPL-2.0-or-later，除非具体文件另有声明；完整 GPLv2 文本见 `COPYING`。这是本仓库贡献的许可声明，不会改写第三方作者的权利或原许可证。
 
 QEMU 及其各组件保留逐文件的 GPL/LGPL 等许可。外部 `nikon-fw-key-tool` 采用 GPLv3；使用/分发与其结合的程序时应遵守相应兼容条款，不将其重新标为 GPLv2-only。其他参考仓库按各自文件的条款处理；仅有引用关系不表示取得其所有素材的再分发许可。

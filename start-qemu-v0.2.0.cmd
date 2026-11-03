@@ -1,6 +1,13 @@
 @echo off
 setlocal
 cd /d "%~dp0"
+if not exist ".runtime\tmp" mkdir ".runtime\tmp"
+set "TEMP=%CD%\.runtime\tmp"
+set "TMP=%TEMP%"
+set "PYTHONDONTWRITEBYTECODE=1"
+set "PIP_CACHE_DIR=%CD%\.runtime\cache\pip"
+set "APPDATA=%CD%\.runtime\appdata"
+set "LOCALAPPDATA=%CD%\.runtime\local-appdata"
 echo Nikon Z6II QEMU Lab v0.2.0
 echo Original firmware bring-up, not a functional camera MENU emulator yet.
 echo.

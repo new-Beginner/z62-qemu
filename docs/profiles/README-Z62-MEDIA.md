@@ -65,7 +65,7 @@ python -X utf8 -B tools/probe_z62_media_console.py --output analysis/my-fresh-me
 
 输出目录必须尚不存在。探测器启动并拥有一个独立 QEMU 会话，验证 JPEG＋NEF 拍摄、JPEG 独立解码、来源重放、4 倍回放、成组删除、仅 NEF 拍摄及回放；对两份 NEF 调用独立解码器，最后正常关闭并重开空卡。不会连接物理相机或写入物理盘。
 
-已保留 [原包实际流程](../../analysis/z62-raw-r25/live-media-flow-2/media-check.json) 和早期 [缺少 events 字段的失败记录](../../analysis/z62-raw-r25/live-media-flow-1/media-check.json)。原包流程的两张 NEF 各有 1,523,084 个 RAW 样本全部匹配，内嵌预览逐字节一致。原厂 JPEG／NEF 等价、全分辨率、AF、视频及真机更新安全不在本次通过范围内。
+已保留 原包实际流程（本地证据，未分发：`analysis/z62-raw-r25/live-media-flow-2/media-check.json`） 和早期 缺少 events 字段的失败记录（本地证据，未分发：`analysis/z62-raw-r25/live-media-flow-1/media-check.json`）。原包流程的两张 NEF 各有 1,523,084 个 RAW 样本全部匹配，内嵌预览逐字节一致。原厂 JPEG／NEF 等价、全分辨率、AF、视频及真机更新安全不在本次通过范围内。
 
 ## 格式依据和许可
 

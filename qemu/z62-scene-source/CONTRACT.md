@@ -36,4 +36,4 @@ Device reset preserves the external frame and publication identity, clears consu
 
 ## Evidence
 
-[Native r23a checks](../../analysis/z62-camera-r23/native-scene-ascii-final/report.json) cover all four byte-for-byte slot readbacks, ten rejected packets, no acknowledgement on failed DMA, repeated input, read-only diagnostics, reset, initial preload and the disabled legacy pattern. CPUs remained stopped and no firmware was loaded for those device tests. Actual firmware flow is separately verified by the r24 host.
+Native r23a checks（本地证据，未分发：`../../analysis/z62-camera-r23/native-scene-ascii-final/report.json`） cover all four byte-for-byte slot readbacks, ten rejected packets, no acknowledgement on failed DMA, repeated input, read-only diagnostics, reset, initial preload and the disabled legacy pattern. CPUs remained stopped and no firmware was loaded for those device tests. Actual firmware flow is separately verified by the r24 host.

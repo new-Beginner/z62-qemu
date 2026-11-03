@@ -63,4 +63,4 @@ python -B tools\probe_z62_candidate.py --firmware "Z6_2_0170 (1).bin" --wall-sec
 
 `probe_completed=true` 只表示所选入口字节加载、QMP 运行观测、证据采集及正常退出完成。报告的 `firmware_health_verified` 和 `flash_safety_verified` 仍为 false。
 
-整体开发和验收条件见 工作计划（本地证据，未分发：`GOAL-Z62-QEMU.md`）。
+整体开发和验收条件见 [工作计划](../GOAL-Z62-QEMU.md)。

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "snapshot": "2026.11.03-r85",
+  "scope": "Hashes identify omitted local evidence; these are not downloadable traces.",
+  "entries": [
+    {
+      "path": "analysis/z62-kernel-events-r83/verified-kernel-1.json",
+      "bytes": 5348,
+      "original_sha256": "f109e36d1c92a5ee3c36609f54c7a34972033a67cc9fbb048fd21e626c52503f",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-kernel-events-r83/events-1/result.json",
+      "bytes": 58378,
+      "original_sha256": "fbdbdba5c78d914bca0cc7c76bd3b216bf375a66e1beff4224ae8a81f55c7dc9",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-kernel-events-r83/events-2/result.json",
+      "bytes": 55629,
+      "original_sha256": "5f80f66fa0bbf967877209a805469dfeeacbc8895457cc730c59e672255f73b2",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-kernel-events-r83/events-3/result.json",
+      "bytes": 61164,
+      "original_sha256": "3a0929e6d996366b54a9669025f6c3baa19503b9fc8262bdfa97250672c76820",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-kernel-events-r83/kernel-contract-1.json",
+      "bytes": 4732,
+      "original_sha256": "8d0dfe54d222b75af97a5b8071f2c2b9b799135bb85ab09209dc6bc9ee1725e7",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-prepare-control-r79/verified-control-3.json",
+      "bytes": 3463,
+      "original_sha256": "e08ab3d6ce31ea59f6fa2a987577df2c8e5e5089daa909109c2ae349e4fc9b30",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capture-submit-r77/verified-traces-2.json",
+      "bytes": 31154,
+      "original_sha256": "95c5829460817111b7cd24da2639dda43e0bab3236d8d9b285a7688f10f9fc1e",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-persistent-diagnostic-r74/verified-photo-and-faults-1.json",
+      "bytes": 2093,
+      "original_sha256": "074e9297fe97d7f03f14510a5103b261deeb526e195ae4077ad6af09b05a70f9",
+      "original_contents_published": false
+    }
+  ]
+}

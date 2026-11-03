@@ -2,7 +2,37 @@
 
 本仓库是源码快照。以下使用已验证工程的**原生 Windows Python + MSYS2 UCRT64** 路线；不宣称完整 Linux/macOS 构建和相机行为已验收。原本地构建已存在并验证，本次公开没有在空机器重建全部历史内核。
 
-建议使用 ASCII 工作路径（如 `C:/camera-lab/z62-qemu`），准备较充足磁盘。历史构建为保护证据保留多个独立源码/编译目录，完整链可能需要数十 GB；单个后续构建器还要求至少 12 GiB 空闲。已有或失败目录不会自动删除/覆盖。
+建议使用 ASCII 的 D 盘工作路径（如 `D:/camera-lab/z62-qemu`），所有新缓存、TEMP/TMP、工具链和运行文件放在项目目录。历史构建为保护证据保留多个独立源码/编译目录，完整链可能需要数十 GB；单个后续构建器还要求至少 12 GiB 空闲。已有或失败目录不会自动删除/覆盖。
+
+## 2026-11-03 当前路线
+
+当前为 r69 内核、r75 交互控制台、r85 研究快照。下文 r24/r48 是仍保留的历史路线；不是最新内核已经在空机器重新构建的声明。新克隆需自己准备固件、工具链及父构建。
+
+在后文 r48 基础上，源中当前父依赖顺序为：
+
+```powershell
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_grid_geometry.py --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_photo_results.py --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_video_isp.py --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_video_isp_format.py --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_statistics_observe.py --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_raw_stop_control.py --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_mmio_filter.py --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_paired_ingress.py --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_paired_handoff.py --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_output_lineage.py --jobs 4
+```
+
+它们对应源码依赖，不要求编译不存在的 r75/r85 内核。本次发布没有重新运行整条构建链。宿主/观察器可能严格绑定历史源、输入和 EXE SHA；不同工具链的 fresh build 需要明确的新验收绑定，不能删除 guard 冒充原窗口。
+
+构建和原厂输入准备好后，使用已安装依赖的 Python；r75 的永久宿主诊断还要求现有的 **Windows host GDB**。若默认路径不适用，显式传入本机实际 GDB 路径，例如项目内 MSYS2/UCRT64 的 gdb.exe：
+
+```powershell
+.venv/Scripts/Activate.ps1
+./start-z6ii-workspace.cmd --host-gdb .runtime/tools/msys2/ucrt64/bin/gdb.exe --group23-fixture artifacts/fixtures/group23.bin --sd-card artifacts/fixtures/card.raw --software-card artifacts/my-photo-card
+```
+
+在克隆后先设置 `$env:TEMP`、`$env:TMP`、`$env:PIP_CACHE_DIR` 到项目 `.runtime` 子目录；详见 [工作目录存储说明](profiles/README-WORKSPACE-STORAGE.md)。Q: 必须空闲或已映射到此项目；不会覆盖另一个盘符映射。历史 r4/r24/r48 构建说明继续保留，单纯复制旧 CMD 不能提供编译缓存或合法固件。
 
 ## 1. 克隆与 Python
 
@@ -25,7 +55,7 @@ git submodule update --init third_party/nikon-fw-key-tool
 
 ## 2. MSYS2 与 QEMU 源码
 
-安装 MSYS2 UCRT64 的 GCC/toolchain、binutils、pkgconf、GLib、Pixman、libfdt/dtc、zlib、Meson/Ninja、Python 等 QEMU 构建依赖。构建器检查它们已存在，不自动安装系统工具。后续例子假定目录为 `C:/msys64`，请替换为自己的安装位置。
+安装 MSYS2 UCRT64 的 GCC/toolchain、binutils、pkgconf、GLib、Pixman、libfdt/dtc、zlib、Meson/Ninja、Python 等 QEMU 构建依赖。构建器检查它们已存在，不自动安装系统工具。后续例子假定目录为 `D:/camera-lab/z62-qemu/.runtime/tools/msys2`，请替换为自己的安装位置。
 
 QEMU 固定为 **10.2.4**：
 
@@ -36,7 +66,7 @@ QEMU 固定为 **10.2.4**：
 可以手工将官方包放到该缓存位置；各构建器会检查哈希。也可运行早期基线构建器，它会下载并核验，同时编译独立 v0.4 基线：
 
 ```powershell
-.venv/Scripts/python.exe -X utf8 -B tools/build_qemu.py --msys-root C:/msys64 --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_qemu.py --msys-root D:/camera-lab/z62-qemu/.runtime/tools/msys2 --jobs 4
 ```
 
 这个早期 `nikon-z6ii` 基线不是后面的完整 Z62 donor 配置，不能把它的成功替代 r24/r48。
@@ -46,8 +76,8 @@ QEMU 固定为 **10.2.4**：
 以下顺序来自现有构建器的父 manifest 依赖。**交互路线构建到 r24 即可；研究路线继续到 r48。** 不需要将每个宿主/观察编号都当成新内核，也不要求先编译一个 Z72 runtime。
 
 ```powershell
-.venv/Scripts/python.exe -X utf8 -B tools/build_z62_functional.py --msys2-dir C:/msys64 --jobs 4
-.venv/Scripts/python.exe -X utf8 -B tools/build_z62_transaction.py --msys2-dir C:/msys64 --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_functional.py --msys2-dir D:/camera-lab/z62-qemu/.runtime/tools/msys2 --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_transaction.py --msys2-dir D:/camera-lab/z62-qemu/.runtime/tools/msys2 --jobs 4
 .venv/Scripts/python.exe -X utf8 -B tools/build_z62_capcom.py --jobs 4
 .venv/Scripts/python.exe -X utf8 -B tools/build_z62_raw_stream.py --jobs 4
 .venv/Scripts/python.exe -X utf8 -B tools/build_z62_finite_stats.py --jobs 4

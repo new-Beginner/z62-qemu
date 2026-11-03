@@ -28,8 +28,13 @@ TEST_MODULES = (
     'test_z62_video_scene', 'test_z62_video_card', 'test_z62_async_video_card',
     'test_z62_async_video_scene', 'test_z62_async_video_job',
     'test_z62_selector_observation', 'test_z62_selector_configuration', 'test_z62_selector_completion',
+    'test_z62_paired_camera', 'test_z62_committed_controls_js',
+    'test_z62_action_queue', 'test_z62_action_evidence',
+    'test_z62_capture_submit', 'test_z62_capture_submit_evidence',
+    'test_z62_prepare_packet', 'test_z62_prepare_control', 'test_z62_prepare_control_evidence',
+    'test_z62_input_counters', 'test_z62_kernel_event_layout', 'test_z62_kernel_event_frames',
 )
-EXCLUDED = {'.git', '.build', '.venv', 'venv', 'artifacts', 'runs', 'third_party', '__pycache__', '.pytest_cache'}
+EXCLUDED = {'.git', '.build', '.runtime', '.venv', 'venv', 'artifacts', 'runs', 'third_party', '__pycache__', '.pytest_cache'}
 FORBIDDEN = {'.bin', '.exe', '.dll', '.raw', '.img', '.nef', '.mp4', '.mov', '.zip', '.7z', '.xz'}
 
 
@@ -79,7 +84,7 @@ def check(output):
     output = Path(output)
     if output.exists() or output.with_suffix('.log').exists():
         raise FileExistsError('Use a new source-check result path')
-    result = {'schema': 1, 'snapshot': '2026-11-02-r49', 'completed': False,
+    result = {'schema': 1, 'snapshot': '2026.11.03-r85', 'completed': False,
               'firmware_loaded': False, 'camera_accessed': False,
               'historical_full_suite_repeated': False, 'test_modules': list(TEST_MODULES)}
     log = io.StringIO()

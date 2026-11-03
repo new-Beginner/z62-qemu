@@ -61,9 +61,9 @@ AF-ON、录像、Fn等仍只具有已验证的原厂输入路径，不虚构AF�
 ## 验证和已知限制
 
 - r24二进制SHA256：`dbe36d222dbfa633086f906f626968635c61d9825eaee8174480bef22a39abf2`。旧r21、失败r23、成功r23a均保留；新C设备源码和13层构建清单绑定。
-- [原生文件输入测试](../../analysis/z62-camera-r24/native-file-final/report.json)覆盖四槽逐字节回读、10种坏包、失败DMA不确认、只读标签、重复、复位、预加载和默认关闭兼容性。测试未执行固件。
+- 原生文件输入测试（本地证据，未分发：`analysis/z62-camera-r24/native-file-final/report.json`）覆盖四槽逐字节回读、10种坏包、失败DMA不确认、只读标签、重复、复位、预加载和默认关闭兼容性。测试未执行固件。
 - 旧RAW（本地证据，未分发：`analysis/z62-camera-r24/legacy-raw.json`）和24组ADC（本地证据，未分发：`analysis/z62-camera-r24/legacy-adc.json`）在新二进制上通过。
-- [原版流程](../../analysis/z62-camera-r24/live-flow-1/native-console-check.json)、[最终原版复测](../../analysis/z62-camera-r24/release-flow-final/native-console-check.json)和[候选分支](../../analysis/z62-camera-r24/candidate-flow-1/native-console-check.json)实际执行固件，经共享快门完成JPEG、回放4倍、删除及返回取景。FFmpeg独立解码，并重放校验采样RGB与原生RAW载荷SHA。
+- 原版流程（本地证据，未分发：`analysis/z62-camera-r24/live-flow-1/native-console-check.json`）、最终原版复测（本地证据，未分发：`analysis/z62-camera-r24/release-flow-final/native-console-check.json`）和候选分支（本地证据，未分发：`analysis/z62-camera-r24/candidate-flow-1/native-console-check.json`）实际执行固件，经共享快门完成JPEG、回放4倍、删除及返回取景。FFmpeg独立解码，并重放校验采样RGB与原生RAW载荷SHA。
 - 浏览器实点已完成手动镜头设置、拍摄、回放、4倍放大、删除；回放截图（本地证据，未分发：`analysis/z62-camera-r24/ui-qa-zoom.jpg`）和删除截图（本地证据，未分发：`analysis/z62-camera-r24/ui-qa-delete.jpg`）保留。删除后目录卡重新打开仍为空。
 - 实点时发现退出回放的缩放选择值未同步，已补组件回归修正；该小修正未再次运行整套浏览器操作。关闭阶段曾出现HTTP连接中止／QMP截屏超时告警，主进程exit0且无残留QEMU；长稳和关闭提示仍需完善。
 - 部分界面沿用旧宿主版本文字；构建身份以`hardware_version`、`native_scene.version`和构建清单为准。原厂电源／照片视频拨杆、触屏、肩屏完整状态、NEF、视频和AF平台仍待完成。

@@ -14,6 +14,6 @@ The exchange observes used IDs before and after reading the associated tags; an 
 
 On the current machine, a valid ~3MB base64 QOM packet took13.765 seconds with guest CPUs paused. File QOM operations in the native validation took0–0.015 seconds, measured by a clock with approximately15ms resolution; zero means below that resolution, not literally instantaneous.
 
-[Native r24 checks](../../analysis/z62-camera-r24/native-file-final/report.json) repeat the full four-slot, rejection, default-off, reset and preload cases through file transport. Legacy RAW（本地证据，未分发：`../../analysis/z62-camera-r24/legacy-raw.json`） and 24 ADC cases（本地证据，未分发：`../../analysis/z62-camera-r24/legacy-adc.json`） were also run against this binary. Root firmware execution, GUI behavior and C JPEG decoding use separate evidence.
+Native r24 checks（本地证据，未分发：`../../analysis/z62-camera-r24/native-file-final/report.json`） repeat the full four-slot, rejection, default-off, reset and preload cases through file transport. Legacy RAW（本地证据，未分发：`../../analysis/z62-camera-r24/legacy-raw.json`） and 24 ADC cases（本地证据，未分发：`../../analysis/z62-camera-r24/legacy-adc.json`） were also run against this binary. Root firmware execution, GUI behavior and C JPEG decoding use separate evidence.
 
 The native file reader is not a security boundary for an untrusted QMP controller. Production callers use only their owned ordinary staging directory; the public camera HTTP API does not accept arbitrary frame filenames.

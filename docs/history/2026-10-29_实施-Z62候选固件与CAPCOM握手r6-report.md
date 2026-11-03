@@ -14,7 +14,7 @@ start-z6ii-qemu.cmd --firmware "Z6_2_0170 (1).bin"
 - [统一使用说明](../profiles/README-Z62-QEMU.md)
 - [候选输入合同](../profiles/README-FIRMWARE-TEST.md)
 - [设备合同](../../qemu/z62-capcom/CONTRACT.md)
-- [证据复核汇总](../../analysis/z62-capcom-r6/summary.json)
+- 证据复核汇总（本地证据，未分发：`analysis/z62-capcom-r6/summary.json`）
 - 二进制：`.build/z62-capcom-2026.10.28-r6/runtime/qemu-system-arm.exe`
 - QEMU版本：10.2.4
 - EXE SHA256：`6a14316c4a3f25bdce27f4f649710dcc06b15677e416f7c1e80fb6cb810ec132`
@@ -30,7 +30,7 @@ start-z6ii-qemu.cmd --firmware "Z6_2_0170 (1).bin"
 
 读取后保存不可变字节快照，分别记录基线/候选SHA256、变化字节数和范围，每次启动再次核对暂存文件。原版入口的固定SHA限制仍保留。新入口不修CRC、不重打包、不修改输入原件。
 
-CPU执行验证在临时master副本的入口放入 `mov r0,#0x62; b .`，只重算该副本成员CRC。r6实测 `PC=10020004、r0=62`，入口字节为 `6200a0e3feffffea`，正常退出。证据：[candidate-sentinel/report.json](../../analysis/z62-capcom-r6/candidate-sentinel/report.json)。这证明修改指令被执行，不代表这一测试副本是可用的相机固件。
+CPU执行验证在临时master副本的入口放入 `mov r0,#0x62; b .`，只重算该副本成员CRC。r6实测 `PC=10020004、r0=62`，入口字节为 `6200a0e3feffffea`，正常退出。证据：candidate-sentinel/report.json（本地证据，未分发：`analysis/z62-capcom-r6/candidate-sentinel/report.json`）。这证明修改指令被执行，不代表这一测试副本是可用的相机固件。
 
 统一CMD分别以原版及明确选择的候选包启动HTTP控制台，两者均响应MENU并正常停止；原版界面读取到完整空状态列表，候选界面持续报告状态未知。候选固定RAM地址仅作为未验证的观测，早期内存尚未初始化的异常会明确保留，不伪装成健康。
 

@@ -43,4 +43,4 @@ python -X utf8 -B tools\verify_z62_extra_inputs.py
 python -X utf8 -B -m unittest discover -s tests -p test_z62_extra_inputs.py -v
 ```
 
-完整目标与正在运行的模式盘观察见 工作计划（本地证据，未分发：`GOAL-Z62-QEMU.md`）。
+完整目标与正在运行的模式盘观察见 [工作计划](../GOAL-Z62-QEMU.md)。

@@ -1,5 +1,7 @@
 # Local firmware, generated builds, runtime state and media.
 /.build/
+/.runtime/
+/references/rtos/
 /.venv/
 /venv/
 /dist/
