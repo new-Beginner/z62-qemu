@@ -6,7 +6,7 @@
 
 ## 2026-11-04 当前路线
 
-当前为 r91 源码快照，默认仍为 r69 内核／r75 交互控制台；r89/r91 是独立且默认关闭的采集实验内核。下文 r24/r48 是仍保留的历史路线；不是最新内核已在空机器重建的声明。新克隆需自己准备固件、工具链及父构建。
+当前为 r98 源码快照，默认仍为 r69 内核／r75 交互控制台；新增采集模型默认关闭。下文 r24/r48 是仍保留的历史路线；不是最新内核已在空机器重建的声明。新克隆需自己准备固件、工具链及父构建。
 
 在后文 r48 基础上，源中当前父依赖顺序为：
 
@@ -31,6 +31,18 @@
 ```
 
 前者是 r89，后者是 r91；两者还依赖工作目录内 r73 工具链锁。详情见 [采集后端说明](profiles/README-Z62-CAPTUREWORK-DEVICE.md)。本次发布没有重新运行整条构建链。宿主/观察器严格绑定历史源、输入和 EXE SHA；不同工具链的 fresh build 需要明确的新验收绑定，不能删除 guard 冒充原窗口。默认入口保持 r69，启用 CaptureWork 时不支持迁移／完整快照。
+
+本次r92、r93、r98按父依赖继续，分别为连续统计来源、采集组和保留帧finite；r94–r97是资源／观察／供帧工具，无须构建同编号内核：
+
+```powershell
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_capturework_statistics.py --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_capture_group.py --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_capturework_finite.py --jobs 4
+```
+
+r98本地EXE身份为`63531fbc8772c8cf370fab2d721eca96d8104022c08b674e94b65aae2cedfcde`，不要求不同编译器生成相同字节。新属性`z62-capturework-finite`默认off，要求CW和`functional-finite-stats`；只保留实际完成DMA的量化线性图像，既有finite采样不是新RAW采集。显式C参考group17的生成和preboot加载见[参数合同](../qemu/z62-capturework/GROUP-PARAMETERS.md)，不能用真实标定或任意文件代替限定合成基线。
+
+实际16秒观察和独立验证命令见[r96–r98报告](history/2026-11-04_实施-Z62连续供帧与保留帧有限采样r96-r98-report.md)与[finite合同](../qemu/z62-capturework/FINITE-CONTRACT.md)。这些命令依赖完整研究环境；原厂最终Error／preview0，不提升默认入口。公开源码检查仍使用`tools/check_public_source.py`，本次增加虚拟参数和原时钟资格的无固件测试，实际计数见[验证记录](VALIDATION.md)。
 
 构建和原厂输入准备好后，使用已安装依赖的 Python；r75 的永久宿主诊断还要求现有的 **Windows host GDB**。若默认路径不适用，显式传入本机实际 GDB 路径，例如项目内 MSYS2/UCRT64 的 gdb.exe：
 

@@ -12,7 +12,7 @@ import subprocess
 import export_z62_public as old
 
 ROOT=Path(__file__).resolve().parents[1]
-SNAPSHOT='2026.11.04-r91'
+SNAPSHOT='2026.11.04-r98'
 REMOTE='https://github.com/new-Beginner/z62-qemu.git'
 
 
@@ -45,6 +45,7 @@ def refresh(destination,source=ROOT):
             'original_sha256':hashlib.sha256(original).hexdigest(),
             'published_sha256':hashlib.sha256(data).hexdigest(),'transformed':original!=data,'bytes':len(data)})
     navigation='\n## 公开仓库导航\n\n- [构建与父依赖](docs/BUILD.md)\n- [功能清单](docs/FEATURES.md)与[已知限制](docs/LIMITATIONS.md)\n- [开发时间线](docs/DEVELOPMENT.md)\n- [参考、作者与许可证](docs/REFERENCES.md)\n- [本次源码验证范围](docs/VALIDATION.md)\n- [历史内核事件验收摘要](docs/evidence/latest-kernel-events.json)（r83–r85，非完整原始轨迹）\n- [r86采集像素核验摘要](docs/evidence/capturework-pixels-r86.json)（独立数值阶段）\n- [r91原厂MAIN／DMA验收摘要](docs/evidence/capturework-original-r91.json)（统计／预览未贯通）\n'
+    navigation+='- [r98 发布说明](docs/RELEASE-r98.md)\n- [r95 参数追踪摘要](docs/evidence/group-parameters-r95.json)\n- [r96/r97 实际等待与供帧摘要](docs/evidence/current-stream-r97.json)\n- [r98 保留帧有限统计摘要](docs/evidence/retained-finite-r98.json)（最终原厂 Error，预览未通过）\n'
     prepared['README.md']+=navigation.encode('utf-8')
     for row in ledger:
         if row['published']=='README.md':
@@ -93,6 +94,42 @@ def refresh(destination,source=ROOT):
         scope='Selected historical r91 controlled-entry evidence; not a new firmware run or whole-camera acceptance.',
         publication_note='The local record predates publication; its published=false field is not a current cloud status.')
     prepared['docs/evidence/capturework-original-r91.json']=(json.dumps(stage_summary,ensure_ascii=False,indent=2)+'\n').encode()
+    # Summaries preserve numerical facts and failed functional acceptance separately.
+    selected=(
+        ('group-parameters-r95.json','analysis/z62-group-parameter-input-r95/verification-1/result.json'),
+        ('current-stream-r97.json','analysis/z62-main-stream-r97/verification-1/result.json'),
+        ('retained-finite-r98.json','analysis/z62-capturework-finite-r98/verification-1/result.json'),
+    )
+    for name,local in selected:
+        path=source/local; proof=json.loads(path.read_text(encoding='utf-8'))
+        if proof.get('completed_evidence_check') is not True or proof.get('camera_accessed') is not False:
+            raise ValueError('Incomplete or out-of-scope evidence: '+local)
+        public={key:value for key,value in proof.items() if key!='source_sha256'}
+        public.update(snapshot=SNAPSHOT,original_record_sha256=old.digest(path),
+            scope='Selected local offline evidence only; original inputs, raw traces and RAM are omitted.')
+        if name=='retained-finite-r98.json':
+            native=source/'analysis/z62-capturework-finite-r98/native-1/result.json'
+            original=source/'analysis/z62-capturework-finite-r98/original-dma-1/result.json'
+            if (proof['native_result_sha256']!=old.digest(native) or proof['original_result_sha256']!=old.digest(original)
+                    or proof['native_output_bytes_independently_recomputed']!=93696
+                    or proof['original_scalar_bytes_independently_verified']!=1536 or proof['scalar_byte_mismatches']!=0
+                    or proof['original_finite_samples']!=122 or proof['preview_batches']!=0
+                    or proof['complete_camera_or_AF_or_flash_safety_verified'] is not False):
+                raise ValueError('Retained finite numerical or acceptance binding changed')
+            lcd=source/'analysis/z62-capturework-finite-r98/original-dma-1/final-lcd.png'
+            public.update(final_LCD_manual_observation='Error. Turn camera off and then on again.',
+                final_LCD_original_sha256=old.digest(lcd),functional_acceptance_passed=False,
+                original_scalar_scope='One 768-byte snapshot per batch; not all 122 original DMA outputs retained.')
+            reg_path=source/'analysis/z62-capturework-finite-r98/regression-1.json'
+            reg=json.loads(reg_path.read_text(encoding='utf-8'))
+            log_path=reg_path.with_suffix('.log')
+            if (not reg['completed'] or reg['tests']!=715 or any(reg[k] for k in ('failures','errors','skipped'))):
+                raise ValueError('r98 full local regression is incomplete')
+            if log_path.is_file() and old.digest(log_path)!=reg['log_sha256']:
+                raise ValueError('r98 regression log binding changed')
+            public['local_full_regression']={k:reg[k] for k in ('tests','failures','errors','skipped','elapsed_seconds','rawpy_available','log_sha256')}
+            public['local_full_regression']['original_record_sha256']=old.digest(reg_path)
+        prepared['docs/evidence/'+name]=(json.dumps(public,ensure_ascii=False,indent=2)+'\n').encode()
     references=('analysis/z62-kernel-events-r83/verified-kernel-1.json',
         'analysis/z62-kernel-events-r83/events-1/result.json','analysis/z62-kernel-events-r83/events-2/result.json',
         'analysis/z62-kernel-events-r83/events-3/result.json','analysis/z62-kernel-events-r83/kernel-contract-1.json',
@@ -111,13 +148,28 @@ def refresh(destination,source=ROOT):
         'analysis/z62-capturework-policy-r91/build-binding/source-archive.json',
         'analysis/z62-capturework-original-r90/original-1/result.json',
         'analysis/z62-capturework-original-r90/original-2/result.json',
-        'analysis/z62-capturework-original-r90/verification-1/result.json')
+        'analysis/z62-capturework-original-r90/verification-1/result.json',
+        *(local for _,local in selected),
+        'analysis/z62-group-parameter-input-r95/reference-dma-1/result.json',
+        'analysis/z62-group-parameter-input-r95/reference-dma-1/parameter-dma.json',
+        'analysis/z62-current-ready-r96/trace-1/ready-observer.json',
+        'analysis/z62-main-stream-r97/stream-3/result.json',
+        'analysis/z62-main-stream-r97/verification-1/source-archive.json',
+        'analysis/z62-capturework-finite-r98/native-1/result.json',
+        'analysis/z62-capturework-finite-r98/legacy-finite-1.json',
+        'analysis/z62-capturework-finite-r98/regression-1.json',
+        'analysis/z62-capturework-finite-r98/original-dma-1/result.json',
+        'analysis/z62-capturework-finite-r98/original-dma-1/retained-dma.json',
+        'analysis/z62-capturework-finite-r98/original-dma-1/final-lcd.png',
+        'analysis/z62-capturework-finite-r98/original-dma-1/source-archive.json',
+        'analysis/z62-capturework-finite-r98/verification-1/source-archive.json')
     index={'schema':1,'snapshot':SNAPSHOT,'scope':'Hashes identify omitted local evidence; these are not downloadable traces.',
            'entries':[{'path':name,'bytes':(source/name).stat().st_size,'original_sha256':old.digest(source/name),
                        'original_contents_published':False} for name in references]}
     prepared['docs/evidence-index-20261104.json']=(json.dumps(index,ensure_ascii=False,indent=2)+'\n').encode()
     for relative in ('docs/evidence/latest-kernel-events.json','docs/evidence/capturework-pixels-r86.json',
                      'docs/evidence/capturework-original-r91.json',
+                     *('docs/evidence/'+name for name,_ in selected),
                      'docs/evidence-index-20261104.json'):
         data=prepared[relative]
         ledger.append({'source':'selected local verification records','published':relative,

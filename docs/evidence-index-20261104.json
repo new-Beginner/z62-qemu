@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "snapshot": "2026.11.04-r91",
+  "snapshot": "2026.11.04-r98",
   "scope": "Hashes identify omitted local evidence; these are not downloadable traces.",
   "entries": [
     {
@@ -127,6 +127,102 @@
       "path": "analysis/z62-capturework-original-r90/verification-1/result.json",
       "bytes": 15351,
       "original_sha256": "d3163452f07a1201670602f1f73247a2f6cc413802008af932667027a5cb1661",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-group-parameter-input-r95/verification-1/result.json",
+      "bytes": 5187,
+      "original_sha256": "9e2e7e86fdc63a8013127781be699af3f0836a2ee4db5a686f23f6124fef89cc",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-main-stream-r97/verification-1/result.json",
+      "bytes": 3133,
+      "original_sha256": "ed0baba2281b82a8228b7586ffae4faadf1e50be988daaf1ef7e64b4b010314c",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-finite-r98/verification-1/result.json",
+      "bytes": 5575,
+      "original_sha256": "5c4491bcc65b5391c39d1af89d9f4889df083f558d19f5b3572e89d705ebcbec",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-group-parameter-input-r95/reference-dma-1/result.json",
+      "bytes": 4607441,
+      "original_sha256": "b48c1fc72ffe832b366e370e46bad0b4159ea6515d34596f4e47483ee95986a7",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-group-parameter-input-r95/reference-dma-1/parameter-dma.json",
+      "bytes": 5769,
+      "original_sha256": "75d6d362ca4f750799b496c96e4091c3d1c47a9cda19cb9a8fc0ea27f0af2dff",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-current-ready-r96/trace-1/ready-observer.json",
+      "bytes": 69899,
+      "original_sha256": "5b73aa9fbce4c6a4b53100f04374b4904d99c8403c3167b27c894411a9304dfa",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-main-stream-r97/stream-3/result.json",
+      "bytes": 713271,
+      "original_sha256": "2e022953d9fc37fbb1dd607af590459e3212298169b167d2d93a1f5ac22a8e8a",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-main-stream-r97/verification-1/source-archive.json",
+      "bytes": 1221,
+      "original_sha256": "7f998def3359ca644613be331add4fcd9593aa241fc3a6ff6fa0e8a509c7eaa1",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-finite-r98/native-1/result.json",
+      "bytes": 9153,
+      "original_sha256": "4e5a9bdf0fb0d4d8d2f18bd3ebe2c3d792c61e05995690ac697d247ecef1ce61",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-finite-r98/legacy-finite-1.json",
+      "bytes": 1363,
+      "original_sha256": "a14cc7f2b549c26ad5cd67218039604280b36daacd7c907a37372589ba484953",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-finite-r98/regression-1.json",
+      "bytes": 654,
+      "original_sha256": "e11cb7e0afc6c4a31117dcb6b1cb982a35098c85cf02a07260d7fc14bbe11bf6",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-finite-r98/original-dma-1/result.json",
+      "bytes": 1428654,
+      "original_sha256": "edd01ef42b3c533d09f3bacf2f1d5ab69aad75dc98cc2c41f8c34a158d0e567f",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-finite-r98/original-dma-1/retained-dma.json",
+      "bytes": 12623,
+      "original_sha256": "fefda31d4431095bdc0f86cfb630ac288a919126311ae7ad92f8a18d6907f1f8",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-finite-r98/original-dma-1/final-lcd.png",
+      "bytes": 34181,
+      "original_sha256": "636eee6147610c45b609640927f61b429bda6ac421977284003456040f7003dc",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-finite-r98/original-dma-1/source-archive.json",
+      "bytes": 1012,
+      "original_sha256": "da69f3bea808703ccd901b834a1e71b960cd1a79915ad08f2fc1b1db8fe960ed",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-capturework-finite-r98/verification-1/source-archive.json",
+      "bytes": 3346,
+      "original_sha256": "590090377e877992bcc779dbaa6cc627591811c6b377e029cc6d88585a64e3da",
       "original_contents_published": false
     }
   ]

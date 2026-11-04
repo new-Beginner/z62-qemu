@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "completed_evidence_check": true,
+  "slow_observer_sha256": "5b73aa9fbce4c6a4b53100f04374b4904d99c8403c3167b27c894411a9304dfa",
+  "fast_original_result_sha256": "2e022953d9fc37fbb1dd607af590459e3212298169b167d2d93a1f5ac22a8e8a",
+  "slow_source_waits": [
+    {
+      "success": true,
+      "kernel_result": 0,
+      "output_bits": 95420416,
+      "duration_ns": 81471937
+    },
+    {
+      "success": false,
+      "kernel_result": 4291690496,
+      "output_bits": 0,
+      "duration_ns": 201787521
+    },
+    {
+      "success": true,
+      "kernel_result": 0,
+      "output_bits": 95420416,
+      "duration_ns": 116127750
+    }
+  ],
+  "continuous_source_waits": [
+    {
+      "success": true,
+      "kernel_result": 0,
+      "output_bits": 95420416,
+      "duration_ns": 25937
+    },
+    {
+      "success": true,
+      "kernel_result": 0,
+      "output_bits": 95420416,
+      "duration_ns": 9438
+    },
+    {
+      "success": true,
+      "kernel_result": 0,
+      "output_bits": 95420416,
+      "duration_ns": 28042
+    }
+  ],
+  "original_OR_store_publications_verified": 10,
+  "accepted_MAIN_packets_reconstructed": 32,
+  "source_frames_skipped": 3,
+  "mailbox_files": 2,
+  "unique_payloads": 2,
+  "all_accepted_inputs_byte_exact_reconstructable": true,
+  "retained_source_fake_RAW_acquisitions": false,
+  "original_finite_count_minus_one": 60,
+  "finite_model_enabled": true,
+  "finite_samples": 0,
+  "finite_reason": "source",
+  "LCD_all_black": true,
+  "preview_batches": 0,
+  "functional_acceptance_eligible": false,
+  "camera_accessed": false,
+  "snapshot": "2026.11.04-r98",
+  "original_record_sha256": "ed0baba2281b82a8228b7586ffae4faadf1e50be988daaf1ef7e64b4b010314c",
+  "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted."
+}

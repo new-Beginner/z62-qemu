@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "completed_evidence_check": true,
+  "binary_sha256": "bad3bc345bb152ddb3587beefbbf0a7dbd9a1ae30dc2f67ae872435752294dac",
+  "marker_result_sha256": "6d4c569fb98e3e02afce99e36139b3cad2dc24d4635a3638c9385f1059c754c3",
+  "reference_result_sha256": "b48c1fc72ffe832b366e370e46bad0b4159ea6515d34596f4e47483ee95986a7",
+  "resource_contract_sha256": "e5f7c52096fe5e1c42eac5b33dd053281d3efb9f077acb2f449026c2fff67a73",
+  "diagnostic_tag_flow_verified": true,
+  "marker_group_completed": 0,
+  "reference_group_completed": 13,
+  "original_CPU_event96_ACKs": 13,
+  "original_retained_group_DMA_frames": 4,
+  "original_group_DMA_bytes_retained": 256,
+  "original_classified_group_bytes_independently_verified": 216,
+  "classified_mismatches": 0,
+  "original_unclassified_bytes_independent_preservation_verified": false,
+  "whole_primary_cache_image_equals_input": false,
+  "resource_slice_equals_explicit_input": true,
+  "corrected_coefficients_argument": "0xc26a08c2",
+  "C26A08DC_is_coefficients": false,
+  "legacy_RAW_accepted_always_zero": true,
+  "original_window_ns": 8008828354,
+  "LCD_size": [
+    1024,
+    682
+  ],
+  "LCD_all_black": true,
+  "preview_batches": 0,
+  "kernel_pattern_samples_non_atomic": {
+    "unavailable": 2,
+    "0x0": 566,
+    "0x8000000": 15,
+    "0x5300000": 15
+  },
+  "kernel_wait_return_traced": false,
+  "factory_calibration": false,
+  "physical_AF_or_ISP_equivalence": false,
+  "complete_camera_or_flash_safety_verified": false,
+  "camera_accessed": false,
+  "snapshot": "2026.11.04-r98",
+  "original_record_sha256": "9e2e7e86fdc63a8013127781be699af3f0836a2ee4db5a686f23f6124fef89cc",
+  "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted."
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "completed_evidence_check": true,
+  "binary_sha256": "63531fbc8772c8cf370fab2d721eca96d8104022c08b674e94b65aae2cedfcde",
+  "native_result_sha256": "4e5a9bdf0fb0d4d8d2f18bd3ebe2c3d792c61e05995690ac697d247ecef1ce61",
+  "original_result_sha256": "edd01ef42b3c533d09f3bacf2f1d5ab69aad75dc98cc2c41f8c34a158d0e567f",
+  "native_inputs": 2,
+  "native_finite_samples": 122,
+  "native_output_bytes_independently_recomputed": 93696,
+  "original_finite_samples": 122,
+  "original_finite_batches": 2,
+  "original_finite_batch_bit7_ACKs": 7,
+  "original_scalar_DMA_snapshots": 2,
+  "original_scalar_bytes_independently_verified": 1536,
+  "scalar_byte_mismatches": 0,
+  "retained_source_identities": [
+    {
+      "batch_request": 1,
+      "source_publication": 33,
+      "source_frame": 61,
+      "source_time_ns": 2047019729
+    },
+    {
+      "batch_request": 2,
+      "source_publication": 33,
+      "source_frame": 61,
+      "source_time_ns": 2047019729
+    }
+  ],
+  "samples_are_not_new_RAW_acquisitions": true,
+  "legacy_RAW_accepted_always_zero": true,
+  "original_window_ns": 16000750250,
+  "MAIN_publications": 33,
+  "CW_DMA_completed": 33,
+  "LCD_all_black": false,
+  "preview_batches": 0,
+  "camera_accessed": false,
+  "complete_camera_or_AF_or_flash_safety_verified": false,
+  "snapshot": "2026.11.04-r98",
+  "original_record_sha256": "5c4491bcc65b5391c39d1af89d9f4889df083f558d19f5b3572e89d705ebcbec",
+  "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted.",
+  "final_LCD_manual_observation": "Error. Turn camera off and then on again.",
+  "final_LCD_original_sha256": "636eee6147610c45b609640927f61b429bda6ac421977284003456040f7003dc",
+  "functional_acceptance_passed": false,
+  "original_scalar_scope": "One 768-byte snapshot per batch; not all 122 original DMA outputs retained.",
+  "local_full_regression": {
+    "tests": 715,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "elapsed_seconds": 187.34399999999732,
+    "rawpy_available": false,
+    "log_sha256": "f2784425fa4f172586cb4e54de29f5250350f018e454b9fda2158e2b0e226bda",
+    "original_record_sha256": "e11cb7e0afc6c4a31117dcb6b1cb982a35098c85cf02a07260d7fc14bbe11bf6"
+  }
+}

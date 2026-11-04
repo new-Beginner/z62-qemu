@@ -1,5 +1,25 @@
 # 验证与公开证据
 
+## r98 本次公开副本检查（2026-11-04）
+
+实际执行**35模块、143项无固件测试，0失败／错误／跳过**；GCC16.2.0以C11／O2／Wall／Wextra／Werror／pedantic编译并通过**16个C case**（8像素、3 MAIN、5 transfer，单独计数）。同时核对962个导出文件SHA、635份Python内存编译、本地Markdown链接、被排除产物和凭据形态；819个未转换导出文件另与研究目录逐字节核对，零差异。结果见[JSON](../analysis/publication/source-check-r98-20261104-1.json)和[日志](../analysis/publication/source-check-r98-20261104-1.log)。
+
+```powershell
+python -X utf8 -B tools/check_public_source.py --output analysis/publication/my-r98-check.json --native-compiler .runtime/tools/msys2/ucrt64/bin/gcc.exe
+```
+
+使用已有Python依赖、Node与实际GCC位置，工作目录为ASCII路径或已核对别名，TEMP／TMP留在项目内。新增虚拟参数完整性与原时钟资格9项；MAIN stream测试另属本地Q:别名环境，没有悄悄计入公共可移植子集。此次公开检查没有加载固件、启动QEMU、重跑715项或RawPy／LibRaw；原厂与native设备结果属于下节独立证据。最终文档回写后只重核静态清单／链接／差异，不重复计为运行143项。
+
+## r98 本地实现与原厂窗口（2026-11-04）
+
+本次新增r92–r98，默认仍r75界面／r69内核。已有完整本地回归为**715项、0失败／错误／跳过，187.344秒**；其完整日志和源绑定在本地留存，没有RawPy，不称新一轮LibRaw验证。r98原生4个进程exit0，两输入／122次DMA／93,696字节独立重算通过；旧finite原生回归通过。
+
+本次继续等待既有16秒原厂探针至真实终态，实际运行`verify_z62_retained_finite.py`：原厂122次采样／2批／0拒绝，两批同publication33／frame61；每批保存一份768B scalar，总1,536B从保留packed12和冻结LUT重算零差异。CPU0 bit7 ACK写7次，不称7批。原厂3个成员及输入卡未变，进程exit0。verifier归档24份源／生成源／构建元数据，原厂窗口归档7份。
+
+最终LCD已人工查看，出现`Error. Turn camera off and then on again.`，preview0、CW未恢复。`LCD_all_black=false`仅指非黑像素，不能称预览／相机成功。完整摄影、AF和刷机安全保持false。摘要见[r98证据](evidence/retained-finite-r98.json)，原件身份见[哈希索引](evidence-index-20261104.json)，失败及复现见[r96–r98报告](history/2026-11-04_实施-Z62连续供帧与保留帧有限采样r96-r98-report.md)。
+
+下面r91和r86公开检查为历史范围；本次r98公开副本检查单独记录，不把本地715项混计进无固件子集。
+
 ## r91 本次公开副本验证（2026-11-04）
 
 本次发布新增 r87–r91 源码，默认仍为 r69 内核／r75 界面。独立公开副本实际执行 **33 模块、134 项无固件测试，零失败／错误／跳过**；以 GCC 16.2.0、C11、O2、Wall、Wextra、Werror、pedantic 编译公开头文件及探针，**16 个 C case 全部通过**：8 个像素、3 个 MAIN 解析／生命周期／拒绝、5 个 transfer 量化／无损 RAW16／未知码拒绝。C case 独立于 134 项计数。结果见 [JSON](../analysis/publication/source-check-r91-20261104-1.json) 和 [完整日志](../analysis/publication/source-check-r91-20261104-1.log)。

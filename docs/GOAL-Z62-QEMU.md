@@ -2,6 +2,18 @@
 
 目标：在现有工作区成果上实现可用于测试用户固件的 Z6II QEMU。完整目标仍在进行，不能用菜单截图或设备单测通过代替整机验收。
 
+## 当前检查点 r98（2026-11-04，覆盖下方历史“下一步”）
+
+- 本次公开源码更新到r98，默认r75界面／r69内核保持；r92–r98实验默认关闭。公开发布任务与完整相机Goal分开，后者继续active。
+- r96真实硬件执行断点观察：慢源原厂AND等待2次成功／1次FFCE0000h超时；10次实际OR/store形成两组完整05B条件。不是所有就绪生产者均缺失。
+- r97按64位客体时钟30Hz帧号供MAIN，busy不积压；两个mailbox／两payload，32个accepted包可逐字节重构，三个原始等待全部kernel0／BOOL1。原厂随后停CW并提交61槽30×12有限统计；旧source gate拒绝，保持RAW计数0。
+- 独立r98只在CW全部有效行DMA成功后保留量化linear12和源身份，stop保留、reset清除，owned batch冻结、下一请求选latest，source/output alias拒绝。默认off保留旧gate，没有补ready、扩队列、改原厂返回或AF。
+- native4进程exit0，两个输入、122次实际DMA／93,696字节独立重算一致；旧有限统计原生回归通过。当前完整715项／187.344秒／0失败错误跳过，无RawPy。
+- 16.000750250客体秒原厂窗口正常退出：33次MAIN／CW／group，32帧连续统计，122有限采样／2批／0拒绝。两批都用publication33／frame61／time2047019729ns，非122个新RAW。两份保存scalar共1,536字节从保留packed12和冻结LUT独立重算零差异；CPU0 bit7 ACK写入7次不能称7批。
+- 最终LCD已目视，显示关机重开Error，preview0、CW未恢复；8秒早期黑屏结论不能覆盖16秒终态。没有完整摄影／恢复／刷机安全验收，不提升默认入口。
+- r98 verifier归档24份源／生成源／清单，16秒原厂窗口归档7份；r97路径失败、错误QOM属性、旧日志截断、r96归档缺command失败均保留，后者只接受SHA相同保存副本。
+- [r96–r98报告](history/2026-11-04_实施-Z62连续供帧与保留帧有限采样r96-r98-report.md)及[有限来源合同](../qemu/z62-capturework/FINITE-CONTRACT.md)为当前结论。下一步沿原厂首次失败CALL／RETURN、帧对象与readout／ISP请求定位Error；不重做已验收数值，不靠补通知推进。完整镜头／AF、原厂编码存卡、模式往返和全局快照仍缺。
+
 ## 当前起点（2026-10-28）
 
 - r5 为已构建的独立 QEMU，既有记录显示原厂菜单、受描述符约束的合成 RAW DMA、事务完成桥及虚拟 SD 可分别运行。
@@ -1083,6 +1095,51 @@
 - 导入 r87–r91 新增源码、测试、合同和阶段报告，更新 README、覆盖表、构建、限制、开发过程、原作者署名及选定 r91 摘要。默认 r75／r69 与冻结 r89／r91 EXE 保持；公开不含固件、卡、工具链、完整 RAM／trace 或 NKN 原件。
 - 独立发布目录实际完成 33 模块、134 项无固件测试，零失败／错误／跳过；GCC16.2.0 严格编译 16 个 C case 全部通过。902 个导出文件哈希、593 份 Python 内存编译与文档链接通过；最终文档回写后另外静态核对，不声称再跑原厂窗口或本地 701 项。
 - GitHub API 已核对 `new-Beginner/z62-qemu` 为公开、默认分支 main。云端最终提交另以推送后回执为准；完整 Goal 仍 active，后续统计／ISP 来源桥、原厂摄影、模式恢复和 AF 尚未完成。
+
+### r91 GitHub 发布完成（2026-11-04，本地发布回执）
+
+- 独立公开克隆 `codex/publish-r91` 提交 62 个文件，commit **a9088bf571c4f66d8629b1f60cee128203166110**，正常 fast-forward 推送 `main`，保留 r86／8c4591d 历史，未 force。
+- 推送后 Git `ls-remote` 与匿名 GitHub API 均确认 main 指向该提交、仓库公开；远端 README、`docs/RELEASE-r91.md`、`docs/VALIDATION.md` 解码后 SHA256 与本地逐一相同，发布克隆 clean。
+- 134 项无固件测试、16 个 C case、902 个导出哈希、593 份 Python 内存编译及链接检查通过；文档回写后另做静态复核。本轮没有新建 QEMU 内核、启动原厂窗口、重跑本地 701 项或进行 RawPy/LibRaw 解码。
+- 本地云端回执：`analysis/publication/cloud-r91-20261104.json`。研究仓库 `.gitmodules`、`third_party/z62-qemu` 两项既有 staged 保持，未混入公开历史。默认 r75／r69、冻结 r89／r91 EXE 均保持。
+- 本次发布子任务完成；完整相机目标仍 active。下游来源／统计／ISP、原厂摄影、模式完整往返、快照、镜头和 AF 均继续未验收，不能保证真机更新安全。
+
+### r92 CW真实来源到连续统计（2026-11-04，本地后续）
+
+- 前回合完成r91公开推送，为有效进展。本轮完整重读目标，检查实际r91生成源码及有效命令：旧连续统计只认raw_accepted，而CW关闭旧RAW；原厂驱动还漏了card-detect，影响统计时钟和预览资格。grid reason不是直接supported属性，不能仅凭disabled解释硬件缺失。
+- 独立r92适配层和默认关闭`z62-capturework-statistics`：worker以冻结transfer量化重建linear16，再打包私有linear12；只有真实CW DMA成功才取得来源资格。单缓存背压、五路写回后消费、代次取消／停止／reset、旧计数0、编码客体RAW保持。EXE SHA **7ec44439301467bd9ef7d170e77425830be0bf6d823e7121815eef9b4e24a644**，父r91／r89和默认入口保持。
+- 旧r91缺属性红检查保留。首轮native夹具拒绝上传后遗留frame-3重名，修夹具后native-2通过；native-3只加强MAIN／五路输出保存，六帧157,440输出字节独立重算零差异，背压／冻结LUT／几何拒绝／停止／reset通过，四进程exit0。
+- 独立wrapper复用冻结r90b驱动，明确补card-detect并启用桥；原厂8,005,927,333客体ns有14次输入接受、13次CW DMA、13帧统计和2批，CPU有11次20h和2次A0h W1C。旧RAW accepted／stream计数始终0；从CPU trace恢复提交几何，保存6帧9,138,504样本独立核对一致。原厂五路统计数值未另存，不冒充独立数值验收。
+- 内核pattern采样0共414、08000000共23、04300000共17、04B00000共158，另2未解析。非原子采样，不能证明05B条件间隙从未满足；ready_join／inhibit1、队列60、预览0，最终LCD已看且全黑。仅组合原厂实验，没有单独card-detect对照，不量化两改动各自贡献。
+- 完整回归首轮693项／1个setUpClass错误，根因GCC从中文物理路径找crt2／库失败，stderr又被严格UTF-8遮蔽；不改冻结helper，显式ASCII GCC_EXEC_PREFIX／LIBRARY_PATH后8项专项及701项全量通过，0失败／错误／跳过，180.844秒。旧连续／有限统计及旧CW／policy原生回归通过；仍无RawPy，不称重跑LibRaw。
+- 生成源／构建、原厂窗口、native-3、独立复核分别归档12、7、4、13份源／清单；旧失败保留。[r92报告](history/2026-11-04_实施-Z62采集来源到连续统计r92-report.md)、来源合同和能力表同步。下一步完成四槽cohort／readout／ISP真实来源与其它就绪生产者，不能把单帧伪装四帧或补ready；摄影、模式恢复、快照、镜头和AF仍未验收。
+- 本地r92未发布，云端仍r91／a9088bf；所有新产物位于工作目录，未访问相机／物理盘、未刷机／改AF；完整Goal继续active。
+
+### r93 unit20数值／DMA及事件96边界（2026-11-04，本地后续）
+
+- 前回合r92为有效进展。本轮完整重读目标，检查实际生成源、r92完整CPU写轨迹及固定nightglasses参考；发现尚未写预览输入和主要配方。重新核对Z62回调literal／注册mask／原始字节，缺少的01000000h生产者是unit20的输入事件96，不是metadata-only事件6或猜测的136。
+- 独立r93默认关闭`z62-capture-group`：冻结MAIN／配置和代次，65点插值、signed8/7水平FIR及ROI／9×9网格三类记录；143必需配置字、可选B984冷零且非零拒绝；完整RAM／alias、只读8字cursor包，所有活动族实际DMA后才发96。旧RAW计数不增加，没有原厂ready／队列／返回值写入。EXE SHA **bad3bc345bb152ddb3587beefbbf0a7dbd9a1ae30dc2f67ae872435752294dac**；r92及更早对象保持。
+- 初版误将未写的可选B984列为必需，在未验收构建阶段停止唯一自有构建树，归档prepared／生成源后刷新增量构建，日志保留。原生红检查旧r92缺属性；native-1正向通过后因把可写启动RAM误作unmapped负例而中止，源归档。改用真实越界跨度后native-2完整通过，9进程exit0。
+- 原生7个MAIN、19份三族输出共18,528字节独立NumPy重算零差异；三族、5槽、bank1 grid-only且忽略未选ROI、masked pending／独立ACK、未分类字节、只读结果、取消／重启／reset、零曲线／零系数／坏曲线／越界／RAW alias拒绝均通过。共享CW worker／按成功工作推进cursor是C有限实现，inflight交错、独立TG和物理时序未穷尽。
+- 原厂8,006,316,916客体ns：实际65曲线字及24系数字明确写0；group有效提交但以reason3数值profile拒绝13次、完成0、pending0；CW和连续统计仍各13帧，旧RAW accepted始终0。内核pattern样本0×454、08000000×17、04300000×20、04B00000×165，另2次未解析；非原子，不能证明AND条件间隙从未满足。预览0，LCD像素核验全黑，卡源和原始3成员保持、进程exit0。
+- 独立复核verification-1通过，绑定原生／原厂／源／构建、数值载荷和实际零参数；原厂group数值验收保持false。contract/native/original/verification分别归档3／3／7／28份源清单，后者含group wrapper及6个生成源。一次同目录重复归档保护拒绝，已有归档未覆盖。
+- 默认group关闭的旧CW→连续统计原生回归通过；完整701项／192.641秒／0失败错误跳过，仍无RawPy，不冒充LibRaw或整机。当前C参考算子不做Bayer解混，不是原厂AF／PDAF；未补曲线或系数。
+- parameter-source-1另按Z62原字节确认C26A0884参数结构、C26A08DC packed系数实参与C26A0904曲线指针槽，setter调用10239C14／10239C6A。Z72同地址函数及resource39/descriptor17偏移未在Z62验证，未照搬加载。下一步观测真实指针／provider与资源来源，再推进合法96消费、四槽取景／模式恢复；不能直接用零值推断NOR擦除或用ready掩盖输入缺口。
+- [r93报告](history/2026-11-04_实施-Z62采集组数值后端与事件96合同r93-report.md)、采集组合同及能力表同步；本地r92/r93未发布，云端仍r91／a9088bf，默认r75／r69保持。未访问相机／USB／物理盘、未刷机／改AF，完整Goal继续active。
+
+### r94/r95 参数来源更正与显式虚拟输入（2026-11-04，本地后续）
+
+- 上轮r93为有效进展。本轮完整重读目标，沿实际参数结构追provider，使用冻结r93内核，无新QEMU构建。r94是被动观察版本，r95是独立虚拟输入／验证宿主，默认r75／r69与云端r91保持。
+- 原字节明确撤回旧+58系数标签：packed系数在C26A0884+3Eh／C26A08C2，走1020C132→10208CB0；+58／C26A08DC走1020C13E→10208CF4为另一配置。曲线+80指针仍正确。旧脚本和回执冻结，当前文档附更正，r93寄存器数值模型未受影响。
+- 新静态合同核对资源表118D74C0={0,11500,2C00,00270300}、ID39；1021F3E2→103DFC14→102ABBC0→102AB28A从上下文+18读资源，系数186C/18CC/192C/198C/26B0各24u32，曲线1A1C/130B。并非直接套用Z72PC／偏移。
+- 被动读到C21835D4经C1861EF0发布，资源C8159500，曲线C25DAF18。候选整块缓存C8148000与staged group17有10字节差异，完整镜像假设保持false。没有把全零相等当来源证明。
+- 独立marker参数文件只改资源曲线第17点的2字节为0123h，四次一致读取验证文件→资源源页→原厂缓冲→实际寄存器；系数仍0、group完成0。由此确立本实验加载路径。基线资源体来自既有合成group17零填充，不证明真实NOR擦除或恢复了标定。
+- 独立reference输入改140字节，声明65点线性曲线和五套三组差分FIR；其它资源／ENDM保持。由既有132C0000参数窗口preboot加载，原固件／AF不变，运行中不写软件对象／寄存器／ready或发完成。marker SHA6c904efc…，reference SHA8deb1d24…，完整SHA见生成manifest。
+- 原厂reference-1先验证13次group成功；reference-dma-1正常至8,008,828,354客体ns、group13次／832B、CPU事件96 ACK13次。保存4组DMA256B，其中216个已分类字节按实际MAIN与唯一稳定提交配方独立重算零差异；未分类字节原厂前后保持未另证。旧RAW accepted始终0，原始3成员与snapshot卡保持，进程exit0。
+- 当前pattern样本0×566、08000000×15、05300000×15，另2未解析；没有跟踪AND等待返回，ready_join／inhibit仍1，预览0、LCD全黑，不把group／ACK计数当整机就绪。下一步跟踪真实等待CALL／RETURN和帧对象链，再推进四槽／readout／ISP。
+- 早期origin-1在读取前QMP超时、无源发布／无参数捕获，终态exit1；image-1初始硬件频率0、终态exit0。新增clock guard只等待真实非零频率，不替代频率／时间；四项时钟及五项参数完整性专项并入710项／171.813秒／0失败错误跳过，仍无RawPy。旧QMP自发故障未被宣称修复。
+- marker/reference/DMA输入窗口各归档6份源，独立复核归档22份；verification SHA9e2e7e86…，原EXE仍bad3bc34…。复查NKN ROM配置／EX读口材料，未取得真实标定／主ROM，不把PC全局或EX窗口当本资源。
+- [r94/r95报告](history/2026-11-04_实施-Z62参数来源与虚拟采集组输入r94-r95-report.md)、参数合同、README和能力表同步。所有新产物在工作目录，无相机／USB／物理盘／刷写／AF修改；完整Goal继续active。本地r92–r95尚未发布，云端仍r91／a9088bf。
 
 
 
