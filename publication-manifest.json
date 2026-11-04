@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "snapshot": "2026.11.04-r98",
-  "file_count": 962,
-  "bytes": 5137157,
+  "snapshot": "2026.11.04-r103",
+  "file_count": 998,
+  "bytes": 5336840,
   "source_bytes_preserved": true,
   "original_firmware_included": false,
   "compiled_runtimes_included": false,
@@ -60,10 +60,10 @@
     {
       "source": "README.md",
       "published": "README.md",
-      "original_sha256": "5e014ad5f72f278fa142a69769cadaada41b2ae93650a34cd9d12f24247099e8",
-      "published_sha256": "0307a6b51824545c0928de61b50966b926e6e48b9702e4161be3837f96586078",
+      "original_sha256": "1e8e15c37877bafa4720812d088454ba365a4ae8f312dc0ff70358bdbbf663ed",
+      "published_sha256": "038f19afb41585d063f80f09c11efae1f423b593f362be04fbe12c9104b9e7a4",
       "transformed": true,
-      "bytes": 21004,
+      "bytes": 23842,
       "publication_navigation_added": true
     },
     {
@@ -637,18 +637,18 @@
     {
       "source": "Z62-CAPABILITY-COVERAGE.md",
       "published": "docs/CAPABILITY-COVERAGE.md",
-      "original_sha256": "de07cdf614ee1b100ab9a32f332f20164111639d421661c2df7a86af93f18c24",
-      "published_sha256": "ad45bb0a943580e37b7471610b57c6fc37fef28c5e1e29fac8be3f92ef96a3ac",
+      "original_sha256": "30fa8cbaf74c762c2f8e9cf6764d8699dfa192cb9eb57d4207a4cb9c24208f47",
+      "published_sha256": "c0d8244822a7309396f51e1338a94cff0e9e898871e2031aebbf7cc3d1681622",
       "transformed": true,
-      "bytes": 50583
+      "bytes": 53166
     },
     {
       "source": "GOAL-Z62-QEMU.md",
       "published": "docs/GOAL-Z62-QEMU.md",
-      "original_sha256": "179879ead461540bb75b42401aaad199aaf10a7a32eea6a7a600e452d69f1ff5",
-      "published_sha256": "ad79c74808544f5cd192cb2249b77328a661ccfdeb8c862cbd8ece421247e65a",
+      "original_sha256": "c7295a6514644aa477031b2bf68e9fa5aa3ccefd07b2d6adb1aa2b4d7d096ed2",
+      "published_sha256": "9e1dc4060517511d0f59b16bdd56eb23f1cdf194db8c69d9656eed874ab03568",
       "transformed": true,
-      "bytes": 266304
+      "bytes": 272591
     },
     {
       "source": "2026-10-25_构建-Z6II-QEMU-v0.2.0-report.md",
@@ -1347,6 +1347,14 @@
       "bytes": 8020
     },
     {
+      "source": "2026-11-04_实施-Z62原始停止等待与内联读出r101-r102-report.md",
+      "published": "docs/history/2026-11-04_实施-Z62原始停止等待与内联读出r101-r102-report.md",
+      "original_sha256": "81a825ec744c286ea98784ce146b76dc5bd111e4e31e5a0aa11273c394b29439",
+      "published_sha256": "7555362e97320eaca0cd68fb97fbe727e71f32621913a7c59728a3d86ea703af",
+      "transformed": true,
+      "bytes": 10205
+    },
+    {
       "source": "2026-11-04_实施-Z62原生采集后端与DMA交付r89-report.md",
       "published": "docs/history/2026-11-04_实施-Z62原生采集后端与DMA交付r89-report.md",
       "original_sha256": "c0934c97f8458535f7e73cca680d9485686e2d8a832c0d832b8f2eeae056ae7e",
@@ -1369,6 +1377,14 @@
       "published_sha256": "2918959c29d48393f130c23dcd4f31f7b22187cf87c8ba2da74b3bcd35089bbb",
       "transformed": true,
       "bytes": 5401
+    },
+    {
+      "source": "2026-11-04_实施-Z62读出统计桥与原厂停止恢复r103-report.md",
+      "published": "docs/history/2026-11-04_实施-Z62读出统计桥与原厂停止恢复r103-report.md",
+      "original_sha256": "9e90a47d406d31bcb5d1be176d33691390df133984f394447817d5eb2592d0f8",
+      "published_sha256": "09cbba7e80d58c8f2785104321bef4b4fdbea53edad82c84255dd9bdcc778350",
+      "transformed": true,
+      "bytes": 10465
     },
     {
       "source": "2026-11-04_实施-Z62连续供帧与保留帧有限采样r96-r98-report.md",
@@ -1401,6 +1417,14 @@
       "published_sha256": "26d339906dcbb8975cdc95a8223e56cd22dd405cf2eda74751c778d863a168b0",
       "transformed": true,
       "bytes": 8495
+    },
+    {
+      "source": "2026-11-04_研究-Z62有限统计后的停止错误r99-r100-report.md",
+      "published": "docs/history/2026-11-04_研究-Z62有限统计后的停止错误r99-r100-report.md",
+      "original_sha256": "563dce7b42be313a4e4c16ea578fcdcf585f89f7ea9f6a77548033827ed23460",
+      "published_sha256": "563dce7b42be313a4e4c16ea578fcdcf585f89f7ea9f6a77548033827ed23460",
+      "transformed": false,
+      "bytes": 9802
     },
     {
       "source": "README-FIRMWARE-TEST.md",
@@ -1771,6 +1795,14 @@
       "bytes": 4425
     },
     {
+      "source": "qemu/z62-capturework/INPUT-READOUT-CONTRACT.md",
+      "published": "qemu/z62-capturework/INPUT-READOUT-CONTRACT.md",
+      "original_sha256": "931584980358b24d69a86d4f91342fa1d04d3d03af763544c858065485c468f0",
+      "published_sha256": "0c8ecbdeca1dba727b892d4298ad5c3dcdb434d7de21258b47a7659a313d6769",
+      "transformed": true,
+      "bytes": 3865
+    },
+    {
       "source": "qemu/z62-capturework/MAIN-CONTRACT.md",
       "published": "qemu/z62-capturework/MAIN-CONTRACT.md",
       "original_sha256": "a2e3903ac8a268c2d9fd5148a2a6081bc0368933a8717e3ab8442593360dbc1b",
@@ -1785,6 +1817,14 @@
       "published_sha256": "40a505b140cd0910f3a44298b120893fb112832d5799ca2676c259a980f98451",
       "transformed": false,
       "bytes": 3113
+    },
+    {
+      "source": "qemu/z62-capturework/READOUT-STATISTICS-CONTRACT.md",
+      "published": "qemu/z62-capturework/READOUT-STATISTICS-CONTRACT.md",
+      "original_sha256": "688ec2ebe31cf85a8abeb275f8c86f01f9f86f3db376e31c0f4559a2a01bf5ce",
+      "published_sha256": "032377b24c28f902a4147ec4160f78bbbd168fe822277ad996a4711a1fd709fe",
+      "transformed": true,
+      "bytes": 3335
     },
     {
       "source": "qemu/z62-capturework/STATISTICS-CONTRACT.md",
@@ -1859,6 +1899,14 @@
       "bytes": 7549
     },
     {
+      "source": "qemu/z62-capturework/nikon-z62-input-readout.h",
+      "published": "qemu/z62-capturework/nikon-z62-input-readout.h",
+      "original_sha256": "672d8c3cb22ff51c94e9bb8f5a0a973cc6a886b3ac44a1671762262c09293405",
+      "published_sha256": "672d8c3cb22ff51c94e9bb8f5a0a973cc6a886b3ac44a1671762262c09293405",
+      "transformed": false,
+      "bytes": 5504
+    },
+    {
       "source": "qemu/z62-capturework/nikon-z62-main-source.h",
       "published": "qemu/z62-capturework/nikon-z62-main-source.h",
       "original_sha256": "79a1dd365062dbd149ed4529b43ed49708edb1c8b8a3910767fc0c93f7c12454",
@@ -1873,6 +1921,14 @@
       "published_sha256": "04f5009c5a197eaf62458bfe61f7be3cf8a717ea6b6ac83e083609922b30af3c",
       "transformed": false,
       "bytes": 6177
+    },
+    {
+      "source": "qemu/z62-capturework/nikon-z62-readout-statistics.h",
+      "published": "qemu/z62-capturework/nikon-z62-readout-statistics.h",
+      "original_sha256": "fd25d5948c43bc832eeebf23dd4d28f1c6669c9b23545a4f68043cf48558c967",
+      "published_sha256": "fd25d5948c43bc832eeebf23dd4d28f1c6669c9b23545a4f68043cf48558c967",
+      "transformed": false,
+      "bytes": 4223
     },
     {
       "source": "qemu/z62-continuous-stats/CONTRACT.md",
@@ -3803,12 +3859,36 @@
       "bytes": 1498
     },
     {
+      "source": "tools/archive_z62_declared_saved_sources.py",
+      "published": "tools/archive_z62_declared_saved_sources.py",
+      "original_sha256": "a08a9c369147e7a278323a05dd8921aad93d91f980b7ed9458e4aaa406229444",
+      "published_sha256": "a08a9c369147e7a278323a05dd8921aad93d91f980b7ed9458e4aaa406229444",
+      "transformed": false,
+      "bytes": 2753
+    },
+    {
+      "source": "tools/archive_z62_input_readout_build.py",
+      "published": "tools/archive_z62_input_readout_build.py",
+      "original_sha256": "d48efc7c768c40c8dbea67f5d069510a5bebed50adc505d11c83b9d37bafb343",
+      "published_sha256": "d48efc7c768c40c8dbea67f5d069510a5bebed50adc505d11c83b9d37bafb343",
+      "transformed": false,
+      "bytes": 1725
+    },
+    {
       "source": "tools/archive_z62_paired_session.py",
       "published": "tools/archive_z62_paired_session.py",
       "original_sha256": "b1c869c11bc54356176b0da10dba8908006dbdd812f8e516f31b4d214e5184e7",
       "published_sha256": "b1c869c11bc54356176b0da10dba8908006dbdd812f8e516f31b4d214e5184e7",
       "transformed": false,
       "bytes": 3083
+    },
+    {
+      "source": "tools/archive_z62_readout_statistics_build.py",
+      "published": "tools/archive_z62_readout_statistics_build.py",
+      "original_sha256": "c8293ce7cbdb12f13d2ba83e7b011ec2220fdd3dacdc48ed169a8e5787fec4a9",
+      "published_sha256": "c8293ce7cbdb12f13d2ba83e7b011ec2220fdd3dacdc48ed169a8e5787fec4a9",
+      "transformed": false,
+      "bytes": 1757
     },
     {
       "source": "tools/archive_z62_saved_sources.py",
@@ -4019,6 +4099,14 @@
       "bytes": 4303
     },
     {
+      "source": "tools/build_z62_input_readout.py",
+      "published": "tools/build_z62_input_readout.py",
+      "original_sha256": "db5a4e64034480bb838f700150cf10fb844548edc4e63cfd3f64bcadc2270652",
+      "published_sha256": "db5a4e64034480bb838f700150cf10fb844548edc4e63cfd3f64bcadc2270652",
+      "transformed": false,
+      "bytes": 5472
+    },
+    {
       "source": "tools/build_z62_mmio_filter.py",
       "published": "tools/build_z62_mmio_filter.py",
       "original_sha256": "10df3c190a41ca5ca2d2fd7702a18dfa26ddb4fe6f48ee4667d83b061a89cd2c",
@@ -4105,6 +4193,14 @@
       "published_sha256": "dbb06ccda17787977e44bc536b8612693acdb389620fbb13adee8413711e7e2d",
       "transformed": false,
       "bytes": 8167
+    },
+    {
+      "source": "tools/build_z62_readout_statistics.py",
+      "published": "tools/build_z62_readout_statistics.py",
+      "original_sha256": "029954dd6605e1ec2b405ef695d827b8cec3ae2d586e02366c17c83ad04d5555",
+      "published_sha256": "029954dd6605e1ec2b405ef695d827b8cec3ae2d586e02366c17c83ad04d5555",
+      "transformed": false,
+      "bytes": 5523
     },
     {
       "source": "tools/build_z62_scene_file.py",
@@ -4627,12 +4723,36 @@
       "bytes": 9390
     },
     {
+      "source": "tools/probe_z62_current_failure.py",
+      "published": "tools/probe_z62_current_failure.py",
+      "original_sha256": "9f62cf1233d80321a7efe3f75cfd6d72b3efaa651b7e8675ffb84a0ca3d68645",
+      "published_sha256": "9f62cf1233d80321a7efe3f75cfd6d72b3efaa651b7e8675ffb84a0ca3d68645",
+      "transformed": false,
+      "bytes": 3117
+    },
+    {
       "source": "tools/probe_z62_current_ready.py",
       "published": "tools/probe_z62_current_ready.py",
       "original_sha256": "538774d45bb3b5fabbd7f8157eb5c721031242600e8af268009accaa7db04d17",
       "published_sha256": "538774d45bb3b5fabbd7f8157eb5c721031242600e8af268009accaa7db04d17",
       "transformed": false,
       "bytes": 2765
+    },
+    {
+      "source": "tools/probe_z62_current_stop.py",
+      "published": "tools/probe_z62_current_stop.py",
+      "original_sha256": "7fdcc37f5cd3bc9f8230ccbfe8946ced7380fca4c5f9528e85938a2628afc5ec",
+      "published_sha256": "7fdcc37f5cd3bc9f8230ccbfe8946ced7380fca4c5f9528e85938a2628afc5ec",
+      "transformed": false,
+      "bytes": 2626
+    },
+    {
+      "source": "tools/probe_z62_current_stop_scoped.py",
+      "published": "tools/probe_z62_current_stop_scoped.py",
+      "original_sha256": "582821602228a2931f7d4777c8d532c0c678942f22343b11c327f972de02a450",
+      "published_sha256": "582821602228a2931f7d4777c8d532c0c678942f22343b11c327f972de02a450",
+      "transformed": false,
+      "bytes": 1966
     },
     {
       "source": "tools/probe_z62_encoder_console.py",
@@ -4809,6 +4929,22 @@
       "published_sha256": "4b5b21762a2e5a040158b9134edfce12813be850401d7ea2c06d0f61b52c44a6",
       "transformed": false,
       "bytes": 4589
+    },
+    {
+      "source": "tools/probe_z62_input_readout.py",
+      "published": "tools/probe_z62_input_readout.py",
+      "original_sha256": "7af2be22bf77867685001b3814269b6581bd19c969a86021ede2853bd7dbeb0e",
+      "published_sha256": "7af2be22bf77867685001b3814269b6581bd19c969a86021ede2853bd7dbeb0e",
+      "transformed": false,
+      "bytes": 8306
+    },
+    {
+      "source": "tools/probe_z62_input_readout_original.py",
+      "published": "tools/probe_z62_input_readout_original.py",
+      "original_sha256": "d6ef941d0c1c5eb162dc34b51b84e3d8a6e2c9a88f48af0a15cec3c9fe327827",
+      "published_sha256": "d6ef941d0c1c5eb162dc34b51b84e3d8a6e2c9a88f48af0a15cec3c9fe327827",
+      "transformed": false,
+      "bytes": 6110
     },
     {
       "source": "tools/probe_z62_isp_contract.py",
@@ -5179,6 +5315,30 @@
       "bytes": 7300
     },
     {
+      "source": "tools/probe_z62_readout_statistics.py",
+      "published": "tools/probe_z62_readout_statistics.py",
+      "original_sha256": "77c23d03f964b6c21afa2cc73a63b9f8cedb594748f07d5c1228079df9aaa1e3",
+      "published_sha256": "77c23d03f964b6c21afa2cc73a63b9f8cedb594748f07d5c1228079df9aaa1e3",
+      "transformed": false,
+      "bytes": 9221
+    },
+    {
+      "source": "tools/probe_z62_readout_statistics_no_debugger.py",
+      "published": "tools/probe_z62_readout_statistics_no_debugger.py",
+      "original_sha256": "0e10e236f38123088e7691a726fb01bad40cad9f281823f6170d03a793c83d37",
+      "published_sha256": "0e10e236f38123088e7691a726fb01bad40cad9f281823f6170d03a793c83d37",
+      "transformed": false,
+      "bytes": 4721
+    },
+    {
+      "source": "tools/probe_z62_readout_statistics_original.py",
+      "published": "tools/probe_z62_readout_statistics_original.py",
+      "original_sha256": "1a42b35e9aae41610457d03cd2bf838e824eb905cb046519636aa6f18da688a1",
+      "published_sha256": "1a42b35e9aae41610457d03cd2bf838e824eb905cb046519636aa6f18da688a1",
+      "transformed": false,
+      "bytes": 4987
+    },
+    {
       "source": "tools/probe_z62_ready_producers.py",
       "published": "tools/probe_z62_ready_producers.py",
       "original_sha256": "7ac56f886c0ac1a49cfda505a20cecbb8ba5fe46398c67fd55016c9081cb51c5",
@@ -5267,6 +5427,14 @@
       "bytes": 5356
     },
     {
+      "source": "tools/probe_z62_stop_wait_source.py",
+      "published": "tools/probe_z62_stop_wait_source.py",
+      "original_sha256": "6709e8b7553ff9c2e6f2e547e27147c76405cf59b15b2b3ad4c4f3afc43384f0",
+      "published_sha256": "6709e8b7553ff9c2e6f2e547e27147c76405cf59b15b2b3ad4c4f3afc43384f0",
+      "transformed": false,
+      "bytes": 2868
+    },
+    {
       "source": "tools/probe_z62_transaction.py",
       "published": "tools/probe_z62_transaction.py",
       "original_sha256": "0640456bc649c3195ab22c43af80aeb2df4cc9fa6fbcd6a2a7891ddb31ed4677",
@@ -5349,10 +5517,10 @@
     {
       "source": "tools/refresh_z62_public_snapshot.py",
       "published": "tools/refresh_z62_public_snapshot.py",
-      "original_sha256": "0b2e6dad58b29b867a95a3dc00a20834e08ed079cefaf8c6d55c73e18b230e97",
-      "published_sha256": "0b2e6dad58b29b867a95a3dc00a20834e08ed079cefaf8c6d55c73e18b230e97",
+      "original_sha256": "028841e9232a81d4cb0255f235767beb704a650576e964ef1079a14525b03684",
+      "published_sha256": "028841e9232a81d4cb0255f235767beb704a650576e964ef1079a14525b03684",
       "transformed": false,
-      "bytes": 15652
+      "bytes": 18502
     },
     {
       "source": "tools/run_qemu.py",
@@ -5539,6 +5707,14 @@
       "bytes": 1534
     },
     {
+      "source": "tools/run_z62_input_readout.py",
+      "published": "tools/run_z62_input_readout.py",
+      "original_sha256": "ad35b053fa3aefb154c95806ac897dae9a52c757445ec56c0afb75053ea09ad3",
+      "published_sha256": "ad35b053fa3aefb154c95806ac897dae9a52c757445ec56c0afb75053ea09ad3",
+      "transformed": false,
+      "bytes": 1029
+    },
+    {
       "source": "tools/run_z62_media_console.py",
       "published": "tools/run_z62_media_console.py",
       "original_sha256": "0de148291bf10831b686689d66829931fba7a8daf88d38e0de2884d06acc86d8",
@@ -5681,6 +5857,14 @@
       "published_sha256": "120d719a16206a163946f3c7e8eb34a91beded2b089b482e6b3a50997148c2cc",
       "transformed": false,
       "bytes": 4213
+    },
+    {
+      "source": "tools/run_z62_readout_statistics.py",
+      "published": "tools/run_z62_readout_statistics.py",
+      "original_sha256": "1941002223179f98a16f47b5ed69a95fea73dfb2d218fd3a88a9bd85a1949749",
+      "published_sha256": "1941002223179f98a16f47b5ed69a95fea73dfb2d218fd3a88a9bd85a1949749",
+      "transformed": false,
+      "bytes": 1057
     },
     {
       "source": "tools/run_z62_scene_file.py",
@@ -6587,6 +6771,14 @@
       "bytes": 5541
     },
     {
+      "source": "tools/verify_z62_failure_observation.py",
+      "published": "tools/verify_z62_failure_observation.py",
+      "original_sha256": "cd24b029b4cfc98ca92f7f3f4bfc27dd95e81df1eedbeb1475b9df6d6fffcb29",
+      "published_sha256": "cd24b029b4cfc98ca92f7f3f4bfc27dd95e81df1eedbeb1475b9df6d6fffcb29",
+      "transformed": false,
+      "bytes": 5078
+    },
+    {
       "source": "tools/verify_z62_finite_evidence.py",
       "published": "tools/verify_z62_finite_evidence.py",
       "original_sha256": "85c05cb701d26c6e12c2e450b3157e1c0a76f224360324ece80214bcf4fe2163",
@@ -6617,6 +6809,14 @@
       "published_sha256": "d56d6d1ec342fcb6e98ac87b218a06c410815d0e6a013e80f8fc1fe70e89e7ba",
       "transformed": false,
       "bytes": 9702
+    },
+    {
+      "source": "tools/verify_z62_input_readout_evidence.py",
+      "published": "tools/verify_z62_input_readout_evidence.py",
+      "original_sha256": "41ba9dec35443ed572ad198cfa87b79b7a41c8ec0e3e251ad040c86fb5fc03fd",
+      "published_sha256": "41ba9dec35443ed572ad198cfa87b79b7a41c8ec0e3e251ad040c86fb5fc03fd",
+      "transformed": false,
+      "bytes": 8954
     },
     {
       "source": "tools/verify_z62_input_research.py",
@@ -6747,6 +6947,14 @@
       "bytes": 10712
     },
     {
+      "source": "tools/verify_z62_readout_statistics_evidence.py",
+      "published": "tools/verify_z62_readout_statistics_evidence.py",
+      "original_sha256": "4f20c43f0b52665f1a82811dab9b17a0c4f25b850f3f5f2cdf19aab1e567d03c",
+      "published_sha256": "4f20c43f0b52665f1a82811dab9b17a0c4f25b850f3f5f2cdf19aab1e567d03c",
+      "transformed": false,
+      "bytes": 11018
+    },
+    {
       "source": "tools/verify_z62_retained_finite.py",
       "published": "tools/verify_z62_retained_finite.py",
       "original_sha256": "dc7fd04e68dbfabeb8bad584d3c8e1433fd9fefad1e88d33c3856a3b95b2425a",
@@ -6793,6 +7001,22 @@
       "published_sha256": "970f05eae2641bf5f4501cd61e0121ac71d143e2d76236647120fb63bc547f96",
       "transformed": false,
       "bytes": 11877
+    },
+    {
+      "source": "tools/verify_z62_stop_composition.py",
+      "published": "tools/verify_z62_stop_composition.py",
+      "original_sha256": "40e8c3013b2d592f46e63f82dd882f1e1ebc8da0e5cbaa160088b8aea1b82a0d",
+      "published_sha256": "40e8c3013b2d592f46e63f82dd882f1e1ebc8da0e5cbaa160088b8aea1b82a0d",
+      "transformed": false,
+      "bytes": 6389
+    },
+    {
+      "source": "tools/verify_z62_stop_wait_source.py",
+      "published": "tools/verify_z62_stop_wait_source.py",
+      "original_sha256": "485ca15c202b10b676fe94260b9630ab242c8dc97b394569bc8fae691e4e0576",
+      "published_sha256": "485ca15c202b10b676fe94260b9630ab242c8dc97b394569bc8fae691e4e0576",
+      "transformed": false,
+      "bytes": 5988
     },
     {
       "source": "tools/verify_z62_video_isp_evidence.py",
@@ -7075,6 +7299,14 @@
       "bytes": 3434
     },
     {
+      "source": "tools/z62_failure_observer.py",
+      "published": "tools/z62_failure_observer.py",
+      "original_sha256": "95e30c734870fb7a271f4b90f45c15aa4974bd126cf9b21cfc67c64da338b179",
+      "published_sha256": "95e30c734870fb7a271f4b90f45c15aa4974bd126cf9b21cfc67c64da338b179",
+      "transformed": false,
+      "bytes": 5791
+    },
+    {
       "source": "tools/z62_finite_stats_device.py",
       "published": "tools/z62_finite_stats_device.py",
       "original_sha256": "27257ce4c7a18c456b5bf29146cd9e8722a9f3946261695ee6ded170c0da9da0",
@@ -7129,6 +7361,14 @@
       "published_sha256": "18bc53104ae4d002185931972a1525deffbed076131757224aa3f439f6250a25",
       "transformed": false,
       "bytes": 7032
+    },
+    {
+      "source": "tools/z62_input_readout_device.py",
+      "published": "tools/z62_input_readout_device.py",
+      "original_sha256": "6de746e8cd60bae6638df494649c012e14ce8b92d554ede2322caf6281cb7854",
+      "published_sha256": "6de746e8cd60bae6638df494649c012e14ce8b92d554ede2322caf6281cb7854",
+      "transformed": false,
+      "bytes": 4442
     },
     {
       "source": "tools/z62_kernel_event_layout.py",
@@ -7419,6 +7659,14 @@
       "bytes": 2080
     },
     {
+      "source": "tools/z62_readout_statistics_device.py",
+      "published": "tools/z62_readout_statistics_device.py",
+      "original_sha256": "45407093adaac26c020bba9d7af4ec3170b48c5ee0e03195433d5d5ebe71d74e",
+      "published_sha256": "45407093adaac26c020bba9d7af4ec3170b48c5ee0e03195433d5d5ebe71d74e",
+      "transformed": false,
+      "bytes": 5955
+    },
+    {
       "source": "tools/z62_reference_features.py",
       "published": "tools/z62_reference_features.py",
       "original_sha256": "eb568607df7ffeaa8af477547aa11053630ef6d435fe0aeae264d0eff4ca5877",
@@ -7539,6 +7787,14 @@
       "bytes": 4812
     },
     {
+      "source": "tools/z62_stop_wait_observer.py",
+      "published": "tools/z62_stop_wait_observer.py",
+      "original_sha256": "93a5d535bedd9318f9908222a6ca112d7368ba2a3b7fafb9832fa31fb343a6f7",
+      "published_sha256": "93a5d535bedd9318f9908222a6ca112d7368ba2a3b7fafb9832fa31fb343a6f7",
+      "transformed": false,
+      "bytes": 7916
+    },
+    {
       "source": "tools/z62_transaction_device.py",
       "published": "tools/z62_transaction_device.py",
       "original_sha256": "b0cdd3ee4c9b4df82704cf7a08aedea6505db155981a42bbc50c96c751add52d",
@@ -7654,64 +7910,100 @@
       "source": "selected local verification records",
       "published": "docs/evidence/latest-kernel-events.json",
       "original_sha256": null,
-      "published_sha256": "23bac0ed199bcb98ca31fd21b93836dfbe46fe81a31b3b720811247f5df0bdaa",
+      "published_sha256": "a80cb9be4c3384c942ac8122b943e87aee10f703bd7d965d9657c3b7e23a0a70",
       "transformed": true,
       "generated_summary": true,
-      "bytes": 1945
+      "bytes": 1946
     },
     {
       "source": "selected local verification records",
       "published": "docs/evidence/capturework-pixels-r86.json",
       "original_sha256": null,
-      "published_sha256": "c56603a2c479525b0367ebc32adf5a87a437a7400ba4b35c4e0e6a8e73481fea",
+      "published_sha256": "76b16d82e21744e44d92bcd5b357ac8506364bbc1ece7221f32b8ca360c281b2",
       "transformed": true,
       "generated_summary": true,
-      "bytes": 1232
+      "bytes": 1233
     },
     {
       "source": "selected local verification records",
       "published": "docs/evidence/capturework-original-r91.json",
       "original_sha256": null,
-      "published_sha256": "7127ea3d7883c55fcddafa7cd5c0122e12574346e202b21636d485625ae23372",
+      "published_sha256": "251c576c2138df75d8845bc96749339a571fb901a040a213ba4fff79693665fc",
       "transformed": true,
       "generated_summary": true,
-      "bytes": 2237
+      "bytes": 2238
     },
     {
       "source": "selected local verification records",
       "published": "docs/evidence/group-parameters-r95.json",
       "original_sha256": null,
-      "published_sha256": "02fe472ad15059b8c7f1c5c88493879b933c396563b86994ff7e5ba30083f86a",
+      "published_sha256": "91fee5f6142c82c41e2e6eec03355c97a793008bca1aff82fbebf8d36e073bef",
       "transformed": true,
       "generated_summary": true,
-      "bytes": 1729
+      "bytes": 1730
     },
     {
       "source": "selected local verification records",
       "published": "docs/evidence/current-stream-r97.json",
       "original_sha256": null,
-      "published_sha256": "bdc37fca9e17e93bd5ed42009fb394ccda818d0e8e982bff3d7f75a85fe49a1e",
+      "published_sha256": "f830ef39adf1d2bcd29adcbfde4fa3f332b65951e62b86a7bff5a2f304d1758f",
       "transformed": true,
       "generated_summary": true,
-      "bytes": 1798
+      "bytes": 1799
     },
     {
       "source": "selected local verification records",
       "published": "docs/evidence/retained-finite-r98.json",
       "original_sha256": null,
-      "published_sha256": "e55bff9d4179ae11c457917bd42103a1431599fbbebeae876e751f38a1b944f7",
+      "published_sha256": "5ec37dfd0ca74f135342c66ba414396d1719fbc02cfbe26d46aa70066acba449",
       "transformed": true,
       "generated_summary": true,
-      "bytes": 2209
+      "bytes": 2210
+    },
+    {
+      "source": "selected local verification records",
+      "published": "docs/evidence/stop-composition-r100.json",
+      "original_sha256": null,
+      "published_sha256": "c640eb35f444786c0729b9dc90fed4fade1b8e18d851dcfe9ea34d211367f6b8",
+      "transformed": true,
+      "generated_summary": true,
+      "bytes": 2872
+    },
+    {
+      "source": "selected local verification records",
+      "published": "docs/evidence/stop-wait-source-r101.json",
+      "original_sha256": null,
+      "published_sha256": "0b1faed7fa21e313cce7dedee05e1e4c24c4e7cdfac43c31b8798a483d0fc686",
+      "transformed": true,
+      "generated_summary": true,
+      "bytes": 1327
+    },
+    {
+      "source": "selected local verification records",
+      "published": "docs/evidence/input-readout-r102.json",
+      "original_sha256": null,
+      "published_sha256": "81b85b5d592b746b0ae6fb25ee7cb72186a625bf126e46cae9a2a643a86cb9eb",
+      "transformed": true,
+      "generated_summary": true,
+      "bytes": 1906
+    },
+    {
+      "source": "selected local verification records",
+      "published": "docs/evidence/readout-statistics-r103.json",
+      "original_sha256": null,
+      "published_sha256": "ec57c26707329056aa26acbe274f5f2173600485f3268d4147a1985f3d75cce8",
+      "transformed": true,
+      "generated_summary": true,
+      "bytes": 2856
     },
     {
       "source": "selected local verification records",
       "published": "docs/evidence-index-20261104.json",
       "original_sha256": null,
-      "published_sha256": "177bdd58e218daabebcf779fbadb373f6007cb5c7f279e3e48cdcb489d8f9e24",
+      "published_sha256": "6b46080a41122898c009eaa41737836389cca2914f9d2115e4dd6afa21942fa3",
       "transformed": true,
       "generated_summary": true,
-      "bytes": 9376
+      "bytes": 13366
     }
   ],
   "notes": [

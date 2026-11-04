@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "completed_evidence_check": true,
+  "binary_sha256": "fe98f30251aaedb6736f1cacea2364df38f765b3f58fe4000f27101d9bc9801e",
+  "native_result_sha256": "0395dab4cb72886fdda68c2f31d0291e7136ab106f8c96ff1e9937843decd313",
+  "original_result_sha256": "a345a88c80a9595b234416688f1f2b1773623173fc2d8c9ae5506a3d20bd5517",
+  "source_route_receipt_sha256": "56b6019a758558384391080803c09258a26faf6f80019830572267463caa26ab",
+  "build_binding_sha256": "7b13b6ffbf9ecd7c096c201527adda95085fc83548ed11ddf1a4d8b5173597f9",
+  "accepted_packets_byte_exact_reconstructed": 319,
+  "original_CW_publications": 31,
+  "original_inline_readouts": 288,
+  "original_inline_bytes_consumed": 158238720,
+  "observed_original_consumer_summaries_independently_recomputed": 97,
+  "distinct_inline_payloads_recomputed": 2,
+  "native_inline_bytes_independently_recomputed": 549440,
+  "original_kernel_stop_wait_results": [
+    0,
+    4291690496
+  ],
+  "first_inline_source_time_ns": 6404315416,
+  "failed_wait_return_time_ns": 6402969312,
+  "original_window_ns": 16001121500,
+  "original_final_status_codes": [
+    63
+  ],
+  "preview_batches": 0,
+  "legacy_native_regressions": {
+    "legacy-CW-1": "82c3006d55fa890920d1be2d3278379d3d574d7a2f0c5811b0470e97fbffdc04",
+    "legacy-retained-finite-1": "d05a82437e518a6bf70be29b598f6b93ca1d5c75d5f1030a6dbb8ee27b200611"
+  },
+  "guest_RAW_DMA_from_inline_readout": false,
+  "legacy_RAW_accepted_always_zero": true,
+  "physical_sensor_equivalence": false,
+  "all_original_intermediate_outputs_separately_retained": false,
+  "original_stop_error_fixed": false,
+  "complete_camera_or_AF_or_flash_safety_verified": false,
+  "camera_accessed": false,
+  "snapshot": "2026.11.04-r103",
+  "original_record_sha256": "f3f6195d49ec3e3546405fc4d2a97ac2f1e18e05c0293772d34a920f0445928e",
+  "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted."
+}

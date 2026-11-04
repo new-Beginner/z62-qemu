@@ -2,6 +2,35 @@
 
 目标：在现有工作区成果上实现可用于测试用户固件的 Z6II QEMU。完整目标仍在进行，不能用菜单截图或设备单测通过代替整机验收。
 
+## 当前检查点 r103（2026-11-04）
+
+- 上轮r102为实质进展。本轮独立默认off的`z62-readout-statistics`已构建，EXE SHA 886e70dda9146be3494413250f4f5ce6b4535615c60bc74178d58197d3c19e72；r102／r98及默认r75／r69保持。
+- 显式C输入按实际unit4／30×12／61槽资格供给；完整读出缓存、pending lease和owned batch分开，缺源不回用CW，停止需新输入。linear16>>4的C区域均值产生真实统计DMA，不是Nikon测光／PDAF，也不是61个新RAW。
+- 新native两个进程exit0，122次DMA／93696字节逐次读回并独立积分图重算；pending缓存／冻结batch／latest选择／停止取消reset／越界均通过；同r103旧r102读出和r98保留CW原生回归通过。没有重跑历史715项或LibRaw。
+- 原厂16.000987666秒：两个800h等待均kernel0／BOOL1，原厂真实OR/store已见；状态[]、CW308、grid169，拍摄OSD恢复。初版102392FCh scalar断点只命中暖启动28次，有限阶段未经过，scalar0的缺口保留。
+- 另建24.000898083秒无GDB窗口，用两次短QMP暂停保存两份scalar；来源publication34／frame62及publication97／frame125，1536字节独立重算一致。CW541、grid322、状态[]；两窗共1109输入包可逐字节重构。最终LCD已目视，仍绿背景、preview0，取景／摄影未通过。
+- 独立verifier37份源、构建绑定15份、新native6份、红检查6份、两个原厂各7份已归档。完整Goal继续active；没有访问实机／USB／物理盘或改AF。
+- 下一步恢复CW真实RAW到预览的来源交付，核对提交与四槽cohort／冻结transfer／数据域，不增加旧RAW计数或复制单帧冒充四帧，也不补事件6跳过原厂依赖。报告：[r103](history/2026-11-04_实施-Z62读出统计桥与原厂停止恢复r103-report.md)，[合同](../qemu/z62-capturework/READOUT-STATISTICS-CONTRACT.md)。本次源码发布信息以README／公开仓库为准；下方本地／云端描述均保留当时历史。
+
+## 当前本地检查点 r101／r102（2026-11-04，云端r98）
+
+- 上轮r99／r100为实质进展。本轮r101直接读取C18A7634h／800h两个等待：kernel0／FFCE0000h，BOOL1／0，第二次100701355ns。真实CB C2C38F28h，pattern180Ch→100Ch；第二次mode2及mask已武装，sensor源计数全0、init完成1。独立复核和14份源归档通过。
+- 独立r102默认off的`z62-input-readout`已构建，EXE SHA fe98f30251aaedb6736f1cacea2364df38f765b3f58fe4000f27101d9bc9801e。只在已提交2020×136、correction0和unit0控制资格下消费真实提供的MAIN／linear16；完整有效像素处理后才交付functional sensor完成，旧RAW计数不增加、没有客体RAW DMA／物理CMOS等价声明。
+- 旧r98缺属性红检查保留；新native2进程exit0，549440B有效像素sum／FNV独立核对，默认off／缺源／暂停／mailbox替换／坏CRC尺寸epoch旧帧／停止取消重启reset／mask及W1C均通过。同r102旧CW6帧9138504样本及旧retained finite两输入122次DMA原生回归通过，无新715项或LibRaw声明。
+- 原厂16.001121500秒正常收尾：31CW、288内联读出、319accepted源包可逐字节重构，内联158238720有效字节；97份实际消费者摘要和两种payload独立重算一致。两次等待仍0／FFCE0000h；第一内联源6404315416ns，晚于失败返回6402969312ns。最终3Fh、preview0、LCD关机重开Error已目视，功能恢复未过。
+- 当前直接下一步：恢复有限统计unit4阶段的真实输入／30×12／61槽来源；unit0是在其后开放，不能放宽r102资格或补IRQ去迁就等待。新C统计桥必须同源产生实际DMA并冻结batch身份，缺源拒绝；保留r98静态保留帧和r102后置读出，使用独立新版本。
+- r102构建绑定14份、新native3份、红3份、原厂7份、verifier40份源归档通过。所有新产物在工作目录，所有自有窗口terminal；默认r75／r69、原固件／AF、根staged两项及公开r98保持。本轮新内容未推送。报告：[r101／r102](history/2026-11-04_实施-Z62原始停止等待与内联读出r101-r102-report.md)，[合同](../qemu/z62-capturework/INPUT-READOUT-CONTRACT.md)。完整Goal继续active。
+
+## 当前本地检查点 r99／r100（2026-11-04，云端r98）
+
+- 上轮完成r98源码／文档推送，云端main=f9ed1dc9e553135f524aabed74466e35338d07d8，属于实质进展。完整Goal仍active，不因发布而完成。
+- r99冻结r98内核上取得3对原始调用返回：有限统计消费者、scalar消费者、3F追加；实际状态[]→[63]。31次CW／122次有限采样，16.001479833秒，detach／进程退出通过。scalar输出首8字节01ffffff08000000，不把R0=0当已确认错误码。
+- r100首轮逐帧零结果通知消耗128停点；65入口／63返回，两个停止函数未返回、没捕获3F，范围失败保留。另建r100b去除高频通知入口，未改首轮或重启其进程。
+- r100b完整16.002262750秒、23对入口返回，32CW／122采样；第一次停止参数1返回0，第二次参数0返回80h。两次mode及四清理均0；第二次到mode入口101203187ns。原字节102DBBACh／102DBBB2h与literal证明80h来自C18A7634h／mask800h／limit100的前置等待失败。尚未直接捕获该等待原始kernel错误，不声称FFCE超时已证明。
+- 第二次停止返回6403615875ns，3F追加6403628645ns；最终原厂Error已目视、preview0。下一步追该事件的原始CALL／RETURN、102D7E26h bit1生产者及136行读出阶段提交／rearm／真实完成；不能补IRQ92、ready或旧RAW计数代替数据工作。
+- r99及r100b返回／源复核、停止组成独立复核通过；7个新增Python内存编译。r99 verifier归档14份、r100 composition归档17份，原始两窗口各7份。旧归档因跨目录command保存副本拒绝后，新工具只接受verifier声明且SHA一致的工作区closed-command，不重建旧目录。
+- 无新内核、未重跑历史715项或LibRaw；所有三个实例terminal、所有产物在工作目录，未访问相机／USB／物理盘、未修改AF。报告：[r99／r100](history/2026-11-04_研究-Z62有限统计后的停止错误r99-r100-report.md)。原厂摄影／模式往返／全局快照／镜头AF／刷机安全仍缺；本地新阶段未推送。
+
 ## 当前检查点 r98（2026-11-04，覆盖下方历史“下一步”）
 
 - 本次公开源码更新到r98，默认r75界面／r69内核保持；r92–r98实验默认关闭。公开发布任务与完整相机Goal分开，后者继续active。

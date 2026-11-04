@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "snapshot": "2026.11.04-r98",
+  "snapshot": "2026.11.04-r103",
   "scope": "Hashes identify omitted local evidence; these are not downloadable traces.",
   "entries": [
     {
@@ -148,6 +148,30 @@
       "original_contents_published": false
     },
     {
+      "path": "analysis/z62-current-stop-r100/composition-verification-1/result.json",
+      "bytes": 5825,
+      "original_sha256": "ef10c9a1d2a3ea66ddb6b84f81b292e6e76fb2a0dc6f69cce264be1b18d04ec7",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-stop-wait-source-r101/verification-1/result.json",
+      "bytes": 3714,
+      "original_sha256": "7088074997bc2342991a349b849f77e8e5c7af1633ce24ddfc17b4a280b3b5be",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-input-readout-r102/verification-1/result.json",
+      "bytes": 8824,
+      "original_sha256": "f3f6195d49ec3e3546405fc4d2a97ac2f1e18e05c0293772d34a920f0445928e",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-readout-statistics-r103/verification-1/result.json",
+      "bytes": 9319,
+      "original_sha256": "0366d06d4a6fb382a8d9d58e8888b22c1e8a4eac650099951ba02cee29297aa5",
+      "original_contents_published": false
+    },
+    {
       "path": "analysis/z62-group-parameter-input-r95/reference-dma-1/result.json",
       "bytes": 4607441,
       "original_sha256": "b48c1fc72ffe832b366e370e46bad0b4159ea6515d34596f4e47483ee95986a7",
@@ -223,6 +247,78 @@
       "path": "analysis/z62-capturework-finite-r98/verification-1/source-archive.json",
       "bytes": 3346,
       "original_sha256": "590090377e877992bcc779dbaa6cc627591811c6b377e029cc6d88585a64e3da",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-current-failure-r99/verification-1/result.json",
+      "bytes": 4328,
+      "original_sha256": "57bfde9cf7dd758d86f75b679eaa3b6afb5fcc1ee3256f8b3565cb4a88921f90",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-current-stop-r100/scoped-1/result.json",
+      "bytes": 1541281,
+      "original_sha256": "b61604958a16908c67ff4daca2604b31d2fb3a912d661ba0ea8aacc5bc52ac3e",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-stop-wait-source-r101/trace-1/result.json",
+      "bytes": 783478,
+      "original_sha256": "7fd115edec3ff70a23df96f51b68af7b3bfe2a714b3f9b8f9e6eb3f5a3c0b9a5",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-input-readout-r102/native-1/result.json",
+      "bytes": 4937,
+      "original_sha256": "0395dab4cb72886fdda68c2f31d0291e7136ab106f8c96ff1e9937843decd313",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-input-readout-r102/original-1/result.json",
+      "bytes": 1794836,
+      "original_sha256": "a345a88c80a9595b234416688f1f2b1773623173fc2d8c9ae5506a3d20bd5517",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-input-readout-r102/build-binding/result.json",
+      "bytes": 2920,
+      "original_sha256": "7b13b6ffbf9ecd7c096c201527adda95085fc83548ed11ddf1a4d8b5173597f9",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-readout-statistics-r103/native-1/result.json",
+      "bytes": 9216,
+      "original_sha256": "bf1f05be5e22cb5ea0b694095cc13fedac8da794b6722b05462a9b2447c4731e",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-readout-statistics-r103/build-binding/result.json",
+      "bytes": 3210,
+      "original_sha256": "0fd2f7eb40fc9c8996699598561aee9a3e097b645cc4dddd5e8de442a03a5d51",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-readout-statistics-r103/original-1/result.json",
+      "bytes": 1991343,
+      "original_sha256": "c3b47eb526074e33b0c1cd9e77b053449018fd0f44bcf0ee58570af5d4a13c4f",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-readout-statistics-r103/no-debugger-1/result.json",
+      "bytes": 2915883,
+      "original_sha256": "fef9321ae59d59742eaa9ead0e171a9fe5211710442300275583bf3f7fa34e0c",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-readout-statistics-r103/no-debugger-1/no-debugger-statistics.json",
+      "bytes": 2490,
+      "original_sha256": "b3f8140e76b3fed50a2ed4de497f4eddcc0ced2cb7b5e7831813d5afa8a9b6fb",
+      "original_contents_published": false
+    },
+    {
+      "path": "analysis/z62-readout-statistics-r103/verification-1/source-archive.json",
+      "bytes": 5346,
+      "original_sha256": "9cce8b7ce78aa081f0ad9b7847dbe82c0a7bb58fd2a9ae1f36628ca2a58131a6",
       "original_contents_published": false
     }
   ]

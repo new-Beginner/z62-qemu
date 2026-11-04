@@ -1,5 +1,23 @@
 # 验证与公开证据
 
+## r103 本次公开副本检查（2026-11-04）
+
+实际执行**35模块、143项无固件测试，0失败／错误／跳过**；GCC16.2.0以C11／O2／Wall／Wextra／Werror／pedantic编译并通过**16个基础C case**（8像素、3 MAIN、5 transfer，单独计数）。998个导出文件SHA、660份Python内存编译、本地Markdown链接、被排除产物和凭据形态检查通过；847个未转换文件另与研究目录逐字节核对一致。见[JSON](../analysis/publication/source-check-r103-20261104-1.json)和[日志](../analysis/publication/source-check-r103-20261104-1.log)。
+
+```powershell
+python -X utf8 -B tools/check_public_source.py --output analysis/publication/my-r103-check.json --native-compiler .runtime/tools/msys2/ucrt64/bin/gcc.exe
+```
+
+使用已有Python依赖、Node与实际GCC位置，所有临时产物在项目内。该子集和r98相同，不把143项说成覆盖新增QEMU设备全部行为；此次没有启动QEMU、加载固件、重跑715项或RawPy／LibRaw。最终文档回写后只复核静态清单／链接／差异，不重复计为运行测试。
+
+## r103 新设备与原厂证据
+
+完整独立QEMU构建、两个新native进程、旧r102读出／r98保留CW统计native已在本地实际运行。新native两批122次DMA／93,696字节逐次读取，独立积分图重算一致；两批owned来源、pending／completed cache隔离、缺源不回用CW、停止新输入、取消／reset／越界分别验证。
+
+16.000987666秒原厂窗口直接捕获两个kernel0／BOOL1和真实800h OR/store；状态[]，CW308／grid169。该轮scalar断点只在暖启动命中、未保存有限数据，缺口保留。另建24.000898083秒无GDB窗口，用两次短QMP暂停保存两份scalar，总1,536字节与publication34／97的实际源独立重算一致；状态[]、CW541／grid322。两窗共1,109个源包逐字节重构，旧RAW计数保持0。
+
+LCD已目视为原厂拍摄OSD、绿色背景，preview0。只验证本实验配置停止等待恢复，不能当作真实场景取景、原厂摄影、AF／物理传感器等价或刷机安全。摘要见[r103证据](evidence/readout-statistics-r103.json)，原件身份见[索引](evidence-index-20261104.json)，完整步骤及失败见[r103报告](history/2026-11-04_实施-Z62读出统计桥与原厂停止恢复r103-report.md)。
+
 ## r98 本次公开副本检查（2026-11-04）
 
 实际执行**35模块、143项无固件测试，0失败／错误／跳过**；GCC16.2.0以C11／O2／Wall／Wextra／Werror／pedantic编译并通过**16个C case**（8像素、3 MAIN、5 transfer，单独计数）。同时核对962个导出文件SHA、635份Python内存编译、本地Markdown链接、被排除产物和凭据形态；819个未转换导出文件另与研究目录逐字节核对，零差异。结果见[JSON](../analysis/publication/source-check-r98-20261104-1.json)和[日志](../analysis/publication/source-check-r98-20261104-1.log)。

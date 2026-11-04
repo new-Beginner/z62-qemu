@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "completed_evidence_check": true,
+  "binary_sha256": "886e70dda9146be3494413250f4f5ce6b4535615c60bc74178d58197d3c19e72",
+  "native_result_sha256": "bf1f05be5e22cb5ea0b694095cc13fedac8da794b6722b05462a9b2447c4731e",
+  "build_binding_sha256": "0fd2f7eb40fc9c8996699598561aee9a3e097b645cc4dddd5e8de442a03a5d51",
+  "native_actual_DMA_bytes_independently_recomputed": 93696,
+  "original_scalar_DMA_bytes_independently_recomputed": 1536,
+  "sample_mismatches": 0,
+  "actual_original_stop_waits": [
+    {
+      "call_ns": 2063443750,
+      "duration_ns": 8395,
+      "kernel_result": 0,
+      "boolean_result": 1,
+      "pattern_at_call": "0x180c"
+    },
+    {
+      "call_ns": 6301271708,
+      "duration_ns": 20458,
+      "kernel_result": 0,
+      "boolean_result": 1,
+      "pattern_at_call": "0x180c"
+    }
+  ],
+  "actual_original_pattern_stores_verified": 1,
+  "traced_window": {
+    "result_sha256": "c3b47eb526074e33b0c1cd9e77b053449018fd0f44bcf0ee58570af5d4a13c4f",
+    "virtual_time_ns": 16000987666,
+    "accepted_packets_reconstructed": 438,
+    "CW_DMA_completed": 308,
+    "inline_readouts": 130,
+    "statistics_batches": 2,
+    "finite_DMA_samples": 122,
+    "final_status_codes": [],
+    "grid_groups": 169,
+    "preview_batches": 0
+  },
+  "no_GDB_window": {
+    "result_sha256": "fef9321ae59d59742eaa9ead0e171a9fe5211710442300275583bf3f7fa34e0c",
+    "virtual_time_ns": 24000898083,
+    "accepted_packets_reconstructed": 671,
+    "CW_DMA_completed": 541,
+    "inline_readouts": 130,
+    "statistics_batches": 2,
+    "finite_DMA_samples": 122,
+    "final_status_codes": [],
+    "grid_groups": 322,
+    "preview_batches": 0
+  },
+  "original_batch_sources": [
+    {
+      "publication": 34,
+      "frame": 62,
+      "time_ns": 2067737750
+    },
+    {
+      "publication": 97,
+      "frame": 125,
+      "time_ns": 4167032520
+    }
+  ],
+  "first_traced_scalar_capture_missing_preserved": true,
+  "coherent_scalar_capture_QMP_pauses": 2,
+  "observation_timing_perturbed": true,
+  "statistics_are_retained_per_batch_not_new_RAW_acquisitions": true,
+  "legacy_RAW_accepted_always_zero": true,
+  "legacy_native_regressions": {
+    "legacy-readout-1": "d74ecf699d7e6d567f17674e1241937b7801cfadc00e3128fb0e9ddaa43a9903",
+    "legacy-retained-finite-1": "19cf07e06162a78ce76ed4900b9b5a944040b81b077164cacfe82fa3c7bbb2d3"
+  },
+  "physical_sensor_or_AF_equivalence": false,
+  "complete_camera_or_flash_safety_verified": false,
+  "camera_accessed": false,
+  "snapshot": "2026.11.04-r103",
+  "original_record_sha256": "0366d06d4a6fb382a8d9d58e8888b22c1e8a4eac650099951ba02cee29297aa5",
+  "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted.",
+  "publication_note": "C reference input; bounded stop recovery and OSD, green background, no completed preview. The 24s run used two QMP scalar pauses."
+}

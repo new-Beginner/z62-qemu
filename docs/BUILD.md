@@ -1,5 +1,18 @@
 # 构建、输入和运行
 
+当前源码快照r103，默认仍r75界面／r69内核。本次没有在空机器重建整条历史依赖链。新克隆仍须准备合法C1.70、工具链及父构建；严禁删除SHA／manifest guard冒充旧验收。
+
+在下文r98基础上，新增两个独立父子构建：
+
+```powershell
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_input_readout.py --jobs 4
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_readout_statistics.py --jobs 4
+```
+
+r102为C内联读出，r103另加默认off的`z62-readout-statistics`，要求内联读出和有限统计。r103本地EXE身份为`886e70dda9146be3494413250f4f5ce6b4535615c60bc74178d58197d3c19e72`，不同工具链可产生不同字节，应建立自己的新验收绑定。
+
+新native、16秒原始等待、24秒无GDB／两次取数暂停及独立复核命令见[r103报告](history/2026-11-04_实施-Z62读出统计桥与原厂停止恢复r103-report.md)，数据边界见[合同](../qemu/z62-capturework/READOUT-STATISTICS-CONTRACT.md)。OSD恢复、背景绿色、preview0；不提升默认入口，不附带EXE／固件／卡。公开源码子集仍用`tools/check_public_source.py`，本次实际结果单独记录在[VALIDATION](VALIDATION.md)。下方r98／r48等路线保留。
+
 本仓库是源码快照。以下使用已验证工程的**原生 Windows Python + MSYS2 UCRT64** 路线；不宣称完整 Linux/macOS 构建和相机行为已验收。原本地构建已存在并验证，本次公开没有在空机器重建全部历史内核。
 
 建议使用 ASCII 的 D 盘工作路径（如 `D:/camera-lab/z62-qemu`），所有新缓存、TEMP/TMP、工具链和运行文件放在项目目录。历史构建为保护证据保留多个独立源码/编译目录，完整链可能需要数十 GB；单个后续构建器还要求至少 12 GiB 空闲。已有或失败目录不会自动删除/覆盖。

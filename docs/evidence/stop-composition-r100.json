@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "completed_evidence_check": true,
+  "original_result_sha256": "b61604958a16908c67ff4daca2604b31d2fb3a912d661ba0ea8aacc5bc52ac3e",
+  "frame_verification_sha256": "000ed186526f7e0aa56dc6672a1907de241d0acd923273040a0e783fe8fbb4eb",
+  "preliminary_result_sha256": "bd6cdc61317caa7d25ceebf8404157ddcac2cca0e205d154250535a9952d8851",
+  "binary_sha256": "63531fbc8772c8cf370fab2d721eca96d8104022c08b674e94b65aae2cedfcde",
+  "original_stop_results": [
+    {
+      "argument": 1,
+      "result": 0,
+      "call_time_ns": 2063832604,
+      "return_time_ns": 2064940687,
+      "time_before_mode_entry_ns": 5375,
+      "mode": "mode0-stop",
+      "all_nested_observed_results_zero": true,
+      "nested_returns": [
+        {
+          "label": "mode0-substop-a",
+          "result": 0
+        },
+        {
+          "label": "mode0-substop-b",
+          "result": 0
+        },
+        {
+          "label": "mode0-substop-c",
+          "result": 0
+        },
+        {
+          "label": "mode0-stop",
+          "result": 0
+        },
+        {
+          "label": "cleanup-a",
+          "result": 0
+        },
+        {
+          "label": "cleanup-b",
+          "result": 0
+        },
+        {
+          "label": "cleanup-c",
+          "result": 0
+        },
+        {
+          "label": "cleanup-d",
+          "result": 0
+        }
+      ]
+    },
+    {
+      "argument": 0,
+      "result": 128,
+      "call_time_ns": 6301289708,
+      "return_time_ns": 6403615875,
+      "time_before_mode_entry_ns": 101203187,
+      "mode": "mode2-stop",
+      "all_nested_observed_results_zero": true,
+      "nested_returns": [
+        {
+          "label": "mode0-substop-a",
+          "result": 0
+        },
+        {
+          "label": "mode2-stop",
+          "result": 0
+        },
+        {
+          "label": "cleanup-a",
+          "result": 0
+        },
+        {
+          "label": "cleanup-b",
+          "result": 0
+        },
+        {
+          "label": "cleanup-c",
+          "result": 0
+        },
+        {
+          "label": "cleanup-d",
+          "result": 0
+        }
+      ]
+    }
+  ],
+  "original_wait_object": "0xc18a7634",
+  "wait_mask": 2048,
+  "wait_limit_argument": 100,
+  "first_wait_failed_from_original_0x80_branch_and_zero_nested_returns": true,
+  "direct_wait_CALL_RETURN_or_raw_kernel_error_traced": false,
+  "raw_kernel_timeout_claimed": false,
+  "original_status_0x3f_after_second_stop": true,
+  "preliminary_128_stop_scope_exhaustion_preserved": true,
+  "device_completion_root_cause_or_fix_verified": false,
+  "guest_software_modified": false,
+  "camera_accessed": false,
+  "functional_acceptance_eligible": false,
+  "snapshot": "2026.11.04-r103",
+  "original_record_sha256": "ef10c9a1d2a3ea66ddb6b84f81b292e6e76fb2a0dc6f69cce264be1b18d04ec7",
+  "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted."
+}

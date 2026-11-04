@@ -12,7 +12,7 @@ import subprocess
 import export_z62_public as old
 
 ROOT=Path(__file__).resolve().parents[1]
-SNAPSHOT='2026.11.04-r98'
+SNAPSHOT='2026.11.04-r103'
 REMOTE='https://github.com/new-Beginner/z62-qemu.git'
 
 
@@ -46,6 +46,7 @@ def refresh(destination,source=ROOT):
             'published_sha256':hashlib.sha256(data).hexdigest(),'transformed':original!=data,'bytes':len(data)})
     navigation='\n## 公开仓库导航\n\n- [构建与父依赖](docs/BUILD.md)\n- [功能清单](docs/FEATURES.md)与[已知限制](docs/LIMITATIONS.md)\n- [开发时间线](docs/DEVELOPMENT.md)\n- [参考、作者与许可证](docs/REFERENCES.md)\n- [本次源码验证范围](docs/VALIDATION.md)\n- [历史内核事件验收摘要](docs/evidence/latest-kernel-events.json)（r83–r85，非完整原始轨迹）\n- [r86采集像素核验摘要](docs/evidence/capturework-pixels-r86.json)（独立数值阶段）\n- [r91原厂MAIN／DMA验收摘要](docs/evidence/capturework-original-r91.json)（统计／预览未贯通）\n'
     navigation+='- [r98 发布说明](docs/RELEASE-r98.md)\n- [r95 参数追踪摘要](docs/evidence/group-parameters-r95.json)\n- [r96/r97 实际等待与供帧摘要](docs/evidence/current-stream-r97.json)\n- [r98 保留帧有限统计摘要](docs/evidence/retained-finite-r98.json)（最终原厂 Error，预览未通过）\n'
+    navigation+='- [r103 发布说明](docs/RELEASE-r103.md)\n- [r103 统计输入、原始等待与恢复摘要](docs/evidence/readout-statistics-r103.json)（预览仍未贯通）\n'
     prepared['README.md']+=navigation.encode('utf-8')
     for row in ledger:
         if row['published']=='README.md':
@@ -99,12 +100,16 @@ def refresh(destination,source=ROOT):
         ('group-parameters-r95.json','analysis/z62-group-parameter-input-r95/verification-1/result.json'),
         ('current-stream-r97.json','analysis/z62-main-stream-r97/verification-1/result.json'),
         ('retained-finite-r98.json','analysis/z62-capturework-finite-r98/verification-1/result.json'),
+        ('stop-composition-r100.json','analysis/z62-current-stop-r100/composition-verification-1/result.json'),
+        ('stop-wait-source-r101.json','analysis/z62-stop-wait-source-r101/verification-1/result.json'),
+        ('input-readout-r102.json','analysis/z62-input-readout-r102/verification-1/result.json'),
+        ('readout-statistics-r103.json','analysis/z62-readout-statistics-r103/verification-1/result.json'),
     )
     for name,local in selected:
         path=source/local; proof=json.loads(path.read_text(encoding='utf-8'))
         if proof.get('completed_evidence_check') is not True or proof.get('camera_accessed') is not False:
             raise ValueError('Incomplete or out-of-scope evidence: '+local)
-        public={key:value for key,value in proof.items() if key!='source_sha256'}
+        public={key:value for key,value in proof.items() if key not in ('source_sha256','saved_identical_command_fallbacks')}
         public.update(snapshot=SNAPSHOT,original_record_sha256=old.digest(path),
             scope='Selected local offline evidence only; original inputs, raw traces and RAM are omitted.')
         if name=='retained-finite-r98.json':
@@ -129,7 +134,21 @@ def refresh(destination,source=ROOT):
                 raise ValueError('r98 regression log binding changed')
             public['local_full_regression']={k:reg[k] for k in ('tests','failures','errors','skipped','elapsed_seconds','rawpy_available','log_sha256')}
             public['local_full_regression']['original_record_sha256']=old.digest(reg_path)
-        prepared['docs/evidence/'+name]=(json.dumps(public,ensure_ascii=False,indent=2)+'\n').encode()
+        if name=='readout-statistics-r103.json':
+            local_native=source/'analysis/z62-readout-statistics-r103/native-1/result.json'
+            local_traced=source/'analysis/z62-readout-statistics-r103/original-1/result.json'
+            local_plain=source/'analysis/z62-readout-statistics-r103/no-debugger-1/result.json'
+            if (proof['native_result_sha256']!=old.digest(local_native)
+                    or proof['traced_window']['result_sha256']!=old.digest(local_traced)
+                    or proof['no_GDB_window']['result_sha256']!=old.digest(local_plain)
+                    or proof['native_actual_DMA_bytes_independently_recomputed']!=93696
+                    or proof['original_scalar_DMA_bytes_independently_recomputed']!=1536
+                    or proof['sample_mismatches']!=0 or any(w['kernel_result']!=0 for w in proof['actual_original_stop_waits'])
+                    or proof['no_GDB_window']['preview_batches']!=0
+                    or proof['complete_camera_or_flash_safety_verified'] is not False):
+                raise ValueError('r103 source/data/recovery binding changed or overclaims acceptance')
+            public['publication_note']='C reference input; bounded stop recovery and OSD, green background, no completed preview. The 24s run used two QMP scalar pauses.'
+        prepared['docs/evidence/'+name]=(json.dumps(old.scrub_json(public,source),ensure_ascii=False,indent=2)+'\n').encode()
     references=('analysis/z62-kernel-events-r83/verified-kernel-1.json',
         'analysis/z62-kernel-events-r83/events-1/result.json','analysis/z62-kernel-events-r83/events-2/result.json',
         'analysis/z62-kernel-events-r83/events-3/result.json','analysis/z62-kernel-events-r83/kernel-contract-1.json',
@@ -162,7 +181,19 @@ def refresh(destination,source=ROOT):
         'analysis/z62-capturework-finite-r98/original-dma-1/retained-dma.json',
         'analysis/z62-capturework-finite-r98/original-dma-1/final-lcd.png',
         'analysis/z62-capturework-finite-r98/original-dma-1/source-archive.json',
-        'analysis/z62-capturework-finite-r98/verification-1/source-archive.json')
+        'analysis/z62-capturework-finite-r98/verification-1/source-archive.json',
+        'analysis/z62-current-failure-r99/verification-1/result.json',
+        'analysis/z62-current-stop-r100/scoped-1/result.json',
+        'analysis/z62-stop-wait-source-r101/trace-1/result.json',
+        'analysis/z62-input-readout-r102/native-1/result.json',
+        'analysis/z62-input-readout-r102/original-1/result.json',
+        'analysis/z62-input-readout-r102/build-binding/result.json',
+        'analysis/z62-readout-statistics-r103/native-1/result.json',
+        'analysis/z62-readout-statistics-r103/build-binding/result.json',
+        'analysis/z62-readout-statistics-r103/original-1/result.json',
+        'analysis/z62-readout-statistics-r103/no-debugger-1/result.json',
+        'analysis/z62-readout-statistics-r103/no-debugger-1/no-debugger-statistics.json',
+        'analysis/z62-readout-statistics-r103/verification-1/source-archive.json')
     index={'schema':1,'snapshot':SNAPSHOT,'scope':'Hashes identify omitted local evidence; these are not downloadable traces.',
            'entries':[{'path':name,'bytes':(source/name).stat().st_size,'original_sha256':old.digest(source/name),
                        'original_contents_published':False} for name in references]}

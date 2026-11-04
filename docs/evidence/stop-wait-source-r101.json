@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "completed_evidence_check": true,
+  "original_result_sha256": "7fd115edec3ff70a23df96f51b68af7b3bfe2a714b3f9b8f9e6eb3f5a3c0b9a5",
+  "binary_sha256": "63531fbc8772c8cf370fab2d721eca96d8104022c08b674e94b65aae2cedfcde",
+  "original_waits": [
+    {
+      "kernel_result": 0,
+      "boolean_result": 1,
+      "output_bits": 6156,
+      "call_ns": 2061358562,
+      "duration_ns": 8250,
+      "event_control_block": "0xc2c38f28",
+      "pattern": "0x180c"
+    },
+    {
+      "kernel_result": 4291690496,
+      "boolean_result": 0,
+      "output_bits": 0,
+      "call_ns": 6301629395,
+      "duration_ns": 100701355,
+      "event_control_block": "0xc2c38f28",
+      "pattern": "0x100c"
+    }
+  ],
+  "sensor_raw_source_events_always_zero": true,
+  "sensor_initialization_completions": 1,
+  "second_wait_consumer_armed_in_mode2": true,
+  "legacy_RAW_accepted_always_zero": true,
+  "raw_kernel_failure_ffce0000_proven": true,
+  "source_edges_in_observed_callback_window": 0,
+  "original_code_or_AF_modified": false,
+  "camera_accessed": false,
+  "functional_acceptance_eligible": false,
+  "snapshot": "2026.11.04-r103",
+  "original_record_sha256": "7088074997bc2342991a349b849f77e8e5c7af1633ce24ddfc17b4a280b3b5be",
+  "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted."
+}
