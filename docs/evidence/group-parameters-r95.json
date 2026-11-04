@@ -37,7 +37,7 @@
   "physical_AF_or_ISP_equivalence": false,
   "complete_camera_or_flash_safety_verified": false,
   "camera_accessed": false,
-  "snapshot": "2026.11.04-r103",
+  "snapshot": "2026.11.04-r104",
   "original_record_sha256": "9e2e7e86fdc63a8013127781be699af3f0836a2ee4db5a686f23f6124fef89cc",
   "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted."
 }

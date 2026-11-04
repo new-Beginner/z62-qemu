@@ -36,7 +36,7 @@
   "preview_batches": 0,
   "camera_accessed": false,
   "complete_camera_or_AF_or_flash_safety_verified": false,
-  "snapshot": "2026.11.04-r103",
+  "snapshot": "2026.11.04-r104",
   "original_record_sha256": "5c4491bcc65b5391c39d1af89d9f4889df083f558d19f5b3572e89d705ebcbec",
   "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted.",
   "final_LCD_manual_observation": "Error. Turn camera off and then on again.",

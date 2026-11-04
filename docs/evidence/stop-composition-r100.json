@@ -97,7 +97,7 @@
   "guest_software_modified": false,
   "camera_accessed": false,
   "functional_acceptance_eligible": false,
-  "snapshot": "2026.11.04-r103",
+  "snapshot": "2026.11.04-r104",
   "original_record_sha256": "ef10c9a1d2a3ea66ddb6b84f81b292e6e76fb2a0dc6f69cce264be1b18d04ec7",
   "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted."
 }

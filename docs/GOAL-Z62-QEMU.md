@@ -2,7 +2,18 @@
 
 目标：在现有工作区成果上实现可用于测试用户固件的 Z6II QEMU。完整目标仍在进行，不能用菜单截图或设备单测通过代替整机验收。
 
-## 当前检查点 r103（2026-11-04）
+## 当前检查点 r104（2026-11-04）
+
+- 独立默认 off 的 `z62-capturework-preview` 已实现并构建；EXE SHA `c4a91a02bc5f2c0d0b6154a7c5eb15ebd9ba644f8950a8e3ce8d97d380b7e3e1`。实际 CW 有效行 DMA 后收集四个不同 slot／publication／地址，保存冻结 transfer 和私有量化 linear12；不改客体编码 RAW、旧 RAW 计数或原厂软件事件6。
+- Native 两组分别16／14个CW帧；120,960字节NV12、27,427,584字节完整linear SHA、18,285,056字节客体编码RAW保持经独立复核。背压无credit、bank切换四新槽、错误bank与旧通知拒绝、停止／reset／slave隔离通过；旧预览／r103统计native回归通过。新来源只遍历三种缩略几何，不宣称全部全分辨率配方通过。
+- 24.000660666客体秒原厂窗口exit0、状态[]、CW541、135来源集合、123份接受来源、122预览批次；671包重构，原厂scalar1,536字节重算。无GDB但有两次短QMP取数暂停；LCD16点橙色RGB(210,60,17)匹配最近实际源，固定色场不能唯一确定四帧中哪帧显示。
+- 生命周期窗口证实蓝RGB(41,81,161)／橙色变化到LCD；但首个半按早于实际菜单进入。最后有效样本21.224059秒、preview102，随后TimeoutError、进程exit1；未完成24秒，不是两轮菜单通过，恢复及超时根因均未验证。
+- 本次发布重新执行数据证据复核与失败分类，见 `analysis/z62-capturework-preview-r104/publication-verification-1/result.json` 和 `publication-lifecycle-verification-1/result.json`；不是重跑QEMU窗口、历史715项或RawPy。原始运行、失败、源码归档均保留，新增缓存和产物在工作目录。
+- 当前工作为r104源码／README／覆盖表／报告及选定摘要的GitHub发布；完整Goal继续active，默认r75／r69保持。未访问相机／USB／物理盘、未修改AF；完整原厂摄影、镜头AF、视频新来源和全局快照仍缺。
+- r104公开副本已实际通过35模块／143项无固件测试、16个基础C case，零失败／错误／跳过；1,015个导出哈希、670份Python内存编译与Markdown链接通过，860个未转换文件与研究目录字节一致。最终文档回写后只复核静态检查；这些结果不冒充新QEMU窗口或完整相机验收。
+- 下一开发动作：先接入永久host timeout现场保存，再按index1真实菜单进入→半按→index3及新帧恢复推进两轮；不盲目延长等待、不修改已冻结r104语义。报告：[r104](history/2026-11-04_实施-Z62采集四帧来源与原厂预览r104-report.md)，[合同](../qemu/z62-capturework/CW-PREVIEW-CONTRACT.md)。以下检查点均保留当时历史范围和云端状态。
+
+## 历史检查点 r103（2026-11-04）
 
 - 上轮r102为实质进展。本轮独立默认off的`z62-readout-statistics`已构建，EXE SHA 886e70dda9146be3494413250f4f5ce6b4535615c60bc74178d58197d3c19e72；r102／r98及默认r75／r69保持。
 - 显式C输入按实际unit4／30×12／61槽资格供给；完整读出缓存、pending lease和owned batch分开，缺源不回用CW，停止需新输入。linear16>>4的C区域均值产生真实统计DMA，不是Nikon测光／PDAF，也不是61个新RAW。

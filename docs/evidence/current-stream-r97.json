@@ -58,7 +58,7 @@
   "preview_batches": 0,
   "functional_acceptance_eligible": false,
   "camera_accessed": false,
-  "snapshot": "2026.11.04-r103",
+  "snapshot": "2026.11.04-r104",
   "original_record_sha256": "ed0baba2281b82a8228b7586ffae4faadf1e50be988daaf1ef7e64b4b010314c",
   "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted."
 }

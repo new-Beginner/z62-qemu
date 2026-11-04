@@ -1,6 +1,14 @@
 # 构建、输入和运行
 
-当前源码快照r103，默认仍r75界面／r69内核。本次没有在空机器重建整条历史依赖链。新克隆仍须准备合法C1.70、工具链及父构建；严禁删除SHA／manifest guard冒充旧验收。
+当前源码快照r104，默认仍r75界面／r69内核。本次没有在空机器重建整条历史依赖链。新克隆仍须准备合法C1.70、工具链及父构建；严禁删除SHA／manifest guard冒充旧验收。
+
+在r103父构建后新增独立来源桥：
+
+```powershell
+.venv/Scripts/python.exe -X utf8 -B tools/build_z62_capturework_preview.py --jobs 4
+```
+
+属性`z62-capturework-preview`默认off，要求CW后端；已验收本机EXE SHA256为`c4a91a02bc5f2c0d0b6154a7c5eb15ebd9ba644f8950a8e3ce8d97d380b7e3e1`。它使用私有量化linear12四帧集合，不改变客体编码RAW、旧RAW计数或原厂软件状态。新CW来源当前拒绝paired ingress、旧output-lineage及video配方。原厂24秒LCD通路与菜单恢复失败分别见[r104报告](history/2026-11-04_实施-Z62采集四帧来源与原厂预览r104-report.md)；探针、输入和复核命令亦在其中。以下为父构建及历史路线。
 
 在下文r98基础上，新增两个独立父子构建：
 

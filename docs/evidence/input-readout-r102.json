@@ -35,7 +35,7 @@
   "original_stop_error_fixed": false,
   "complete_camera_or_AF_or_flash_safety_verified": false,
   "camera_accessed": false,
-  "snapshot": "2026.11.04-r103",
+  "snapshot": "2026.11.04-r104",
   "original_record_sha256": "f3f6195d49ec3e3546405fc4d2a97ac2f1e18e05c0293772d34a920f0445928e",
   "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted."
 }

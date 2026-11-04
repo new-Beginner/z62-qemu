@@ -183,7 +183,7 @@ def check(output, native_compiler=None):
     output = Path(output)
     if output.exists() or output.with_suffix('.log').exists():
         raise FileExistsError('Use a new source-check result path')
-    result = {'schema': 1, 'snapshot': '2026.11.04-r103', 'completed': False,
+    result = {'schema': 1, 'snapshot': '2026.11.04-r104', 'completed': False,
               'firmware_loaded': False, 'camera_accessed': False,
               'historical_full_suite_repeated': False, 'test_modules': list(TEST_MODULES),
               'native_requested': native_compiler is not None}

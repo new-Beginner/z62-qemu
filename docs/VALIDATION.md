@@ -1,5 +1,27 @@
 # 验证与公开证据
 
+## r104 本次公开副本检查（2026-11-04）
+
+实际执行 **35模块／143项无固件测试，零失败／错误／跳过**；GCC16.2.0以C11／O2／Wall／Wextra／Werror／pedantic编译并通过 **16个基础C case**（8像素、3 MAIN、5 transfer，单独计数）。1,015个导出文件SHA、670份Python内存编译、本地Markdown链接、被排除产物及凭据形态检查通过；860个未转换导出文件另与研究目录逐字节核对一致。结果见[JSON](../analysis/publication/source-check-r104-20261104-1.json)和[日志](../analysis/publication/source-check-r104-20261104-1.log)。
+
+使用已有Python依赖、Node和工作目录中的实际GCC，没有在空机器安装全部依赖；TEMP／TMP和C编译临时产物都留在工作目录。源码检查未启动QEMU／加载固件、未重跑历史715项或RawPy／LibRaw。16个基础C case不覆盖r104全部设备行为；最终文档回写后单独复核静态清单与链接，不重复记作运行143项。
+
+```powershell
+python -X utf8 -B tools/check_public_source.py --output analysis/publication/my-r104-check.json --native-compiler .runtime/tools/msys64/ucrt64/bin/gcc.exe
+```
+
+上例要求工具链已准备在项目内所列位置，输出文件必须不存在。本机实际GCC位于已验证工作目录别名`Q:/.runtime/tools/msys64/ucrt64/bin/gcc.exe`，Python借用既有工作目录环境；新克隆不含工具链。
+
+## r104 设备、原厂显示与生命周期失败
+
+本地已有独立构建及原生新来源／bank域检查：16／14个CW帧，NV12共120,960B独立核对，27,427,584B私有linear视图SHA，18,285,056B客体LUT编码RAW保持；四不同帧、bank／背压／停止／reset／旧通知与旧预览／r103统计回归分别验证。新来源native只遍历三种缩略几何。
+
+24.000660666客体秒原厂窗口exit0，状态[]、CW541、135来源集合、123份被接受来源、122批预览。671输入包、185份来源状态／123个不同集合、两种payload和原厂scalar1,536B独立核对；LCD16点橙色与实际源一致。无GDB但有两次短QMP取数暂停；固定色场不唯一识别四帧中的显示帧。
+
+另一生命周期窗口证实蓝RGB(41,81,161)／橙RGB(210,60,17)各16点随输入变化；但固定首半按早于实际菜单进入，最后有效21.224059秒后通信超时、exit1、未观察恢复index3。**两轮菜单及预览恢复未通过，超时根因未知**。分类器`completed_evidence_check=true`仅表示证据分类完成。
+
+发布前实际重跑数据证据核验和失败分类，两命令exit0；没有重跑QEMU／原厂窗口。新的普通归档器因Q:／D:别名重复键保留了一份部分副本；随后46个绑定均与先前45份唯一冻结源逐SHA核对一致，生命周期复核20份来源另完整归档。详见[完整报告](history/2026-11-04_实施-Z62采集四帧来源与原厂预览r104-report.md)。选定事实见[预览摘要](evidence/capturework-preview-r104.json)、[生命周期失败摘要](evidence/cw-preview-lifecycle-r104.json)，原件身份见[证据索引](evidence-index-20261104.json)。完整摄影、AF、全局恢复及刷机安全仍未验收。
+
 ## r103 本次公开副本检查（2026-11-04）
 
 实际执行**35模块、143项无固件测试，0失败／错误／跳过**；GCC16.2.0以C11／O2／Wall／Wextra／Werror／pedantic编译并通过**16个基础C case**（8像素、3 MAIN、5 transfer，单独计数）。998个导出文件SHA、660份Python内存编译、本地Markdown链接、被排除产物和凭据形态检查通过；847个未转换文件另与研究目录逐字节核对一致。见[JSON](../analysis/publication/source-check-r103-20261104-1.json)和[日志](../analysis/publication/source-check-r103-20261104-1.log)。

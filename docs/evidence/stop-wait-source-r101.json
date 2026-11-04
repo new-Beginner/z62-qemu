@@ -32,7 +32,7 @@
   "original_code_or_AF_modified": false,
   "camera_accessed": false,
   "functional_acceptance_eligible": false,
-  "snapshot": "2026.11.04-r103",
+  "snapshot": "2026.11.04-r104",
   "original_record_sha256": "7088074997bc2342991a349b849f77e8e5c7af1633ce24ddfc17b4a280b3b5be",
   "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted."
 }

@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "snapshot": "2026.11.04-r103",
-  "file_count": 998,
-  "bytes": 5336840,
+  "snapshot": "2026.11.04-r104",
+  "file_count": 1015,
+  "bytes": 5440482,
   "source_bytes_preserved": true,
   "original_firmware_included": false,
   "compiled_runtimes_included": false,
@@ -60,10 +60,10 @@
     {
       "source": "README.md",
       "published": "README.md",
-      "original_sha256": "1e8e15c37877bafa4720812d088454ba365a4ae8f312dc0ff70358bdbbf663ed",
-      "published_sha256": "038f19afb41585d063f80f09c11efae1f423b593f362be04fbe12c9104b9e7a4",
+      "original_sha256": "3bad54e94c94e66953ba3adf48d0d0247e92e91411ebe682f83aeb2bd9bd8d02",
+      "published_sha256": "6b97b2e8f3b89ed3949d38f88e3cf2f2230c73e436e5fe49a8cff3ad2431b869",
       "transformed": true,
-      "bytes": 23842,
+      "bytes": 26451,
       "publication_navigation_added": true
     },
     {
@@ -637,18 +637,18 @@
     {
       "source": "Z62-CAPABILITY-COVERAGE.md",
       "published": "docs/CAPABILITY-COVERAGE.md",
-      "original_sha256": "30fa8cbaf74c762c2f8e9cf6764d8699dfa192cb9eb57d4207a4cb9c24208f47",
-      "published_sha256": "c0d8244822a7309396f51e1338a94cff0e9e898871e2031aebbf7cc3d1681622",
+      "original_sha256": "60aa0a8a616b86e9134c7b402d4dbdcdab7ae856bf982efcbcb54af1e044c0d6",
+      "published_sha256": "ac034ee4310d49fbfe100db4881cd078a246fed077c6b064095bc3f94bb4d923",
       "transformed": true,
-      "bytes": 53166
+      "bytes": 54507
     },
     {
       "source": "GOAL-Z62-QEMU.md",
       "published": "docs/GOAL-Z62-QEMU.md",
-      "original_sha256": "c7295a6514644aa477031b2bf68e9fa5aa3ccefd07b2d6adb1aa2b4d7d096ed2",
-      "published_sha256": "9e1dc4060517511d0f59b16bdd56eb23f1cdf194db8c69d9656eed874ab03568",
+      "original_sha256": "7562f3d1750adfbc5d57e94337b5cb4ceb0d0276a68e76e7487883ad48a6472f",
+      "published_sha256": "65f3f9b3eb237f087727d0513d94e67d5412aee64f7faf8f681d2b5f288c843f",
       "transformed": true,
-      "bytes": 272591
+      "bytes": 275294
     },
     {
       "source": "2026-10-25_构建-Z6II-QEMU-v0.2.0-report.md",
@@ -1403,6 +1403,14 @@
       "bytes": 5929
     },
     {
+      "source": "2026-11-04_实施-Z62采集四帧来源与原厂预览r104-report.md",
+      "published": "docs/history/2026-11-04_实施-Z62采集四帧来源与原厂预览r104-report.md",
+      "original_sha256": "01a1f2048e9befdc9d7acf555661b326c399aed82ee42929e06ff6d7692aba93",
+      "published_sha256": "fd8ee633bb4b2af5e4b2d38f63bfcf5c2db8dccb22f248876c24ea3b7d9f7516",
+      "transformed": true,
+      "bytes": 12722
+    },
+    {
       "source": "2026-11-04_实施-Z62采集来源到连续统计r92-report.md",
       "published": "docs/history/2026-11-04_实施-Z62采集来源到连续统计r92-report.md",
       "original_sha256": "72302aa48e84a780ba0d16d63ded931eeefd1f8cafcaf9d4d6bcd84d98e3cb24",
@@ -1445,10 +1453,10 @@
     {
       "source": "README-QEMU.md",
       "published": "docs/profiles/README-QEMU.md",
-      "original_sha256": "3b26f0e9d3a0995b02c57232a4163c0732f8904025e758ddbea5529337ac0178",
-      "published_sha256": "a3c84f41ac37e06dd5cd7c3b667733242553d99e19ee755f6adeb9f815337632",
+      "original_sha256": "d6a3378fa5c96ee95fbfa7b6451909fd3a2052dd335584c9a082f4403fe0d9c6",
+      "published_sha256": "12d7ad3593157184fe4bc2c1faac33e2897ee015194c4a4326d9060ca3ffe263",
       "transformed": true,
-      "bytes": 7768
+      "bytes": 7769
     },
     {
       "source": "README-WORKSPACE-STORAGE.md",
@@ -1763,6 +1771,14 @@
       "bytes": 2633
     },
     {
+      "source": "qemu/z62-capturework/CW-PREVIEW-CONTRACT.md",
+      "published": "qemu/z62-capturework/CW-PREVIEW-CONTRACT.md",
+      "original_sha256": "624408bb17d377344a8678cf16b86d3ba2dbaf7860551708e085864a1061fd3a",
+      "published_sha256": "4d69efc22195b9ef428dd3ba1c4f2508efd54bd8bac41cdb725fa0ff824d67de",
+      "transformed": true,
+      "bytes": 3335
+    },
+    {
       "source": "qemu/z62-capturework/DEVICE-CONTRACT.md",
       "published": "qemu/z62-capturework/DEVICE-CONTRACT.md",
       "original_sha256": "5fe60ab62f51c50a3943ebc83425a1e8f22d4141262c84acbb3e9c60fbb6c89e",
@@ -1881,6 +1897,30 @@
       "published_sha256": "b73b77b46e2d5acadb7e3b248661779582c6e7bdb02536bc9251117f957d3e74",
       "transformed": false,
       "bytes": 3380
+    },
+    {
+      "source": "qemu/z62-capturework/nikon-z62-cw-cohort.h",
+      "published": "qemu/z62-capturework/nikon-z62-cw-cohort.h",
+      "original_sha256": "171050033046fafe9d5df1090219fc1f4c87afedc59b4b8a664d9d295483bd3f",
+      "published_sha256": "171050033046fafe9d5df1090219fc1f4c87afedc59b4b8a664d9d295483bd3f",
+      "transformed": false,
+      "bytes": 3908
+    },
+    {
+      "source": "qemu/z62-capturework/nikon-z62-cw-preview-api.h",
+      "published": "qemu/z62-capturework/nikon-z62-cw-preview-api.h",
+      "original_sha256": "1560a88d68ff70fe775b9ee5bb9b632a72ed9d86953dcc4f56423296e998256e",
+      "published_sha256": "1560a88d68ff70fe775b9ee5bb9b632a72ed9d86953dcc4f56423296e998256e",
+      "transformed": false,
+      "bytes": 1008
+    },
+    {
+      "source": "qemu/z62-capturework/nikon-z62-cw-preview.h",
+      "published": "qemu/z62-capturework/nikon-z62-cw-preview.h",
+      "original_sha256": "7a66e207221578ad098dea3a93f464f777c056f893237295c20dd43e34e40f75",
+      "published_sha256": "7a66e207221578ad098dea3a93f464f777c056f893237295c20dd43e34e40f75",
+      "transformed": false,
+      "bytes": 4052
     },
     {
       "source": "qemu/z62-capturework/nikon-z62-group-device.h",
@@ -3851,6 +3891,14 @@
       "bytes": 3379
     },
     {
+      "source": "tools/archive_z62_capturework_preview_build.py",
+      "published": "tools/archive_z62_capturework_preview_build.py",
+      "original_sha256": "c24187ee6f68bcf69eba043a06008bf7e0079067d40d63bf9b26ba83b1652682",
+      "published_sha256": "c24187ee6f68bcf69eba043a06008bf7e0079067d40d63bf9b26ba83b1652682",
+      "transformed": false,
+      "bytes": 1798
+    },
+    {
       "source": "tools/archive_z62_capturework_statistics_build.py",
       "published": "tools/archive_z62_capturework_statistics_build.py",
       "original_sha256": "d615df3cfb1a592ccbac557bbd64a3a19a25e5b0d32f6bf64924161fe3d9af6b",
@@ -4049,6 +4097,14 @@
       "published_sha256": "16f3877bc74b221036f8d9cf8cb9feb6c9cc6d5a0ef1ee9b206b7f139e6d7a91",
       "transformed": false,
       "bytes": 5800
+    },
+    {
+      "source": "tools/build_z62_capturework_preview.py",
+      "published": "tools/build_z62_capturework_preview.py",
+      "original_sha256": "cda3d1a03c22392c4638c6196018a12a95e7a1e6a6fbb65713d424cbd4444bcc",
+      "published_sha256": "cda3d1a03c22392c4638c6196018a12a95e7a1e6a6fbb65713d424cbd4444bcc",
+      "transformed": false,
+      "bytes": 5532
     },
     {
       "source": "tools/build_z62_capturework_statistics.py",
@@ -4683,6 +4739,22 @@
       "bytes": 5380
     },
     {
+      "source": "tools/probe_z62_capturework_preview.py",
+      "published": "tools/probe_z62_capturework_preview.py",
+      "original_sha256": "a5cbce34e05bb856e89dd54b1aa723cf56b4b416ec92519e96fa642aa3224a68",
+      "published_sha256": "a5cbce34e05bb856e89dd54b1aa723cf56b4b416ec92519e96fa642aa3224a68",
+      "transformed": false,
+      "bytes": 11124
+    },
+    {
+      "source": "tools/probe_z62_capturework_preview_original.py",
+      "published": "tools/probe_z62_capturework_preview_original.py",
+      "original_sha256": "c5a72a1e62afe0d07b13aa26fa52fe591b2202e3a110b2d4f5b4b1239eb768e2",
+      "published_sha256": "c5a72a1e62afe0d07b13aa26fa52fe591b2202e3a110b2d4f5b4b1239eb768e2",
+      "transformed": false,
+      "bytes": 3081
+    },
+    {
       "source": "tools/probe_z62_capturework_state.py",
       "published": "tools/probe_z62_capturework_state.py",
       "original_sha256": "cf3087c4a09be2a43fd0d3b22f7a99dde6aac70e81a18d1e1fcf4e9711476211",
@@ -4753,6 +4825,22 @@
       "published_sha256": "582821602228a2931f7d4777c8d532c0c678942f22343b11c327f972de02a450",
       "transformed": false,
       "bytes": 1966
+    },
+    {
+      "source": "tools/probe_z62_cw_preview_banks.py",
+      "published": "tools/probe_z62_cw_preview_banks.py",
+      "original_sha256": "33df5cd4a09a3aa04c2c8ed8150486d5242d1872c0bb8838275e207c948067c9",
+      "published_sha256": "33df5cd4a09a3aa04c2c8ed8150486d5242d1872c0bb8838275e207c948067c9",
+      "transformed": false,
+      "bytes": 5572
+    },
+    {
+      "source": "tools/probe_z62_cw_preview_lifecycle.py",
+      "published": "tools/probe_z62_cw_preview_lifecycle.py",
+      "original_sha256": "84cb81311a48aea3da98a5dbc7737d1da0bfb4bd83b85937d4842ec75ea7c25f",
+      "published_sha256": "84cb81311a48aea3da98a5dbc7737d1da0bfb4bd83b85937d4842ec75ea7c25f",
+      "transformed": false,
+      "bytes": 4091
     },
     {
       "source": "tools/probe_z62_encoder_console.py",
@@ -5517,10 +5605,10 @@
     {
       "source": "tools/refresh_z62_public_snapshot.py",
       "published": "tools/refresh_z62_public_snapshot.py",
-      "original_sha256": "028841e9232a81d4cb0255f235767beb704a650576e964ef1079a14525b03684",
-      "published_sha256": "028841e9232a81d4cb0255f235767beb704a650576e964ef1079a14525b03684",
+      "original_sha256": "38096681868b46a5426bc372489106c2f71a01a07817d94a04313ebb06ff99c3",
+      "published_sha256": "38096681868b46a5426bc372489106c2f71a01a07817d94a04313ebb06ff99c3",
       "transformed": false,
-      "bytes": 18502
+      "bytes": 23118
     },
     {
       "source": "tools/run_qemu.py",
@@ -5625,6 +5713,14 @@
       "published_sha256": "16cbc234e06024dccf10c04ac1615466a12bd7c02eb5b9ecfbf36eb5703a14c3",
       "transformed": false,
       "bytes": 1418
+    },
+    {
+      "source": "tools/run_z62_capturework_preview.py",
+      "published": "tools/run_z62_capturework_preview.py",
+      "original_sha256": "b746489f8110e90348cdde727287e03495a37e6b8ca6b59d76a2c37bd0c89a95",
+      "published_sha256": "b746489f8110e90348cdde727287e03495a37e6b8ca6b59d76a2c37bd0c89a95",
+      "transformed": false,
+      "bytes": 1050
     },
     {
       "source": "tools/run_z62_capturework_statistics.py",
@@ -6723,6 +6819,14 @@
       "bytes": 5105
     },
     {
+      "source": "tools/verify_z62_capturework_preview_evidence.py",
+      "published": "tools/verify_z62_capturework_preview_evidence.py",
+      "original_sha256": "6a7b5e2554a79d4147f6ca235d8b88797934334a86e69a87ca53caf073304abf",
+      "published_sha256": "6a7b5e2554a79d4147f6ca235d8b88797934334a86e69a87ca53caf073304abf",
+      "transformed": false,
+      "bytes": 10251
+    },
+    {
       "source": "tools/verify_z62_capturework_statistics_evidence.py",
       "published": "tools/verify_z62_capturework_statistics_evidence.py",
       "original_sha256": "1756a18cba8cc22371b3dddbac86a5ad5262455c65d30d6f44900e28707c7125",
@@ -6753,6 +6857,14 @@
       "published_sha256": "5c271e311e3360b0c4909b6b80929e25fdffe5264d6d665aed68f6fd7ebe8e30",
       "transformed": false,
       "bytes": 6875
+    },
+    {
+      "source": "tools/verify_z62_cw_preview_lifecycle.py",
+      "published": "tools/verify_z62_cw_preview_lifecycle.py",
+      "original_sha256": "83075e2b5862a237908790c9fec1ba58ac2f0645f94aec95261aeb9172200eab",
+      "published_sha256": "83075e2b5862a237908790c9fec1ba58ac2f0645f94aec95261aeb9172200eab",
+      "transformed": false,
+      "bytes": 5147
     },
     {
       "source": "tools/verify_z62_encoders.py",
@@ -7209,6 +7321,14 @@
       "published_sha256": "a0078e2dcc6116f47d82ecfe9b3255e532536a625d3cb21259c938926153e299",
       "transformed": false,
       "bytes": 3787
+    },
+    {
+      "source": "tools/z62_capturework_preview_device.py",
+      "published": "tools/z62_capturework_preview_device.py",
+      "original_sha256": "52ac3f3eb757ffb42a9f59bc888b9f16499892cc7a2d41207e622e2fbd3fe8df",
+      "published_sha256": "52ac3f3eb757ffb42a9f59bc888b9f16499892cc7a2d41207e622e2fbd3fe8df",
+      "transformed": false,
+      "bytes": 7009
     },
     {
       "source": "tools/z62_capturework_statistics_device.py",
@@ -7910,7 +8030,7 @@
       "source": "selected local verification records",
       "published": "docs/evidence/latest-kernel-events.json",
       "original_sha256": null,
-      "published_sha256": "a80cb9be4c3384c942ac8122b943e87aee10f703bd7d965d9657c3b7e23a0a70",
+      "published_sha256": "c5f734908baab81a19695abba6d896eecf87e10ed2e4f174f3a98598b15dfa51",
       "transformed": true,
       "generated_summary": true,
       "bytes": 1946
@@ -7919,7 +8039,7 @@
       "source": "selected local verification records",
       "published": "docs/evidence/capturework-pixels-r86.json",
       "original_sha256": null,
-      "published_sha256": "76b16d82e21744e44d92bcd5b357ac8506364bbc1ece7221f32b8ca360c281b2",
+      "published_sha256": "1e5461540e35538eeadc20c5ebd1ad51eeecbac13baad05b99c2548bd89786a4",
       "transformed": true,
       "generated_summary": true,
       "bytes": 1233
@@ -7928,7 +8048,7 @@
       "source": "selected local verification records",
       "published": "docs/evidence/capturework-original-r91.json",
       "original_sha256": null,
-      "published_sha256": "251c576c2138df75d8845bc96749339a571fb901a040a213ba4fff79693665fc",
+      "published_sha256": "41a4fe24f646dddc6646859ee912146115260c1e8592154f0575a89668be8948",
       "transformed": true,
       "generated_summary": true,
       "bytes": 2238
@@ -7937,7 +8057,7 @@
       "source": "selected local verification records",
       "published": "docs/evidence/group-parameters-r95.json",
       "original_sha256": null,
-      "published_sha256": "91fee5f6142c82c41e2e6eec03355c97a793008bca1aff82fbebf8d36e073bef",
+      "published_sha256": "779250a3f6c4a37e430c526e21b5e07ff7fc3ca32fe310ced5d33e3dbb06db91",
       "transformed": true,
       "generated_summary": true,
       "bytes": 1730
@@ -7946,7 +8066,7 @@
       "source": "selected local verification records",
       "published": "docs/evidence/current-stream-r97.json",
       "original_sha256": null,
-      "published_sha256": "f830ef39adf1d2bcd29adcbfde4fa3f332b65951e62b86a7bff5a2f304d1758f",
+      "published_sha256": "73868d1ebc73563b01dd282e1bb5f7273d981eaf9dd91a74b1ed1f23be0bdbaf",
       "transformed": true,
       "generated_summary": true,
       "bytes": 1799
@@ -7955,7 +8075,7 @@
       "source": "selected local verification records",
       "published": "docs/evidence/retained-finite-r98.json",
       "original_sha256": null,
-      "published_sha256": "5ec37dfd0ca74f135342c66ba414396d1719fbc02cfbe26d46aa70066acba449",
+      "published_sha256": "35ed2577aa9d139d9e9fbadf064541209dfdd5348f26b13260d46deca25ae8b7",
       "transformed": true,
       "generated_summary": true,
       "bytes": 2210
@@ -7964,7 +8084,7 @@
       "source": "selected local verification records",
       "published": "docs/evidence/stop-composition-r100.json",
       "original_sha256": null,
-      "published_sha256": "c640eb35f444786c0729b9dc90fed4fade1b8e18d851dcfe9ea34d211367f6b8",
+      "published_sha256": "3224561b1cc90a768cb9b2f4d088bcd00b8787ddfc0122c9d6ff23f7536bfce5",
       "transformed": true,
       "generated_summary": true,
       "bytes": 2872
@@ -7973,7 +8093,7 @@
       "source": "selected local verification records",
       "published": "docs/evidence/stop-wait-source-r101.json",
       "original_sha256": null,
-      "published_sha256": "0b1faed7fa21e313cce7dedee05e1e4c24c4e7cdfac43c31b8798a483d0fc686",
+      "published_sha256": "3fdda69b500d2951e83622d7bcfefaad1c5aebee5c09eec9d846057a55c195f8",
       "transformed": true,
       "generated_summary": true,
       "bytes": 1327
@@ -7982,7 +8102,7 @@
       "source": "selected local verification records",
       "published": "docs/evidence/input-readout-r102.json",
       "original_sha256": null,
-      "published_sha256": "81b85b5d592b746b0ae6fb25ee7cb72186a625bf126e46cae9a2a643a86cb9eb",
+      "published_sha256": "2702206d13694ea4968af6bb6067229c411dee972a39c70d1b7e168ad72b3062",
       "transformed": true,
       "generated_summary": true,
       "bytes": 1906
@@ -7991,19 +8111,37 @@
       "source": "selected local verification records",
       "published": "docs/evidence/readout-statistics-r103.json",
       "original_sha256": null,
-      "published_sha256": "ec57c26707329056aa26acbe274f5f2173600485f3268d4147a1985f3d75cce8",
+      "published_sha256": "bf9ffd7bccc62825267ccfe3110215a2fc6a539914aab1c8c82c77a1d94f0975",
       "transformed": true,
       "generated_summary": true,
       "bytes": 2856
     },
     {
       "source": "selected local verification records",
-      "published": "docs/evidence-index-20261104.json",
+      "published": "docs/evidence/capturework-preview-r104.json",
       "original_sha256": null,
-      "published_sha256": "6b46080a41122898c009eaa41737836389cca2914f9d2115e4dd6afa21942fa3",
+      "published_sha256": "8f90cca35a3fea1d7037e69778745463bbaa7799108f9a329205a59a78f856e5",
       "transformed": true,
       "generated_summary": true,
-      "bytes": 13366
+      "bytes": 4097
+    },
+    {
+      "source": "selected local verification records",
+      "published": "docs/evidence/cw-preview-lifecycle-r104.json",
+      "original_sha256": null,
+      "published_sha256": "8c413505328eff9cc41ffaea1b5dad570b76ad8494b064ae4b69cd709bb51ad8",
+      "transformed": true,
+      "generated_summary": true,
+      "bytes": 2221
+    },
+    {
+      "source": "selected local verification records",
+      "published": "docs/evidence-index-20261104.json",
+      "original_sha256": null,
+      "published_sha256": "1d2da7b1846d4f85b05f49b7844e72034941867f84c90d85a88b00de01d403c4",
+      "transformed": true,
+      "generated_summary": true,
+      "bytes": 19740
     }
   ],
   "notes": [

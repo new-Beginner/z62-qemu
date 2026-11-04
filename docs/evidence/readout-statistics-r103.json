@@ -72,7 +72,7 @@
   "physical_sensor_or_AF_equivalence": false,
   "complete_camera_or_flash_safety_verified": false,
   "camera_accessed": false,
-  "snapshot": "2026.11.04-r103",
+  "snapshot": "2026.11.04-r104",
   "original_record_sha256": "0366d06d4a6fb382a8d9d58e8888b22c1e8a4eac650099951ba02cee29297aa5",
   "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted.",
   "publication_note": "C reference input; bounded stop recovery and OSD, green background, no completed preview. The 24s run used two QMP scalar pauses."

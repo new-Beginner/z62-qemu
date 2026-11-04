@@ -1,0 +1,222 @@
+{
+  "schema": 1,
+  "completed_evidence_check": true,
+  "binary_sha256": "c4a91a02bc5f2c0d0b6154a7c5eb15ebd9ba644f8950a8e3ce8d97d380b7e3e1",
+  "native_result_sha256": "1e3a327fcad9923f5b8976e36b3aaa055e3c1bda91a4e950ca5061b3ea44df73",
+  "bank_result_sha256": "c49ebc9b2a8217c8318246423c74b4b16b47a45ff0c9036af93bcfb4df735f6d",
+  "original_result_sha256": "81fd2e3918080bdd4c7b303eebd940e0b4485cf11b300d046a5b06607f54a5f4",
+  "build_binding_sha256": "808b95e85ed8157c8c1d48716b5c5d3b7ba31f9eeedae027cbcd4b8c4d946f9a",
+  "native_full_linear_bytes_independently_hashed": 27427584,
+  "native_NV12_bytes_independently_verified": 120960,
+  "encoded_guest_RAW_bytes_preservation_checked": 18285056,
+  "original_accepted_packets_reconstructed": 671,
+  "original_cohort_samples_verified": 185,
+  "unique_original_cohorts_observed": 123,
+  "distinct_original_payloads_recomputed": 2,
+  "original_CW_DMA_frames": 541,
+  "original_source_cohorts": 135,
+  "original_preview_batches": 122,
+  "original_virtual_ns": 24000660666,
+  "original_status_codes": [],
+  "LCD_sha256": "0f5b214592d328f45c9f19032838e3f1ad1d852b8f385427086b60571dd6b70c",
+  "LCD_points": [
+    {
+      "xy": [
+        200,
+        200
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    },
+    {
+      "xy": [
+        400,
+        200
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    },
+    {
+      "xy": [
+        600,
+        200
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    },
+    {
+      "xy": [
+        800,
+        200
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    },
+    {
+      "xy": [
+        200,
+        300
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    },
+    {
+      "xy": [
+        400,
+        300
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    },
+    {
+      "xy": [
+        600,
+        300
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    },
+    {
+      "xy": [
+        800,
+        300
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    },
+    {
+      "xy": [
+        200,
+        400
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    },
+    {
+      "xy": [
+        400,
+        400
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    },
+    {
+      "xy": [
+        600,
+        400
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    },
+    {
+      "xy": [
+        800,
+        400
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    },
+    {
+      "xy": [
+        200,
+        500
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    },
+    {
+      "xy": [
+        400,
+        500
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    },
+    {
+      "xy": [
+        600,
+        500
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    },
+    {
+      "xy": [
+        800,
+        500
+      ],
+      "rgb": [
+        210,
+        60,
+        17
+      ]
+    }
+  ],
+  "LCD_matching_recent_publications": [
+    668,
+    669,
+    670,
+    671
+  ],
+  "unique_displayed_frame_identified": false,
+  "original_finite_scalar_bytes_recomputed": 1536,
+  "legacy_RAW_counters_unchanged": true,
+  "metadata_event6_injected": false,
+  "legacy_native_regressions": {
+    "legacy-preview-1.json": "5f30995e0a6c2f95fc42ef315cd5f3ea244d92ebc6f7a19b856413c33f48c99e",
+    "result.json": "b09b6a7fb3c56920cfe54d8d83484cdf3db8799aa39e596f953508cf2f6b6ae2"
+  },
+  "physical_ISP_or_AF_equivalence": false,
+  "preview_resume_verified": false,
+  "complete_camera_or_flash_safety_verified": false,
+  "camera_accessed": false,
+  "snapshot": "2026.11.04-r104",
+  "original_record_sha256": "1b6cbd6cb1a7186423834ff6e773e5f516d9b5ca1d6de8361fa0d00ab28c4d9d",
+  "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted.",
+  "publication_note": "Four distinct CW frame identities; bounded C preview and original LCD. No GDB, two short QMP scalar pauses; no menu-resume acceptance."
+}

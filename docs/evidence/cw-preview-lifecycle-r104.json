@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "completed_evidence_check": true,
+  "original_result_sha256": "6de5a613d2bef9a3b86fda3a7efc6095516437ad02c2bcd0a82f39726bb22ef7",
+  "binary_sha256": "c4a91a02bc5f2c0d0b6154a7c5eb15ebd9ba644f8950a8e3ce8d97d380b7e3e1",
+  "LCD_color_challenges": [
+    {
+      "label": "color-blue",
+      "time_ns": 10462107104,
+      "LCD_sha256": "e7eeda613979c561cd0a79fc2fe1259ba0c88c059eb6c74a88415c62023aadae",
+      "RGB": [
+        41,
+        81,
+        161
+      ],
+      "points": 16,
+      "matching_source_publications": [
+        276,
+        277,
+        278,
+        279
+      ]
+    },
+    {
+      "label": "color-orange",
+      "time_ns": 11468465854,
+      "LCD_sha256": "651d077dca693ee38744c00b84169e26833068bb508619aaf89e46a88528f9c0",
+      "RGB": [
+        210,
+        60,
+        17
+      ],
+      "points": 16,
+      "matching_source_publications": [
+        304,
+        305,
+        306,
+        307
+      ]
+    }
+  ],
+  "two_input_colors_reached_LCD": true,
+  "application_index_transitions": [
+    {
+      "virtual_time_ns": 0,
+      "index": 5
+    },
+    {
+      "virtual_time_ns": 100532145,
+      "index": 0
+    },
+    {
+      "virtual_time_ns": 1004945020,
+      "index": 3
+    },
+    {
+      "virtual_time_ns": 17202871500,
+      "index": 1
+    },
+    {
+      "virtual_time_ns": 20117697104,
+      "index": 0
+    }
+  ],
+  "fixed_first_half_press_preceded_menu_entry": true,
+  "last_good_sample_ns": 21224059000,
+  "last_good_preview_batches": 102,
+  "host_communication_timeout_preserved": {
+    "type": "TimeoutError",
+    "message": "timed out"
+  },
+  "process_exit_code": 1,
+  "full_requested_observation_completed": false,
+  "two_menu_cycles_passed": false,
+  "preview_resume_verified": false,
+  "timeout_root_cause_verified": false,
+  "camera_accessed": false,
+  "snapshot": "2026.11.04-r104",
+  "original_record_sha256": "6c3a45346b513d7fa9ef9560b8bd293cd6eb19b38bd8538083cbd8c57d1997d9",
+  "scope": "Selected local offline evidence only; original inputs, raw traces and RAM are omitted.",
+  "publication_note": "Evidence classification completed, functional lifecycle FAILED. Fixed first half press preceded actual menu entry; host communication timeout remains unexplained."
+}

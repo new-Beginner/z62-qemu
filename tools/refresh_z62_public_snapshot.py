@@ -12,7 +12,7 @@ import subprocess
 import export_z62_public as old
 
 ROOT=Path(__file__).resolve().parents[1]
-SNAPSHOT='2026.11.04-r103'
+SNAPSHOT='2026.11.04-r104'
 REMOTE='https://github.com/new-Beginner/z62-qemu.git'
 
 
@@ -47,6 +47,7 @@ def refresh(destination,source=ROOT):
     navigation='\n## 公开仓库导航\n\n- [构建与父依赖](docs/BUILD.md)\n- [功能清单](docs/FEATURES.md)与[已知限制](docs/LIMITATIONS.md)\n- [开发时间线](docs/DEVELOPMENT.md)\n- [参考、作者与许可证](docs/REFERENCES.md)\n- [本次源码验证范围](docs/VALIDATION.md)\n- [历史内核事件验收摘要](docs/evidence/latest-kernel-events.json)（r83–r85，非完整原始轨迹）\n- [r86采集像素核验摘要](docs/evidence/capturework-pixels-r86.json)（独立数值阶段）\n- [r91原厂MAIN／DMA验收摘要](docs/evidence/capturework-original-r91.json)（统计／预览未贯通）\n'
     navigation+='- [r98 发布说明](docs/RELEASE-r98.md)\n- [r95 参数追踪摘要](docs/evidence/group-parameters-r95.json)\n- [r96/r97 实际等待与供帧摘要](docs/evidence/current-stream-r97.json)\n- [r98 保留帧有限统计摘要](docs/evidence/retained-finite-r98.json)（最终原厂 Error，预览未通过）\n'
     navigation+='- [r103 发布说明](docs/RELEASE-r103.md)\n- [r103 统计输入、原始等待与恢复摘要](docs/evidence/readout-statistics-r103.json)（预览仍未贯通）\n'
+    navigation+='- [r104 发布说明](docs/RELEASE-r104.md)\n- [r104 四帧来源与原厂预览摘要](docs/evidence/capturework-preview-r104.json)\n- [r104 两色变化及生命周期失败摘要](docs/evidence/cw-preview-lifecycle-r104.json)（菜单恢复未通过）\n'
     prepared['README.md']+=navigation.encode('utf-8')
     for row in ledger:
         if row['published']=='README.md':
@@ -104,6 +105,8 @@ def refresh(destination,source=ROOT):
         ('stop-wait-source-r101.json','analysis/z62-stop-wait-source-r101/verification-1/result.json'),
         ('input-readout-r102.json','analysis/z62-input-readout-r102/verification-1/result.json'),
         ('readout-statistics-r103.json','analysis/z62-readout-statistics-r103/verification-1/result.json'),
+        ('capturework-preview-r104.json','analysis/z62-capturework-preview-r104/publication-verification-1/result.json'),
+        ('cw-preview-lifecycle-r104.json','analysis/z62-capturework-preview-r104/publication-lifecycle-verification-1/result.json'),
     )
     for name,local in selected:
         path=source/local; proof=json.loads(path.read_text(encoding='utf-8'))
@@ -148,6 +151,33 @@ def refresh(destination,source=ROOT):
                     or proof['complete_camera_or_flash_safety_verified'] is not False):
                 raise ValueError('r103 source/data/recovery binding changed or overclaims acceptance')
             public['publication_note']='C reference input; bounded stop recovery and OSD, green background, no completed preview. The 24s run used two QMP scalar pauses.'
+        if name=='capturework-preview-r104.json':
+            for key,local_result in (
+                    ('native_result_sha256','native-3/result.json'),
+                    ('bank_result_sha256','banks-1/result.json'),
+                    ('original_result_sha256','original-1/result.json'),
+                    ('build_binding_sha256','build-binding/result.json')):
+                if proof[key]!=old.digest(source/'analysis/z62-capturework-preview-r104'/local_result):
+                    raise ValueError('r104 evidence binding changed: '+local_result)
+            if (proof['original_preview_batches']!=122 or proof['original_CW_DMA_frames']!=541
+                    or proof['original_accepted_packets_reconstructed']!=671
+                    or proof['native_NV12_bytes_independently_verified']!=120960
+                    or proof['encoded_guest_RAW_bytes_preservation_checked']!=18285056
+                    or proof['original_status_codes']!=[] or proof['preview_resume_verified'] is not False
+                    or proof['complete_camera_or_flash_safety_verified'] is not False):
+                raise ValueError('r104 preview data binding changed or overclaims recovery')
+            public['publication_note']='Four distinct CW frame identities; bounded C preview and original LCD. No GDB, two short QMP scalar pauses; no menu-resume acceptance.'
+        if name=='cw-preview-lifecycle-r104.json':
+            local_result=source/'analysis/z62-capturework-preview-r104/lifecycle-1/result.json'
+            if (proof['original_result_sha256']!=old.digest(local_result)
+                    or proof['two_input_colors_reached_LCD'] is not True
+                    or proof['full_requested_observation_completed'] is not False
+                    or proof['two_menu_cycles_passed'] is not False
+                    or proof['preview_resume_verified'] is not False
+                    or proof['timeout_root_cause_verified'] is not False
+                    or proof['process_exit_code']!=1):
+                raise ValueError('r104 failed lifecycle evidence changed or is reported as passed')
+            public['publication_note']='Evidence classification completed, functional lifecycle FAILED. Fixed first half press preceded actual menu entry; host communication timeout remains unexplained.'
         prepared['docs/evidence/'+name]=(json.dumps(old.scrub_json(public,source),ensure_ascii=False,indent=2)+'\n').encode()
     references=('analysis/z62-kernel-events-r83/verified-kernel-1.json',
         'analysis/z62-kernel-events-r83/events-1/result.json','analysis/z62-kernel-events-r83/events-2/result.json',
@@ -193,7 +223,30 @@ def refresh(destination,source=ROOT):
         'analysis/z62-readout-statistics-r103/original-1/result.json',
         'analysis/z62-readout-statistics-r103/no-debugger-1/result.json',
         'analysis/z62-readout-statistics-r103/no-debugger-1/no-debugger-statistics.json',
-        'analysis/z62-readout-statistics-r103/verification-1/source-archive.json')
+        'analysis/z62-readout-statistics-r103/verification-1/source-archive.json',
+        'analysis/z62-capturework-preview-r104/native-red-1/result.json',
+        'analysis/z62-capturework-preview-r104/native-1/result.json',
+        'analysis/z62-capturework-preview-r104/native-2/result.json',
+        'analysis/z62-capturework-preview-r104/native-3/result.json',
+        'analysis/z62-capturework-preview-r104/banks-1/result.json',
+        'analysis/z62-capturework-preview-r104/legacy-preview-1.json',
+        'analysis/z62-capturework-preview-r104/legacy-readout-statistics-1/result.json',
+        'analysis/z62-capturework-preview-r104/build-binding/result.json',
+        'analysis/z62-capturework-preview-r104/build-binding/source-archive.json',
+        'analysis/z62-capturework-preview-r104/original-1/result.json',
+        'analysis/z62-capturework-preview-r104/original-1/command.json',
+        'analysis/z62-capturework-preview-r104/original-1/final-lcd.png',
+        'analysis/z62-capturework-preview-r104/original-1/source-archive.json',
+        'analysis/z62-capturework-preview-r104/verification-1/result.json',
+        'analysis/z62-capturework-preview-r104/verification-1/source-archive.json',
+        'analysis/z62-capturework-preview-r104/lifecycle-1/result.json',
+        'analysis/z62-capturework-preview-r104/lifecycle-1/command.json',
+        'analysis/z62-capturework-preview-r104/lifecycle-1/preview-lifecycle.json',
+        'analysis/z62-capturework-preview-r104/lifecycle-1/color-blue.png',
+        'analysis/z62-capturework-preview-r104/lifecycle-1/color-orange.png',
+        'analysis/z62-capturework-preview-r104/lifecycle-1/source-archive.json',
+        'analysis/z62-capturework-preview-r104/lifecycle-verification-1/result.json',
+        'analysis/z62-capturework-preview-r104/lifecycle-verification-1/source-archive.json')
     index={'schema':1,'snapshot':SNAPSHOT,'scope':'Hashes identify omitted local evidence; these are not downloadable traces.',
            'entries':[{'path':name,'bytes':(source/name).stat().st_size,'original_sha256':old.digest(source/name),
                        'original_contents_published':False} for name in references]}
