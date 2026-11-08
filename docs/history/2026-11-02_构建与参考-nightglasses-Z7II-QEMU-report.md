@@ -71,9 +71,9 @@ ARM/RX 构建也有警告，已观察到 `gate.c` 的局部 `index` 遮蔽，以
 以下在 Windows PowerShell 执行。目录变量只是命令参数，不创建自制构建脚本；编译、链接与测试由上游原生入口完成。WSL 的 `buildsrc` 已存在时，跳过这段一次性的准备命令，直接执行后一段 make。
 
 ```powershell
-wsl -d Ubuntu-24.04 -- git clone --no-checkout --shared '/mnt/d/32057/Files_of_Desktop/Academic/AI/固件Z6II/third_party/nightglasses-z7ii-qemu' /root/z7ii-0e53ea5/buildsrc
+wsl -d Ubuntu-24.04 -- git clone --no-checkout --shared '<WORKSPACE>/third_party/nightglasses-z7ii-qemu' /root/z7ii-0e53ea5/buildsrc
 wsl -d Ubuntu-24.04 -- git -C /root/z7ii-0e53ea5/buildsrc checkout --detach 0e53ea5a6d4f3fc635d63c195a92e943370ac5e9
-wsl -d Ubuntu-24.04 -- git -C /root/z7ii-0e53ea5/buildsrc -c protocol.file.allow=always -c 'submodule.qemu.url=file:///mnt/d/32057/Files_of_Desktop/Academic/AI/固件Z6II/third_party/nightglasses-z7ii-qemu/qemu' submodule update --init --depth 1 -- qemu
+wsl -d Ubuntu-24.04 -- git -C /root/z7ii-0e53ea5/buildsrc -c protocol.file.allow=always -c 'submodule.qemu.url=file://<WORKSPACE>/third_party/nightglasses-z7ii-qemu/qemu' submodule update --init --depth 1 -- qemu
 wsl -d Ubuntu-24.04 -- git -C /root/z7ii-0e53ea5/buildsrc rev-parse --show-toplevel HEAD
 wsl -d Ubuntu-24.04 -- git -C /root/z7ii-0e53ea5/buildsrc/qemu rev-parse --show-toplevel HEAD
 ```

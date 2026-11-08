@@ -37,6 +37,7 @@ TEST_MODULES = (
     'test_z62_input_counters', 'test_z62_kernel_event_layout', 'test_z62_kernel_event_frames',
     'test_z62_capturework_original',
     'test_z62_group_parameter_input', 'test_z62_original_clock_guard',
+    'test_fenestra_z62_pack', 'test_z62_cw_preview_recovery',
 )
 EXCLUDED = {'.git', '.build', '.runtime', '.venv', 'venv', 'artifacts', 'runs', 'third_party', '__pycache__', '.pytest_cache'}
 FORBIDDEN = {'.bin', '.exe', '.dll', '.raw', '.p12', '.p14', '.p16', '.img', '.nef', '.mp4', '.mov', '.zip', '.7z', '.xz'}
@@ -183,7 +184,7 @@ def check(output, native_compiler=None):
     output = Path(output)
     if output.exists() or output.with_suffix('.log').exists():
         raise FileExistsError('Use a new source-check result path')
-    result = {'schema': 1, 'snapshot': '2026.11.04-r104', 'completed': False,
+    result = {'schema': 1, 'snapshot': json.loads((ROOT/'publication-manifest.json').read_text(encoding='utf-8'))['snapshot'], 'completed': False,
               'firmware_loaded': False, 'camera_accessed': False,
               'historical_full_suite_repeated': False, 'test_modules': list(TEST_MODULES),
               'native_requested': native_compiler is not None}

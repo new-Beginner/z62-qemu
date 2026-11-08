@@ -4,8 +4,8 @@ from pathlib import Path as NativePath
 
 ROOT=NativePath(os.environ.get('Z62_PROJECT_ROOT',str(NativePath(__file__).resolve().parents[1]))).resolve()
 ALIAS=NativePath(os.environ.get('Z62_PROJECT_DRIVE','Q:/'))
-OLD_RUNTIME=NativePath('C:/Users/32057/Documents/Z62-QEMU-runtime')
-OLD_TEMP=NativePath('C:/Users/32057/AppData/Local/Temp')
+OLD_RUNTIME=NativePath('<USERPROFILE>/Documents/Z62-QEMU-runtime')
+OLD_TEMP=NativePath('<USERPROFILE>/AppData/Local/Temp')
 OLD_TOOLS=ROOT.parent/'z62-qemu-tools'
 
 

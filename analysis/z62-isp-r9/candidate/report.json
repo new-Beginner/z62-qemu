@@ -126,7 +126,7 @@
       "silicon_timing_verified": false
     },
     "builder_sha256": "b5e5bcd735dbf44995e06efc0460970e2037515a94da81576004faf963915e3d",
-    "msys2_dir": "D:\\Mypi_deskktop\\.pi-desktoooop\\data\\scratch\\ea676126-86fa-48b9-8090-07cabb814b52\\toolchain\\msys64",
+    "msys2_dir": "<PI_SCRATCH>\\toolchain\\msys64",
     "donor_commit": "4f4389944fc339d107f22f5f7ca3f90cc34b78de",
     "schema": 1,
     "version": "2026.10.28-r5",

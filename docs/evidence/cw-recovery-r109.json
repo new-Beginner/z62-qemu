@@ -1,0 +1,2193 @@
+{
+  "schema": 1,
+  "completed_evidence_check": true,
+  "original_result_sha256": "4fc78f24d49bbda139b3d196eae88d8a73802c307bd5c7f128c2fdb466979413",
+  "applv_receipt_sha256": "8619059512e1125d4f8bc8f4581f32b03f5b08af9aabf3ff0a54ba44f952a34e",
+  "manager_call_verification_sha256": "f4fb1dfa942f6afd9ec98d7911ace3d6fe4fcb3668ece996edd4de3edca7377d",
+  "original_accepted_packets_reconstructed": 333,
+  "completed_original_observation": true,
+  "APPLV_stopped_snapshots": 134,
+  "APPLV_actual_call_pairs": [
+    {
+      "label": "transition-request-1054297e",
+      "call_sequence": 14,
+      "return_sequence": 15,
+      "call_pc": "0x1054297e",
+      "return_pc": "0x10542cce",
+      "entry_ns": 18840563541,
+      "return_ns": 18840574625,
+      "elapsed_ns": 11084,
+      "input_r0_r3": [
+        16,
+        0,
+        2710,
+        0
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 0
+    },
+    {
+      "label": "transition-selector-1054564e",
+      "call_sequence": 16,
+      "return_sequence": 17,
+      "call_pc": "0x1054564e",
+      "return_pc": "0x10542f62",
+      "entry_ns": 18880448479,
+      "return_ns": 18880455104,
+      "elapsed_ns": 6625,
+      "input_r0_r3": [
+        1,
+        4293918703,
+        3246426596,
+        0
+      ],
+      "result_r0": 1,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 0
+    },
+    {
+      "label": "transition-status-a",
+      "call_sequence": 18,
+      "return_sequence": 19,
+      "call_pc": "0x1054302a",
+      "return_pc": "0x1054302e",
+      "entry_ns": 18880997541,
+      "return_ns": 18881004000,
+      "elapsed_ns": 6459,
+      "input_r0_r3": [
+        0,
+        3255642452,
+        4294967288,
+        0
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 0
+    },
+    {
+      "label": "transition-status-b",
+      "call_sequence": 20,
+      "return_sequence": 21,
+      "call_pc": "0x10543030",
+      "return_pc": "0x10543034",
+      "entry_ns": 18881006833,
+      "return_ns": 18881020500,
+      "elapsed_ns": 13667,
+      "input_r0_r3": [
+        0,
+        0,
+        4294967288,
+        2129
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 0
+    },
+    {
+      "label": "transition-status-c",
+      "call_sequence": 22,
+      "return_sequence": 23,
+      "call_pc": "0x10543036",
+      "return_pc": "0x1054303a",
+      "entry_ns": 18881026375,
+      "return_ns": 18881029916,
+      "elapsed_ns": 3541,
+      "input_r0_r3": [
+        0,
+        0,
+        4294967288,
+        2129
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 0
+    },
+    {
+      "label": "transition-flag-2a",
+      "call_sequence": 24,
+      "return_sequence": 25,
+      "call_pc": "0x105430e4",
+      "return_pc": "0x105430e8",
+      "entry_ns": 18883083291,
+      "return_ns": 18883089187,
+      "elapsed_ns": 5896,
+      "input_r0_r3": [
+        42,
+        1,
+        1,
+        0
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 0
+    },
+    {
+      "label": "transition-condition-a",
+      "call_sequence": 26,
+      "return_sequence": 27,
+      "call_pc": "0x105430ea",
+      "return_pc": "0x105430ee",
+      "entry_ns": 18883092250,
+      "return_ns": 18883093437,
+      "elapsed_ns": 1187,
+      "input_r0_r3": [
+        0,
+        3254959368,
+        42,
+        780
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 0
+    },
+    {
+      "label": "transition-condition-b",
+      "call_sequence": 28,
+      "return_sequence": 29,
+      "call_pc": "0x105430f0",
+      "return_pc": "0x105430f4",
+      "entry_ns": 18883093812,
+      "return_ns": 18883105458,
+      "elapsed_ns": 11646,
+      "input_r0_r3": [
+        0,
+        0,
+        42,
+        780
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 0
+    },
+    {
+      "label": "transition-condition-c",
+      "call_sequence": 30,
+      "return_sequence": 31,
+      "call_pc": "0x105430f6",
+      "return_pc": "0x105430fa",
+      "entry_ns": 18883111520,
+      "return_ns": 18883114937,
+      "elapsed_ns": 3417,
+      "input_r0_r3": [
+        0,
+        0,
+        42,
+        780
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 0
+    },
+    {
+      "label": "observed-flag-setter",
+      "call_sequence": 32,
+      "return_sequence": 33,
+      "call_pc": "0x105b3358",
+      "return_pc": "0x10543102",
+      "entry_ns": 18883116270,
+      "return_ns": 18883116708,
+      "elapsed_ns": 438,
+      "input_r0_r3": [
+        1,
+        0,
+        42,
+        780
+      ],
+      "result_r0": 1,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-transition-10542b48",
+      "call_sequence": 13,
+      "return_sequence": 34,
+      "call_pc": "0x10542b48",
+      "return_pc": "0x1053ff8a",
+      "entry_ns": 18840464041,
+      "return_ns": 18944272208,
+      "elapsed_ns": 103808167,
+      "input_r0_r3": [
+        1,
+        0,
+        0,
+        273954327
+      ],
+      "result_r0": 2,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 35,
+      "return_sequence": 36,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 18944272583,
+      "return_ns": 18944549500,
+      "elapsed_ns": 276917,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 37,
+      "return_sequence": 38,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 18944597604,
+      "return_ns": 18944603395,
+      "elapsed_ns": 5791,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 39,
+      "return_sequence": 40,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 18992809500,
+      "return_ns": 18992815750,
+      "elapsed_ns": 6250,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 41,
+      "return_sequence": 42,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 19144594208,
+      "return_ns": 19144600666,
+      "elapsed_ns": 6458,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 43,
+      "return_sequence": 44,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 19168040833,
+      "return_ns": 19168044520,
+      "elapsed_ns": 3687,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 45,
+      "return_sequence": 46,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 19240035000,
+      "return_ns": 19240040562,
+      "elapsed_ns": 5562,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 47,
+      "return_sequence": 48,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 19347581541,
+      "return_ns": 19347588520,
+      "elapsed_ns": 6979,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 49,
+      "return_sequence": 50,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 19487246708,
+      "return_ns": 19487260083,
+      "elapsed_ns": 13375,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 51,
+      "return_sequence": 52,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 19572044520,
+      "return_ns": 19572048750,
+      "elapsed_ns": 4230,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 53,
+      "return_sequence": 54,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 19652191229,
+      "return_ns": 19652196479,
+      "elapsed_ns": 5250,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 55,
+      "return_sequence": 56,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 19734495291,
+      "return_ns": 19734507229,
+      "elapsed_ns": 11938,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 57,
+      "return_sequence": 58,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 19855187062,
+      "return_ns": 19855193312,
+      "elapsed_ns": 6250,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 59,
+      "return_sequence": 60,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 19981742833,
+      "return_ns": 19981754562,
+      "elapsed_ns": 11729,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 61,
+      "return_sequence": 62,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 20159654645,
+      "return_ns": 20159659354,
+      "elapsed_ns": 4709,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 63,
+      "return_sequence": 64,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 20178030333,
+      "return_ns": 20178035104,
+      "elapsed_ns": 4771,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 65,
+      "return_sequence": 66,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 20228956583,
+      "return_ns": 20228962333,
+      "elapsed_ns": 5750,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 67,
+      "return_sequence": 68,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 20362507229,
+      "return_ns": 20362517270,
+      "elapsed_ns": 10041,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 69,
+      "return_sequence": 70,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 20476091833,
+      "return_ns": 20476097104,
+      "elapsed_ns": 5271,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 71,
+      "return_sequence": 72,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 20581836833,
+      "return_ns": 20581841020,
+      "elapsed_ns": 4187,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 73,
+      "return_sequence": 74,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 20667011458,
+      "return_ns": 20667016562,
+      "elapsed_ns": 5104,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 75,
+      "return_sequence": 76,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 20723338125,
+      "return_ns": 20723343979,
+      "elapsed_ns": 5854,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 77,
+      "return_sequence": 78,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 20870040625,
+      "return_ns": 20870052437,
+      "elapsed_ns": 11812,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 79,
+      "return_sequence": 80,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 20970383583,
+      "return_ns": 20970387895,
+      "elapsed_ns": 4312,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 81,
+      "return_sequence": 82,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 21174451479,
+      "return_ns": 21174458250,
+      "elapsed_ns": 6771,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 83,
+      "return_sequence": 84,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 21191485333,
+      "return_ns": 21191501541,
+      "elapsed_ns": 16208,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 85,
+      "return_sequence": 86,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 21217697000,
+      "return_ns": 21217702645,
+      "elapsed_ns": 5645,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 87,
+      "return_sequence": 88,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 21377413604,
+      "return_ns": 21377417208,
+      "elapsed_ns": 3604,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 89,
+      "return_sequence": 90,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 21464877270,
+      "return_ns": 21464882708,
+      "elapsed_ns": 5438,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 91,
+      "return_sequence": 92,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 21591834000,
+      "return_ns": 21591838333,
+      "elapsed_ns": 4333,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 93,
+      "return_sequence": 94,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 21681905729,
+      "return_ns": 21681918291,
+      "elapsed_ns": 12562,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 95,
+      "return_sequence": 96,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 21712031750,
+      "return_ns": 21712036666,
+      "elapsed_ns": 4916,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 97,
+      "return_sequence": 98,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 21884915375,
+      "return_ns": 21884921666,
+      "elapsed_ns": 6291,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 99,
+      "return_sequence": 100,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 21959131604,
+      "return_ns": 21959143104,
+      "elapsed_ns": 11500,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 101,
+      "return_sequence": 102,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 22189385125,
+      "return_ns": 22189391604,
+      "elapsed_ns": 6479,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 103,
+      "return_sequence": 104,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 22206540083,
+      "return_ns": 22206551312,
+      "elapsed_ns": 11229,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 105,
+      "return_sequence": 106,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 22392397229,
+      "return_ns": 22392406604,
+      "elapsed_ns": 9375,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 107,
+      "return_sequence": 108,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 22453752791,
+      "return_ns": 22453758895,
+      "elapsed_ns": 6104,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 109,
+      "return_sequence": 110,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 22601768375,
+      "return_ns": 22601772583,
+      "elapsed_ns": 4208,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 111,
+      "return_sequence": 112,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 22696936562,
+      "return_ns": 22696946604,
+      "elapsed_ns": 10042,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 113,
+      "return_sequence": 114,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 22714338125,
+      "return_ns": 22714344125,
+      "elapsed_ns": 6000,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 115,
+      "return_sequence": 116,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 22899849375,
+      "return_ns": 22899854666,
+      "elapsed_ns": 5291,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 117,
+      "return_sequence": 118,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 22948065958,
+      "return_ns": 22948071750,
+      "elapsed_ns": 5792,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 119,
+      "return_sequence": 120,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 23195222291,
+      "return_ns": 23195227979,
+      "elapsed_ns": 5688,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 121,
+      "return_sequence": 122,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 23204296729,
+      "return_ns": 23204302416,
+      "elapsed_ns": 5687,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 123,
+      "return_sequence": 124,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 23221695145,
+      "return_ns": 23221699729,
+      "elapsed_ns": 4584,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 125,
+      "return_sequence": 126,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 23407879291,
+      "return_ns": 23407889395,
+      "elapsed_ns": 10104,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 127,
+      "return_sequence": 128,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 23442446375,
+      "return_ns": 23442453395,
+      "elapsed_ns": 7020,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 129,
+      "return_sequence": 130,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 23611587812,
+      "return_ns": 23611591416,
+      "elapsed_ns": 3604,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 131,
+      "return_sequence": 132,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 23689579812,
+      "return_ns": 23689585791,
+      "elapsed_ns": 5979,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "applv-parameter-10540ed2",
+      "call_sequence": 133,
+      "return_sequence": 134,
+      "call_pc": "0x10540ed2",
+      "return_pc": "0x105451b8",
+      "entry_ns": 23711739187,
+      "return_ns": 23711746041,
+      "elapsed_ns": 6854,
+      "input_r0_r3": [
+        3309246408,
+        3309246136,
+        0,
+        3254894240
+      ],
+      "result_r0": 3309246408,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    }
+  ],
+  "object_snapshots": [
+    {
+      "sequence": 2,
+      "label": "manager-call-1035cb1e",
+      "pointer": "0xc1824eb4",
+      "object_field_28": "0x0",
+      "object_method_3c": "0x10450be7",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 4,
+      "label": "manager-call-1035cb1a",
+      "pointer": "0xc181d8d0",
+      "object_field_28": "0x0",
+      "object_method_3c": "0x1043a1ed",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 8,
+      "label": "manager-call-1035cb1e",
+      "pointer": "0xc181d8d0",
+      "object_field_28": "0x1",
+      "object_method_3c": "0x1043a1ed",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 10,
+      "label": "manager-call-1035cb1a",
+      "pointer": "0xc181d9e4",
+      "object_field_28": "0x0",
+      "object_method_3c": "0x1054008f",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 35,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 36,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 37,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 38,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 39,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 40,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 41,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 42,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 43,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 44,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 45,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 46,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 47,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 48,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 49,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 50,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 51,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 52,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 53,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 54,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 55,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 56,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 57,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 58,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 59,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 60,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 61,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 62,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 63,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 64,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 65,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 66,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 67,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 68,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 69,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 70,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 71,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 72,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 73,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 74,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 75,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 76,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 77,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 78,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 79,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 80,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 81,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 82,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 83,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 84,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 85,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 86,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 87,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 88,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 89,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 90,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 91,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 92,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 93,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 94,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 95,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 96,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 97,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 98,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 99,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 100,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 101,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 102,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 103,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 104,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 105,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 106,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 107,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 108,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 109,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 110,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 111,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 112,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 113,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 114,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 115,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 116,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 117,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 118,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 119,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 120,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 121,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 122,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 123,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 124,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 125,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 126,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 127,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 128,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 129,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 130,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 131,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 132,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 133,
+      "label": "applv-parameter-10540ed2",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    },
+    {
+      "sequence": 134,
+      "label": "applv-parameter-10540ed2-return",
+      "pointer": "0xc53f17c8",
+      "object_field_28": "0xc181d9e4",
+      "object_method_3c": "0x0",
+      "captured_after_original_single_step": true,
+      "method_target_execution_independently_observed": false
+    }
+  ],
+  "original_flag_setter_pairs": [
+    {
+      "call_sequence": 32,
+      "return_sequence": 33,
+      "entry_ns": 18883116270,
+      "return_ns": 18883116708,
+      "actual_argument": 1,
+      "before": 0,
+      "after": 1,
+      "original_link": "0x10543103",
+      "original_store_destination": "0xc1821eb8"
+    }
+  ],
+  "original_flag_production_observed": true,
+  "flag_is_cause_of_missing_capture_restart_proven": false,
+  "incomplete_calls": [],
+  "scope_limit_reached": false,
+  "functional_acceptance_eligible": false,
+  "complete_camera_or_AF_or_flash_safety_verified": false,
+  "camera_accessed": false,
+  "snapshot": "2026.11.08-r110-fenestra-r19",
+  "original_record_sha256": "2ba60c3f940963d921b4b46c7f06202286eca0564dd91dffd229b967ec25bf85",
+  "publication_scope": "Selected offline verification, not raw traces or a new firmware run. Negative acceptance fields are preserved."
+}

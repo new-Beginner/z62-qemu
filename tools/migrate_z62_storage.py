@@ -10,8 +10,8 @@ import time
 
 ROOT=Path(__file__).resolve().parents[1]
 DEST=ROOT/'.runtime/migrated'
-OLD_RUNTIME=Path('C:/Users/32057/Documents/Z62-QEMU-runtime')
-OLD_TEMP=Path('C:/Users/32057/AppData/Local/Temp')
+OLD_RUNTIME=Path('<USERPROFILE>/Documents/Z62-QEMU-runtime')
+OLD_TEMP=Path('<USERPROFILE>/AppData/Local/Temp')
 
 
 def plain(path):

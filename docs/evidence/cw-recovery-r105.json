@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "completed_evidence_check": true,
+  "original_result_sha256": "9eda0b5bca84dff8a6ed95f89305c9d345fab3788849063b6f50ae7231fb25f3",
+  "observer_sha256": "58ee6dc100f40a934d7190add201faf47b034f81b1ac92af4dbed9973043489b",
+  "binary_sha256": "c4a91a02bc5f2c0d0b6154a7c5eb15ebd9ba644f8950a8e3ce8d97d380b7e3e1",
+  "original_accepted_packets_reconstructed": 333,
+  "event_frame_sources_verified": 8,
+  "completed_original_observation": true,
+  "completed_state_driven_cycles": 0,
+  "cycle_sequences": [],
+  "fresh_LCD_checks": [],
+  "host_timeout_count": 0,
+  "host_capture_quality": [],
+  "original_failure": null,
+  "two_menu_cycles_and_preview_resume_verified": false,
+  "unique_displayed_frame_identified": false,
+  "complete_camera_or_AF_or_flash_safety_verified": false,
+  "camera_accessed": false,
+  "snapshot": "2026.11.08-r110-fenestra-r19",
+  "original_record_sha256": "50b80aec7ee76172e2757c8a666286b7f52e7169d6393151ced2dc0ce8f45481",
+  "publication_scope": "Selected offline verification, not raw traces or a new firmware run. Negative acceptance fields are preserved."
+}

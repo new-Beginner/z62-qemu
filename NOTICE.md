@@ -10,6 +10,8 @@ r86–r98还参考nightglasses/z7ii-qemu的CaptureWork分工、共享字段、�
 
 本仓库新增的有界数据设备、控制/场景/媒体后端、测试及开发文档采用 GPL-2.0-or-later，除非具体文件另有声明；完整 GPLv2 文本见 `COPYING`。这是本仓库贡献的许可声明，不会改写第三方作者的权利或原许可证。
 
+**Fenestra 单独许可例外：**`fenestra/upstream/` 来自 WonderLantern/Fenestra 的 b199dcdfbb0ef536c6269ae5a9d97c376d488b8b，采用 CC BY-NC-SA 4.0，并有其 `EXCEPTIONS.md` 所列商业摄影许可。完整条款与署名保存在该目录的 LICENSE、NOTICE、EXCEPTIONS.md。修改过的 `include/fenestra_module.h`、`src/module.c` 继续遵守其上游条款，不被上述 GPL 声明重新授权。它与 QEMU 分属独立源码/构建试验，不分发合并固件或运行镜像；本地 ARM32 改动仅为 loader-only 研究。
+
 r99–r103新增原始等待／停止观察、C内联读出与有限统计来源桥，沿用本项目既有有限传输及源所有权工作。C均值与近似场景不是原厂测光／PDAF／AF，原厂真实等待和DMA另外验证；所有参考与直接基础按上述来源链保留署名和逐文件条款。
 
 QEMU 及其各组件保留逐文件的 GPL/LGPL 等许可。外部 `nikon-fw-key-tool` 采用 GPLv3；使用/分发与其结合的程序时应遵守相应兼容条款，不将其重新标为 GPLv2-only。其他参考仓库按各自文件的条款处理；仅有引用关系不表示取得其所有素材的再分发许可。

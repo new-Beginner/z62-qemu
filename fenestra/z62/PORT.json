@@ -1,0 +1,17 @@
+{
+  "version": "0.1.0-dev.1",
+  "stage": "experimental-loader-only",
+  "upstream": "b199dcdfbb0ef536c6269ae5a9d97c376d488b8b",
+  "target": "Nikon Z6II C1.70 ARM32/Thumb",
+  "local_isa": "0x62000001",
+  "local_relocation_kind": "0x62000001",
+  "upstream_ids_assigned": false,
+  "entry_contract": "v1 legacy FxModuleServices, 32-bit pointers",
+  "firmware_integrated": false,
+  "card_loading_verified": false,
+  "native_menu_verified": false,
+  "flash_safety_verified": false,
+  "physical_camera_access_enabled": false,
+  "original_goal": "A，一直Fenestra，并且使用自己开发的z62qemu验证是否可行，然后确定刷入没问题以后再上真机，主要保证真机一定要没问题。",
+  "hardware_gate": "QEMU results alone do not prove physical hardware safety; no flashing is performed or authorized by this probe."
+}

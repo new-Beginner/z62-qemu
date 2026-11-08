@@ -2,9 +2,11 @@
 
 尼康 **Z6II / Z62 C1.70** 的 QEMU 系统仿真实验工程。运行原始固件，连接机身输入、虚拟场景、软件镜头、近似成像、虚拟存储和调试工具，逐步建设固件研究平台。
 
-**当前源码快照为 2026-11-04 / r104，尚未完成完整相机仿真，不能保证修改后的固件刷入真机不变砖。** 默认仍使用 **r69 QEMU 内核、r75 交互入口**。r104 新增实际 CaptureWork 四帧来源到受限软件预览的通路：24 秒原厂窗口完成 122 批预览，LCD 已显示输入场景；另一次实验确认蓝／橙两色变化。但菜单返回恢复未通过，约 21.22 秒后出现宿主通信超时，根因未确认。新模型默认关闭，没有提升默认入口或修改原厂固件版本字段。
+**当前发布范围为 2026-11-08 / r110 + Fenestra r19（源码快照 `2026.11.08-r110-fenestra-r19`），不是完整相机或可刷固件。** 默认仍为 r69 QEMU 内核、r75 交互入口；r104 的受限四帧预览已有原厂 LCD 证据，r105–r110 继续诊断菜单返回后采集未重新武装。Fenestra 仅 ARM32 loader-only 与原厂局部合同研究，r20 只有范围检查，没有 SDK 实现。源码发布不改变任何真机安全门槛。
 
 本项目基于他人的公开成果继续开发。直接基础包括 [xiaoqingfeng0526/nikon-z62-qemu](https://github.com/xiaoqingfeng0526/nikon-z62-qemu)、[JKWTCN/z72-qemu](https://github.com/JKWTCN/z72-qemu)、WonderLantern Z6/Z7 及其贡献者；近期内核研究还参考了 [nightglasses/z7ii-qemu](https://github.com/nightglasses/z7ii-qemu)。保留原作者、QEMU 和各依赖的许可证与署名，不把他人成果称为从零实现。
+
+**r105–r110 新增诊断，不是恢复修复：**状态驱动菜单恢复、宿主故障捕获、原厂 APPLV 与请求资格追踪。r109 取得65对调用／返回，原厂自身将 C1821EB8 从0写为1；r110 的离线核验确认请求转换和参数查询的局部分支，但采集重启根因未证明，仍不能称两轮恢复或旧超时修复。原字节、333个输入包及失败分类保留。见[r105报告](docs/history/2026-11-04_研究-Z62状态驱动菜单返回与采集停用r105-report.md)、[r106／r107范围更正](docs/history/2026-11-04_研究-Z62应用索引写入与观察范围r106-r107-report.md)、[r108／r109原厂重入](docs/history/2026-11-04_研究-Z62管理器通知与APPLV实际重入r108-r109-report.md)及[Fenestra阶段边界](docs/profiles/README-FENESTRA-Z62.md)。本次发布范围和隐私策略见[发布说明](docs/history/2026-11-08_发布-Z62最新源码与验证边界-report.md)。
 
 ## 已实现、部分实现与缺失
 
@@ -147,7 +149,7 @@ python -m venv .venv
 
 上游来源包括 QEMU、xiaoqingfeng0526、JKWTCN、WonderLantern、R3tr0ooo、nightglasses 等作者及其贡献者；Nikon 官方资料用于机型/控件校对。Tornado NKN 仅作为 PC 维修软件协议和结构线索，不能当作镜头电气协议或 AF 源码，其原件/恢复包不公开。RawPy/LibRaw 用于独立 RAW 解码，PyAV/FFmpeg 用于 C 视频编码与审计。公开的 T-Kernel 2.0 仅为语义参考，目标代码仍独立核验。
 
-本项目新增代码按仓库 GPL-2.0-or-later 声明及逐文件说明分发，第三方保留各自许可证；不对 Nikon/NKN 原件授予权利。公开副本会脱敏文档路径并保留源码字节，省略原始大轨迹/反汇编/固件；被省略的证据明确标作本地材料，不能把摘要当原始运行的替代。
+本项目新增代码按仓库 GPL-2.0-or-later 声明及逐文件说明分发，第三方保留各自许可证；Fenestra上游及其派生修改单独遵守CC BY-NC-SA 4.0与其例外，不对Nikon/NKN原件授予权利。公开副本对私人路径和邮箱脱敏，包括少量源码字面量；转换前后哈希明示于清单，只有transformed=false可称字节相同。省略原始大轨迹/反汇编/固件，被省略证据标作本地材料，摘要不替代原始运行。
 
 ## 公开仓库导航
 
@@ -168,3 +170,8 @@ python -m venv .venv
 - [r104 发布说明](docs/RELEASE-r104.md)
 - [r104 四帧来源与原厂预览摘要](docs/evidence/capturework-preview-r104.json)
 - [r104 两色变化及生命周期失败摘要](docs/evidence/cw-preview-lifecycle-r104.json)（菜单恢复未通过）
+
+- [最新 r110 + Fenestra r19 发布说明](docs/RELEASE-r110.md)
+- [Fenestra ARM32 阶段与真机门槛](docs/profiles/README-FENESTRA-Z62.md)
+- [r110 请求资格诊断摘要](docs/evidence/request-qualification-r110.json)
+- [Fenestra r19 局部队列摘要](docs/evidence/fenestra-queue-r19.json)

@@ -14,7 +14,7 @@ import run_z62_output_lineage as hardware
 import z62_paired_console as paired
 
 ROOT=Path(__file__).resolve().parents[1]
-FIXTURES=Path('C:/Users/32057/Documents/Z62-QEMU-runtime/fixtures')
+FIXTURES=Path('<USERPROFILE>/Documents/Z62-QEMU-runtime/fixtures')
 GROUP23_SHA256='c7dd14358b45b2813fdee85fc587bcdd5899f7a81e0d5830513d631235bcc700'
 
 

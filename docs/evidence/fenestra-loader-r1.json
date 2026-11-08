@@ -1,0 +1,24 @@
+{
+  "version": "0.1.0-dev.1",
+  "loader_evidence_verified": true,
+  "runs": [
+    {
+      "file": "analysis/fenestra-z62-r1/run-4.json",
+      "sha256": "ffb7f61477a4b7113f4a03290e94fbeb41fc0aaa185e3661f0017b4a1fdbeca7"
+    },
+    {
+      "file": "analysis/fenestra-z62-r1/run-5-repeat.json",
+      "sha256": "ab8693c4d08aea04f1dad1369b0e3c399a0f6e89a8db2c2befb0f977ee547a74"
+    }
+  ],
+  "guest_checks_per_run": 58,
+  "distinct_fixture_kinds": 29,
+  "positive_callbacks_per_run": 2,
+  "original_firmware_inputs_unchanged": 4,
+  "existing_qemu_unchanged": true,
+  "firmware_integrated": false,
+  "flash_safety_verified": false,
+  "snapshot": "2026.11.08-r110-fenestra-r19",
+  "original_record_sha256": "0018e44ff915816d5ede1d6aaea845bc11cf84cc7efedcb0b580b56fa92d8a41",
+  "publication_scope": "Selected offline verification, not raw traces or a new firmware run. Negative acceptance fields are preserved."
+}

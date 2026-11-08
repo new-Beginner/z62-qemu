@@ -41,8 +41,8 @@ if __name__=='__main__':
         count+=1
         if time.monotonic()-last>=15:
             print(json.dumps({'verified_c_files':count,'total':len(moved)}),flush=True); last=time.monotonic()
-    remaining=[p for p in Path('C:/Users/32057/AppData/Local/Temp').iterdir() if p.name.startswith('z62-') and p.is_dir()]
-    require(not remaining and not Path('C:/Users/32057/Documents/Z62-QEMU-runtime').exists(),'C project runtime remains')
+    remaining=[p for p in Path('<USERPROFILE>/AppData/Local/Temp').iterdir() if p.name.startswith('z62-') and p.is_dir()]
+    require(not remaining and not Path('<USERPROFILE>/Documents/Z62-QEMU-runtime').exists(),'C project runtime remains')
     before=json.loads((ROOT/'.runtime/tools-relocation.json').read_text(encoding='utf-8'))
     after=json.loads((ROOT/'.runtime/tools-relocation-verified.json').read_text(encoding='utf-8'))
     require(after['verified'] and before['files']==after['files'] and not Path(before['source']).exists(),

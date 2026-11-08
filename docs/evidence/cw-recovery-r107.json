@@ -1,0 +1,204 @@
+{
+  "schema": 1,
+  "completed_evidence_check": true,
+  "original_result_sha256": "b1cc9bf10a88f64b0e36d0f452b64184ee2d0bb92b301d5452fd71e147197eec",
+  "RAM_receipt_sha256": "6132e4f2796418dad0d67d1cc725e218741dcaca5d6eeddce324a420697fd8f6",
+  "source_and_data_verification_sha256": "98aa705a695669c7c92428782419d78ba466e8b192304805f4e829efa86d9e4f",
+  "original_accepted_packets_reconstructed": 333,
+  "completed_original_observation": true,
+  "memory_write_hits": 6,
+  "writers": [
+    {
+      "label": "application-index-word",
+      "address": "0xc1811e60",
+      "watch_stop_pc": "0x1029a916",
+      "instruction_set": "Thumb",
+      "link": "0x1029ab91",
+      "virtual_time_ns": 13758929291,
+      "word_at_stop": 1281,
+      "word_after_original_step": 1,
+      "caller": {
+        "link": "0x1029ab91",
+        "known": true,
+        "callsite": "0x1029ab8c",
+        "target": "0x1029a874",
+        "kind": "thumb-bl",
+        "is_complete_call_chain": false,
+        "raw": "fff772fe",
+        "original_bytes_match": true
+      },
+      "complete_call_chain_verified": false
+    },
+    {
+      "label": "application-index-word",
+      "address": "0xc1811e60",
+      "watch_stop_pc": "0x1029a8ea",
+      "instruction_set": "Thumb",
+      "link": "0x1029ab91",
+      "virtual_time_ns": 13763056854,
+      "word_at_stop": 1,
+      "word_after_original_step": 0,
+      "caller": {
+        "link": "0x1029ab91",
+        "known": true,
+        "callsite": "0x1029ab8c",
+        "target": "0x1029a874",
+        "kind": "thumb-bl",
+        "is_complete_call_chain": false,
+        "raw": "fff772fe",
+        "original_bytes_match": true
+      },
+      "complete_call_chain_verified": false
+    },
+    {
+      "label": "application-index-word",
+      "address": "0xc1811e60",
+      "watch_stop_pc": "0x1029a8ee",
+      "instruction_set": "Thumb",
+      "link": "0x1029ab91",
+      "virtual_time_ns": 13763066854,
+      "word_at_stop": 0,
+      "word_after_original_step": 1280,
+      "caller": {
+        "link": "0x1029ab91",
+        "known": true,
+        "callsite": "0x1029ab8c",
+        "target": "0x1029a874",
+        "kind": "thumb-bl",
+        "is_complete_call_chain": false,
+        "raw": "fff772fe",
+        "original_bytes_match": true
+      },
+      "complete_call_chain_verified": false
+    },
+    {
+      "label": "application-index-word",
+      "address": "0xc1811e60",
+      "watch_stop_pc": "0x1029a916",
+      "instruction_set": "Thumb",
+      "link": "0x1029ab91",
+      "virtual_time_ns": 18838808333,
+      "word_at_stop": 1280,
+      "word_after_original_step": 768,
+      "caller": {
+        "link": "0x1029ab91",
+        "known": true,
+        "callsite": "0x1029ab8c",
+        "target": "0x1029a874",
+        "kind": "thumb-bl",
+        "is_complete_call_chain": false,
+        "raw": "fff772fe",
+        "original_bytes_match": true
+      },
+      "complete_call_chain_verified": false
+    },
+    {
+      "label": "application-index-word",
+      "address": "0xc1811e60",
+      "watch_stop_pc": "0x1029a8ea",
+      "instruction_set": "Thumb",
+      "link": "0x1029ab91",
+      "virtual_time_ns": 18841101854,
+      "word_at_stop": 768,
+      "word_after_original_step": 771,
+      "caller": {
+        "link": "0x1029ab91",
+        "known": true,
+        "callsite": "0x1029ab8c",
+        "target": "0x1029a874",
+        "kind": "thumb-bl",
+        "is_complete_call_chain": false,
+        "raw": "fff772fe",
+        "original_bytes_match": true
+      },
+      "complete_call_chain_verified": false
+    },
+    {
+      "label": "application-index-word",
+      "address": "0xc1811e60",
+      "watch_stop_pc": "0x1029a8ee",
+      "instruction_set": "Thumb",
+      "link": "0x1029ab91",
+      "virtual_time_ns": 18841107250,
+      "word_at_stop": 771,
+      "word_after_original_step": 1283,
+      "caller": {
+        "link": "0x1029ab91",
+        "known": true,
+        "callsite": "0x1029ab8c",
+        "target": "0x1029a874",
+        "kind": "thumb-bl",
+        "is_complete_call_chain": false,
+        "raw": "fff772fe",
+        "original_bytes_match": true
+      },
+      "complete_call_chain_verified": false
+    }
+  ],
+  "observed_word_changes": [
+    {
+      "address": "0xc1811e60",
+      "previous_observed_word": 1281,
+      "new_word": 1,
+      "virtual_time_ns": 13758929291,
+      "watch_stop_pc": "0x1029a916",
+      "after_step_pc": "0x1029a918"
+    },
+    {
+      "address": "0xc1811e60",
+      "previous_observed_word": 1,
+      "new_word": 0,
+      "virtual_time_ns": 13763056854,
+      "watch_stop_pc": "0x1029a8ea",
+      "after_step_pc": "0x1029a8ec"
+    },
+    {
+      "address": "0xc1811e60",
+      "previous_observed_word": 0,
+      "new_word": 1280,
+      "virtual_time_ns": 13763066854,
+      "watch_stop_pc": "0x1029a8ee",
+      "after_step_pc": "0x1029a8f0"
+    },
+    {
+      "address": "0xc1811e60",
+      "previous_observed_word": 1280,
+      "new_word": 768,
+      "virtual_time_ns": 18838808333,
+      "watch_stop_pc": "0x1029a916",
+      "after_step_pc": "0x1029a918"
+    },
+    {
+      "address": "0xc1811e60",
+      "previous_observed_word": 768,
+      "new_word": 771,
+      "virtual_time_ns": 18841101854,
+      "watch_stop_pc": "0x1029a8ea",
+      "after_step_pc": "0x1029a8ec"
+    },
+    {
+      "address": "0xc1811e60",
+      "previous_observed_word": 771,
+      "new_word": 1283,
+      "virtual_time_ns": 18841107250,
+      "watch_stop_pc": "0x1029a8ee",
+      "after_step_pc": "0x1029a8f0"
+    }
+  ],
+  "actual_index_write_observed": true,
+  "watched_index_value_at_attach": 1281,
+  "watched_index_value_at_close": 1283,
+  "half_request_ns": 13748671854,
+  "post_half_index3_ns": 18882716833,
+  "scope_limit_reached": false,
+  "close_reason": "actual-post-half-index3",
+  "exact_write_instruction_identified": false,
+  "complete_call_chain_verified": false,
+  "guest_debug_timing_perturbed": true,
+  "functional_acceptance_eligible": false,
+  "complete_camera_or_AF_or_flash_safety_verified": false,
+  "camera_accessed": false,
+  "snapshot": "2026.11.08-r110-fenestra-r19",
+  "original_record_sha256": "ca48f4037731161d1c49470c1d9d4498f735c225f404552fd542b25c57fabe0c",
+  "publication_scope": "Selected offline verification, not raw traces or a new firmware run. Negative acceptance fields are preserved."
+}

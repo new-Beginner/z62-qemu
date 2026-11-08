@@ -1,0 +1,234 @@
+{
+  "schema": 1,
+  "completed_evidence_check": true,
+  "original_result_sha256": "975343262dab78f8f955a7e47e8ed95b94a317eca853f310061c611c2dda73e5",
+  "qualification_receipt_sha256": "03a1a5705e938712d7751a4eb950a4d22535e4148383fe98ea55314edfc3226b",
+  "call_verification_sha256": "e41a0c7fbc24c14094d309f9d6bde385717aedab34900c54e25a34c2d6de2bc3",
+  "original_accepted_packets_reconstructed": 333,
+  "completed_original_observation": true,
+  "actual_request_call_pairs": [
+    {
+      "label": "request-mode-conversion",
+      "call_sequence": 15,
+      "return_sequence": 19,
+      "call_pc": "0x10542992",
+      "return_pc": "0x10542996",
+      "entry_ns": 18842595270,
+      "return_ns": 18842621562,
+      "elapsed_ns": 26292,
+      "input_r0_r3": [
+        16,
+        3255642452,
+        2710,
+        0
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 0
+    },
+    {
+      "label": "transition-request",
+      "call_sequence": 14,
+      "return_sequence": 22,
+      "call_pc": "0x1054297e",
+      "return_pc": "0x10542cce",
+      "entry_ns": 18842589375,
+      "return_ns": 18842623104,
+      "elapsed_ns": 33729,
+      "input_r0_r3": [
+        16,
+        0,
+        2710,
+        0
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 0
+    }
+  ],
+  "actual_original_branch_and_value_proofs": [
+    {
+      "label": "conversion-compare-old-new",
+      "old_value_r8": 0,
+      "new_value_r5": 0,
+      "equal": true,
+      "original_CMP_Z_verified": true,
+      "virtual_time_ns": 18842600687
+    },
+    {
+      "label": "conversion-stability-branch",
+      "condition": true,
+      "actual_after_PC": "0x10634914",
+      "r0": 0,
+      "r4": 3246503036,
+      "r9": 0,
+      "r10": 0,
+      "virtual_time_ns": 18842612395,
+      "original_branch_execution_verified": true
+    },
+    {
+      "label": "conversion-result",
+      "actual_return_value": 0,
+      "virtual_time_ns": 18842618583
+    },
+    {
+      "label": "request-changed-gate",
+      "condition": true,
+      "actual_after_PC": "0x10542a6c",
+      "r0": 0,
+      "r4": 0,
+      "r9": 3246512540,
+      "r10": 0,
+      "virtual_time_ns": 18842622645,
+      "original_branch_execution_verified": true
+    },
+    {
+      "label": "request-result",
+      "actual_return_value": 0,
+      "virtual_time_ns": 18842623000
+    },
+    {
+      "label": "parameter-19-branch",
+      "condition": true,
+      "actual_after_PC": "0x1054104e",
+      "r0": 0,
+      "r4": 3246512540,
+      "r9": 3246512829,
+      "r10": 0,
+      "virtual_time_ns": 18948451270,
+      "original_branch_execution_verified": true
+    },
+    {
+      "label": "parameter-19-branch",
+      "condition": true,
+      "actual_after_PC": "0x1054104e",
+      "r0": 0,
+      "r4": 3246512540,
+      "r9": 3246512829,
+      "r10": 0,
+      "virtual_time_ns": 18948773083,
+      "original_branch_execution_verified": true
+    },
+    {
+      "label": "parameter-19-branch",
+      "condition": true,
+      "actual_after_PC": "0x1054104e",
+      "r0": 0,
+      "r4": 3246512540,
+      "r9": 3246512829,
+      "r10": 0,
+      "virtual_time_ns": 18991966041,
+      "original_branch_execution_verified": true
+    },
+    {
+      "label": "parameter-19-branch",
+      "condition": true,
+      "actual_after_PC": "0x1054104e",
+      "r0": 0,
+      "r4": 3246512540,
+      "r9": 3246512829,
+      "r10": 0,
+      "virtual_time_ns": 19146704395,
+      "original_branch_execution_verified": true
+    }
+  ],
+  "parameter_19_first_four_queries": [
+    {
+      "label": "parameter-19-query",
+      "call_sequence": 26,
+      "return_sequence": 27,
+      "call_pc": "0x10540f3c",
+      "return_pc": "0x10540f40",
+      "entry_ns": 18948450895,
+      "return_ns": 18948451145,
+      "elapsed_ns": 250,
+      "input_r0_r3": [
+        25,
+        3309246140,
+        0,
+        3254894240
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "parameter-19-query",
+      "call_sequence": 29,
+      "return_sequence": 30,
+      "call_pc": "0x10540f3c",
+      "return_pc": "0x10540f40",
+      "entry_ns": 18948772375,
+      "return_ns": 18948772916,
+      "elapsed_ns": 541,
+      "input_r0_r3": [
+        25,
+        3309246140,
+        0,
+        3254894240
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "parameter-19-query",
+      "call_sequence": 32,
+      "return_sequence": 33,
+      "call_pc": "0x10540f3c",
+      "return_pc": "0x10540f40",
+      "entry_ns": 18991949312,
+      "return_ns": 18991960520,
+      "elapsed_ns": 11208,
+      "input_r0_r3": [
+        25,
+        3309246140,
+        0,
+        3254894240
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    },
+    {
+      "label": "parameter-19-query",
+      "call_sequence": 35,
+      "return_sequence": 36,
+      "call_pc": "0x10540f3c",
+      "return_pc": "0x10540f40",
+      "entry_ns": 19146703937,
+      "return_ns": 19146704145,
+      "elapsed_ns": 208,
+      "input_r0_r3": [
+        25,
+        3309246140,
+        0,
+        3254894240
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1283,
+      "observed_C1821EB8_at_entry": 1,
+      "observed_C1821EB8_at_return": 1
+    }
+  ],
+  "parameter_19_all_queries_in_window_sampled": false,
+  "clear_call_marker_hits": 0,
+  "special_zero_assignment_hits": 0,
+  "setter_arguments": [
+    1
+  ],
+  "incomplete_calls": [],
+  "scope_limit_reached": false,
+  "missing_capture_restart_root_cause_verified": false,
+  "functional_acceptance_eligible": false,
+  "complete_camera_or_AF_or_flash_safety_verified": false,
+  "camera_accessed": false,
+  "snapshot": "2026.11.08-r110-fenestra-r19",
+  "original_record_sha256": "3755d5135e671d8f6e4e952ccf82653c52bf5a4b59aa4261dd6bd2e1e03b0211",
+  "publication_scope": "Selected offline verification, not raw traces or a new firmware run. Negative acceptance fields are preserved."
+}

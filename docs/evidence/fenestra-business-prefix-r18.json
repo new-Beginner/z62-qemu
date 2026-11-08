@@ -1,0 +1,1299 @@
+{
+  "schema": 1,
+  "tool": "fenestra-z62-business-prefix-verifier/0.1.0",
+  "runs": [
+    {
+      "events": 344,
+      "registrations": 128,
+      "calls": 46,
+      "returned": 42,
+      "pending_registrations": [],
+      "pending_calls": [
+        {
+          "sequence": 128,
+          "role": "master",
+          "kind": 1,
+          "object_address": 3256169616,
+          "tcb_address": 3267453808,
+          "field_target": 270656863,
+          "message": 32
+        },
+        {
+          "sequence": 278,
+          "role": "master",
+          "kind": 1,
+          "object_address": 3266443564,
+          "tcb_address": 3267470440,
+          "field_target": 272361511,
+          "message": 2
+        },
+        {
+          "sequence": 302,
+          "role": "slave",
+          "kind": 2,
+          "object_address": 3242751064,
+          "tcb_address": 3247936808,
+          "field_target": 268859153,
+          "message": 1
+        },
+        {
+          "sequence": 339,
+          "role": "master",
+          "kind": 2,
+          "object_address": 3264086264,
+          "tcb_address": 3267481240,
+          "field_target": 272148893,
+          "message": 1
+        }
+      ],
+      "summary": {
+        "master": {
+          "registrations": 92,
+          "calls": 39,
+          "registered_calls": 39,
+          "returned": 36,
+          "unregistered_calls": 0,
+          "signatures": {
+            "1": 38,
+            "2": 1
+          },
+          "targets": [
+            {
+              "address": 270557569,
+              "samples": 1
+            },
+            {
+              "address": 270579599,
+              "samples": 1
+            },
+            {
+              "address": 270579979,
+              "samples": 6
+            },
+            {
+              "address": 270598421,
+              "samples": 1
+            },
+            {
+              "address": 270656863,
+              "samples": 1
+            },
+            {
+              "address": 270699281,
+              "samples": 8
+            },
+            {
+              "address": 270734465,
+              "samples": 1
+            },
+            {
+              "address": 270981327,
+              "samples": 1
+            },
+            {
+              "address": 271668755,
+              "samples": 1
+            },
+            {
+              "address": 272056583,
+              "samples": 3
+            },
+            {
+              "address": 272126581,
+              "samples": 1
+            },
+            {
+              "address": 272127889,
+              "samples": 1
+            },
+            {
+              "address": 272129195,
+              "samples": 1
+            },
+            {
+              "address": 272148893,
+              "samples": 1
+            },
+            {
+              "address": 272156995,
+              "samples": 1
+            },
+            {
+              "address": 272211813,
+              "samples": 1
+            },
+            {
+              "address": 272285235,
+              "samples": 1
+            },
+            {
+              "address": 272361511,
+              "samples": 1
+            },
+            {
+              "address": 272612539,
+              "samples": 1
+            },
+            {
+              "address": 272638939,
+              "samples": 1
+            },
+            {
+              "address": 272883169,
+              "samples": 1
+            },
+            {
+              "address": 273715391,
+              "samples": 1
+            },
+            {
+              "address": 275447311,
+              "samples": 1
+            },
+            {
+              "address": 275602317,
+              "samples": 2
+            }
+          ],
+          "registrations_without_call": 68,
+          "return_r0_values": {
+            "0": 4,
+            "1": 4,
+            "1073741824": 2,
+            "134217728": 1,
+            "16777216": 2,
+            "268435456": 2,
+            "32768": 8,
+            "33554432": 2,
+            "33555456": 1,
+            "4": 1,
+            "4096": 1,
+            "536870912": 7,
+            "805306368": 1
+          }
+        },
+        "slave": {
+          "registrations": 36,
+          "calls": 7,
+          "registered_calls": 7,
+          "returned": 6,
+          "unregistered_calls": 0,
+          "signatures": {
+            "1": 6,
+            "2": 1
+          },
+          "targets": [
+            {
+              "address": 268783441,
+              "samples": 1
+            },
+            {
+              "address": 268822115,
+              "samples": 3
+            },
+            {
+              "address": 268840865,
+              "samples": 2
+            },
+            {
+              "address": 268859153,
+              "samples": 1
+            }
+          ],
+          "registrations_without_call": 32,
+          "return_r0_values": {
+            "0": 2,
+            "16777216": 1,
+            "268435456": 2,
+            "536870912": 1
+          }
+        }
+      },
+      "last_observed_model_seconds": 0.026276041666666666,
+      "returned_signature_kinds": [
+        1
+      ],
+      "returned_chains": [
+        {
+          "call_sequence": 4,
+          "return_sequence": 5,
+          "role": "slave",
+          "kind": 1,
+          "registration_index": 1,
+          "field_target": 268822115
+        },
+        {
+          "call_sequence": 6,
+          "return_sequence": 7,
+          "role": "slave",
+          "kind": 1,
+          "registration_index": 1,
+          "field_target": 268822115
+        },
+        {
+          "call_sequence": 71,
+          "return_sequence": 72,
+          "role": "slave",
+          "kind": 1,
+          "registration_index": 1,
+          "field_target": 268822115
+        },
+        {
+          "call_sequence": 106,
+          "return_sequence": 107,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 26,
+          "field_target": 272056583
+        },
+        {
+          "call_sequence": 108,
+          "return_sequence": 109,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 30,
+          "field_target": 270579599
+        },
+        {
+          "call_sequence": 110,
+          "return_sequence": 111,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 29,
+          "field_target": 270579979
+        },
+        {
+          "call_sequence": 112,
+          "return_sequence": 113,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 26,
+          "field_target": 272056583
+        },
+        {
+          "call_sequence": 114,
+          "return_sequence": 115,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 33,
+          "field_target": 272156995
+        },
+        {
+          "call_sequence": 116,
+          "return_sequence": 117,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 39,
+          "field_target": 272612539
+        },
+        {
+          "call_sequence": 118,
+          "return_sequence": 119,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 35,
+          "field_target": 270557569
+        },
+        {
+          "call_sequence": 120,
+          "return_sequence": 121,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 36,
+          "field_target": 272129195
+        },
+        {
+          "call_sequence": 122,
+          "return_sequence": 123,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 28,
+          "field_target": 272127889
+        },
+        {
+          "call_sequence": 124,
+          "return_sequence": 125,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 27,
+          "field_target": 272126581
+        },
+        {
+          "call_sequence": 126,
+          "return_sequence": 127,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 257,
+          "return_sequence": 258,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 26,
+          "field_target": 272056583
+        },
+        {
+          "call_sequence": 259,
+          "return_sequence": 260,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 43,
+          "field_target": 271668755
+        },
+        {
+          "call_sequence": 261,
+          "return_sequence": 262,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 42,
+          "field_target": 270734465
+        },
+        {
+          "call_sequence": 263,
+          "return_sequence": 264,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 265,
+          "return_sequence": 266,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 267,
+          "return_sequence": 268,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 29,
+          "field_target": 270579979
+        },
+        {
+          "call_sequence": 269,
+          "return_sequence": 270,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 29,
+          "field_target": 270579979
+        },
+        {
+          "call_sequence": 271,
+          "return_sequence": 279,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 63,
+          "field_target": 272638939
+        },
+        {
+          "call_sequence": 272,
+          "return_sequence": 277,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 87,
+          "field_target": 272285235
+        },
+        {
+          "call_sequence": 273,
+          "return_sequence": 274,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 275,
+          "return_sequence": 276,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 280,
+          "return_sequence": 281,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 86,
+          "field_target": 273715391
+        },
+        {
+          "call_sequence": 282,
+          "return_sequence": 289,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 96,
+          "field_target": 272211813
+        },
+        {
+          "call_sequence": 285,
+          "return_sequence": 286,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 290,
+          "return_sequence": 291,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 114,
+          "field_target": 270981327
+        },
+        {
+          "call_sequence": 292,
+          "return_sequence": 293,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 41,
+          "field_target": 270598421
+        },
+        {
+          "call_sequence": 294,
+          "return_sequence": 295,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 90,
+          "field_target": 275602317
+        },
+        {
+          "call_sequence": 296,
+          "return_sequence": 297,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 90,
+          "field_target": 275602317
+        },
+        {
+          "call_sequence": 298,
+          "return_sequence": 299,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 300,
+          "return_sequence": 301,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 303,
+          "return_sequence": 304,
+          "role": "slave",
+          "kind": 1,
+          "registration_index": 12,
+          "field_target": 268840865
+        },
+        {
+          "call_sequence": 305,
+          "return_sequence": 306,
+          "role": "slave",
+          "kind": 1,
+          "registration_index": 12,
+          "field_target": 268840865
+        },
+        {
+          "call_sequence": 307,
+          "return_sequence": 308,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 29,
+          "field_target": 270579979
+        },
+        {
+          "call_sequence": 309,
+          "return_sequence": 312,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 113,
+          "field_target": 275447311
+        },
+        {
+          "call_sequence": 310,
+          "return_sequence": 311,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 29,
+          "field_target": 270579979
+        },
+        {
+          "call_sequence": 313,
+          "return_sequence": 316,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 74,
+          "field_target": 272883169
+        },
+        {
+          "call_sequence": 314,
+          "return_sequence": 315,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 29,
+          "field_target": 270579979
+        },
+        {
+          "call_sequence": 340,
+          "return_sequence": 341,
+          "role": "slave",
+          "kind": 1,
+          "registration_index": 18,
+          "field_target": 268783441
+        }
+      ],
+      "local_failed_prefix_replayed": true,
+      "full_run_passed": false,
+      "accepted_run": false,
+      "bounded_registered_business_return_verified": false,
+      "all_business_callbacks_return_verified": false,
+      "allocator_lifetime_verified": false,
+      "business_callback_return_verified": false,
+      "business_task_completed": false,
+      "camera_accessed": false,
+      "card_attached": false,
+      "complete_business_task_list_verified": false,
+      "complete_descriptor_layout_verified": false,
+      "complete_native_boot_verified": false,
+      "complete_task_abi_verified": false,
+      "controller_loaded": false,
+      "debugger_guest_memory_written": false,
+      "debugger_guest_registers_written": false,
+      "debugger_guest_state_written": false,
+      "default_model_completion_logic_disabled": false,
+      "deletion_reuse_verified": false,
+      "descriptor_ownership_verified": false,
+      "exact_model_source_recovered": false,
+      "firmware_integrated": false,
+      "flash_safety_verified": false,
+      "frame_sync_enabled": false,
+      "full_fenestra_port_verified": false,
+      "injected_calls": false,
+      "laboratory_completion_enabled": false,
+      "message_semantics_verified": false,
+      "native_normal_shutdown_verified": false,
+      "native_startup_completed": false,
+      "normal_shutdown_verified": false,
+      "old_r69_reproduced": false,
+      "original_firmware_patched": false,
+      "parameters_loaded": false,
+      "r10_pending_explained": false,
+      "registration_ownership_verified": false,
+      "same_creation_launch_business_chain_verified": false,
+      "stable_task_identity_verified": false,
+      "startup_failure_matrix_verified": false,
+      "system_mode_verified": false,
+      "task_lifetime_verified": false,
+      "path": "analysis/fenestra-z62-business-r18/run-1.json",
+      "sha256": "f6d6f6ea515f20e98126defec054a27e371a79be6e6cf3b3e31e26f9bf8ade44"
+    },
+    {
+      "events": 348,
+      "registrations": 128,
+      "calls": 48,
+      "returned": 44,
+      "pending_registrations": [],
+      "pending_calls": [
+        {
+          "sequence": 118,
+          "role": "master",
+          "kind": 1,
+          "object_address": 3256169616,
+          "tcb_address": 3267453808,
+          "field_target": 270656863,
+          "message": 32
+        },
+        {
+          "sequence": 281,
+          "role": "master",
+          "kind": 1,
+          "object_address": 3266443564,
+          "tcb_address": 3267470440,
+          "field_target": 272361511,
+          "message": 2
+        },
+        {
+          "sequence": 288,
+          "role": "slave",
+          "kind": 2,
+          "object_address": 3242751064,
+          "tcb_address": 3247936808,
+          "field_target": 268859153,
+          "message": 1
+        },
+        {
+          "sequence": 343,
+          "role": "master",
+          "kind": 2,
+          "object_address": 3264086264,
+          "tcb_address": 3267481240,
+          "field_target": 272148893,
+          "message": 1
+        }
+      ],
+      "summary": {
+        "master": {
+          "registrations": 92,
+          "calls": 41,
+          "registered_calls": 41,
+          "returned": 38,
+          "unregistered_calls": 0,
+          "signatures": {
+            "1": 40,
+            "2": 1
+          },
+          "targets": [
+            {
+              "address": 270557569,
+              "samples": 1
+            },
+            {
+              "address": 270579599,
+              "samples": 1
+            },
+            {
+              "address": 270579979,
+              "samples": 6
+            },
+            {
+              "address": 270598421,
+              "samples": 1
+            },
+            {
+              "address": 270656863,
+              "samples": 1
+            },
+            {
+              "address": 270699281,
+              "samples": 10
+            },
+            {
+              "address": 270734465,
+              "samples": 1
+            },
+            {
+              "address": 270981327,
+              "samples": 1
+            },
+            {
+              "address": 271668755,
+              "samples": 1
+            },
+            {
+              "address": 272056583,
+              "samples": 3
+            },
+            {
+              "address": 272126581,
+              "samples": 1
+            },
+            {
+              "address": 272127889,
+              "samples": 1
+            },
+            {
+              "address": 272129195,
+              "samples": 1
+            },
+            {
+              "address": 272148893,
+              "samples": 1
+            },
+            {
+              "address": 272156995,
+              "samples": 1
+            },
+            {
+              "address": 272211813,
+              "samples": 1
+            },
+            {
+              "address": 272285235,
+              "samples": 1
+            },
+            {
+              "address": 272361511,
+              "samples": 1
+            },
+            {
+              "address": 272612539,
+              "samples": 1
+            },
+            {
+              "address": 272638939,
+              "samples": 1
+            },
+            {
+              "address": 272883169,
+              "samples": 1
+            },
+            {
+              "address": 273715391,
+              "samples": 1
+            },
+            {
+              "address": 275447311,
+              "samples": 1
+            },
+            {
+              "address": 275602317,
+              "samples": 2
+            }
+          ],
+          "registrations_without_call": 68,
+          "return_r0_values": {
+            "0": 4,
+            "1": 4,
+            "1073741824": 2,
+            "134217728": 1,
+            "16777216": 2,
+            "268435456": 2,
+            "32768": 10,
+            "33554432": 2,
+            "33555456": 1,
+            "4": 1,
+            "4096": 1,
+            "536870912": 7,
+            "805306368": 1
+          }
+        },
+        "slave": {
+          "registrations": 36,
+          "calls": 7,
+          "registered_calls": 7,
+          "returned": 6,
+          "unregistered_calls": 0,
+          "signatures": {
+            "1": 6,
+            "2": 1
+          },
+          "targets": [
+            {
+              "address": 268783441,
+              "samples": 1
+            },
+            {
+              "address": 268822115,
+              "samples": 3
+            },
+            {
+              "address": 268840865,
+              "samples": 2
+            },
+            {
+              "address": 268859153,
+              "samples": 1
+            }
+          ],
+          "registrations_without_call": 32,
+          "return_r0_values": {
+            "0": 2,
+            "16777216": 1,
+            "268435456": 2,
+            "536870912": 1
+          }
+        }
+      },
+      "last_observed_model_seconds": 0.027826270833333333,
+      "returned_signature_kinds": [
+        1
+      ],
+      "returned_chains": [
+        {
+          "call_sequence": 4,
+          "return_sequence": 5,
+          "role": "slave",
+          "kind": 1,
+          "registration_index": 1,
+          "field_target": 268822115
+        },
+        {
+          "call_sequence": 6,
+          "return_sequence": 7,
+          "role": "slave",
+          "kind": 1,
+          "registration_index": 1,
+          "field_target": 268822115
+        },
+        {
+          "call_sequence": 72,
+          "return_sequence": 73,
+          "role": "slave",
+          "kind": 1,
+          "registration_index": 1,
+          "field_target": 268822115
+        },
+        {
+          "call_sequence": 106,
+          "return_sequence": 107,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 28,
+          "field_target": 272127889
+        },
+        {
+          "call_sequence": 108,
+          "return_sequence": 109,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 27,
+          "field_target": 272126581
+        },
+        {
+          "call_sequence": 110,
+          "return_sequence": 117,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 111,
+          "return_sequence": 112,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 26,
+          "field_target": 272056583
+        },
+        {
+          "call_sequence": 113,
+          "return_sequence": 114,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 30,
+          "field_target": 270579599
+        },
+        {
+          "call_sequence": 115,
+          "return_sequence": 116,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 29,
+          "field_target": 270579979
+        },
+        {
+          "call_sequence": 247,
+          "return_sequence": 248,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 26,
+          "field_target": 272056583
+        },
+        {
+          "call_sequence": 249,
+          "return_sequence": 250,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 43,
+          "field_target": 271668755
+        },
+        {
+          "call_sequence": 251,
+          "return_sequence": 252,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 26,
+          "field_target": 272056583
+        },
+        {
+          "call_sequence": 253,
+          "return_sequence": 254,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 33,
+          "field_target": 272156995
+        },
+        {
+          "call_sequence": 255,
+          "return_sequence": 260,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 39,
+          "field_target": 272612539
+        },
+        {
+          "call_sequence": 256,
+          "return_sequence": 257,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 258,
+          "return_sequence": 259,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 261,
+          "return_sequence": 262,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 35,
+          "field_target": 270557569
+        },
+        {
+          "call_sequence": 263,
+          "return_sequence": 264,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 36,
+          "field_target": 272129195
+        },
+        {
+          "call_sequence": 265,
+          "return_sequence": 266,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 42,
+          "field_target": 270734465
+        },
+        {
+          "call_sequence": 267,
+          "return_sequence": 268,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 269,
+          "return_sequence": 270,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 271,
+          "return_sequence": 272,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 29,
+          "field_target": 270579979
+        },
+        {
+          "call_sequence": 273,
+          "return_sequence": 274,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 29,
+          "field_target": 270579979
+        },
+        {
+          "call_sequence": 275,
+          "return_sequence": 280,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 87,
+          "field_target": 272285235
+        },
+        {
+          "call_sequence": 276,
+          "return_sequence": 277,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 278,
+          "return_sequence": 279,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 282,
+          "return_sequence": 283,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 63,
+          "field_target": 272638939
+        },
+        {
+          "call_sequence": 284,
+          "return_sequence": 285,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 86,
+          "field_target": 273715391
+        },
+        {
+          "call_sequence": 286,
+          "return_sequence": 287,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 289,
+          "return_sequence": 290,
+          "role": "slave",
+          "kind": 1,
+          "registration_index": 12,
+          "field_target": 268840865
+        },
+        {
+          "call_sequence": 291,
+          "return_sequence": 296,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 96,
+          "field_target": 272211813
+        },
+        {
+          "call_sequence": 297,
+          "return_sequence": 302,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 114,
+          "field_target": 270981327
+        },
+        {
+          "call_sequence": 298,
+          "return_sequence": 299,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 300,
+          "return_sequence": 301,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 45,
+          "field_target": 270699281
+        },
+        {
+          "call_sequence": 303,
+          "return_sequence": 304,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 29,
+          "field_target": 270579979
+        },
+        {
+          "call_sequence": 305,
+          "return_sequence": 314,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 113,
+          "field_target": 275447311
+        },
+        {
+          "call_sequence": 306,
+          "return_sequence": 307,
+          "role": "slave",
+          "kind": 1,
+          "registration_index": 12,
+          "field_target": 268840865
+        },
+        {
+          "call_sequence": 308,
+          "return_sequence": 309,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 29,
+          "field_target": 270579979
+        },
+        {
+          "call_sequence": 310,
+          "return_sequence": 313,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 74,
+          "field_target": 272883169
+        },
+        {
+          "call_sequence": 311,
+          "return_sequence": 312,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 29,
+          "field_target": 270579979
+        },
+        {
+          "call_sequence": 315,
+          "return_sequence": 316,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 41,
+          "field_target": 270598421
+        },
+        {
+          "call_sequence": 317,
+          "return_sequence": 318,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 90,
+          "field_target": 275602317
+        },
+        {
+          "call_sequence": 319,
+          "return_sequence": 320,
+          "role": "master",
+          "kind": 1,
+          "registration_index": 90,
+          "field_target": 275602317
+        },
+        {
+          "call_sequence": 344,
+          "return_sequence": 345,
+          "role": "slave",
+          "kind": 1,
+          "registration_index": 18,
+          "field_target": 268783441
+        }
+      ],
+      "local_failed_prefix_replayed": true,
+      "full_run_passed": false,
+      "accepted_run": false,
+      "bounded_registered_business_return_verified": false,
+      "all_business_callbacks_return_verified": false,
+      "allocator_lifetime_verified": false,
+      "business_callback_return_verified": false,
+      "business_task_completed": false,
+      "camera_accessed": false,
+      "card_attached": false,
+      "complete_business_task_list_verified": false,
+      "complete_descriptor_layout_verified": false,
+      "complete_native_boot_verified": false,
+      "complete_task_abi_verified": false,
+      "controller_loaded": false,
+      "debugger_guest_memory_written": false,
+      "debugger_guest_registers_written": false,
+      "debugger_guest_state_written": false,
+      "default_model_completion_logic_disabled": false,
+      "deletion_reuse_verified": false,
+      "descriptor_ownership_verified": false,
+      "exact_model_source_recovered": false,
+      "firmware_integrated": false,
+      "flash_safety_verified": false,
+      "frame_sync_enabled": false,
+      "full_fenestra_port_verified": false,
+      "injected_calls": false,
+      "laboratory_completion_enabled": false,
+      "message_semantics_verified": false,
+      "native_normal_shutdown_verified": false,
+      "native_startup_completed": false,
+      "normal_shutdown_verified": false,
+      "old_r69_reproduced": false,
+      "original_firmware_patched": false,
+      "parameters_loaded": false,
+      "r10_pending_explained": false,
+      "registration_ownership_verified": false,
+      "same_creation_launch_business_chain_verified": false,
+      "stable_task_identity_verified": false,
+      "startup_failure_matrix_verified": false,
+      "system_mode_verified": false,
+      "task_lifetime_verified": false,
+      "path": "analysis/fenestra-z62-business-r18/run-2-repeat.json",
+      "sha256": "ed051f2e67c26e367fe9af1ada0af7903b86c4f4078f72cdbd1d55b7b51f9b53"
+    }
+  ],
+  "verifier_sha256": "1f0b30cef1183d160bf4d9e2c5623ba54da1cdc1e83bae30e172f604f5988c22",
+  "record_mutations_rejected": [
+    "omitted",
+    "source",
+    "scope",
+    "model",
+    "command",
+    "failure",
+    "promote",
+    "rsp-write",
+    "traditional-step",
+    "qmp",
+    "quit",
+    "model-tree",
+    "failure-tail",
+    "read-audit",
+    "step-audit",
+    "g-audit",
+    "sequence",
+    "cpu",
+    "step-cpu",
+    "rom",
+    "clock",
+    "system",
+    "after-system",
+    "setter-push",
+    "setter-source",
+    "strd-memory",
+    "saved-stack",
+    "field",
+    "message",
+    "tcb",
+    "blx-lr",
+    "blx-isa",
+    "blx-parameter",
+    "target-rom",
+    "target-current",
+    "target-system",
+    "return-register",
+    "return-tcb",
+    "return-branch"
+  ],
+  "full_run_passed": false,
+  "accepted_run": false,
+  "phase1_passed": false,
+  "phase2_entered": false,
+  "physical_gate_open": false,
+  "absolute_safety_verified": false,
+  "all_business_callbacks_return_verified": false,
+  "allocator_lifetime_verified": false,
+  "business_callback_return_verified": false,
+  "business_task_completed": false,
+  "camera_accessed": false,
+  "card_attached": false,
+  "complete_business_task_list_verified": false,
+  "complete_descriptor_layout_verified": false,
+  "complete_native_boot_verified": false,
+  "complete_task_abi_verified": false,
+  "controller_loaded": false,
+  "debugger_guest_memory_written": false,
+  "debugger_guest_registers_written": false,
+  "debugger_guest_state_written": false,
+  "default_model_completion_logic_disabled": false,
+  "deletion_reuse_verified": false,
+  "descriptor_ownership_verified": false,
+  "exact_model_source_recovered": false,
+  "firmware_integrated": false,
+  "flash_safety_verified": false,
+  "frame_sync_enabled": false,
+  "full_fenestra_port_verified": false,
+  "injected_calls": false,
+  "laboratory_completion_enabled": false,
+  "message_semantics_verified": false,
+  "native_normal_shutdown_verified": false,
+  "native_startup_completed": false,
+  "normal_shutdown_verified": false,
+  "old_r69_reproduced": false,
+  "original_firmware_patched": false,
+  "parameters_loaded": false,
+  "r10_pending_explained": false,
+  "registration_ownership_verified": false,
+  "same_creation_launch_business_chain_verified": false,
+  "stable_task_identity_verified": false,
+  "startup_failure_matrix_verified": false,
+  "system_mode_verified": false,
+  "task_lifetime_verified": false,
+  "snapshot": "2026.11.08-r110-fenestra-r19",
+  "original_record_sha256": "7fb41d7f187530e6fb2c53c7b258cda331f1f536e97f347d56be07e2df63377b",
+  "publication_scope": "Selected offline verification, not raw traces or a new firmware run. Negative acceptance fields are preserved."
+}

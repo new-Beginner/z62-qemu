@@ -70,6 +70,6 @@ class PublicExportTests(unittest.TestCase):
 
     def test_private_paths_are_redacted_in_documentation(self):
         module = self.api()
-        text = module.scrub('C:/Users/private-user/Documents/run ' + str(Path.cwd()), Path.cwd())
+        text = module.scrub('<USERPROFILE>/Documents/run ' + str(Path.cwd()), Path.cwd())
         self.assertNotIn('private-user', text)
         self.assertNotIn(str(Path.cwd()), text)

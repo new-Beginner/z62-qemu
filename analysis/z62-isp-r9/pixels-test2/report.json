@@ -1,7 +1,7 @@
 {
   "completed": true,
   "command": [
-    "D:\\Mypi_deskktop\\.pi-desktoooop\\data\\scratch\\ea676126-86fa-48b9-8090-07cabb814b52\\toolchain\\msys64\\ucrt64\\bin\\gcc.exe",
+    "<PI_SCRATCH>\\toolchain\\msys64\\ucrt64\\bin\\gcc.exe",
     "-std=c11",
     "-O2",
     "-Wall",
@@ -10,10 +10,10 @@
     "tests/native/z62_preview_pixels_test.c",
     "-o",
     "analysis/z62-isp-r9/pixels-test2/pixels-test.exe",
-    "-ID:/Mypi_deskktop/.pi-desktoooop/data/scratch/ea676126-86fa-48b9-8090-07cabb814b52/toolchain/msys64/ucrt64/bin/../include/glib-2.0",
-    "-ID:/Mypi_deskktop/.pi-desktoooop/data/scratch/ea676126-86fa-48b9-8090-07cabb814b52/toolchain/msys64/ucrt64/bin/../lib/glib-2.0/include",
-    "-ID:/Mypi_deskktop/.pi-desktoooop/data/scratch/ea676126-86fa-48b9-8090-07cabb814b52/toolchain/msys64/ucrt64/bin/../include",
-    "-LD:/Mypi_deskktop/.pi-desktoooop/data/scratch/ea676126-86fa-48b9-8090-07cabb814b52/toolchain/msys64/ucrt64/bin/../lib",
+    "-I<PI_SCRATCH>/toolchain/msys64/ucrt64/bin/../include/glib-2.0",
+    "-I<PI_SCRATCH>/toolchain/msys64/ucrt64/bin/../lib/glib-2.0/include",
+    "-I<PI_SCRATCH>/toolchain/msys64/ucrt64/bin/../include",
+    "-L<PI_SCRATCH>/toolchain/msys64/ucrt64/bin/../lib",
     "-lglib-2.0",
     "-lintl",
     "-lm"

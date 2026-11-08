@@ -48,7 +48,7 @@ def scrub(text, root):
         for spelling in (old.replace('\\', '\\\\'), old):
             text = text.replace(spelling, new)
     text = re.sub(r'(?i)C:[/\\]Users[/\\][^/\\\s"<>]+', '<USERPROFILE>', text)
-    return text.replace('3205732937@qq.com', '<LOCAL_EMAIL>')
+    return text.replace('<LOCAL_EMAIL>', '<LOCAL_EMAIL>')
 
 
 def scrub_json(value, root):

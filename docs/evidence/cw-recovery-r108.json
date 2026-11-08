@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "completed_evidence_check": true,
+  "original_result_sha256": "122fceaf81eeab60086b0f3a4f3aa871dc7875445c7392c9c7f8778b0fe730f1",
+  "app_receipt_sha256": "8369ba82ba7e795820f310cf99114ad8db0ae6eaf3fc1a152924c0209e06e052",
+  "source_and_data_verification_sha256": "d953f6720fd6c61309644bac26ea3f825e741e9abe38f2058fbae98739cb0b2b",
+  "original_accepted_packets_reconstructed": 333,
+  "completed_original_observation": true,
+  "original_call_pairs": [
+    {
+      "label": "manager-call-1035cb1e",
+      "call_sequence": 2,
+      "return_sequence": 3,
+      "call_pc": "0x1029a92a",
+      "return_pc": "0x1029a92e",
+      "entry_ns": 13759335562,
+      "return_ns": 13759338479,
+      "elapsed_ns": 2917,
+      "input_r0_r3": [
+        3246542516,
+        0,
+        1610612755,
+        0
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 0
+    },
+    {
+      "label": "manager-call-1035cb1a",
+      "call_sequence": 4,
+      "return_sequence": 5,
+      "call_pc": "0x1029a94e",
+      "return_pc": "0x1029a952",
+      "entry_ns": 13762630458,
+      "return_ns": 13762651645,
+      "elapsed_ns": 21187,
+      "input_r0_r3": [
+        3246512336,
+        1,
+        1610612755,
+        0
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 1,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 0
+    },
+    {
+      "label": "manager-call-1035cb1e",
+      "call_sequence": 8,
+      "return_sequence": 9,
+      "call_pc": "0x1029a92a",
+      "return_pc": "0x1029a92e",
+      "entry_ns": 18838471916,
+      "return_ns": 18838474916,
+      "elapsed_ns": 3000,
+      "input_r0_r3": [
+        3246512336,
+        3,
+        1610612755,
+        0
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 768,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 0
+    },
+    {
+      "label": "manager-call-1035cb1a",
+      "call_sequence": 10,
+      "return_sequence": 11,
+      "call_pc": "0x1029a94e",
+      "return_pc": "0x1029a952",
+      "entry_ns": 18840664458,
+      "return_ns": 18840680645,
+      "elapsed_ns": 16187,
+      "input_r0_r3": [
+        3246512612,
+        1,
+        1610612755,
+        0
+      ],
+      "result_r0": 0,
+      "manager_index_word_at_entry": 768,
+      "observed_C1821EB8_at_entry": 0,
+      "observed_C1821EB8_at_return": 0
+    }
+  ],
+  "actual_indirect_callbacks": [],
+  "call_count": 4,
+  "return_count": 4,
+  "incomplete_calls": [],
+  "manager_execution_point_positive_control_hits": 4,
+  "first_post_half_index3_ns": 18881602687,
+  "last_post_half_index3_sample_ns": 23705655250,
+  "post_index3_call_pairs": [],
+  "scope_limit_reached": false,
+  "guest_debug_timing_perturbed": true,
+  "functional_acceptance_eligible": false,
+  "complete_camera_or_AF_or_flash_safety_verified": false,
+  "camera_accessed": false,
+  "snapshot": "2026.11.08-r110-fenestra-r19",
+  "original_record_sha256": "f633a4213b5ef71da7e6360185d754b6f4131260a0c5fe6e00237b4e09bca4d3",
+  "publication_scope": "Selected offline verification, not raw traces or a new firmware run. Negative acceptance fields are preserved."
+}

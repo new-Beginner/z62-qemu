@@ -1,5 +1,23 @@
 # 验证与公开证据
 
+## r110 + Fenestra r19 本次公开副本检查（2026-11-08）
+
+源码快照 `2026.11.08-r110-fenestra-r19`。实际执行 **37模块／153项无固件测试，零失败／错误／跳过**；GCC 16.2.0 以 C11／O2／Wall／Wextra／Werror／pedantic 编译并通过 **16个基础C用例**。1,557个导出条目哈希、846份Python内存编译和Markdown链接通过；禁止产物与凭据形态检查未发现命中。最终文档回写后另做静态检查，不重复记为运行测试。
+
+结果与完整测试输出见 [JSON](evidence/source-check-r110.json) 和 [日志](evidence/source-check-r110.log)。初次静态检查发现 r111 未验证草稿跨行条件缺括号，只补括号保持原条件；第二次因默认Python缺PyAV有45项跳过，未算通过；最终复用已有视频环境PyAV19.0.2，153项全部执行。r111只做语法检查，没有运行其固件观察，不能称新功能已通过。
+
+未启动QEMU、未加载Nikon固件、未接相机、未重跑历史全量或RawPy／LibRaw。C用例只覆盖基础像素、MAIN和transfer，不覆盖Fenestra原厂集成或全部CW设备行为。Fenestra源码和既有原厂局部观察摘要随附；r18整跑失败、r19只认局部队列窗口，不提升真机门槛。
+
+```powershell
+python -X utf8 -B tools/check_public_source.py --output .runtime/my-r110-check.json --native-compiler .runtime/tools/msys64/ucrt64/bin/gcc.exe
+```
+
+需要公开源码依赖、PyAV19.0.2、可用Node及显式GCC；Windows原生C检查需ASCII工作路径或已核对工作区别名。源码中的私人历史路径只在公开副本脱敏，转换明示于publication-manifest，不称所有源码字节原样。旧Git历史未重写，不能保证历史提交无旧路径信息。
+
+---
+
+以下为历史检查，不是本次重跑：
+
 ## r104 本次公开副本检查（2026-11-04）
 
 实际执行 **35模块／143项无固件测试，零失败／错误／跳过**；GCC16.2.0以C11／O2／Wall／Wextra／Werror／pedantic编译并通过 **16个基础C case**（8像素、3 MAIN、5 transfer，单独计数）。1,015个导出文件SHA、670份Python内存编译、本地Markdown链接、被排除产物及凭据形态检查通过；860个未转换导出文件另与研究目录逐字节核对一致。结果见[JSON](../analysis/publication/source-check-r104-20261104-1.json)和[日志](../analysis/publication/source-check-r104-20261104-1.log)。
